@@ -1,0 +1,356 @@
+# 初始化
+
+学习如何进行资源系统的初始化。
+
+**创建资源包对象**
+
+```csharp
+// 初始化资源系统
+YooAssets.Initialize();
+
+// 创建默认的资源包
+var package = YooAssets.CreatePackage("DefaultPackage");
+
+// 获取指定的资源包，如果没有找到会报错
+var package = YooAssets.GetPackage("DefaultPackage");
+
+// 获取指定的资源包，如果没有找到不会报错
+if (YooAssets.TryGetPackage("DefaultPackage", out var package))
+{
+    // 找到资源包
+}
+
+```
+
+注意：3.0版本已移除 `YooAssets.SetDefaultPackage()` 及默认包裹静态快捷加载接口，资源加载、下载、清理等操作都应通过 `ResourcePackage` 实例调用。
+
+**销毁资源包对象**
+
+```csharp
+private IEnumerator DestroyPackage()
+{
+    // 先销毁资源包
+    var package = YooAssets.GetPackage("DefaultPackage");
+    DestroyPackageOperation operation = package.DestroyPackageAsync();
+    yield return operation;
+    
+    // 然后移除资源包
+    YooAssets.RemovePackage(package.PackageName);
+    Debug.Log("移除成功！");
+}
+```
+
+### 资源系统的运行模式
+
+- 编辑器模拟模式 (EditorSimulateMode)
+- 单机运行模式  (OfflinePlayMode)
+- 联机运行模式  (HostPlayMode)
+- Web运行模式  (WebPlayMode)
+- 自定义运行模式  (CustomPlayMode)
+
+### 编辑器模拟模式 (EditorSimulateMode)
+
+在编辑器下，不需要构建资源包，来模拟运行游戏。
+
+注意：该模式只在编辑器下起效
+
+````csharp
+private IEnumerator InitPackage()
+{  
+    var buildResult = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");    
+    var packageRoot = buildResult.PackageRootDirectory;
+    var fileSystemParams = FileSystemParameters.CreateDefaultEditorFileSystemParameters(packageRoot);
+    
+    var createParameters = new EditorSimulateModeOptions();
+    createParameters.EditorFileSystemParameters = fileSystemParams;
+    
+    var initOperation = package.InitializePackageAsync(createParameters);
+    yield return initOperation;
+    
+    if(initOperation.Status == EOperationStatus.Succeeded)
+        Debug.Log("资源包初始化成功！");
+    else 
+        Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+    
+    //获取资源版本
+    ...(代码省略，见下文)
+    
+    //更新资源清单
+    ...(代码省略，见下文)
+}
+````
+
+### 单机运行模式  (OfflinePlayMode)
+
+对于不需要热更新资源的游戏，可以使用单机运行模式。
+
+注意：该模式需要构建资源包
+
+````csharp
+private IEnumerator InitPackage()
+{
+    var fileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    
+    var createParameters = new OfflinePlayModeOptions();
+    createParameters.BuiltinFileSystemParameters = fileSystemParams;
+    
+    var initOperation = package.InitializePackageAsync(createParameters);
+    yield return initOperation;
+    
+    if(initOperation.Status == EOperationStatus.Succeeded)
+        Debug.Log("资源包初始化成功！");
+    else 
+        Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+    
+    //获取资源版本
+    ...(代码省略，见下文)
+
+    //更新资源清单
+    ...(代码省略，见下文)
+}
+````
+
+### 联机运行模式 (HostPlayMode)
+
+对于需要热更新资源的游戏，可以使用联机运行模式。
+
+注意：该模式需要构建资源包
+
+````csharp
+private IEnumerator InitPackage()
+{
+    string defaultHostServer = "http://127.0.0.1/CDN/Android/v1.0";
+    string fallbackHostServer = "http://127.0.0.1/CDN/Android/v1.0";
+    IRemoteService remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    var cacheFileSystemParams = FileSystemParameters.CreateDefaultSandboxFileSystemParameters(remoteServices);
+    var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    
+    var createParameters = new HostPlayModeOptions();
+    createParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    createParameters.CacheFileSystemParameters = cacheFileSystemParams;
+    
+    var initOperation = package.InitializePackageAsync(createParameters);
+    yield return initOperation;
+    
+    if(initOperation.Status == EOperationStatus.Succeeded)
+        Debug.Log("资源包初始化成功！");
+    else 
+        Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+    
+    //获取资源版本
+    ...(代码省略，见下文)
+    
+    //更新资源清单
+    ...(代码省略，见下文)    
+}
+````
+
+```csharp
+/// <summary>
+/// 远端资源地址查询服务类
+/// </summary>
+private class RemoteServices : IRemoteService
+{
+    private readonly string _defaultHostServer;
+    private readonly string _fallbackHostServer;
+
+    public RemoteServices(string defaultHostServer, string fallbackHostServer)
+    {
+        _defaultHostServer = defaultHostServer;
+        _fallbackHostServer = fallbackHostServer;
+    }
+    public IReadOnlyList<string> GetRemoteUrls(string fileName)
+    {
+        return new[]
+        {
+            $"{_defaultHostServer}/{fileName}",
+            $"{_fallbackHostServer}/{fileName}"
+        };
+    }
+}
+```
+
+### Web运行模式 (WebPlayMode)
+
+针对WebGL平台的专属模式，包括微信小游戏，抖音小游戏都需要选择该模式。
+
+注意：微信小游戏，抖音小游戏请参考解决方案文档介绍。
+
+注意：该模式需要构建资源包
+
+```csharp
+private IEnumerator InitPackage()
+{
+    //说明：RemoteServices类定义请参考联机运行模式！
+    IRemoteService remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
+    var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
+    
+    var createParameters = new WebPlayModeOptions();
+    createParameters.WebServerFileSystemParameters = webServerFileSystemParams;
+    createParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
+    
+    var initOperation = package.InitializePackageAsync(createParameters);
+    yield return initOperation;
+    
+    if(initOperation.Status == EOperationStatus.Succeeded)
+        Debug.Log("资源包初始化成功！");
+    else 
+        Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+    
+    //获取资源版本
+    ...(代码省略，见下文)
+    
+    //更新资源清单
+    ...(代码省略，见下文)    
+}
+```
+
+### 获取资源版本（初始化必须步骤）
+
+资源包在初始化成功之后，需要获取包裹版本
+
+说明：RequestPackageVersionAsync()方法通常用于获取Package.version文件内容。
+
+说明：开发者也可以自行管理资源版本，不使用RequestPackageVersionAsync()方法。例如通过HTTP协议请求服务器下发的版本号。
+
+````csharp
+private IEnumerator RequestPackageVersion()
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var operation = package.RequestPackageVersionAsync();
+    yield return operation;
+
+    if (operation.Status == EOperationStatus.Succeeded)
+    {
+        //更新成功
+        string packageVersion = operation.PackageVersion;
+        Debug.Log($"Request package Version : {packageVersion}");
+    }
+    else
+    {
+        //更新失败
+        Debug.LogError(operation.Error);
+    }
+}
+````
+
+### 更新资源清单（初始化必须步骤）
+
+在获取到资源版本号之后，就可以更新资源清单了。
+
+````csharp
+private IEnumerator UpdatePackageManifest()
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var operation = package.LoadPackageManifestAsync(new LoadPackageManifestOptions(packageVersion, 60));
+    yield return operation;
+
+    if (operation.Status == EOperationStatus.Succeeded)
+    {
+        //更新成功
+    }
+    else
+    {
+        //更新失败
+        Debug.LogError(operation.Error);
+    }
+}
+````
+
+### 自定义运行模式  (CustomPlayMode)
+
+支持多个文件系统。
+
+注意：列表最后一个元素作为主文件系统！
+
+```csharp
+private IEnumerator InitPackage()
+{
+    // 配置各个文件系统参数
+    ......
+    
+    var createParameters = new CustomPlayModeOptions();
+    createParameters.FileSystemParameterList.Add(FileSystemParamsA);
+    createParameters.FileSystemParameterList.Add(FileSystemParamsB);
+    createParameters.FileSystemParameterList.Add(FileSystemParamsC);
+    
+    var initOperation = package.InitializePackageAsync(createParameters);
+    yield return initOperation;
+    
+    if(initOperation.Status == EOperationStatus.Succeeded)
+        Debug.Log("资源包初始化成功！");
+    else 
+        Debug.LogError($"资源包初始化失败：{initOperation.Error}");
+}
+```
+
+### 资源文件解密方法
+
+实现一个继承IBundleDecryptor相关接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestFileEncryption.cs)
+
+```csharp
+// 初始化资源包
+var decryptor = new TestFileStreamDecryption();
+var createParameters = new OfflinePlayModeOptions();
+createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, decryptor);
+
+var initializeOp = package.InitializePackageAsync(createParameters);
+yield return initializeOp;
+```
+
+### 资源清单解密方法
+
+实现一个继承IManifestDecryptor接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestManifestServices.cs)
+
+```csharp
+// 初始化资源包
+var createParameters = new OfflinePlayModeOptions();
+var decryption = new TestProcessManifest();
+createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.ManifestDecryptor, decryption);
+
+var initializeOp = package.InitializePackageAsync(createParameters);
+yield return initializeOp;
+```
+
+### 注意事项
+
+如果指定内置文件系统的根目录为沙盒目录，是一件十分危险的行为。
+
+1. 内置文件系统类并不会在初始化的时候去校验内置文件。
+2. 内置文件系统类没有处理加载资源文件失败的Fallback机制。
+3. 要想解决上面的问题，需要开发者扩展默认的内置文件系统类。
+
+```csharp
+string packageRoot = Application.persistentDataPath + "/buildin"; //沙盒目录
+FileSystemParameters.CreateDefaultBuiltinFileSystemParameters(packageRoot);
+```
+
+另外的正确处理方法是，对下载的ZIP包解压后，可以通过导入器将解压的资源文件拷贝到YOO的缓存目录下。
+
+1. 缓存文件系统类在初始化的时候会自动校验缓存文件。
+2. 缓存文件系统类有完备的资源文件加载失败的Fallback机制。
+
+### 源代码解析
+
+Package.InitializePackageAsync()方法解析。
+
+- 编辑器模拟模式
+
+  每次启动调用EditorSimulateModeHelper.SimulateBuild方法，都会在底层执行一次模拟构建（Simulate Build）。
+
+  如果参与构建的资源对象数量级很大的话则会有卡顿现象，可以通过直接指定已有的清单路径来避免每次都重复执行模拟构建。
+
+- 单机运行模式
+
+  在初始化的时候，会初始化内置文件系统。
+
+- 联机运行模式
+
+  在初始化的时候，会初始化内置文件系统和缓存文件系统。
+
+  **注意：内置文件系统可以为空。**
+
+  
