@@ -26,7 +26,7 @@ public static string[] FindAssets(EAssetFilterType filterType, string[] searchIn
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EAssetFilterType](../YooAsset.Editor/EAssetFilterType.md) | *filterType* | 搜集的资源类型 |
+| [YooAsset.Editor.EAssetFilterType](/docs/3.0.x/api/YooAsset.Editor/EAssetFilterType) | *filterType* | 搜集的资源类型 |
 | `System.String[]` | *searchInFolders* | 指定搜索的文件夹列表 |
 
 ### FindAssets(EAssetFilterType, string)
@@ -43,7 +43,7 @@ public static string[] FindAssets(EAssetFilterType filterType, string searchInFo
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EAssetFilterType](../YooAsset.Editor/EAssetFilterType.md) | *filterType* | 搜集的资源类型 |
+| [YooAsset.Editor.EAssetFilterType](/docs/3.0.x/api/YooAsset.Editor/EAssetFilterType) | *filterType* | 搜集的资源类型 |
 | `System.String` | *searchInFolder* | 指定搜索的文件夹 |
 
 ### FindAssets(string, string[])

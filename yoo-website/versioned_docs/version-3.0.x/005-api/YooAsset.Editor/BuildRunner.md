@@ -28,11 +28,11 @@ public static BuildResult Run(List<IBuildTask> pipeline, BuildContext context)
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md): 构建结果，包含成功状态和错误信息
+[YooAsset.Editor.BuildResult](/docs/3.0.x/api/YooAsset.Editor/BuildResult): 构建结果，包含成功状态和错误信息
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
 | `System.Collections.Generic.List<YooAsset.Editor.IBuildTask>` | *pipeline* | 构建任务列表 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 

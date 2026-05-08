@@ -100,6 +100,6 @@ public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command, Bundle
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* | 收集命令 |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属分组 |
+| [YooAsset.Editor.CollectCommand](/docs/3.0.x/api/YooAsset.Editor/CollectCommand) | *command* | 收集命令 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属分组 |
 

@@ -29,7 +29,7 @@ public static void Initialize(ILogger logger = null)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ILogger](../YooAsset/ILogger.md) | *logger* | 自定义日志处理 |
+| [YooAsset.ILogger](/docs/2.3.x/api/YooAsset/ILogger) | *logger* | 自定义日志处理 |
 
 ### Destroy()
 销毁资源系统
@@ -46,7 +46,7 @@ public static ResourcePackage CreatePackage(string packageName)
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md)
+[YooAsset.ResourcePackage](/docs/2.3.x/api/YooAsset/ResourcePackage)
 
 ##### Parameters
 
@@ -63,7 +63,7 @@ public static ResourcePackage GetPackage(string packageName)
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md)
+[YooAsset.ResourcePackage](/docs/2.3.x/api/YooAsset/ResourcePackage)
 
 ##### Parameters
 
@@ -80,7 +80,7 @@ public static ResourcePackage TryGetPackage(string packageName)
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md)
+[YooAsset.ResourcePackage](/docs/2.3.x/api/YooAsset/ResourcePackage)
 
 ##### Parameters
 
@@ -130,7 +130,7 @@ public static bool RemovePackage(ResourcePackage package)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md) | *package* | 包裹实例对象 |
+| [YooAsset.ResourcePackage](/docs/2.3.x/api/YooAsset/ResourcePackage) | *package* | 包裹实例对象 |
 
 ### ContainsPackage(string)
 检测资源包裹是否存在
@@ -160,7 +160,7 @@ public static void StartOperation(GameAsyncOperation operation)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.GameAsyncOperation](../YooAsset/GameAsyncOperation.md) | *operation* | 异步操作对象 |
+| [YooAsset.GameAsyncOperation](/docs/2.3.x/api/YooAsset/GameAsyncOperation) | *operation* | 异步操作对象 |
 
 ### SetDownloadSystemUnityWebRequest(UnityWebRequestDelegate)
 设置下载系统参数，自定义下载请求
@@ -173,7 +173,7 @@ public static void SetDownloadSystemUnityWebRequest(UnityWebRequestDelegate crea
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.UnityWebRequestDelegate](../YooAsset/UnityWebRequestDelegate.md) | *createDelegate* |
+| [YooAsset.UnityWebRequestDelegate](/docs/2.3.x/api/YooAsset/UnityWebRequestDelegate) | *createDelegate* |
 
 ### SetOperationSystemMaxTimeSlice(long)
 设置异步系统参数，每帧执行消耗的最大时间切片（单位：毫秒）
@@ -199,7 +199,7 @@ public static void SetDefaultPackage(ResourcePackage package)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md) | *package* |
+| [YooAsset.ResourcePackage](/docs/2.3.x/api/YooAsset/ResourcePackage) | *package* |
 
 ### IsNeedDownloadFromRemote(string)
 是否需要从远端更新下载
@@ -233,7 +233,7 @@ public static bool IsNeedDownloadFromRemote(AssetInfo assetInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* |
 
 ### GetAssetInfos(string)
 获取资源信息列表
@@ -278,7 +278,7 @@ public static AssetInfo GetAssetInfo(string location)
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md)
+[YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo)
 
 ##### Parameters
 
@@ -295,7 +295,7 @@ public static AssetInfo GetAssetInfo(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md)
+[YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo)
 
 ##### Parameters
 
@@ -313,7 +313,7 @@ public static AssetInfo GetAssetInfoByGUID(string assetGUID)
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md)
+[YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo)
 
 ##### Parameters
 
@@ -330,7 +330,7 @@ public static AssetInfo GetAssetInfoByGUID(string assetGUID, Type type)
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md)
+[YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo)
 
 ##### Parameters
 
@@ -365,13 +365,13 @@ public static RawFileHandle LoadRawFileSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md)
+[YooAsset.RawFileHandle](/docs/2.3.x/api/YooAsset/RawFileHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadRawFileSync(string)
 同步加载原生文件
@@ -382,7 +382,7 @@ public static RawFileHandle LoadRawFileSync(string location)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md)
+[YooAsset.RawFileHandle](/docs/2.3.x/api/YooAsset/RawFileHandle)
 
 ##### Parameters
 
@@ -399,13 +399,13 @@ public static RawFileHandle LoadRawFileAsync(AssetInfo assetInfo, uint priority 
 
 ##### Returns
 
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md)
+[YooAsset.RawFileHandle](/docs/2.3.x/api/YooAsset/RawFileHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* |  |
 
 ### LoadRawFileAsync(string, uint)
@@ -417,7 +417,7 @@ public static RawFileHandle LoadRawFileAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md)
+[YooAsset.RawFileHandle](/docs/2.3.x/api/YooAsset/RawFileHandle)
 
 ##### Parameters
 
@@ -435,7 +435,7 @@ public static SceneHandle LoadSceneSync(string location, LoadSceneMode sceneMode
 
 ##### Returns
 
-[YooAsset.SceneHandle](../YooAsset/SceneHandle.md)
+[YooAsset.SceneHandle](/docs/2.3.x/api/YooAsset/SceneHandle)
 
 ##### Parameters
 
@@ -454,13 +454,13 @@ public static SceneHandle LoadSceneSync(AssetInfo assetInfo, LoadSceneMode scene
 
 ##### Returns
 
-[YooAsset.SceneHandle](../YooAsset/SceneHandle.md)
+[YooAsset.SceneHandle](/docs/2.3.x/api/YooAsset/SceneHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 场景的资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
 | `UnityEngine.SceneManagement.LoadSceneMode` | *sceneMode* | 场景加载模式 |
 | `UnityEngine.SceneManagement.LocalPhysicsMode` | *physicsMode* | 场景物理模式 |
 
@@ -473,7 +473,7 @@ public static SceneHandle LoadSceneAsync(string location, LoadSceneMode sceneMod
 
 ##### Returns
 
-[YooAsset.SceneHandle](../YooAsset/SceneHandle.md)
+[YooAsset.SceneHandle](/docs/2.3.x/api/YooAsset/SceneHandle)
 
 ##### Parameters
 
@@ -494,13 +494,13 @@ public static SceneHandle LoadSceneAsync(AssetInfo assetInfo, LoadSceneMode scen
 
 ##### Returns
 
-[YooAsset.SceneHandle](../YooAsset/SceneHandle.md)
+[YooAsset.SceneHandle](/docs/2.3.x/api/YooAsset/SceneHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 场景的资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
 | `UnityEngine.SceneManagement.LoadSceneMode` | *sceneMode* | 场景加载模式 |
 | `UnityEngine.SceneManagement.LocalPhysicsMode` | *physicsMode* | 场景物理模式 |
 | `System.Boolean` | *suspendLoad* | 场景加载到90%自动挂起 |
@@ -515,13 +515,13 @@ public static AssetHandle LoadAssetSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadAssetSync&lt;TObject&gt;(string)
 同步加载资源对象
@@ -532,7 +532,7 @@ public static AssetHandle LoadAssetSync<TObject>(string location) where TObject 
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -553,7 +553,7 @@ public static AssetHandle LoadAssetSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -571,7 +571,7 @@ public static AssetHandle LoadAssetSync(string location)
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -588,13 +588,13 @@ public static AssetHandle LoadAssetAsync(AssetInfo assetInfo, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* |  |
 
 ### LoadAssetAsync&lt;TObject&gt;(string, uint)
@@ -606,7 +606,7 @@ public static AssetHandle LoadAssetAsync<TObject>(string location, uint priority
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -628,7 +628,7 @@ public static AssetHandle LoadAssetAsync(string location, Type type, uint priori
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -647,7 +647,7 @@ public static AssetHandle LoadAssetAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AssetHandle](../YooAsset/AssetHandle.md)
+[YooAsset.AssetHandle](/docs/2.3.x/api/YooAsset/AssetHandle)
 
 ##### Parameters
 
@@ -665,13 +665,13 @@ public static SubAssetsHandle LoadSubAssetsSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadSubAssetsSync&lt;TObject&gt;(string)
 同步加载子资源对象
@@ -682,7 +682,7 @@ public static SubAssetsHandle LoadSubAssetsSync<TObject>(string location) where 
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -703,7 +703,7 @@ public static SubAssetsHandle LoadSubAssetsSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -721,7 +721,7 @@ public static SubAssetsHandle LoadSubAssetsSync(string location)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -738,13 +738,13 @@ public static SubAssetsHandle LoadSubAssetsAsync(AssetInfo assetInfo, uint prior
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* |  |
 
 ### LoadSubAssetsAsync&lt;TObject&gt;(string, uint)
@@ -756,7 +756,7 @@ public static SubAssetsHandle LoadSubAssetsAsync<TObject>(string location, uint 
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -778,7 +778,7 @@ public static SubAssetsHandle LoadSubAssetsAsync(string location, Type type, uin
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -797,7 +797,7 @@ public static SubAssetsHandle LoadSubAssetsAsync(string location, uint priority 
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](../YooAsset/SubAssetsHandle.md)
+[YooAsset.SubAssetsHandle](/docs/2.3.x/api/YooAsset/SubAssetsHandle)
 
 ##### Parameters
 
@@ -815,13 +815,13 @@ public static AllAssetsHandle LoadAllAssetsSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadAllAssetsSync&lt;TObject&gt;(string)
 同步加载资源包内所有资源对象
@@ -832,7 +832,7 @@ public static AllAssetsHandle LoadAllAssetsSync<TObject>(string location) where 
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -853,7 +853,7 @@ public static AllAssetsHandle LoadAllAssetsSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -871,7 +871,7 @@ public static AllAssetsHandle LoadAllAssetsSync(string location)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -888,13 +888,13 @@ public static AllAssetsHandle LoadAllAssetsAsync(AssetInfo assetInfo, uint prior
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* |  |
 
 ### LoadAllAssetsAsync&lt;TObject&gt;(string, uint)
@@ -906,7 +906,7 @@ public static AllAssetsHandle LoadAllAssetsAsync<TObject>(string location, uint 
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -928,7 +928,7 @@ public static AllAssetsHandle LoadAllAssetsAsync(string location, Type type, uin
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -947,7 +947,7 @@ public static AllAssetsHandle LoadAllAssetsAsync(string location, uint priority 
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](../YooAsset/AllAssetsHandle.md)
+[YooAsset.AllAssetsHandle](/docs/2.3.x/api/YooAsset/AllAssetsHandle)
 
 ##### Parameters
 
@@ -965,7 +965,7 @@ public static ResourceDownloaderOperation CreateResourceDownloader(int downloadi
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -983,7 +983,7 @@ public static ResourceDownloaderOperation CreateResourceDownloader(string tag, i
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -1002,7 +1002,7 @@ public static ResourceDownloaderOperation CreateResourceDownloader(string[] tags
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -1021,7 +1021,7 @@ public static ResourceDownloaderOperation CreateBundleDownloader(string location
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -1040,7 +1040,7 @@ public static ResourceDownloaderOperation CreateBundleDownloader(string[] locati
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -1059,13 +1059,13 @@ public static ResourceDownloaderOperation CreateBundleDownloader(AssetInfo asset
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.Int32` | *downloadingMaxNumber* | 同时下载的最大文件数 |
 | `System.Int32` | *failedTryAgain* | 下载失败的重试次数 |
 
@@ -1078,7 +1078,7 @@ public static ResourceDownloaderOperation CreateBundleDownloader(AssetInfo[] ass
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -1097,7 +1097,7 @@ public static ResourceUnpackerOperation CreateResourceUnpacker(int unpackingMaxN
 
 ##### Returns
 
-[YooAsset.ResourceUnpackerOperation](../YooAsset/ResourceUnpackerOperation.md)
+[YooAsset.ResourceUnpackerOperation](/docs/2.3.x/api/YooAsset/ResourceUnpackerOperation)
 
 ##### Parameters
 
@@ -1115,7 +1115,7 @@ public static ResourceUnpackerOperation CreateResourceUnpacker(string tag, int u
 
 ##### Returns
 
-[YooAsset.ResourceUnpackerOperation](../YooAsset/ResourceUnpackerOperation.md)
+[YooAsset.ResourceUnpackerOperation](/docs/2.3.x/api/YooAsset/ResourceUnpackerOperation)
 
 ##### Parameters
 
@@ -1134,7 +1134,7 @@ public static ResourceUnpackerOperation CreateResourceUnpacker(string[] tags, in
 
 ##### Returns
 
-[YooAsset.ResourceUnpackerOperation](../YooAsset/ResourceUnpackerOperation.md)
+[YooAsset.ResourceUnpackerOperation](/docs/2.3.x/api/YooAsset/ResourceUnpackerOperation)
 
 ##### Parameters
 
@@ -1154,7 +1154,7 @@ public static ResourceImporterOperation CreateResourceImporter(string[] filePath
 
 ##### Returns
 
-[YooAsset.ResourceImporterOperation](../YooAsset/ResourceImporterOperation.md)
+[YooAsset.ResourceImporterOperation](/docs/2.3.x/api/YooAsset/ResourceImporterOperation)
 
 ##### Parameters
 

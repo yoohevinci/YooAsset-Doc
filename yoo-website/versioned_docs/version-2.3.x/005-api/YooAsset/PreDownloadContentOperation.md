@@ -20,7 +20,7 @@ public ResourceDownloaderOperation CreateResourceDownloader(int downloadingMaxNu
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -38,7 +38,7 @@ public ResourceDownloaderOperation CreateResourceDownloader(string tag, int down
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -57,7 +57,7 @@ public ResourceDownloaderOperation CreateResourceDownloader(string[] tags, int d
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -76,7 +76,7 @@ public ResourceDownloaderOperation CreateBundleDownloader(string location, bool 
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 
@@ -96,7 +96,7 @@ public ResourceDownloaderOperation CreateBundleDownloader(string[] locations, bo
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md)
+[YooAsset.ResourceDownloaderOperation](/docs/2.3.x/api/YooAsset/ResourceDownloaderOperation)
 
 ##### Parameters
 

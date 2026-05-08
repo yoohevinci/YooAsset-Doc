@@ -62,7 +62,7 @@ public static FileSystemParameters CreateDefaultEditorFileSystemParameters(strin
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md): 配置好的文件系统参数实例
+[YooAsset.FileSystemParameters](/docs/3.0.x/api/YooAsset/FileSystemParameters): 配置好的文件系统参数实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -78,7 +78,7 @@ public static FileSystemParameters CreateDefaultBuiltinFileSystemParameters(stri
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md): 配置好的文件系统参数实例
+[YooAsset.FileSystemParameters](/docs/3.0.x/api/YooAsset/FileSystemParameters): 配置好的文件系统参数实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -94,12 +94,12 @@ public static FileSystemParameters CreateDefaultSandboxFileSystemParameters(IRem
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md): 配置好的文件系统参数实例
+[YooAsset.FileSystemParameters](/docs/3.0.x/api/YooAsset/FileSystemParameters): 配置好的文件系统参数实例
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IRemoteService](../YooAsset/IRemoteService.md) | *remoteService* | 远端资源地址查询服务类 |
+| [YooAsset.IRemoteService](/docs/3.0.x/api/YooAsset/IRemoteService) | *remoteService* | 远端资源地址查询服务类 |
 | `System.String` | *packageRoot* | 文件系统的根目录 |
 
 ### CreateDefaultWebServerFileSystemParameters(bool)
@@ -111,7 +111,7 @@ public static FileSystemParameters CreateDefaultWebServerFileSystemParameters(bo
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md): 配置好的文件系统参数实例
+[YooAsset.FileSystemParameters](/docs/3.0.x/api/YooAsset/FileSystemParameters): 配置好的文件系统参数实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -127,11 +127,11 @@ public static FileSystemParameters CreateDefaultWebRemoteFileSystemParameters(IR
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md): 配置好的文件系统参数实例
+[YooAsset.FileSystemParameters](/docs/3.0.x/api/YooAsset/FileSystemParameters): 配置好的文件系统参数实例
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IRemoteService](../YooAsset/IRemoteService.md) | *remoteService* | 远端资源地址查询服务类 |
+| [YooAsset.IRemoteService](/docs/3.0.x/api/YooAsset/IRemoteService) | *remoteService* | 远端资源地址查询服务类 |
 | `System.Boolean` | *disableUnityWebCache* | 禁用Unity的网络缓存 |
 

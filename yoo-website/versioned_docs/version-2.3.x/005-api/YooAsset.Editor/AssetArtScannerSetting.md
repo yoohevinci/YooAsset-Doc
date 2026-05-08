@@ -27,7 +27,7 @@ public ScannerResult BeginScan(string scannerGUID)
 
 ##### Returns
 
-[YooAsset.Editor.ScannerResult](../YooAsset.Editor/ScannerResult.md)
+[YooAsset.Editor.ScannerResult](/docs/2.3.x/api/YooAsset.Editor/ScannerResult)
 
 ##### Parameters
 
@@ -44,7 +44,7 @@ public AssetArtScanner GetScanner(string scannerGUID)
 
 ##### Returns
 
-[YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md)
+[YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner)
 
 ##### Parameters
 

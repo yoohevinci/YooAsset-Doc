@@ -22,15 +22,15 @@ public PackRuleResult GetPackRuleResult(PackRuleData data)
 
 ##### Returns
 
-[YooAsset.Editor.PackRuleResult](../YooAsset.Editor/PackRuleResult.md)
+[YooAsset.Editor.PackRuleResult](/docs/2.3.x/api/YooAsset.Editor/PackRuleResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.PackRuleData](../YooAsset.Editor/PackRuleData.md) | *data* |
+| [YooAsset.Editor.PackRuleData](/docs/2.3.x/api/YooAsset.Editor/PackRuleData) | *data* |
 
 
 ## Implements
 
-* [YooAsset.Editor.IPackRule](../YooAsset.Editor/IPackRule.md)
+* [YooAsset.Editor.IPackRule](/docs/2.3.x/api/YooAsset.Editor/IPackRule)

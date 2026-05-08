@@ -69,7 +69,7 @@ public AssetInfo GetAssetInfo()
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md)
+[YooAsset.AssetInfo](/docs/2.3.x/api/YooAsset/AssetInfo)
 ### GetDownloadStatus()
 获取下载报告
 
@@ -79,7 +79,7 @@ public DownloadStatus GetDownloadStatus()
 
 ##### Returns
 
-[YooAsset.DownloadStatus](../YooAsset/DownloadStatus.md)
+[YooAsset.DownloadStatus](/docs/2.3.x/api/YooAsset/DownloadStatus)
 
 ## Implements
 

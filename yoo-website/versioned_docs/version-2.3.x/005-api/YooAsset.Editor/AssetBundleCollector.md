@@ -103,6 +103,6 @@ public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command, AssetB
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
 

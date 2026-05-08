@@ -27,11 +27,11 @@ public static BuildResult Run(List<IBuildTask> pipeline, BuildContext context)
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md): 如果成功返回TRUE，否则返回FALSE
+[YooAsset.Editor.BuildResult](/docs/2.3.x/api/YooAsset.Editor/BuildResult): 如果成功返回TRUE，否则返回FALSE
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
 | `System.Collections.Generic.List<YooAsset.Editor.IBuildTask>` | *pipeline* |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* |
+| [YooAsset.Editor.BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext) | *context* |
 

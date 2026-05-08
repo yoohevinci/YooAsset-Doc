@@ -70,7 +70,7 @@ public ReportHeader AddHeader(string headerTitle, int width)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 
@@ -88,7 +88,7 @@ public ReportHeader AddHeader(string headerTitle, int width, int minWidth, int m
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 

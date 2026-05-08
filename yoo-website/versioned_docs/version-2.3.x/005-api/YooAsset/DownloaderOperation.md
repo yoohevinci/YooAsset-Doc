@@ -71,7 +71,7 @@ public void Combine(DownloaderOperation downloader)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.DownloaderOperation](../YooAsset/DownloaderOperation.md) | *downloader* | 合并的下载器 |
+| [YooAsset.DownloaderOperation](/docs/2.3.x/api/YooAsset/DownloaderOperation) | *downloader* | 合并的下载器 |
 
 ### BeginDownload()
 开始下载

@@ -61,7 +61,7 @@ public GameObject InstantiateSync(InstantiateOptions options)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.InstantiateOptions](../YooAsset/InstantiateOptions.md) | *options* | 实例化选项 |
+| [YooAsset.InstantiateOptions](/docs/3.0.x/api/YooAsset/InstantiateOptions) | *options* | 实例化选项 |
 
 ### InstantiateAsync()
 实例化游戏对象
@@ -72,7 +72,7 @@ public InstantiateOperation InstantiateAsync()
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md): 实例化操作### InstantiateAsync(InstantiateOptions)
+[YooAsset.InstantiateOperation](/docs/3.0.x/api/YooAsset/InstantiateOperation): 实例化操作### InstantiateAsync(InstantiateOptions)
 实例化游戏对象
 
 ```csharp title="Declaration"
@@ -81,12 +81,12 @@ public InstantiateOperation InstantiateAsync(InstantiateOptions options)
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md): 实例化操作
+[YooAsset.InstantiateOperation](/docs/3.0.x/api/YooAsset/InstantiateOperation): 实例化操作
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.InstantiateOptions](../YooAsset/InstantiateOptions.md) | *options* | 实例化选项 |
+| [YooAsset.InstantiateOptions](/docs/3.0.x/api/YooAsset/InstantiateOptions) | *options* | 实例化选项 |
 
 ## Events
 ### Completed

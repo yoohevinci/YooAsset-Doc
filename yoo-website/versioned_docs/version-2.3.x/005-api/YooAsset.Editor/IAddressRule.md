@@ -27,5 +27,5 @@ string GetAssetAddress(AddressRuleData data)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AddressRuleData](../YooAsset.Editor/AddressRuleData.md) | *data* |
+| [YooAsset.Editor.AddressRuleData](/docs/2.3.x/api/YooAsset.Editor/AddressRuleData) | *data* |
 

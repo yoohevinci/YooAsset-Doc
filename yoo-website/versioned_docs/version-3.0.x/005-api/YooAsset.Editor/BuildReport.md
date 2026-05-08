@@ -47,7 +47,7 @@ public ReportBundleInfo GetBundleInfo(string bundleName)
 
 ##### Returns
 
-[YooAsset.Editor.ReportBundleInfo](../YooAsset.Editor/ReportBundleInfo.md): 匹配的资源包信息
+[YooAsset.Editor.ReportBundleInfo](/docs/3.0.x/api/YooAsset.Editor/ReportBundleInfo): 匹配的资源包信息
 ##### Parameters
 
 | Type | Name | Description |
@@ -63,7 +63,7 @@ public ReportAssetInfo GetAssetInfo(string assetPath)
 
 ##### Returns
 
-[YooAsset.Editor.ReportAssetInfo](../YooAsset.Editor/ReportAssetInfo.md): 匹配的资源信息
+[YooAsset.Editor.ReportAssetInfo](/docs/3.0.x/api/YooAsset.Editor/ReportAssetInfo): 匹配的资源信息
 ##### Parameters
 
 | Type | Name | Description |
@@ -82,7 +82,7 @@ public static void Serialize(string savePath, BuildReport buildReport)
 | Type | Name | Description |
 |:--- |:--- |:--- |
 | `System.String` | *savePath* | 文件保存路径 |
-| [YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md) | *buildReport* | 要序列化的构建报告 |
+| [YooAsset.Editor.BuildReport](/docs/3.0.x/api/YooAsset.Editor/BuildReport) | *buildReport* | 要序列化的构建报告 |
 
 ### Deserialize(string)
 从 JSON 字符串反序列化构建报告
@@ -93,7 +93,7 @@ public static BuildReport Deserialize(string jsonData)
 
 ##### Returns
 
-[YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md): 反序列化后的构建报告实例
+[YooAsset.Editor.BuildReport](/docs/3.0.x/api/YooAsset.Editor/BuildReport): 反序列化后的构建报告实例
 ##### Parameters
 
 | Type | Name | Description |

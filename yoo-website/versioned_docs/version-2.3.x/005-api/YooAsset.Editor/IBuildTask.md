@@ -22,5 +22,5 @@ void Run(BuildContext context)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* |
+| [YooAsset.Editor.BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext) | *context* |
 

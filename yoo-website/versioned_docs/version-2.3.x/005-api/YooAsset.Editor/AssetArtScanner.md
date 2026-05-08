@@ -105,7 +105,7 @@ public ScannerSchema LoadSchema()
 
 ##### Returns
 
-[YooAsset.Editor.ScannerSchema](../YooAsset.Editor/ScannerSchema.md)
+[YooAsset.Editor.ScannerSchema](/docs/2.3.x/api/YooAsset.Editor/ScannerSchema)
 ### RunScanner()
 运行扫描器生成报告类
 
@@ -115,4 +115,4 @@ public ScanReport RunScanner()
 
 ##### Returns
 
-[YooAsset.Editor.ScanReport](../YooAsset.Editor/ScanReport.md)
+[YooAsset.Editor.ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport)

@@ -64,7 +64,7 @@ public AssetInfo GetAssetInfo()
 
 ##### Returns
 
-[YooAsset.AssetInfo](../YooAsset/AssetInfo.md): 资源信息### GetAwaiter()
+[YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo): 资源信息### GetAwaiter()
 获取用于 async/await 的 Awaiter
 
 ```csharp title="Declaration"
@@ -73,7 +73,7 @@ public OperationAwaiter GetAwaiter()
 
 ##### Returns
 
-[YooAsset.OperationAwaiter](../YooAsset/OperationAwaiter.md): 用于 async/await 的 Awaiter 对象
+[YooAsset.OperationAwaiter](/docs/3.0.x/api/YooAsset/OperationAwaiter): 用于 async/await 的 Awaiter 对象
 ## Implements
 
 * `System.Collections.IEnumerator`

@@ -21,10 +21,10 @@ BundleEncryptResult Encrypt(BundleEncryptArgs args)
 
 ##### Returns
 
-[YooAsset.BundleEncryptResult](../YooAsset/BundleEncryptResult.md): 包含加密状态和加密后数据的结果
+[YooAsset.BundleEncryptResult](/docs/3.0.x/api/YooAsset/BundleEncryptResult): 包含加密状态和加密后数据的结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleEncryptArgs](../YooAsset/BundleEncryptArgs.md) | *args* | 加密操作的输入参数 |
+| [YooAsset.BundleEncryptArgs](/docs/3.0.x/api/YooAsset/BundleEncryptArgs) | *args* | 加密操作的输入参数 |
 

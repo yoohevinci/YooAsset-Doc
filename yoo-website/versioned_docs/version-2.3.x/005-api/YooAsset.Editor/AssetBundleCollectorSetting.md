@@ -99,7 +99,7 @@ public CollectResult GetPackageAssets(bool simulateBuild, bool useAssetDependenc
 
 ##### Returns
 
-[YooAsset.Editor.CollectResult](../YooAsset.Editor/CollectResult.md)
+[YooAsset.Editor.CollectResult](/docs/2.3.x/api/YooAsset.Editor/CollectResult)
 
 ##### Parameters
 
@@ -118,7 +118,7 @@ public CollectResult BeginCollect(string packageName, bool simulateBuild, bool u
 
 ##### Returns
 
-[YooAsset.Editor.CollectResult](../YooAsset.Editor/CollectResult.md)
+[YooAsset.Editor.CollectResult](/docs/2.3.x/api/YooAsset.Editor/CollectResult)
 
 ##### Parameters
 
@@ -137,7 +137,7 @@ public AssetBundleCollectorPackage GetPackage(string packageName)
 
 ##### Returns
 
-[YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md)
+[YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage)
 
 ##### Parameters
 

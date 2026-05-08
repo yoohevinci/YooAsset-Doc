@@ -38,5 +38,5 @@ protected void CopyPackageBundles(BuildMapContext buildMapContext)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildMapContext](../YooAsset.Editor/BuildMapContext.md) | *buildMapContext* |
+| [YooAsset.Editor.BuildMapContext](/docs/3.0.x/api/YooAsset.Editor/BuildMapContext) | *buildMapContext* |
 

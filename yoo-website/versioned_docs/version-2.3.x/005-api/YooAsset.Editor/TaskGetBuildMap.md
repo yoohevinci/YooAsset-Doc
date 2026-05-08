@@ -20,14 +20,14 @@ public BuildMapContext CreateBuildMap(bool simulateBuild, BuildParameters buildP
 
 ##### Returns
 
-[YooAsset.Editor.BuildMapContext](../YooAsset.Editor/BuildMapContext.md)
+[YooAsset.Editor.BuildMapContext](/docs/2.3.x/api/YooAsset.Editor/BuildMapContext)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
 | `System.Boolean` | *simulateBuild* |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
 
 ### PreProcessPackShareBundle(BuildParameters, CollectCommand, Dictionary&lt;string, BuildAssetInfo&gt;)
 共享资源打包前置处理
@@ -40,8 +40,8 @@ protected virtual void PreProcessPackShareBundle(BuildParameters buildParameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
 | `System.Collections.Generic.Dictionary<System.String,YooAsset.Editor.BuildAssetInfo>` | *allBuildAssetInfos* |
 
 ### ProcessingPackShareBundle(BuildParameters, CollectCommand, BuildAssetInfo)
@@ -55,9 +55,9 @@ protected virtual void ProcessingPackShareBundle(BuildParameters buildParameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
-| [YooAsset.Editor.BuildAssetInfo](../YooAsset.Editor/BuildAssetInfo.md) | *buildAssetInfo* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
+| [YooAsset.Editor.BuildAssetInfo](/docs/2.3.x/api/YooAsset.Editor/BuildAssetInfo) | *buildAssetInfo* |
 
 ### PostProcessPackShareBundle(BuildParameters, CollectCommand, Dictionary&lt;string, BuildAssetInfo&gt;)
 共享资源打包后置处理
@@ -70,7 +70,7 @@ protected virtual void PostProcessPackShareBundle(BuildParameters buildParameter
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
 | `System.Collections.Generic.Dictionary<System.String,YooAsset.Editor.BuildAssetInfo>` | *allBuildAssetInfos* |
 

@@ -27,5 +27,5 @@ bool IsIgnore(AssetInfo assetInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetInfo](../YooAsset.Editor/AssetInfo.md) | *assetInfo* |
+| [YooAsset.Editor.AssetInfo](/docs/2.3.x/api/YooAsset.Editor/AssetInfo) | *assetInfo* |
 

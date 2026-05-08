@@ -26,8 +26,8 @@ protected override string GetUnityHash(BuildBundleInfo bundleInfo, BuildContext 
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* |
+| [YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* |
+| [YooAsset.Editor.BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext) | *context* |
 
 ### GetUnityCRC(BuildBundleInfo, BuildContext)
 
@@ -44,8 +44,8 @@ protected override uint GetUnityCRC(BuildBundleInfo bundleInfo, BuildContext con
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* |
+| [YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* |
+| [YooAsset.Editor.BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext) | *context* |
 
 ### GetBundleFileHash(BuildBundleInfo, BuildParametersContext)
 
@@ -62,8 +62,8 @@ protected override string GetBundleFileHash(BuildBundleInfo bundleInfo, BuildPar
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* |
-| [YooAsset.Editor.BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md) | *buildParametersContext* |
+| [YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* |
+| [YooAsset.Editor.BuildParametersContext](/docs/2.3.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* |
 
 ### GetBundleFileCRC(BuildBundleInfo, BuildParametersContext)
 
@@ -80,8 +80,8 @@ protected override uint GetBundleFileCRC(BuildBundleInfo bundleInfo, BuildParame
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* |
-| [YooAsset.Editor.BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md) | *buildParametersContext* |
+| [YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* |
+| [YooAsset.Editor.BuildParametersContext](/docs/2.3.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* |
 
 ### GetBundleFileSize(BuildBundleInfo, BuildParametersContext)
 
@@ -98,10 +98,10 @@ protected override long GetBundleFileSize(BuildBundleInfo bundleInfo, BuildParam
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* |
-| [YooAsset.Editor.BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md) | *buildParametersContext* |
+| [YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* |
+| [YooAsset.Editor.BuildParametersContext](/docs/2.3.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* |
 
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)
+* [YooAsset.Editor.IBuildTask](/docs/2.3.x/api/YooAsset.Editor/IBuildTask)

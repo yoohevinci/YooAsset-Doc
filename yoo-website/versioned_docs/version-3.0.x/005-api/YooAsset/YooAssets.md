@@ -36,7 +36,7 @@ public static void Initialize(ILogger logger)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ILogger](../YooAsset/ILogger.md) | *logger* | 自定义日志处理 |
+| [YooAsset.ILogger](/docs/3.0.x/api/YooAsset/ILogger) | *logger* | 自定义日志处理 |
 
 ### Destroy()
 销毁资源系统
@@ -53,7 +53,7 @@ public static ResourcePackage CreatePackage(string packageName)
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 新创建的资源包裹实例
+[YooAsset.ResourcePackage](/docs/3.0.x/api/YooAsset/ResourcePackage): 新创建的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -69,7 +69,7 @@ public static ResourcePackage CreatePackage(string packageName, uint packagePrio
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 新创建的资源包裹实例
+[YooAsset.ResourcePackage](/docs/3.0.x/api/YooAsset/ResourcePackage): 新创建的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -86,7 +86,7 @@ public static ResourcePackage GetPackage(string packageName)
 
 ##### Returns
 
-[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 指定名称的资源包裹实例
+[YooAsset.ResourcePackage](/docs/3.0.x/api/YooAsset/ResourcePackage): 指定名称的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -108,7 +108,7 @@ public static bool TryGetPackage(string packageName, out ResourcePackage package
 | Type | Name | Description |
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
-| [YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md) | *package* | 获取到的资源包裹，如果不存在则为null。 |
+| [YooAsset.ResourcePackage](/docs/3.0.x/api/YooAsset/ResourcePackage) | *package* | 获取到的资源包裹，如果不存在则为null。 |
 
 ### GetPackages()
 获取所有资源包裹

@@ -22,14 +22,14 @@ public BundlePackRuleResult GetPackRuleResult(BundlePackRuleData data)
 
 ##### Returns
 
-[YooAsset.Editor.BundlePackRuleResult](../YooAsset.Editor/BundlePackRuleResult.md): 打包规则结果
+[YooAsset.Editor.BundlePackRuleResult](/docs/3.0.x/api/YooAsset.Editor/BundlePackRuleResult): 打包规则结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundlePackRuleData](../YooAsset.Editor/BundlePackRuleData.md) | *data* | 打包规则数据 |
+| [YooAsset.Editor.BundlePackRuleData](/docs/3.0.x/api/YooAsset.Editor/BundlePackRuleData) | *data* | 打包规则数据 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md)
+* [YooAsset.Editor.IBundlePackRule](/docs/3.0.x/api/YooAsset.Editor/IBundlePackRule)

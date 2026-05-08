@@ -36,7 +36,7 @@ public void AddCell(ITableCell cell)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md) | *cell* | 要添加的单元格实例 |
+| [YooAsset.Editor.ITableCell](/docs/3.0.x/api/YooAsset.Editor/ITableCell) | *cell* | 要添加的单元格实例 |
 
 ### AddButtonCell(string)
 添加按钮单元格
@@ -138,4 +138,4 @@ public void AddBoolValueCell(string searchTag, bool value)
 
 ## Implements
 
-* [YooAsset.Editor.ITableData](../YooAsset.Editor/ITableData.md)
+* [YooAsset.Editor.ITableData](/docs/3.0.x/api/YooAsset.Editor/ITableData)

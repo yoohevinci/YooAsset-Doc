@@ -22,7 +22,7 @@ protected void CreateReportFile(BuildParametersContext buildParametersContext, B
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md) | *buildParametersContext* |
-| [YooAsset.Editor.BuildMapContext](../YooAsset.Editor/BuildMapContext.md) | *buildMapContext* |
-| [YooAsset.Editor.ManifestContext](../YooAsset.Editor/ManifestContext.md) | *manifestContext* |
+| [YooAsset.Editor.BuildParametersContext](/docs/2.3.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* |
+| [YooAsset.Editor.BuildMapContext](/docs/2.3.x/api/YooAsset.Editor/BuildMapContext) | *buildMapContext* |
+| [YooAsset.Editor.ManifestContext](/docs/2.3.x/api/YooAsset.Editor/ManifestContext) | *manifestContext* |
 

@@ -21,15 +21,15 @@ public BuildResult Run(BuildParameters buildParameters, bool enableLog)
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md): 构建结果
+[YooAsset.Editor.BuildResult](/docs/3.0.x/api/YooAsset.Editor/BuildResult): 构建结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* | 构建参数 |
+| [YooAsset.Editor.BuildParameters](/docs/3.0.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* | 构建参数 |
 | `System.Boolean` | *enableLog* | 是否启用日志记录 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IBuildPipeline](../YooAsset.Editor/IBuildPipeline.md)
+* [YooAsset.Editor.IBuildPipeline](/docs/3.0.x/api/YooAsset.Editor/IBuildPipeline)

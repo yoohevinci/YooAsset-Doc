@@ -21,12 +21,12 @@ public BuildResult Run(BuildParameters buildParameters, List<IBuildTask> buildPi
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md): 构建结果
+[YooAsset.Editor.BuildResult](/docs/3.0.x/api/YooAsset.Editor/BuildResult): 构建结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* | 构建参数 |
+| [YooAsset.Editor.BuildParameters](/docs/3.0.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* | 构建参数 |
 | `System.Collections.Generic.List<YooAsset.Editor.IBuildTask>` | *buildPipeline* | 构建任务列表 |
 | `System.Boolean` | *enableLog* | 是否启用日志记录 |
 

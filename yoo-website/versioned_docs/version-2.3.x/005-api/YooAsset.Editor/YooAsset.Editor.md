@@ -1,338 +1,338 @@
 # YooAsset.Editor
 ## Classes
-### [AddressByFileName](../YooAsset.Editor/AddressByFileName.md)
+### [AddressByFileName](/docs/2.3.x/api/YooAsset.Editor/AddressByFileName)
 
-### [AddressByFolderAndFileName](../YooAsset.Editor/AddressByFolderAndFileName.md)
+### [AddressByFolderAndFileName](/docs/2.3.x/api/YooAsset.Editor/AddressByFolderAndFileName)
 
-### [AddressByGroupAndFileName](../YooAsset.Editor/AddressByGroupAndFileName.md)
+### [AddressByGroupAndFileName](/docs/2.3.x/api/YooAsset.Editor/AddressByGroupAndFileName)
 
-### [AddressDisable](../YooAsset.Editor/AddressDisable.md)
+### [AddressDisable](/docs/2.3.x/api/YooAsset.Editor/AddressDisable)
 
-### [AssetArtCollector](../YooAsset.Editor/AssetArtCollector.md)
+### [AssetArtCollector](/docs/2.3.x/api/YooAsset.Editor/AssetArtCollector)
 
-### [AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md)
+### [AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner)
 
-### [AssetArtScannerConfig](../YooAsset.Editor/AssetArtScannerConfig.md)
+### [AssetArtScannerConfig](/docs/2.3.x/api/YooAsset.Editor/AssetArtScannerConfig)
 
-### [AssetArtScannerConfig.ConfigWrapper](../YooAsset.Editor/AssetArtScannerConfig.ConfigWrapper.md)
+### [AssetArtScannerConfig.ConfigWrapper](/docs/2.3.x/api/YooAsset.Editor/AssetArtScannerConfig.ConfigWrapper)
 
-### [AssetArtScannerSetting](../YooAsset.Editor/AssetArtScannerSetting.md)
+### [AssetArtScannerSetting](/docs/2.3.x/api/YooAsset.Editor/AssetArtScannerSetting)
 
-### [AssetArtScannerSettingData](../YooAsset.Editor/AssetArtScannerSettingData.md)
+### [AssetArtScannerSettingData](/docs/2.3.x/api/YooAsset.Editor/AssetArtScannerSettingData)
 
-### [AssetBundleBuilder](../YooAsset.Editor/AssetBundleBuilder.md)
+### [AssetBundleBuilder](/docs/2.3.x/api/YooAsset.Editor/AssetBundleBuilder)
 
-### [AssetBundleBuilderHelper](../YooAsset.Editor/AssetBundleBuilderHelper.md)
+### [AssetBundleBuilderHelper](/docs/2.3.x/api/YooAsset.Editor/AssetBundleBuilderHelper)
 
-### [AssetBundleBuilderSetting](../YooAsset.Editor/AssetBundleBuilderSetting.md)
+### [AssetBundleBuilderSetting](/docs/2.3.x/api/YooAsset.Editor/AssetBundleBuilderSetting)
 
-### [AssetBundleCollector](../YooAsset.Editor/AssetBundleCollector.md)
+### [AssetBundleCollector](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollector)
 
-### [AssetBundleCollectorConfig](../YooAsset.Editor/AssetBundleCollectorConfig.md)
+### [AssetBundleCollectorConfig](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorConfig)
 
-### [AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md)
+### [AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup)
 
-### [AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md)
+### [AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage)
 
-### [AssetBundleCollectorSetting](../YooAsset.Editor/AssetBundleCollectorSetting.md)
+### [AssetBundleCollectorSetting](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorSetting)
 
-### [AssetBundleCollectorSettingData](../YooAsset.Editor/AssetBundleCollectorSettingData.md)
+### [AssetBundleCollectorSettingData](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorSettingData)
 
-### [AssetBundleInspector](../YooAsset.Editor/AssetBundleInspector.md)
+### [AssetBundleInspector](/docs/2.3.x/api/YooAsset.Editor/AssetBundleInspector)
 
-### [AssetBundleRecorder](../YooAsset.Editor/AssetBundleRecorder.md)
+### [AssetBundleRecorder](/docs/2.3.x/api/YooAsset.Editor/AssetBundleRecorder)
 
-### [AssetBundleSimulateBuilder](../YooAsset.Editor/AssetBundleSimulateBuilder.md)
+### [AssetBundleSimulateBuilder](/docs/2.3.x/api/YooAsset.Editor/AssetBundleSimulateBuilder)
 
-### [AssetDependencyCache](../YooAsset.Editor/AssetDependencyCache.md)
+### [AssetDependencyCache](/docs/2.3.x/api/YooAsset.Editor/AssetDependencyCache)
 
-### [AssetDependencyDatabase](../YooAsset.Editor/AssetDependencyDatabase.md)
+### [AssetDependencyDatabase](/docs/2.3.x/api/YooAsset.Editor/AssetDependencyDatabase)
 资源依赖数据库
-### [AssetInfo](../YooAsset.Editor/AssetInfo.md)
+### [AssetInfo](/docs/2.3.x/api/YooAsset.Editor/AssetInfo)
 
-### [BuildAssetInfo](../YooAsset.Editor/BuildAssetInfo.md)
+### [BuildAssetInfo](/docs/2.3.x/api/YooAsset.Editor/BuildAssetInfo)
 
-### [BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md)
+### [BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo)
 
-### [BuildContext](../YooAsset.Editor/BuildContext.md)
+### [BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext)
 
-### [BuildMapContext](../YooAsset.Editor/BuildMapContext.md)
+### [BuildMapContext](/docs/2.3.x/api/YooAsset.Editor/BuildMapContext)
 
-### [BuildParameters](../YooAsset.Editor/BuildParameters.md)
+### [BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters)
 构建参数
-### [BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md)
+### [BuildParametersContext](/docs/2.3.x/api/YooAsset.Editor/BuildParametersContext)
 
-### [BuildPipelineAttribute](../YooAsset.Editor/BuildPipelineAttribute.md)
+### [BuildPipelineAttribute](/docs/2.3.x/api/YooAsset.Editor/BuildPipelineAttribute)
 
-### [BuildReport](../YooAsset.Editor/BuildReport.md)
+### [BuildReport](/docs/2.3.x/api/YooAsset.Editor/BuildReport)
 构建报告
-### [BuildResult](../YooAsset.Editor/BuildResult.md)
+### [BuildResult](/docs/2.3.x/api/YooAsset.Editor/BuildResult)
 构建结果
-### [BuildRunner](../YooAsset.Editor/BuildRunner.md)
+### [BuildRunner](/docs/2.3.x/api/YooAsset.Editor/BuildRunner)
 
-### [BuiltinBuildParameters](../YooAsset.Editor/BuiltinBuildParameters.md)
+### [BuiltinBuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuiltinBuildParameters)
 
-### [BuiltinBuildPipeline](../YooAsset.Editor/BuiltinBuildPipeline.md)
+### [BuiltinBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/BuiltinBuildPipeline)
 
-### [CollectAll](../YooAsset.Editor/CollectAll.md)
+### [CollectAll](/docs/2.3.x/api/YooAsset.Editor/CollectAll)
 
-### [CollectAssetInfo](../YooAsset.Editor/CollectAssetInfo.md)
+### [CollectAssetInfo](/docs/2.3.x/api/YooAsset.Editor/CollectAssetInfo)
 
-### [CollectCommand](../YooAsset.Editor/CollectCommand.md)
+### [CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand)
 
-### [CollectPrefab](../YooAsset.Editor/CollectPrefab.md)
+### [CollectPrefab](/docs/2.3.x/api/YooAsset.Editor/CollectPrefab)
 
-### [CollectResult](../YooAsset.Editor/CollectResult.md)
+### [CollectResult](/docs/2.3.x/api/YooAsset.Editor/CollectResult)
 
-### [CollectScene](../YooAsset.Editor/CollectScene.md)
+### [CollectScene](/docs/2.3.x/api/YooAsset.Editor/CollectScene)
 
-### [CollectShader](../YooAsset.Editor/CollectShader.md)
+### [CollectShader](/docs/2.3.x/api/YooAsset.Editor/CollectShader)
 
-### [CollectShaderVariants](../YooAsset.Editor/CollectShaderVariants.md)
+### [CollectShaderVariants](/docs/2.3.x/api/YooAsset.Editor/CollectShaderVariants)
 
-### [CollectSprite](../YooAsset.Editor/CollectSprite.md)
+### [CollectSprite](/docs/2.3.x/api/YooAsset.Editor/CollectSprite)
 
-### [DefaultIgnoreRule](../YooAsset.Editor/DefaultIgnoreRule.md)
+### [DefaultIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/DefaultIgnoreRule)
 
-### [DefaultPackRule](../YooAsset.Editor/DefaultPackRule.md)
+### [DefaultPackRule](/docs/2.3.x/api/YooAsset.Editor/DefaultPackRule)
 
-### [DisableGroup](../YooAsset.Editor/DisableGroup.md)
+### [DisableGroup](/docs/2.3.x/api/YooAsset.Editor/DisableGroup)
 
-### [DisplayNameAttribute](../YooAsset.Editor/DisplayNameAttribute.md)
+### [DisplayNameAttribute](/docs/2.3.x/api/YooAsset.Editor/DisplayNameAttribute)
 编辑器显示名字
-### [DisplayNameAttributeHelper](../YooAsset.Editor/DisplayNameAttributeHelper.md)
+### [DisplayNameAttributeHelper](/docs/2.3.x/api/YooAsset.Editor/DisplayNameAttributeHelper)
 
-### [EditorSimulateBuildParameters](../YooAsset.Editor/EditorSimulateBuildParameters.md)
+### [EditorSimulateBuildParameters](/docs/2.3.x/api/YooAsset.Editor/EditorSimulateBuildParameters)
 
-### [EditorSimulateBuildPipeline](../YooAsset.Editor/EditorSimulateBuildPipeline.md)
+### [EditorSimulateBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/EditorSimulateBuildPipeline)
 
-### [EditorTools](../YooAsset.Editor/EditorTools.md)
+### [EditorTools](/docs/2.3.x/api/YooAsset.Editor/EditorTools)
 编辑器工具类
-### [EnableGroup](../YooAsset.Editor/EnableGroup.md)
+### [EnableGroup](/docs/2.3.x/api/YooAsset.Editor/EnableGroup)
 
-### [EncryptionNone](../YooAsset.Editor/EncryptionNone.md)
+### [EncryptionNone](/docs/2.3.x/api/YooAsset.Editor/EncryptionNone)
 
-### [MacroDefine](../YooAsset.Editor/MacroDefine.md)
+### [MacroDefine](/docs/2.3.x/api/YooAsset.Editor/MacroDefine)
 
-### [MacroProcessor](../YooAsset.Editor/MacroProcessor.md)
+### [MacroProcessor](/docs/2.3.x/api/YooAsset.Editor/MacroProcessor)
 
-### [ManifestContext](../YooAsset.Editor/ManifestContext.md)
+### [ManifestContext](/docs/2.3.x/api/YooAsset.Editor/ManifestContext)
 
-### [ManifestProcessNone](../YooAsset.Editor/ManifestProcessNone.md)
+### [ManifestProcessNone](/docs/2.3.x/api/YooAsset.Editor/ManifestProcessNone)
 
-### [ManifestRestoreNone](../YooAsset.Editor/ManifestRestoreNone.md)
+### [ManifestRestoreNone](/docs/2.3.x/api/YooAsset.Editor/ManifestRestoreNone)
 
-### [NormalIgnoreRule](../YooAsset.Editor/NormalIgnoreRule.md)
+### [NormalIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/NormalIgnoreRule)
 适配常规的资源构建管线
-### [PackCollector](../YooAsset.Editor/PackCollector.md)
+### [PackCollector](/docs/2.3.x/api/YooAsset.Editor/PackCollector)
 以收集器路径作为资源包名
 注意：收集的所有文件打进一个资源包
-### [PackDirectory](../YooAsset.Editor/PackDirectory.md)
+### [PackDirectory](/docs/2.3.x/api/YooAsset.Editor/PackDirectory)
 以父类文件夹路径作为资源包名
 注意：文件夹下所有文件打进一个资源包
 例如："Assets/UIPanel/Shop/Image/backgroud.png" --&gt; "assets_uipanel_shop_image.bundle"
 例如："Assets/UIPanel/Shop/View/main.prefab" --&gt; "assets_uipanel_shop_view.bundle"
-### [PackGroup](../YooAsset.Editor/PackGroup.md)
+### [PackGroup](/docs/2.3.x/api/YooAsset.Editor/PackGroup)
 以分组名称作为资源包名
 注意：收集的所有文件打进一个资源包
-### [PackRawFile](../YooAsset.Editor/PackRawFile.md)
+### [PackRawFile](/docs/2.3.x/api/YooAsset.Editor/PackRawFile)
 打包原生文件
-### [PackSeparately](../YooAsset.Editor/PackSeparately.md)
+### [PackSeparately](/docs/2.3.x/api/YooAsset.Editor/PackSeparately)
 以文件路径作为资源包名
 注意：每个文件独自打资源包
 例如："Assets/UIPanel/Shop/Image/backgroud.png" --&gt; "assets_uipanel_shop_image_backgroud.bundle"
 例如："Assets/UIPanel/Shop/View/main.prefab" --&gt; "assets_uipanel_shop_view_main.bundle"
-### [PackShader](../YooAsset.Editor/PackShader.md)
+### [PackShader](/docs/2.3.x/api/YooAsset.Editor/PackShader)
 打包着色器
-### [PackShaderVariants](../YooAsset.Editor/PackShaderVariants.md)
+### [PackShaderVariants](/docs/2.3.x/api/YooAsset.Editor/PackShaderVariants)
 打包着色器变种集合
-### [PackTopDirectory](../YooAsset.Editor/PackTopDirectory.md)
+### [PackTopDirectory](/docs/2.3.x/api/YooAsset.Editor/PackTopDirectory)
 以收集器路径下顶级文件夹为资源包名
 注意：文件夹下所有文件打进一个资源包
 例如：收集器路径为 "Assets/UIPanel"
 例如："Assets/UIPanel/Shop/Image/backgroud.png" --&gt; "assets_uipanel_shop.bundle"
 例如："Assets/UIPanel/Shop/View/main.prefab" --&gt; "assets_uipanel_shop.bundle"
-### [PackVideoFile](../YooAsset.Editor/PackVideoFile.md)
+### [PackVideoFile](/docs/2.3.x/api/YooAsset.Editor/PackVideoFile)
 打包视频文件
-### [RawFileBuildParameters](../YooAsset.Editor/RawFileBuildParameters.md)
+### [RawFileBuildParameters](/docs/2.3.x/api/YooAsset.Editor/RawFileBuildParameters)
 
-### [RawFileBuildPipeline](../YooAsset.Editor/RawFileBuildPipeline.md)
+### [RawFileBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/RawFileBuildPipeline)
 
-### [RawFileIgnoreRule](../YooAsset.Editor/RawFileIgnoreRule.md)
+### [RawFileIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/RawFileIgnoreRule)
 适配原生文件构建管线
-### [ReportAssetInfo](../YooAsset.Editor/ReportAssetInfo.md)
+### [ReportAssetInfo](/docs/2.3.x/api/YooAsset.Editor/ReportAssetInfo)
 
-### [ReportBundleInfo](../YooAsset.Editor/ReportBundleInfo.md)
+### [ReportBundleInfo](/docs/2.3.x/api/YooAsset.Editor/ReportBundleInfo)
 
-### [ReportElement](../YooAsset.Editor/ReportElement.md)
+### [ReportElement](/docs/2.3.x/api/YooAsset.Editor/ReportElement)
 
-### [ReportHeader](../YooAsset.Editor/ReportHeader.md)
+### [ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
-### [ReportIndependAsset](../YooAsset.Editor/ReportIndependAsset.md)
+### [ReportIndependAsset](/docs/2.3.x/api/YooAsset.Editor/ReportIndependAsset)
 
-### [ReportScanInfo](../YooAsset.Editor/ReportScanInfo.md)
+### [ReportScanInfo](/docs/2.3.x/api/YooAsset.Editor/ReportScanInfo)
 
-### [ReportSummary](../YooAsset.Editor/ReportSummary.md)
+### [ReportSummary](/docs/2.3.x/api/YooAsset.Editor/ReportSummary)
 
-### [RuleDisplayName](../YooAsset.Editor/RuleDisplayName.md)
+### [RuleDisplayName](/docs/2.3.x/api/YooAsset.Editor/RuleDisplayName)
 
-### [ScannerDefine](../YooAsset.Editor/ScannerDefine.md)
+### [ScannerDefine](/docs/2.3.x/api/YooAsset.Editor/ScannerDefine)
 
-### [ScannerResult](../YooAsset.Editor/ScannerResult.md)
+### [ScannerResult](/docs/2.3.x/api/YooAsset.Editor/ScannerResult)
 
-### [ScannerSchema](../YooAsset.Editor/ScannerSchema.md)
+### [ScannerSchema](/docs/2.3.x/api/YooAsset.Editor/ScannerSchema)
 
-### [ScanReport](../YooAsset.Editor/ScanReport.md)
+### [ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport)
 
-### [ScanReportCombiner](../YooAsset.Editor/ScanReportCombiner.md)
+### [ScanReportCombiner](/docs/2.3.x/api/YooAsset.Editor/ScanReportCombiner)
 资源扫描报告合并器
 说明：相同类型的报告可以合并查看
-### [ScanReportConfig](../YooAsset.Editor/ScanReportConfig.md)
+### [ScanReportConfig](/docs/2.3.x/api/YooAsset.Editor/ScanReportConfig)
 
-### [SchemaInspector](../YooAsset.Editor/SchemaInspector.md)
+### [SchemaInspector](/docs/2.3.x/api/YooAsset.Editor/SchemaInspector)
 
-### [ScriptableBuildParameters](../YooAsset.Editor/ScriptableBuildParameters.md)
+### [ScriptableBuildParameters](/docs/2.3.x/api/YooAsset.Editor/ScriptableBuildParameters)
 
-### [ScriptableBuildPipeline](../YooAsset.Editor/ScriptableBuildPipeline.md)
+### [ScriptableBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/ScriptableBuildPipeline)
 
-### [SettingLoader](../YooAsset.Editor/SettingLoader.md)
+### [SettingLoader](/docs/2.3.x/api/YooAsset.Editor/SettingLoader)
 
-### [TaskBuilding_BBP](../YooAsset.Editor/TaskBuilding_BBP.md)
+### [TaskBuilding_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskBuilding_BBP)
 
-### [TaskBuilding_BBP.BuildResultContext](../YooAsset.Editor/TaskBuilding_BBP.BuildResultContext.md)
+### [TaskBuilding_BBP.BuildResultContext](/docs/2.3.x/api/YooAsset.Editor/TaskBuilding_BBP.BuildResultContext)
 
-### [TaskBuilding_RFBP](../YooAsset.Editor/TaskBuilding_RFBP.md)
+### [TaskBuilding_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskBuilding_RFBP)
 
-### [TaskBuilding_SBP](../YooAsset.Editor/TaskBuilding_SBP.md)
+### [TaskBuilding_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskBuilding_SBP)
 
-### [TaskBuilding_SBP.BuildResultContext](../YooAsset.Editor/TaskBuilding_SBP.BuildResultContext.md)
+### [TaskBuilding_SBP.BuildResultContext](/docs/2.3.x/api/YooAsset.Editor/TaskBuilding_SBP.BuildResultContext)
 
-### [TaskCopyBuildinFiles](../YooAsset.Editor/TaskCopyBuildinFiles.md)
+### [TaskCopyBuildinFiles](/docs/2.3.x/api/YooAsset.Editor/TaskCopyBuildinFiles)
 
-### [TaskCopyBuildinFiles_BBP](../YooAsset.Editor/TaskCopyBuildinFiles_BBP.md)
+### [TaskCopyBuildinFiles_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskCopyBuildinFiles_BBP)
 
-### [TaskCopyBuildinFiles_RFBP](../YooAsset.Editor/TaskCopyBuildinFiles_RFBP.md)
+### [TaskCopyBuildinFiles_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskCopyBuildinFiles_RFBP)
 
-### [TaskCopyBuildinFiles_SBP](../YooAsset.Editor/TaskCopyBuildinFiles_SBP.md)
+### [TaskCopyBuildinFiles_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskCopyBuildinFiles_SBP)
 
-### [TaskCreateCatalog](../YooAsset.Editor/TaskCreateCatalog.md)
+### [TaskCreateCatalog](/docs/2.3.x/api/YooAsset.Editor/TaskCreateCatalog)
 
-### [TaskCreateCatalog_BBP](../YooAsset.Editor/TaskCreateCatalog_BBP.md)
+### [TaskCreateCatalog_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateCatalog_BBP)
 
-### [TaskCreateCatalog_RFBP](../YooAsset.Editor/TaskCreateCatalog_RFBP.md)
+### [TaskCreateCatalog_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateCatalog_RFBP)
 
-### [TaskCreateCatalog_SBP](../YooAsset.Editor/TaskCreateCatalog_SBP.md)
+### [TaskCreateCatalog_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateCatalog_SBP)
 
-### [TaskCreateManifest](../YooAsset.Editor/TaskCreateManifest.md)
+### [TaskCreateManifest](/docs/2.3.x/api/YooAsset.Editor/TaskCreateManifest)
 
-### [TaskCreateManifest_BBP](../YooAsset.Editor/TaskCreateManifest_BBP.md)
+### [TaskCreateManifest_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateManifest_BBP)
 
-### [TaskCreateManifest_ESBP](../YooAsset.Editor/TaskCreateManifest_ESBP.md)
+### [TaskCreateManifest_ESBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateManifest_ESBP)
 
-### [TaskCreateManifest_RFBP](../YooAsset.Editor/TaskCreateManifest_RFBP.md)
+### [TaskCreateManifest_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateManifest_RFBP)
 
-### [TaskCreateManifest_SBP](../YooAsset.Editor/TaskCreateManifest_SBP.md)
+### [TaskCreateManifest_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateManifest_SBP)
 
-### [TaskCreatePackage_BBP](../YooAsset.Editor/TaskCreatePackage_BBP.md)
+### [TaskCreatePackage_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreatePackage_BBP)
 
-### [TaskCreatePackage_RFBP](../YooAsset.Editor/TaskCreatePackage_RFBP.md)
+### [TaskCreatePackage_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreatePackage_RFBP)
 
-### [TaskCreatePackage_SBP](../YooAsset.Editor/TaskCreatePackage_SBP.md)
+### [TaskCreatePackage_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreatePackage_SBP)
 
-### [TaskCreateReport](../YooAsset.Editor/TaskCreateReport.md)
+### [TaskCreateReport](/docs/2.3.x/api/YooAsset.Editor/TaskCreateReport)
 
-### [TaskCreateReport_BBP](../YooAsset.Editor/TaskCreateReport_BBP.md)
+### [TaskCreateReport_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateReport_BBP)
 
-### [TaskCreateReport_RFBP](../YooAsset.Editor/TaskCreateReport_RFBP.md)
+### [TaskCreateReport_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateReport_RFBP)
 
-### [TaskCreateReport_SBP](../YooAsset.Editor/TaskCreateReport_SBP.md)
+### [TaskCreateReport_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskCreateReport_SBP)
 
-### [TaskEncryption](../YooAsset.Editor/TaskEncryption.md)
+### [TaskEncryption](/docs/2.3.x/api/YooAsset.Editor/TaskEncryption)
 
-### [TaskEncryption_BBP](../YooAsset.Editor/TaskEncryption_BBP.md)
+### [TaskEncryption_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskEncryption_BBP)
 
-### [TaskEncryption_RFBP](../YooAsset.Editor/TaskEncryption_RFBP.md)
+### [TaskEncryption_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskEncryption_RFBP)
 
-### [TaskEncryption_SBP](../YooAsset.Editor/TaskEncryption_SBP.md)
+### [TaskEncryption_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskEncryption_SBP)
 
-### [TaskGetBuildMap](../YooAsset.Editor/TaskGetBuildMap.md)
+### [TaskGetBuildMap](/docs/2.3.x/api/YooAsset.Editor/TaskGetBuildMap)
 
-### [TaskGetBuildMap_BBP](../YooAsset.Editor/TaskGetBuildMap_BBP.md)
+### [TaskGetBuildMap_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskGetBuildMap_BBP)
 
-### [TaskGetBuildMap_ESBP](../YooAsset.Editor/TaskGetBuildMap_ESBP.md)
+### [TaskGetBuildMap_ESBP](/docs/2.3.x/api/YooAsset.Editor/TaskGetBuildMap_ESBP)
 
-### [TaskGetBuildMap_RFBP](../YooAsset.Editor/TaskGetBuildMap_RFBP.md)
+### [TaskGetBuildMap_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskGetBuildMap_RFBP)
 
-### [TaskGetBuildMap_SBP](../YooAsset.Editor/TaskGetBuildMap_SBP.md)
+### [TaskGetBuildMap_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskGetBuildMap_SBP)
 
-### [TaskPrepare_BBP](../YooAsset.Editor/TaskPrepare_BBP.md)
+### [TaskPrepare_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskPrepare_BBP)
 
-### [TaskPrepare_ESBP](../YooAsset.Editor/TaskPrepare_ESBP.md)
+### [TaskPrepare_ESBP](/docs/2.3.x/api/YooAsset.Editor/TaskPrepare_ESBP)
 
-### [TaskPrepare_RFBP](../YooAsset.Editor/TaskPrepare_RFBP.md)
+### [TaskPrepare_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskPrepare_RFBP)
 
-### [TaskPrepare_SBP](../YooAsset.Editor/TaskPrepare_SBP.md)
+### [TaskPrepare_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskPrepare_SBP)
 
-### [TaskUpdateBundleInfo](../YooAsset.Editor/TaskUpdateBundleInfo.md)
+### [TaskUpdateBundleInfo](/docs/2.3.x/api/YooAsset.Editor/TaskUpdateBundleInfo)
 
-### [TaskUpdateBundleInfo_BBP](../YooAsset.Editor/TaskUpdateBundleInfo_BBP.md)
+### [TaskUpdateBundleInfo_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskUpdateBundleInfo_BBP)
 
-### [TaskUpdateBundleInfo_ESBP](../YooAsset.Editor/TaskUpdateBundleInfo_ESBP.md)
+### [TaskUpdateBundleInfo_ESBP](/docs/2.3.x/api/YooAsset.Editor/TaskUpdateBundleInfo_ESBP)
 
-### [TaskUpdateBundleInfo_RFBP](../YooAsset.Editor/TaskUpdateBundleInfo_RFBP.md)
+### [TaskUpdateBundleInfo_RFBP](/docs/2.3.x/api/YooAsset.Editor/TaskUpdateBundleInfo_RFBP)
 
-### [TaskUpdateBundleInfo_SBP](../YooAsset.Editor/TaskUpdateBundleInfo_SBP.md)
+### [TaskUpdateBundleInfo_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskUpdateBundleInfo_SBP)
 
-### [TaskVerifyBuildResult_BBP](../YooAsset.Editor/TaskVerifyBuildResult_BBP.md)
+### [TaskVerifyBuildResult_BBP](/docs/2.3.x/api/YooAsset.Editor/TaskVerifyBuildResult_BBP)
 
-### [TaskVerifyBuildResult_SBP](../YooAsset.Editor/TaskVerifyBuildResult_SBP.md)
+### [TaskVerifyBuildResult_SBP](/docs/2.3.x/api/YooAsset.Editor/TaskVerifyBuildResult_SBP)
 
-### [WindowsDefine](../YooAsset.Editor/WindowsDefine.md)
+### [WindowsDefine](/docs/2.3.x/api/YooAsset.Editor/WindowsDefine)
 
 ## Structs
-### [AddressRuleData](../YooAsset.Editor/AddressRuleData.md)
+### [AddressRuleData](/docs/2.3.x/api/YooAsset.Editor/AddressRuleData)
 
-### [FilterRuleData](../YooAsset.Editor/FilterRuleData.md)
+### [FilterRuleData](/docs/2.3.x/api/YooAsset.Editor/FilterRuleData)
 
-### [GroupData](../YooAsset.Editor/GroupData.md)
+### [GroupData](/docs/2.3.x/api/YooAsset.Editor/GroupData)
 
-### [PackRuleData](../YooAsset.Editor/PackRuleData.md)
+### [PackRuleData](/docs/2.3.x/api/YooAsset.Editor/PackRuleData)
 
-### [PackRuleResult](../YooAsset.Editor/PackRuleResult.md)
+### [PackRuleResult](/docs/2.3.x/api/YooAsset.Editor/PackRuleResult)
 
 ## Interfaces
-### [IActiveRule](../YooAsset.Editor/IActiveRule.md)
+### [IActiveRule](/docs/2.3.x/api/YooAsset.Editor/IActiveRule)
 资源分组激活规则接口
-### [IAddressRule](../YooAsset.Editor/IAddressRule.md)
+### [IAddressRule](/docs/2.3.x/api/YooAsset.Editor/IAddressRule)
 寻址规则接口
-### [IBuildPipeline](../YooAsset.Editor/IBuildPipeline.md)
+### [IBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/IBuildPipeline)
 
-### [IBuildTask](../YooAsset.Editor/IBuildTask.md)
+### [IBuildTask](/docs/2.3.x/api/YooAsset.Editor/IBuildTask)
 
-### [IContextObject](../YooAsset.Editor/IContextObject.md)
+### [IContextObject](/docs/2.3.x/api/YooAsset.Editor/IContextObject)
 
-### [IFilterRule](../YooAsset.Editor/IFilterRule.md)
+### [IFilterRule](/docs/2.3.x/api/YooAsset.Editor/IFilterRule)
 资源过滤规则接口
-### [IIgnoreRule](../YooAsset.Editor/IIgnoreRule.md)
+### [IIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/IIgnoreRule)
 资源忽略规则接口
-### [IPackRule](../YooAsset.Editor/IPackRule.md)
+### [IPackRule](/docs/2.3.x/api/YooAsset.Editor/IPackRule)
 资源打包规则接口
 ## Enums
-### [EAssetFileExtension](../YooAsset.Editor/EAssetFileExtension.md)
+### [EAssetFileExtension](/docs/2.3.x/api/YooAsset.Editor/EAssetFileExtension)
 资源文件格式
-### [EAssetSearchType](../YooAsset.Editor/EAssetSearchType.md)
+### [EAssetSearchType](/docs/2.3.x/api/YooAsset.Editor/EAssetSearchType)
 资源搜索类型
-### [EBuildinFileCopyOption](../YooAsset.Editor/EBuildinFileCopyOption.md)
+### [EBuildinFileCopyOption](/docs/2.3.x/api/YooAsset.Editor/EBuildinFileCopyOption)
 首包资源文件的拷贝方式
-### [EBuildPipeline](../YooAsset.Editor/EBuildPipeline.md)
+### [EBuildPipeline](/docs/2.3.x/api/YooAsset.Editor/EBuildPipeline)
 构建管线类型
-### [ECollectFlags](../YooAsset.Editor/ECollectFlags.md)
+### [ECollectFlags](/docs/2.3.x/api/YooAsset.Editor/ECollectFlags)
 
-### [ECollectorType](../YooAsset.Editor/ECollectorType.md)
+### [ECollectorType](/docs/2.3.x/api/YooAsset.Editor/ECollectorType)
 
-### [ECompressOption](../YooAsset.Editor/ECompressOption.md)
+### [ECompressOption](/docs/2.3.x/api/YooAsset.Editor/ECompressOption)
 AssetBundle压缩选项
-### [EFileNameStyle](../YooAsset.Editor/EFileNameStyle.md)
+### [EFileNameStyle](/docs/2.3.x/api/YooAsset.Editor/EFileNameStyle)
 补丁包内的文件样式
-### [EHeaderType](../YooAsset.Editor/EHeaderType.md)
+### [EHeaderType](/docs/2.3.x/api/YooAsset.Editor/EHeaderType)
 

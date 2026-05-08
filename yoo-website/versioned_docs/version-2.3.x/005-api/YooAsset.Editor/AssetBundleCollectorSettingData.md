@@ -186,7 +186,7 @@ public static IActiveRule GetActiveRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IActiveRule](../YooAsset.Editor/IActiveRule.md)
+[YooAsset.Editor.IActiveRule](/docs/2.3.x/api/YooAsset.Editor/IActiveRule)
 
 ##### Parameters
 
@@ -203,7 +203,7 @@ public static IAddressRule GetAddressRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IAddressRule](../YooAsset.Editor/IAddressRule.md)
+[YooAsset.Editor.IAddressRule](/docs/2.3.x/api/YooAsset.Editor/IAddressRule)
 
 ##### Parameters
 
@@ -220,7 +220,7 @@ public static IPackRule GetPackRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IPackRule](../YooAsset.Editor/IPackRule.md)
+[YooAsset.Editor.IPackRule](/docs/2.3.x/api/YooAsset.Editor/IPackRule)
 
 ##### Parameters
 
@@ -237,7 +237,7 @@ public static IFilterRule GetFilterRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IFilterRule](../YooAsset.Editor/IFilterRule.md)
+[YooAsset.Editor.IFilterRule](/docs/2.3.x/api/YooAsset.Editor/IFilterRule)
 
 ##### Parameters
 
@@ -254,7 +254,7 @@ public static IIgnoreRule GetIgnoreRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IIgnoreRule](../YooAsset.Editor/IIgnoreRule.md)
+[YooAsset.Editor.IIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/IIgnoreRule)
 
 ##### Parameters
 
@@ -310,7 +310,7 @@ public static AssetBundleCollectorPackage CreatePackage(string packageName)
 
 ##### Returns
 
-[YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md)
+[YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage)
 
 ##### Parameters
 
@@ -329,7 +329,7 @@ public static void RemovePackage(AssetBundleCollectorPackage package)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md) | *package* |
+| [YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage) | *package* |
 
 ### ModifyPackage(AssetBundleCollectorPackage)
 
@@ -342,7 +342,7 @@ public static void ModifyPackage(AssetBundleCollectorPackage package)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md) | *package* |
+| [YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage) | *package* |
 
 ### CreateGroup(AssetBundleCollectorPackage, string)
 
@@ -353,13 +353,13 @@ public static AssetBundleCollectorGroup CreateGroup(AssetBundleCollectorPackage 
 
 ##### Returns
 
-[YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md)
+[YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md) | *package* |
+| [YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage) | *package* |
 | `System.String` | *groupName* |
 
 ### RemoveGroup(AssetBundleCollectorPackage, AssetBundleCollectorGroup)
@@ -373,8 +373,8 @@ public static void RemoveGroup(AssetBundleCollectorPackage package, AssetBundleC
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md) | *package* |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
+| [YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage) | *package* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
 
 ### ModifyGroup(AssetBundleCollectorPackage, AssetBundleCollectorGroup)
 
@@ -387,8 +387,8 @@ public static void ModifyGroup(AssetBundleCollectorPackage package, AssetBundleC
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorPackage](../YooAsset.Editor/AssetBundleCollectorPackage.md) | *package* |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
+| [YooAsset.Editor.AssetBundleCollectorPackage](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorPackage) | *package* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
 
 ### CreateCollector(AssetBundleCollectorGroup, AssetBundleCollector)
 
@@ -401,8 +401,8 @@ public static void CreateCollector(AssetBundleCollectorGroup group, AssetBundleC
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
-| [YooAsset.Editor.AssetBundleCollector](../YooAsset.Editor/AssetBundleCollector.md) | *collector* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
+| [YooAsset.Editor.AssetBundleCollector](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollector) | *collector* |
 
 ### RemoveCollector(AssetBundleCollectorGroup, AssetBundleCollector)
 
@@ -415,8 +415,8 @@ public static void RemoveCollector(AssetBundleCollectorGroup group, AssetBundleC
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
-| [YooAsset.Editor.AssetBundleCollector](../YooAsset.Editor/AssetBundleCollector.md) | *collector* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
+| [YooAsset.Editor.AssetBundleCollector](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollector) | *collector* |
 
 ### ModifyCollector(AssetBundleCollectorGroup, AssetBundleCollector)
 
@@ -429,8 +429,8 @@ public static void ModifyCollector(AssetBundleCollectorGroup group, AssetBundleC
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetBundleCollectorGroup](../YooAsset.Editor/AssetBundleCollectorGroup.md) | *group* |
-| [YooAsset.Editor.AssetBundleCollector](../YooAsset.Editor/AssetBundleCollector.md) | *collector* |
+| [YooAsset.Editor.AssetBundleCollectorGroup](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollectorGroup) | *group* |
+| [YooAsset.Editor.AssetBundleCollector](/docs/2.3.x/api/YooAsset.Editor/AssetBundleCollector) | *collector* |
 
 ### GetPackageAllTags(string)
 获取所有的资源标签

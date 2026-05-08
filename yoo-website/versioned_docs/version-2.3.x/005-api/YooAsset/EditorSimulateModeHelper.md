@@ -20,7 +20,7 @@ public static PackageInvokeBuildResult SimulateBuild(string packageName)
 
 ##### Returns
 
-[YooAsset.PackageInvokeBuildResult](../YooAsset/PackageInvokeBuildResult.md)
+[YooAsset.PackageInvokeBuildResult](/docs/2.3.x/api/YooAsset/PackageInvokeBuildResult)
 
 ##### Parameters
 

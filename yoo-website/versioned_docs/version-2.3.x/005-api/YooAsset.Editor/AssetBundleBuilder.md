@@ -20,13 +20,13 @@ public BuildResult Run(BuildParameters buildParameters, List<IBuildTask> buildPi
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md)
+[YooAsset.Editor.BuildResult](/docs/2.3.x/api/YooAsset.Editor/BuildResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
 | `System.Collections.Generic.List<YooAsset.Editor.IBuildTask>` | *buildPipeline* |
 | `System.Boolean` | *enableLog* |
 

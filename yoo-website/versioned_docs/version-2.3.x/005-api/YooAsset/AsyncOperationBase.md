@@ -104,7 +104,7 @@ public int CompareTo(AsyncOperationBase other)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *other* |
+| [YooAsset.AsyncOperationBase](/docs/2.3.x/api/YooAsset/AsyncOperationBase) | *other* |
 
 ## Events
 ### Completed

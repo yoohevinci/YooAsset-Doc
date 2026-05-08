@@ -165,7 +165,7 @@ public static string[] FindAssets(EAssetSearchType searchType, string[] searchIn
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EAssetSearchType](../YooAsset.Editor/EAssetSearchType.md) | *searchType* | 搜集的资源类型 |
+| [YooAsset.Editor.EAssetSearchType](/docs/2.3.x/api/YooAsset.Editor/EAssetSearchType) | *searchType* | 搜集的资源类型 |
 | `System.String[]` | *searchInFolders* | 指定搜索的文件夹列表 |
 
 ### FindAssets(EAssetSearchType, string)
@@ -182,7 +182,7 @@ public static string[] FindAssets(EAssetSearchType searchType, string searchInFo
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EAssetSearchType](../YooAsset.Editor/EAssetSearchType.md) | *searchType* | 搜集的资源类型 |
+| [YooAsset.Editor.EAssetSearchType](/docs/2.3.x/api/YooAsset.Editor/EAssetSearchType) | *searchType* | 搜集的资源类型 |
 | `System.String` | *searchInFolder* | 指定搜索的文件夹 |
 
 ### FindAssets(string, string[])

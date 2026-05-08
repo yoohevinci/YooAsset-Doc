@@ -30,13 +30,13 @@ public abstract ScanReport RunScanner(AssetArtScanner scanner)
 
 ##### Returns
 
-[YooAsset.Editor.ScanReport](../YooAsset.Editor/ScanReport.md)
+[YooAsset.Editor.ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
 
 ### FixResult(List&lt;ReportElement&gt;)
 修复扫描结果
@@ -60,4 +60,4 @@ public virtual SchemaInspector CreateInspector()
 
 ##### Returns
 
-[YooAsset.Editor.SchemaInspector](../YooAsset.Editor/SchemaInspector.md)
+[YooAsset.Editor.SchemaInspector](/docs/2.3.x/api/YooAsset.Editor/SchemaInspector)

@@ -20,11 +20,11 @@ EncryptResult Encrypt(EncryptFileInfo fileInfo)
 
 ##### Returns
 
-[YooAsset.EncryptResult](../YooAsset/EncryptResult.md)
+[YooAsset.EncryptResult](/docs/2.3.x/api/YooAsset/EncryptResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.EncryptFileInfo](../YooAsset/EncryptFileInfo.md) | *fileInfo* |
+| [YooAsset.EncryptFileInfo](/docs/2.3.x/api/YooAsset/EncryptFileInfo) | *fileInfo* |
 

@@ -41,5 +41,5 @@ public static void Search(IList<ITableData> sourceDatas, string command, ESearch
 |:--- |:--- |:--- |
 | `System.Collections.Generic.IList<YooAsset.Editor.ITableData>` | *sourceDatas* | 待过滤的表格数据集合 |
 | `System.String` | *command* | 搜索表达式字符串 |
-| [YooAsset.Editor.ESearchLogic](../YooAsset.Editor/ESearchLogic.md) | *logic* | 同类搜索命令的组内组合逻辑 |
+| [YooAsset.Editor.ESearchLogic](/docs/3.0.x/api/YooAsset.Editor/ESearchLogic) | *logic* | 同类搜索命令的组内组合逻辑 |
 

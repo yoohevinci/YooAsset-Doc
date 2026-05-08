@@ -13,4 +13,4 @@ public class ManifestProcessNone : IManifestProcessServices
 
 ## Implements
 
-* [YooAsset.IManifestProcessServices](../YooAsset/IManifestProcessServices.md)
+* [YooAsset.IManifestProcessServices](/docs/2.3.x/api/YooAsset/IManifestProcessServices)

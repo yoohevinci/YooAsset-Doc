@@ -20,13 +20,13 @@ DecryptResult LoadAssetBundle(DecryptFileInfo fileInfo)
 
 ##### Returns
 
-[YooAsset.DecryptResult](../YooAsset/DecryptResult.md)
+[YooAsset.DecryptResult](/docs/2.3.x/api/YooAsset/DecryptResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.DecryptFileInfo](../YooAsset/DecryptFileInfo.md) | *fileInfo* |
+| [YooAsset.DecryptFileInfo](/docs/2.3.x/api/YooAsset/DecryptFileInfo) | *fileInfo* |
 
 ### LoadAssetBundleAsync(DecryptFileInfo)
 异步方式获取解密的资源包
@@ -37,13 +37,13 @@ DecryptResult LoadAssetBundleAsync(DecryptFileInfo fileInfo)
 
 ##### Returns
 
-[YooAsset.DecryptResult](../YooAsset/DecryptResult.md)
+[YooAsset.DecryptResult](/docs/2.3.x/api/YooAsset/DecryptResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.DecryptFileInfo](../YooAsset/DecryptFileInfo.md) | *fileInfo* |
+| [YooAsset.DecryptFileInfo](/docs/2.3.x/api/YooAsset/DecryptFileInfo) | *fileInfo* |
 
 ### LoadAssetBundleFallback(DecryptFileInfo)
 后备方式获取解密的资源包
@@ -57,13 +57,13 @@ DecryptResult LoadAssetBundleFallback(DecryptFileInfo fileInfo)
 
 ##### Returns
 
-[YooAsset.DecryptResult](../YooAsset/DecryptResult.md)
+[YooAsset.DecryptResult](/docs/2.3.x/api/YooAsset/DecryptResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.DecryptFileInfo](../YooAsset/DecryptFileInfo.md) | *fileInfo* |
+| [YooAsset.DecryptFileInfo](/docs/2.3.x/api/YooAsset/DecryptFileInfo) | *fileInfo* |
 
 ### ReadFileData(DecryptFileInfo)
 获取解密的字节数据
@@ -80,7 +80,7 @@ byte[] ReadFileData(DecryptFileInfo fileInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.DecryptFileInfo](../YooAsset/DecryptFileInfo.md) | *fileInfo* |
+| [YooAsset.DecryptFileInfo](/docs/2.3.x/api/YooAsset/DecryptFileInfo) | *fileInfo* |
 
 ### ReadFileText(DecryptFileInfo)
 获取解密的文本数据
@@ -97,5 +97,5 @@ string ReadFileText(DecryptFileInfo fileInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.DecryptFileInfo](../YooAsset/DecryptFileInfo.md) | *fileInfo* |
+| [YooAsset.DecryptFileInfo](/docs/2.3.x/api/YooAsset/DecryptFileInfo) | *fileInfo* |
 

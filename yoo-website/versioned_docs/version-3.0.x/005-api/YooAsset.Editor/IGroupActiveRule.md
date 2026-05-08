@@ -26,5 +26,5 @@ bool IsActiveGroup(GroupActiveRuleData data)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.GroupActiveRuleData](../YooAsset.Editor/GroupActiveRuleData.md) | *data* | 分组数据 |
+| [YooAsset.Editor.GroupActiveRuleData](/docs/3.0.x/api/YooAsset.Editor/GroupActiveRuleData) | *data* | 分组数据 |
 

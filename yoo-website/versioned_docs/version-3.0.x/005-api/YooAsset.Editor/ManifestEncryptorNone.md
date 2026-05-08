@@ -14,4 +14,4 @@ public class ManifestEncryptorNone : IManifestEncryptor
 
 ## Implements
 
-* [YooAsset.IManifestEncryptor](../YooAsset/IManifestEncryptor.md)
+* [YooAsset.IManifestEncryptor](/docs/3.0.x/api/YooAsset/IManifestEncryptor)

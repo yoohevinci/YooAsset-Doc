@@ -13,4 +13,4 @@ public class ManifestRestoreNone : IManifestRestoreServices
 
 ## Implements
 
-* [YooAsset.IManifestRestoreServices](../YooAsset/IManifestRestoreServices.md)
+* [YooAsset.IManifestRestoreServices](/docs/2.3.x/api/YooAsset/IManifestRestoreServices)

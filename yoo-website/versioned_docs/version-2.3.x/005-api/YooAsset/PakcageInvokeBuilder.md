@@ -20,11 +20,11 @@ public static PackageInvokeBuildResult InvokeBuilder(PackageInvokeBuildParam bui
 
 ##### Returns
 
-[YooAsset.PackageInvokeBuildResult](../YooAsset/PackageInvokeBuildResult.md)
+[YooAsset.PackageInvokeBuildResult](/docs/2.3.x/api/YooAsset/PackageInvokeBuildResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.PackageInvokeBuildParam](../YooAsset/PackageInvokeBuildParam.md) | *buildParam* |
+| [YooAsset.PackageInvokeBuildParam](/docs/2.3.x/api/YooAsset/PackageInvokeBuildParam) | *buildParam* |
 

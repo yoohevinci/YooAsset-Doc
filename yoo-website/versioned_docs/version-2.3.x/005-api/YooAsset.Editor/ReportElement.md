@@ -101,7 +101,7 @@ public ReportScanInfo GetScanInfo(string headerTitle)
 
 ##### Returns
 
-[YooAsset.Editor.ReportScanInfo](../YooAsset.Editor/ReportScanInfo.md)
+[YooAsset.Editor.ReportScanInfo](/docs/2.3.x/api/YooAsset.Editor/ReportScanInfo)
 
 ##### Parameters
 

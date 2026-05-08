@@ -54,7 +54,7 @@ public UnloadSceneOperation UnloadAsync()
 
 ##### Returns
 
-[YooAsset.UnloadSceneOperation](../YooAsset/UnloadSceneOperation.md)
+[YooAsset.UnloadSceneOperation](/docs/2.3.x/api/YooAsset/UnloadSceneOperation)
 ## Events
 ### Completed
 完成委托

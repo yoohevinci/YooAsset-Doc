@@ -27,5 +27,5 @@ bool IsActiveGroup(GroupData data)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.GroupData](../YooAsset.Editor/GroupData.md) | *data* |
+| [YooAsset.Editor.GroupData](/docs/2.3.x/api/YooAsset.Editor/GroupData) | *data* |
 

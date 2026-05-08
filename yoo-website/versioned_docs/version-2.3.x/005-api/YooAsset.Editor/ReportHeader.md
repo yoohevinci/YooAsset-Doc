@@ -88,7 +88,7 @@ public ReportHeader SetMinWidth(int value)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 
@@ -105,7 +105,7 @@ public ReportHeader SetMaxWidth(int value)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 
@@ -122,7 +122,7 @@ public ReportHeader SetStretchable()
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 ### SetSearchable()
 
 
@@ -132,7 +132,7 @@ public ReportHeader SetSearchable()
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 ### SetSortable()
 
 
@@ -142,7 +142,7 @@ public ReportHeader SetSortable()
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 ### SetCounter()
 
 
@@ -152,7 +152,7 @@ public ReportHeader SetCounter()
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 ### SetUnits(string)
 
 
@@ -162,7 +162,7 @@ public ReportHeader SetUnits(string units)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 
@@ -179,13 +179,13 @@ public ReportHeader SetHeaderType(EHeaderType value)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.EHeaderType](../YooAsset.Editor/EHeaderType.md) | *value* |
+| [YooAsset.Editor.EHeaderType](/docs/2.3.x/api/YooAsset.Editor/EHeaderType) | *value* |
 
 ### CheckValueValid(string)
 检测数值有效性

@@ -62,7 +62,7 @@ public bool Combine(ScanReport scanReport)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.ScanReport](../YooAsset.Editor/ScanReport.md) | *scanReport* |
+| [YooAsset.Editor.ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport) | *scanReport* |
 
 ### GetHeader(string)
 获取指定的标题类
@@ -73,7 +73,7 @@ public ReportHeader GetHeader(string headerTitle)
 
 ##### Returns
 
-[YooAsset.Editor.ReportHeader](../YooAsset.Editor/ReportHeader.md)
+[YooAsset.Editor.ReportHeader](/docs/2.3.x/api/YooAsset.Editor/ReportHeader)
 
 ##### Parameters
 

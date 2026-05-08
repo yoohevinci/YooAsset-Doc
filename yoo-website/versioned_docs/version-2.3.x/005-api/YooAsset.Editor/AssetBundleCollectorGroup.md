@@ -74,5 +74,5 @@ public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
 

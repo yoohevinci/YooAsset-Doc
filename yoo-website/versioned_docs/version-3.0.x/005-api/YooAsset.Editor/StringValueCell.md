@@ -60,5 +60,5 @@ public int CompareTo(object other)
 
 ## Implements
 
-* [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md)
+* [YooAsset.Editor.ITableCell](/docs/3.0.x/api/YooAsset.Editor/ITableCell)
 * `System.IComparable`

@@ -64,7 +64,7 @@ public static ScannerResult Scan(string scannerGUID)
 
 ##### Returns
 
-[YooAsset.Editor.ScannerResult](../YooAsset.Editor/ScannerResult.md)
+[YooAsset.Editor.ScannerResult](/docs/2.3.x/api/YooAsset.Editor/ScannerResult)
 
 ##### Parameters
 
@@ -81,7 +81,7 @@ public static AssetArtScanner CreateScanner(string name, string desc)
 
 ##### Returns
 
-[YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md)
+[YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner)
 
 ##### Parameters
 
@@ -101,7 +101,7 @@ public static void RemoveScanner(AssetArtScanner scanner)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
 
 ### ModifyScanner(AssetArtScanner)
 
@@ -114,7 +114,7 @@ public static void ModifyScanner(AssetArtScanner scanner)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
 
 ### CreateCollector(AssetArtScanner, AssetArtCollector)
 
@@ -127,8 +127,8 @@ public static void CreateCollector(AssetArtScanner scanner, AssetArtCollector co
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
-| [YooAsset.Editor.AssetArtCollector](../YooAsset.Editor/AssetArtCollector.md) | *collector* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
+| [YooAsset.Editor.AssetArtCollector](/docs/2.3.x/api/YooAsset.Editor/AssetArtCollector) | *collector* |
 
 ### RemoveCollector(AssetArtScanner, AssetArtCollector)
 
@@ -141,8 +141,8 @@ public static void RemoveCollector(AssetArtScanner scanner, AssetArtCollector co
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
-| [YooAsset.Editor.AssetArtCollector](../YooAsset.Editor/AssetArtCollector.md) | *collector* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
+| [YooAsset.Editor.AssetArtCollector](/docs/2.3.x/api/YooAsset.Editor/AssetArtCollector) | *collector* |
 
 ### ModifyCollector(AssetArtScanner, AssetArtCollector)
 
@@ -155,6 +155,6 @@ public static void ModifyCollector(AssetArtScanner scanner, AssetArtCollector co
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetArtScanner](../YooAsset.Editor/AssetArtScanner.md) | *scanner* |
-| [YooAsset.Editor.AssetArtCollector](../YooAsset.Editor/AssetArtCollector.md) | *collector* |
+| [YooAsset.Editor.AssetArtScanner](/docs/2.3.x/api/YooAsset.Editor/AssetArtScanner) | *scanner* |
+| [YooAsset.Editor.AssetArtCollector](/docs/2.3.x/api/YooAsset.Editor/AssetArtCollector) | *collector* |
 

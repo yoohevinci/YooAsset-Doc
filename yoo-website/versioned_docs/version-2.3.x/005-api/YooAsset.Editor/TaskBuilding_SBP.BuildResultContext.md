@@ -32,4 +32,4 @@ public string MonoScriptsBundleName
 
 ## Implements
 
-* [YooAsset.Editor.IContextObject](../YooAsset.Editor/IContextObject.md)
+* [YooAsset.Editor.IContextObject](/docs/2.3.x/api/YooAsset.Editor/IContextObject)

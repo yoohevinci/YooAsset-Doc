@@ -46,7 +46,7 @@ public static BundlePackRuleResult CreateShadersPackRuleResult()
 
 ##### Returns
 
-[YooAsset.Editor.BundlePackRuleResult](../YooAsset.Editor/BundlePackRuleResult.md): 着色器资源包的打包规则结果### CreateMonosPackRuleResult()
+[YooAsset.Editor.BundlePackRuleResult](/docs/3.0.x/api/YooAsset.Editor/BundlePackRuleResult): 着色器资源包的打包规则结果### CreateMonosPackRuleResult()
 创建脚本资源包的打包结果
 
 ```csharp title="Declaration"
@@ -55,4 +55,4 @@ public static BundlePackRuleResult CreateMonosPackRuleResult()
 
 ##### Returns
 
-[YooAsset.Editor.BundlePackRuleResult](../YooAsset.Editor/BundlePackRuleResult.md): 脚本资源包的打包规则结果
+[YooAsset.Editor.BundlePackRuleResult](/docs/3.0.x/api/YooAsset.Editor/BundlePackRuleResult): 脚本资源包的打包规则结果

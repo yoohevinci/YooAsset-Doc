@@ -51,7 +51,7 @@ public static FileSystemParameters CreateDefaultEditorFileSystemParameters(strin
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md)
+[YooAsset.FileSystemParameters](/docs/2.3.x/api/YooAsset/FileSystemParameters)
 
 ##### Parameters
 
@@ -68,13 +68,13 @@ public static FileSystemParameters CreateDefaultBuildinFileSystemParameters(IDec
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md)
+[YooAsset.FileSystemParameters](/docs/2.3.x/api/YooAsset/FileSystemParameters)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IDecryptionServices](../YooAsset/IDecryptionServices.md) | *decryptionServices* | 加密文件解密服务类 |
+| [YooAsset.IDecryptionServices](/docs/2.3.x/api/YooAsset/IDecryptionServices) | *decryptionServices* | 加密文件解密服务类 |
 | `System.String` | *packageRoot* | 文件系统的根目录 |
 
 ### CreateDefaultCacheFileSystemParameters(IRemoteServices, IDecryptionServices, string)
@@ -86,14 +86,14 @@ public static FileSystemParameters CreateDefaultCacheFileSystemParameters(IRemot
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md)
+[YooAsset.FileSystemParameters](/docs/2.3.x/api/YooAsset/FileSystemParameters)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IRemoteServices](../YooAsset/IRemoteServices.md) | *remoteServices* | 远端资源地址查询服务类 |
-| [YooAsset.IDecryptionServices](../YooAsset/IDecryptionServices.md) | *decryptionServices* | 加密文件解密服务类 |
+| [YooAsset.IRemoteServices](/docs/2.3.x/api/YooAsset/IRemoteServices) | *remoteServices* | 远端资源地址查询服务类 |
+| [YooAsset.IDecryptionServices](/docs/2.3.x/api/YooAsset/IDecryptionServices) | *decryptionServices* | 加密文件解密服务类 |
 | `System.String` | *packageRoot* | 文件系统的根目录 |
 
 ### CreateDefaultWebServerFileSystemParameters(IWebDecryptionServices, bool)
@@ -105,13 +105,13 @@ public static FileSystemParameters CreateDefaultWebServerFileSystemParameters(IW
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md)
+[YooAsset.FileSystemParameters](/docs/2.3.x/api/YooAsset/FileSystemParameters)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IWebDecryptionServices](../YooAsset/IWebDecryptionServices.md) | *decryptionServices* | 加密文件解密服务类 |
+| [YooAsset.IWebDecryptionServices](/docs/2.3.x/api/YooAsset/IWebDecryptionServices) | *decryptionServices* | 加密文件解密服务类 |
 | `System.Boolean` | *disableUnityWebCache* | 禁用Unity的网络缓存 |
 
 ### CreateDefaultWebRemoteFileSystemParameters(IRemoteServices, IWebDecryptionServices, bool)
@@ -123,13 +123,13 @@ public static FileSystemParameters CreateDefaultWebRemoteFileSystemParameters(IR
 
 ##### Returns
 
-[YooAsset.FileSystemParameters](../YooAsset/FileSystemParameters.md)
+[YooAsset.FileSystemParameters](/docs/2.3.x/api/YooAsset/FileSystemParameters)
 
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.IRemoteServices](../YooAsset/IRemoteServices.md) | *remoteServices* | 远端资源地址查询服务类 |
-| [YooAsset.IWebDecryptionServices](../YooAsset/IWebDecryptionServices.md) | *decryptionServices* | 加密文件解密服务类 |
+| [YooAsset.IRemoteServices](/docs/2.3.x/api/YooAsset/IRemoteServices) | *remoteServices* | 远端资源地址查询服务类 |
+| [YooAsset.IWebDecryptionServices](/docs/2.3.x/api/YooAsset/IWebDecryptionServices) | *decryptionServices* | 加密文件解密服务类 |
 | `System.Boolean` | *disableUnityWebCache* | 禁用Unity的网络缓存 |
 

@@ -59,4 +59,4 @@ public void OnRequestFailed(string url, long httpCode, string httpError)
 
 ## Implements
 
-* [YooAsset.IDownloadUrlPolicy](../YooAsset/IDownloadUrlPolicy.md)
+* [YooAsset.IDownloadUrlPolicy](/docs/3.0.x/api/YooAsset/IDownloadUrlPolicy)

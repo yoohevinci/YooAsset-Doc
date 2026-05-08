@@ -27,9 +27,9 @@ public bool IsIgnore(AssetInfo assetInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetInfo](../YooAsset.Editor/AssetInfo.md) | *assetInfo* |
+| [YooAsset.Editor.AssetInfo](/docs/2.3.x/api/YooAsset.Editor/AssetInfo) | *assetInfo* |
 
 
 ## Implements
 
-* [YooAsset.Editor.IIgnoreRule](../YooAsset.Editor/IIgnoreRule.md)
+* [YooAsset.Editor.IIgnoreRule](/docs/2.3.x/api/YooAsset.Editor/IIgnoreRule)

@@ -23,7 +23,7 @@ public void UpdateBundleInfo(BuildContext context)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetUnityHash(BuildBundleInfo, BuildContext)
 获取 Unity 记录的资源包哈希值
@@ -39,8 +39,8 @@ protected abstract string GetUnityHash(BuildBundleInfo bundleInfo, BuildContext 
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetUnityCRC(BuildBundleInfo, BuildContext)
 获取 Unity 记录的资源包 CRC
@@ -56,8 +56,8 @@ protected abstract uint GetUnityCRC(BuildBundleInfo bundleInfo, BuildContext con
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetBundleFileHash(BuildBundleInfo, BuildContext)
 获取资源包文件的哈希值（用于远端文件名等）
@@ -73,8 +73,8 @@ protected abstract string GetBundleFileHash(BuildBundleInfo bundleInfo, BuildCon
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetBundleFileCRC(BuildBundleInfo, BuildContext)
 获取资源包文件的 CRC
@@ -90,8 +90,8 @@ protected abstract uint GetBundleFileCRC(BuildBundleInfo bundleInfo, BuildContex
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetBundleFileSize(BuildBundleInfo, BuildContext)
 获取资源包文件大小（字节）
@@ -107,6 +107,6 @@ protected abstract long GetBundleFileSize(BuildBundleInfo bundleInfo, BuildConte
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 

@@ -13,4 +13,4 @@ public class TaskCopyBuildinFiles_RFBP : TaskCopyBuildinFiles, IBuildTask
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)
+* [YooAsset.Editor.IBuildTask](/docs/2.3.x/api/YooAsset.Editor/IBuildTask)

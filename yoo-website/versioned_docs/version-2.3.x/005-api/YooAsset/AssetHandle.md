@@ -129,7 +129,7 @@ public InstantiateOperation InstantiateAsync(bool actived = true)
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md)
+[YooAsset.InstantiateOperation](/docs/2.3.x/api/YooAsset/InstantiateOperation)
 
 ##### Parameters
 
@@ -146,7 +146,7 @@ public InstantiateOperation InstantiateAsync(Transform parent, bool actived = tr
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md)
+[YooAsset.InstantiateOperation](/docs/2.3.x/api/YooAsset/InstantiateOperation)
 
 ##### Parameters
 
@@ -164,7 +164,7 @@ public InstantiateOperation InstantiateAsync(Transform parent, bool worldPositio
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md)
+[YooAsset.InstantiateOperation](/docs/2.3.x/api/YooAsset/InstantiateOperation)
 
 ##### Parameters
 
@@ -183,7 +183,7 @@ public InstantiateOperation InstantiateAsync(Vector3 position, Quaternion rotati
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md)
+[YooAsset.InstantiateOperation](/docs/2.3.x/api/YooAsset/InstantiateOperation)
 
 ##### Parameters
 
@@ -202,7 +202,7 @@ public InstantiateOperation InstantiateAsync(Vector3 position, Quaternion rotati
 
 ##### Returns
 
-[YooAsset.InstantiateOperation](../YooAsset/InstantiateOperation.md)
+[YooAsset.InstantiateOperation](/docs/2.3.x/api/YooAsset/InstantiateOperation)
 
 ##### Parameters
 

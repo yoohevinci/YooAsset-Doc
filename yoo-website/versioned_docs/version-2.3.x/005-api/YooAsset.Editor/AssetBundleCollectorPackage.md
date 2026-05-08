@@ -98,7 +98,7 @@ public List<CollectAssetInfo> GetCollectAssets(CollectCommand command)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* |
+| [YooAsset.Editor.CollectCommand](/docs/2.3.x/api/YooAsset.Editor/CollectCommand) | *command* |
 
 ### GetAllTags()
 获取所有的资源标签

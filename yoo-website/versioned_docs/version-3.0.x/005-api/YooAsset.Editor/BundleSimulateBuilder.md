@@ -21,10 +21,10 @@ public static PackageBuildResult SimulateBuild(PackageBuildParameters buildParam
 
 ##### Returns
 
-[YooAsset.PackageBuildResult](../YooAsset/PackageBuildResult.md): 包裹构建结果
+[YooAsset.PackageBuildResult](/docs/3.0.x/api/YooAsset/PackageBuildResult): 包裹构建结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.PackageBuildParameters](../YooAsset/PackageBuildParameters.md) | *buildParam* | 包裹构建参数 |
+| [YooAsset.PackageBuildParameters](/docs/3.0.x/api/YooAsset/PackageBuildParameters) | *buildParam* | 包裹构建参数 |
 

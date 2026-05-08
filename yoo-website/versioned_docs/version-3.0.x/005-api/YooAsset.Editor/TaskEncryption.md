@@ -23,6 +23,6 @@ public void EncryptingBundleFiles(BuildParametersContext buildParametersContext,
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildParametersContext](../YooAsset.Editor/BuildParametersContext.md) | *buildParametersContext* | 构建参数上下文 |
-| [YooAsset.Editor.BuildMapContext](../YooAsset.Editor/BuildMapContext.md) | *buildMapContext* | 构建映射上下文 |
+| [YooAsset.Editor.BuildParametersContext](/docs/3.0.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* | 构建参数上下文 |
+| [YooAsset.Editor.BuildMapContext](/docs/3.0.x/api/YooAsset.Editor/BuildMapContext) | *buildMapContext* | 构建映射上下文 |
 

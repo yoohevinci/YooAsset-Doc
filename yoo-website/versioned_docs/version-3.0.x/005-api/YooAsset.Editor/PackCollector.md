@@ -17,4 +17,4 @@ public class PackCollector : IBundlePackRule
 
 ## Implements
 
-* [YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md)
+* [YooAsset.Editor.IBundlePackRule](/docs/3.0.x/api/YooAsset.Editor/IBundlePackRule)

@@ -21,7 +21,7 @@ public static PackageBuildResult Build(string packageName, int buildBundleType)
 
 ##### Returns
 
-[YooAsset.PackageBuildResult](../YooAsset/PackageBuildResult.md): 构建结果
+[YooAsset.PackageBuildResult](/docs/3.0.x/api/YooAsset/PackageBuildResult): 构建结果
 ##### Parameters
 
 | Type | Name | Description |

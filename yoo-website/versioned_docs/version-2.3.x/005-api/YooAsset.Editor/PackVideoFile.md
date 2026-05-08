@@ -15,4 +15,4 @@ public class PackVideoFile : IPackRule
 
 ## Implements
 
-* [YooAsset.Editor.IPackRule](../YooAsset.Editor/IPackRule.md)
+* [YooAsset.Editor.IPackRule](/docs/2.3.x/api/YooAsset.Editor/IPackRule)

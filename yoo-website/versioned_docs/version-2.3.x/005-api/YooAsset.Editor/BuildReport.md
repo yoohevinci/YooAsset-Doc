@@ -47,7 +47,7 @@ public ReportBundleInfo GetBundleInfo(string bundleName)
 
 ##### Returns
 
-[YooAsset.Editor.ReportBundleInfo](../YooAsset.Editor/ReportBundleInfo.md)
+[YooAsset.Editor.ReportBundleInfo](/docs/2.3.x/api/YooAsset.Editor/ReportBundleInfo)
 
 ##### Parameters
 
@@ -64,7 +64,7 @@ public ReportAssetInfo GetAssetInfo(string assetPath)
 
 ##### Returns
 
-[YooAsset.Editor.ReportAssetInfo](../YooAsset.Editor/ReportAssetInfo.md)
+[YooAsset.Editor.ReportAssetInfo](/docs/2.3.x/api/YooAsset.Editor/ReportAssetInfo)
 
 ##### Parameters
 
@@ -84,7 +84,7 @@ public static void Serialize(string savePath, BuildReport buildReport)
 | Type | Name |
 |:--- |:--- |
 | `System.String` | *savePath* |
-| [YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md) | *buildReport* |
+| [YooAsset.Editor.BuildReport](/docs/2.3.x/api/YooAsset.Editor/BuildReport) | *buildReport* |
 
 ### Deserialize(string)
 
@@ -95,7 +95,7 @@ public static BuildReport Deserialize(string jsonData)
 
 ##### Returns
 
-[YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md)
+[YooAsset.Editor.BuildReport](/docs/2.3.x/api/YooAsset.Editor/BuildReport)
 
 ##### Parameters
 

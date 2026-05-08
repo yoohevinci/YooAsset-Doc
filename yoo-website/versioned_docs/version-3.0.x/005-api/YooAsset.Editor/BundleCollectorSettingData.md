@@ -177,7 +177,7 @@ public static IGroupActiveRule GetGroupActiveRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IGroupActiveRule](../YooAsset.Editor/IGroupActiveRule.md): 激活规则实例
+[YooAsset.Editor.IGroupActiveRule](/docs/3.0.x/api/YooAsset.Editor/IGroupActiveRule): 激活规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -193,7 +193,7 @@ public static IAddressRule GetAddressRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IAddressRule](../YooAsset.Editor/IAddressRule.md): 寻址规则实例
+[YooAsset.Editor.IAddressRule](/docs/3.0.x/api/YooAsset.Editor/IAddressRule): 寻址规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -209,7 +209,7 @@ public static IBundlePackRule GetBundlePackRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md): 打包规则实例
+[YooAsset.Editor.IBundlePackRule](/docs/3.0.x/api/YooAsset.Editor/IBundlePackRule): 打包规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -225,7 +225,7 @@ public static IAssetFilterRule GetAssetFilterRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IAssetFilterRule](../YooAsset.Editor/IAssetFilterRule.md): 过滤规则实例
+[YooAsset.Editor.IAssetFilterRule](/docs/3.0.x/api/YooAsset.Editor/IAssetFilterRule): 过滤规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -241,7 +241,7 @@ public static IAssetIgnoreRule GetAssetIgnoreRuleInstance(string ruleName)
 
 ##### Returns
 
-[YooAsset.Editor.IAssetIgnoreRule](../YooAsset.Editor/IAssetIgnoreRule.md): 忽略规则实例
+[YooAsset.Editor.IAssetIgnoreRule](/docs/3.0.x/api/YooAsset.Editor/IAssetIgnoreRule): 忽略规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -296,7 +296,7 @@ public static BundleCollectorPackage CreatePackage(string packageName)
 
 ##### Returns
 
-[YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md): 新创建的资源包裹
+[YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage): 新创建的资源包裹
 ##### Parameters
 
 | Type | Name | Description |
@@ -314,7 +314,7 @@ public static void RemovePackage(BundleCollectorPackage package)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 要移除的资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 要移除的资源包裹 |
 
 ### ModifyPackage(BundleCollectorPackage)
 标记资源包裹已修改
@@ -327,7 +327,7 @@ public static void ModifyPackage(BundleCollectorPackage package)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 已修改的资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 已修改的资源包裹 |
 
 ### CreateGroup(BundleCollectorPackage, string)
 创建资源分组
@@ -338,12 +338,12 @@ public static BundleCollectorGroup CreateGroup(BundleCollectorPackage package, s
 
 ##### Returns
 
-[YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md): 新创建的资源分组
+[YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup): 新创建的资源分组
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
 | `System.String` | *groupName* | 资源分组名称 |
 
 ### RemoveGroup(BundleCollectorPackage, BundleCollectorGroup)
@@ -357,8 +357,8 @@ public static void RemoveGroup(BundleCollectorPackage package, BundleCollectorGr
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 要移除的资源分组 |
+| [YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 要移除的资源分组 |
 
 ### ModifyGroup(BundleCollectorPackage, BundleCollectorGroup)
 标记资源分组已修改
@@ -371,8 +371,8 @@ public static void ModifyGroup(BundleCollectorPackage package, BundleCollectorGr
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 已修改的资源分组 |
+| [YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 已修改的资源分组 |
 
 ### CreateCollector(BundleCollectorGroup, BundleCollector)
 创建资源收集器条目
@@ -385,8 +385,8 @@ public static void CreateCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 资源收集器配置 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](/docs/3.0.x/api/YooAsset.Editor/BundleCollector) | *collector* | 资源收集器配置 |
 
 ### RemoveCollector(BundleCollectorGroup, BundleCollector)
 移除资源收集器条目
@@ -399,8 +399,8 @@ public static void RemoveCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 要移除的资源收集器 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](/docs/3.0.x/api/YooAsset.Editor/BundleCollector) | *collector* | 要移除的资源收集器 |
 
 ### ModifyCollector(BundleCollectorGroup, BundleCollector)
 标记资源收集器已修改
@@ -413,8 +413,8 @@ public static void ModifyCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 已修改的资源收集器 |
+| [YooAsset.Editor.BundleCollectorGroup](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](/docs/3.0.x/api/YooAsset.Editor/BundleCollector) | *collector* | 已修改的资源收集器 |
 
 ### GetPackageAllTags(string)
 获取所有的资源标签

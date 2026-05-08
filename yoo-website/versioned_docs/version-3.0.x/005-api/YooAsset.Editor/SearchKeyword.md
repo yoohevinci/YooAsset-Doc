@@ -44,4 +44,4 @@ public bool CompareTo(string value)
 
 ## Implements
 
-* [YooAsset.Editor.ISearchCommand](../YooAsset.Editor/ISearchCommand.md)
+* [YooAsset.Editor.ISearchCommand](/docs/3.0.x/api/YooAsset.Editor/ISearchCommand)

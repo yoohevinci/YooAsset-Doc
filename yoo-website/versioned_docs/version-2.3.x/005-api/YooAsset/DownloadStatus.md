@@ -45,4 +45,4 @@ public static DownloadStatus CreateDefaultStatus()
 
 ##### Returns
 
-[YooAsset.DownloadStatus](../YooAsset/DownloadStatus.md)
+[YooAsset.DownloadStatus](/docs/2.3.x/api/YooAsset/DownloadStatus)

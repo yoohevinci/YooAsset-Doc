@@ -52,7 +52,7 @@ public void AddColumn(TableColumn column)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.TableColumn](../YooAsset.Editor/TableColumn.md) | *column* | 要添加的列定义 |
+| [YooAsset.Editor.TableColumn](/docs/3.0.x/api/YooAsset.Editor/TableColumn) | *column* | 要添加的列定义 |
 
 ### AddColumns(IList&lt;TableColumn&gt;)
 批量添加单元列

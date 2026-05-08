@@ -28,7 +28,7 @@ public void SetContextObject(IContextObject contextObject)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.IContextObject](../YooAsset.Editor/IContextObject.md) | *contextObject* |
+| [YooAsset.Editor.IContextObject](/docs/2.3.x/api/YooAsset.Editor/IContextObject) | *contextObject* |
 
 ### GetContextObject&lt;T&gt;()
 获取上下文对象

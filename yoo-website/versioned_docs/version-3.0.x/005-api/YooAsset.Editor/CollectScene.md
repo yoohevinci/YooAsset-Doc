@@ -34,9 +34,9 @@ public bool IsCollectAsset(AssetFilterRuleData data)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.AssetFilterRuleData](../YooAsset.Editor/AssetFilterRuleData.md) | *data* | 过滤规则数据 |
+| [YooAsset.Editor.AssetFilterRuleData](/docs/3.0.x/api/YooAsset.Editor/AssetFilterRuleData) | *data* | 过滤规则数据 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IAssetFilterRule](../YooAsset.Editor/IAssetFilterRule.md)
+* [YooAsset.Editor.IAssetFilterRule](/docs/3.0.x/api/YooAsset.Editor/IAssetFilterRule)

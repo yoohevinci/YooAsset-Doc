@@ -95,7 +95,7 @@ public void SetFlag(ECollectFlags flag, bool isOn)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.ECollectFlags](../YooAsset.Editor/ECollectFlags.md) | *flag* |
+| [YooAsset.Editor.ECollectFlags](/docs/2.3.x/api/YooAsset.Editor/ECollectFlags) | *flag* |
 | `System.Boolean` | *isOn* |
 
 ### IsFlagSet(ECollectFlags)
@@ -113,5 +113,5 @@ public bool IsFlagSet(ECollectFlags flag)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.ECollectFlags](../YooAsset.Editor/ECollectFlags.md) | *flag* |
+| [YooAsset.Editor.ECollectFlags](/docs/2.3.x/api/YooAsset.Editor/ECollectFlags) | *flag* |
 

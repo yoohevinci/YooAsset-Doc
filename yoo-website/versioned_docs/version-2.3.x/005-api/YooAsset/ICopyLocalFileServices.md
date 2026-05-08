@@ -25,6 +25,6 @@ void CopyFile(LocalFileInfo sourceFileInfo, string destFilePath)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.LocalFileInfo](../YooAsset/LocalFileInfo.md) | *sourceFileInfo* |
+| [YooAsset.LocalFileInfo](/docs/2.3.x/api/YooAsset/LocalFileInfo) | *sourceFileInfo* |
 | `System.String` | *destFilePath* |
 

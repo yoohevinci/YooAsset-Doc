@@ -51,7 +51,7 @@ public static ECompressOption GetPackageCompressOption(string packageName, strin
 
 ##### Returns
 
-[YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md): 压缩选项
+[YooAsset.Editor.ECompressOption](/docs/3.0.x/api/YooAsset.Editor/ECompressOption): 压缩选项
 ##### Parameters
 
 | Type | Name | Description |
@@ -72,7 +72,7 @@ public static void SetPackageCompressOption(string packageName, string buildPipe
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md) | *compressOption* | 压缩选项 |
+| [YooAsset.Editor.ECompressOption](/docs/3.0.x/api/YooAsset.Editor/ECompressOption) | *compressOption* | 压缩选项 |
 
 ### GetPackageFileNameStyle(string, string)
 获取包裹的文件名样式
@@ -83,7 +83,7 @@ public static EFileNameStyle GetPackageFileNameStyle(string packageName, string 
 
 ##### Returns
 
-[YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md): 文件名样式
+[YooAsset.EFileNameStyle](/docs/3.0.x/api/YooAsset/EFileNameStyle): 文件名样式
 ##### Parameters
 
 | Type | Name | Description |
@@ -104,7 +104,7 @@ public static void SetPackageFileNameStyle(string packageName, string buildPipel
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md) | *fileNameStyle* | 文件名样式 |
+| [YooAsset.EFileNameStyle](/docs/3.0.x/api/YooAsset/EFileNameStyle) | *fileNameStyle* | 文件名样式 |
 
 ### GetPackageBundledCopyOption(string, string)
 获取包裹的首包资源的拷贝选项
@@ -115,7 +115,7 @@ public static EBundledCopyOption GetPackageBundledCopyOption(string packageName,
 
 ##### Returns
 
-[YooAsset.Editor.EBundledCopyOption](../YooAsset.Editor/EBundledCopyOption.md): 首包资源的拷贝选项
+[YooAsset.Editor.EBundledCopyOption](/docs/3.0.x/api/YooAsset.Editor/EBundledCopyOption): 首包资源的拷贝选项
 ##### Parameters
 
 | Type | Name | Description |
@@ -136,7 +136,7 @@ public static void SetPackageBundledCopyOption(string packageName, string buildP
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.Editor.EBundledCopyOption](../YooAsset.Editor/EBundledCopyOption.md) | *bundledCopyOption* | 首包资源的拷贝选项 |
+| [YooAsset.Editor.EBundledCopyOption](/docs/3.0.x/api/YooAsset.Editor/EBundledCopyOption) | *bundledCopyOption* | 首包资源的拷贝选项 |
 
 ### GetPackageBundledCopyParams(string, string)
 获取包裹的首包资源的拷贝参数

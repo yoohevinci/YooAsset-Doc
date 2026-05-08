@@ -45,7 +45,7 @@ public static PackRuleResult CreateShadersPackRuleResult()
 
 ##### Returns
 
-[YooAsset.Editor.PackRuleResult](../YooAsset.Editor/PackRuleResult.md)
+[YooAsset.Editor.PackRuleResult](/docs/2.3.x/api/YooAsset.Editor/PackRuleResult)
 ### CreateMonosPackRuleResult()
 
 
@@ -55,4 +55,4 @@ public static PackRuleResult CreateMonosPackRuleResult()
 
 ##### Returns
 
-[YooAsset.Editor.PackRuleResult](../YooAsset.Editor/PackRuleResult.md)
+[YooAsset.Editor.PackRuleResult](/docs/2.3.x/api/YooAsset.Editor/PackRuleResult)

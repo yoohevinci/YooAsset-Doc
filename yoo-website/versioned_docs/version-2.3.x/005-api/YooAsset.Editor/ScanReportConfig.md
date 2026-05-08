@@ -20,7 +20,7 @@ public static ScanReport ImportJsonConfig(string filePath)
 
 ##### Returns
 
-[YooAsset.Editor.ScanReport](../YooAsset.Editor/ScanReport.md)
+[YooAsset.Editor.ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport)
 
 ##### Parameters
 
@@ -40,5 +40,5 @@ public static void ExportJsonConfig(string savePath, ScanReport scanReport)
 | Type | Name |
 |:--- |:--- |
 | `System.String` | *savePath* |
-| [YooAsset.Editor.ScanReport](../YooAsset.Editor/ScanReport.md) | *scanReport* |
+| [YooAsset.Editor.ScanReport](/docs/2.3.x/api/YooAsset.Editor/ScanReport) | *scanReport* |
 

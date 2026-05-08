@@ -33,12 +33,12 @@ public ResourceDownloaderOperation CreateResourceDownloader(ResourceDownloaderOp
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md): 资源下载操作实例
+[YooAsset.ResourceDownloaderOperation](/docs/3.0.x/api/YooAsset/ResourceDownloaderOperation): 资源下载操作实例
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ResourceDownloaderOptions](../YooAsset/ResourceDownloaderOptions.md) | *options* | 资源下载选项 |
+| [YooAsset.ResourceDownloaderOptions](/docs/3.0.x/api/YooAsset/ResourceDownloaderOptions) | *options* | 资源下载选项 |
 
 ### CreateBundleDownloader(BundleDownloaderOptions)
 创建资源下载器，用于下载指定的资源信息列表依赖的资源包文件。
@@ -49,12 +49,12 @@ public ResourceDownloaderOperation CreateBundleDownloader(BundleDownloaderOption
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](../YooAsset/ResourceDownloaderOperation.md): 资源下载操作实例
+[YooAsset.ResourceDownloaderOperation](/docs/3.0.x/api/YooAsset/ResourceDownloaderOperation): 资源下载操作实例
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDownloaderOptions](../YooAsset/BundleDownloaderOptions.md) | *options* | 资源包下载选项 |
+| [YooAsset.BundleDownloaderOptions](/docs/3.0.x/api/YooAsset/BundleDownloaderOptions) | *options* | 资源包下载选项 |
 
 
 ## Implements

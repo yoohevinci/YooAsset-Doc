@@ -53,7 +53,7 @@ public static DownloadReport CreateProgress(long downloadedBytes, float download
 
 ##### Returns
 
-[YooAsset.DownloadReport](../YooAsset/DownloadReport.md): 不含 HTTP 状态信息的进度报告
+[YooAsset.DownloadReport](/docs/3.0.x/api/YooAsset/DownloadReport): 不含 HTTP 状态信息的进度报告
 ##### Parameters
 
 | Type | Name | Description |
@@ -70,7 +70,7 @@ public static DownloadReport CreateFinished(long httpCode, string httpError, lon
 
 ##### Returns
 
-[YooAsset.DownloadReport](../YooAsset/DownloadReport.md): 包含完整 HTTP 状态信息的最终报告
+[YooAsset.DownloadReport](/docs/3.0.x/api/YooAsset/DownloadReport): 包含完整 HTTP 状态信息的最终报告
 ##### Parameters
 
 | Type | Name | Description |

@@ -55,7 +55,7 @@ public void PackAsset(BuildAssetInfo assetInfo)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildAssetInfo](../YooAsset.Editor/BuildAssetInfo.md) | *assetInfo* |
+| [YooAsset.Editor.BuildAssetInfo](/docs/2.3.x/api/YooAsset.Editor/BuildAssetInfo) | *assetInfo* |
 
 ### IsContainsBundle(string)
 是否包含资源包
@@ -83,7 +83,7 @@ public BuildBundleInfo GetBundleInfo(string bundleName)
 
 ##### Returns
 
-[YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md)
+[YooAsset.Editor.BuildBundleInfo](/docs/2.3.x/api/YooAsset.Editor/BuildBundleInfo)
 
 ##### Parameters
 
@@ -117,4 +117,4 @@ public void CreateEmptyBundleInfo(string bundleName)
 
 ## Implements
 
-* [YooAsset.Editor.IContextObject](../YooAsset.Editor/IContextObject.md)
+* [YooAsset.Editor.IContextObject](/docs/2.3.x/api/YooAsset.Editor/IContextObject)

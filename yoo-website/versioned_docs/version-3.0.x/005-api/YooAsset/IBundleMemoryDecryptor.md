@@ -28,5 +28,5 @@ byte[] GetDecryptedData(BundleDecryptArgs args)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDecryptArgs](../YooAsset/BundleDecryptArgs.md) | *args* | 解密操作的输入参数 |
+| [YooAsset.BundleDecryptArgs](/docs/3.0.x/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
 

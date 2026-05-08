@@ -26,10 +26,10 @@ protected override string[] GetBundleDepends(BuildContext context, string bundle
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* |
+| [YooAsset.Editor.BuildContext](/docs/2.3.x/api/YooAsset.Editor/BuildContext) | *context* |
 | `System.String` | *bundleName* |
 
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)
+* [YooAsset.Editor.IBuildTask](/docs/2.3.x/api/YooAsset.Editor/IBuildTask)

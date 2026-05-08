@@ -98,7 +98,7 @@ public void PackAsset(BuildAssetInfo buildAsset)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildAssetInfo](../YooAsset.Editor/BuildAssetInfo.md) | *buildAsset* |
+| [YooAsset.Editor.BuildAssetInfo](/docs/2.3.x/api/YooAsset.Editor/BuildAssetInfo) | *buildAsset* |
 
 ### IsContainsPackAsset(string)
 是否包含指定资源
@@ -136,7 +136,7 @@ public BuildAssetInfo GetPackAssetInfo(string assetPath)
 
 ##### Returns
 
-[YooAsset.Editor.BuildAssetInfo](../YooAsset.Editor/BuildAssetInfo.md)
+[YooAsset.Editor.BuildAssetInfo](/docs/2.3.x/api/YooAsset.Editor/BuildAssetInfo)
 
 ##### Parameters
 

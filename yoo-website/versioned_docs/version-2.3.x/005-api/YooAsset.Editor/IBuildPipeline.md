@@ -20,12 +20,12 @@ BuildResult Run(BuildParameters buildParameters, bool enableLog)
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md)
+[YooAsset.Editor.BuildResult](/docs/2.3.x/api/YooAsset.Editor/BuildResult)
 
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* |
+| [YooAsset.Editor.BuildParameters](/docs/2.3.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
 | `System.Boolean` | *enableLog* |
 

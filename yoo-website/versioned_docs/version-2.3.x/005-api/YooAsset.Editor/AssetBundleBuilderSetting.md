@@ -51,7 +51,7 @@ public static ECompressOption GetPackageCompressOption(string packageName, strin
 
 ##### Returns
 
-[YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md)
+[YooAsset.Editor.ECompressOption](/docs/2.3.x/api/YooAsset.Editor/ECompressOption)
 
 ##### Parameters
 
@@ -73,7 +73,7 @@ public static void SetPackageCompressOption(string packageName, string buildPipe
 |:--- |:--- |
 | `System.String` | *packageName* |
 | `System.String` | *buildPipeline* |
-| [YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md) | *compressOption* |
+| [YooAsset.Editor.ECompressOption](/docs/2.3.x/api/YooAsset.Editor/ECompressOption) | *compressOption* |
 
 ### GetPackageFileNameStyle(string, string)
 
@@ -84,7 +84,7 @@ public static EFileNameStyle GetPackageFileNameStyle(string packageName, string 
 
 ##### Returns
 
-[YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md)
+[YooAsset.EFileNameStyle](/docs/2.3.x/api/YooAsset/EFileNameStyle)
 
 ##### Parameters
 
@@ -106,7 +106,7 @@ public static void SetPackageFileNameStyle(string packageName, string buildPipel
 |:--- |:--- |
 | `System.String` | *packageName* |
 | `System.String` | *buildPipeline* |
-| [YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md) | *fileNameStyle* |
+| [YooAsset.EFileNameStyle](/docs/2.3.x/api/YooAsset/EFileNameStyle) | *fileNameStyle* |
 
 ### GetPackageBuildinFileCopyOption(string, string)
 
@@ -117,7 +117,7 @@ public static EBuildinFileCopyOption GetPackageBuildinFileCopyOption(string pack
 
 ##### Returns
 
-[YooAsset.Editor.EBuildinFileCopyOption](../YooAsset.Editor/EBuildinFileCopyOption.md)
+[YooAsset.Editor.EBuildinFileCopyOption](/docs/2.3.x/api/YooAsset.Editor/EBuildinFileCopyOption)
 
 ##### Parameters
 
@@ -139,7 +139,7 @@ public static void SetPackageBuildinFileCopyOption(string packageName, string bu
 |:--- |:--- |
 | `System.String` | *packageName* |
 | `System.String` | *buildPipeline* |
-| [YooAsset.Editor.EBuildinFileCopyOption](../YooAsset.Editor/EBuildinFileCopyOption.md) | *buildinFileCopyOption* |
+| [YooAsset.Editor.EBuildinFileCopyOption](/docs/2.3.x/api/YooAsset.Editor/EBuildinFileCopyOption) | *buildinFileCopyOption* |
 
 ### GetPackageBuildinFileCopyParams(string, string)
 

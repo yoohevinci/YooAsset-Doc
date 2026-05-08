@@ -73,7 +73,7 @@ public int CompareTo(AssetInfo other)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.AssetInfo](../YooAsset.Editor/AssetInfo.md) | *other* |
+| [YooAsset.Editor.AssetInfo](/docs/2.3.x/api/YooAsset.Editor/AssetInfo) | *other* |
 
 
 ## Implements

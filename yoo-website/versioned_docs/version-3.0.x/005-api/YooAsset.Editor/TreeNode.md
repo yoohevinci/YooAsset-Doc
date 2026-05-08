@@ -48,7 +48,7 @@ public void AddChild(TreeNode child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.TreeNode](../YooAsset.Editor/TreeNode.md) | *child* | 要添加的子节点 |
+| [YooAsset.Editor.TreeNode](/docs/3.0.x/api/YooAsset.Editor/TreeNode) | *child* | 要添加的子节点 |
 
 ### ClearChildren()
 清理所有子节点

@@ -24,5 +24,5 @@ public bool PingAssetObject()
 `System.Boolean`: 定位成功返回 true；资源不存在时返回 false。
 ## Implements
 
-* [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md)
+* [YooAsset.Editor.ITableCell](/docs/3.0.x/api/YooAsset.Editor/ITableCell)
 * `System.IComparable`

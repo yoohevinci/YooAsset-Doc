@@ -143,7 +143,7 @@ protected void AddChildOperation(AsyncOperationBase child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *child* | 要添加的子任务 |
+| [YooAsset.AsyncOperationBase](/docs/3.0.x/api/YooAsset/AsyncOperationBase) | *child* | 要添加的子任务 |
 
 ### RemoveChildOperation(AsyncOperationBase)
 移除子任务
@@ -156,7 +156,7 @@ protected void RemoveChildOperation(AsyncOperationBase child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *child* | 要移除的子任务 |
+| [YooAsset.AsyncOperationBase](/docs/3.0.x/api/YooAsset/AsyncOperationBase) | *child* | 要移除的子任务 |
 
 ### ExecuteOnce()
 执行一次更新逻辑
@@ -205,7 +205,7 @@ public int CompareTo(AsyncOperationBase other)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *other* |
+| [YooAsset.AsyncOperationBase](/docs/3.0.x/api/YooAsset/AsyncOperationBase) | *other* |
 
 ### GetAwaiter()
 获取用于 async/await 的等待器
@@ -216,7 +216,7 @@ public OperationAwaiter GetAwaiter()
 
 ##### Returns
 
-[YooAsset.OperationAwaiter](../YooAsset/OperationAwaiter.md): 当前操作的等待器## Events
+[YooAsset.OperationAwaiter](/docs/3.0.x/api/YooAsset/OperationAwaiter): 当前操作的等待器## Events
 ### Completed
 异步操作的完成事件
 

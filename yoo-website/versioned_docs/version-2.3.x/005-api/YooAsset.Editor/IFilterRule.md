@@ -34,5 +34,5 @@ bool IsCollectAsset(FilterRuleData data)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.FilterRuleData](../YooAsset.Editor/FilterRuleData.md) | *data* |
+| [YooAsset.Editor.FilterRuleData](/docs/2.3.x/api/YooAsset.Editor/FilterRuleData) | *data* |
 
