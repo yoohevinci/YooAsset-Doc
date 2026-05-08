@@ -149,9 +149,7 @@ string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/yoo"
 
 **微信官方文档**
 
-文档：https://wechat-miniprogram.github.io/minigame-unity-webgl-transform/Design/FileCache.html
-
-文档：https://gitee.com/wechat-minigame/minigame-unity-webgl-transform/blob/main/Design/FileCache.md
+文档：https://developers.weixin.qq.com/minigame/dev/guide/game-engine/unity-webgl-transform.html
 
 ![image](./Image/Solution-img4.png)
 

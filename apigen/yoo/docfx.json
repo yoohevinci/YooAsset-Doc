@@ -7,17 +7,17 @@
             "YooAsset.Editor.csproj",
             "YooAsset.csproj"
           ],
-          "src": "../../../YooAPI/"
+          "src": "../../../YooAsset-Dev/"
         }
       ],
       "dest": "api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false,
       "namespaceLayout": "flattened",
-      "filter": "namespace_ignore.yml",
+      "filter": "namespace_ignore.yml"
     }
   ],
   "globalMetadata": {
     "remoteRepositoryUrl": "https://github.com/tuyoogame/YooAsset"
-  },
+  }
 }
