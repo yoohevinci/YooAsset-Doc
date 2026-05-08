@@ -4,10 +4,9 @@
       "src": [
         {
           "files": [
-            "YooAsset.Editor.csproj",
             "YooAsset.csproj"
           ],
-          "src": "../../../YooAsset-Dev/"
+          "src": "../../../YooAsset-API/"
         }
       ],
       "dest": "api",
@@ -18,6 +17,7 @@
     }
   ],
   "globalMetadata": {
-    "remoteRepositoryUrl": "https://github.com/tuyoogame/YooAsset"
+    "remoteRepositoryUrl": "https://github.com/tuyoogame/YooAsset",
+    "remoteRepositoryBranch": "yoo3"
   }
 }

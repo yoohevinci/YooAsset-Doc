@@ -36,7 +36,7 @@ public void AddRootItem(TreeNode rootNode)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.TreeNode](/docs/3.0.x/api/YooAsset.Editor/TreeNode) | *rootNode* | 要添加的根节点 |
+| [YooAsset.Editor.TreeNode](/docs/api/YooAsset.Editor/TreeNode) | *rootNode* | 要添加的根节点 |
 
 ### AddRootItems(List&lt;TreeNode&gt;)
 批量添加根节点

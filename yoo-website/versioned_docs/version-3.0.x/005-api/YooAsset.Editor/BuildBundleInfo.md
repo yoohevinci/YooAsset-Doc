@@ -98,7 +98,7 @@ public void PackAsset(BuildAssetInfo buildAsset)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildAssetInfo](/docs/3.0.x/api/YooAsset.Editor/BuildAssetInfo) | *buildAsset* | 待打包的资源信息 |
+| [YooAsset.Editor.BuildAssetInfo](/docs/api/YooAsset.Editor/BuildAssetInfo) | *buildAsset* | 待打包的资源信息 |
 
 ### IsContainsPackAsset(string)
 检查是否包含指定资源
@@ -143,7 +143,7 @@ public BuildAssetInfo GetPackAssetInfo(string assetPath)
 
 ##### Returns
 
-[YooAsset.Editor.BuildAssetInfo](/docs/3.0.x/api/YooAsset.Editor/BuildAssetInfo): 对应的构建资源信息
+[YooAsset.Editor.BuildAssetInfo](/docs/api/YooAsset.Editor/BuildAssetInfo): 对应的构建资源信息
 ##### Parameters
 
 | Type | Name | Description |

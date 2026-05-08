@@ -26,9 +26,9 @@ public bool IsIgnoreAsset(EditorAssetInfo assetInfo)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EditorAssetInfo](/docs/3.0.x/api/YooAsset.Editor/EditorAssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.Editor.EditorAssetInfo](/docs/api/YooAsset.Editor/EditorAssetInfo) | *assetInfo* | 资源信息 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IAssetIgnoreRule](/docs/3.0.x/api/YooAsset.Editor/IAssetIgnoreRule)
+* [YooAsset.Editor.IAssetIgnoreRule](/docs/api/YooAsset.Editor/IAssetIgnoreRule)

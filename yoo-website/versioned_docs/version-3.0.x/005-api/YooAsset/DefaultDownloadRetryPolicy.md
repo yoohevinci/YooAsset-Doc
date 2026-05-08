@@ -50,4 +50,4 @@ public float CalculateRetryDelay(int retryCount, float previousDelay)
 
 ## Implements
 
-* [YooAsset.IDownloadRetryPolicy](/docs/3.0.x/api/YooAsset/IDownloadRetryPolicy)
+* [YooAsset.IDownloadRetryPolicy](/docs/api/YooAsset/IDownloadRetryPolicy)

@@ -46,12 +46,12 @@ public InitializePackageOperation InitializePackageAsync(InitializePackageOption
 
 ##### Returns
 
-[YooAsset.InitializePackageOperation](/docs/3.0.x/api/YooAsset/InitializePackageOperation): 返回初始化操作对象
+[YooAsset.InitializePackageOperation](/docs/api/YooAsset/InitializePackageOperation): 返回初始化操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.InitializePackageOptions](/docs/3.0.x/api/YooAsset/InitializePackageOptions) | *options* | 初始化参数 |
+| [YooAsset.InitializePackageOptions](/docs/api/YooAsset/InitializePackageOptions) | *options* | 初始化参数 |
 
 ### DestroyPackageAsync()
 销毁包裹
@@ -62,7 +62,7 @@ public DestroyPackageOperation DestroyPackageAsync()
 
 ##### Returns
 
-[YooAsset.DestroyPackageOperation](/docs/3.0.x/api/YooAsset/DestroyPackageOperation): 返回销毁包裹操作对象### RequestPackageVersionAsync()
+[YooAsset.DestroyPackageOperation](/docs/api/YooAsset/DestroyPackageOperation): 返回销毁包裹操作对象### RequestPackageVersionAsync()
 请求最新的资源版本
 
 ```csharp title="Declaration"
@@ -71,7 +71,7 @@ public RequestPackageVersionOperation RequestPackageVersionAsync()
 
 ##### Returns
 
-[YooAsset.RequestPackageVersionOperation](/docs/3.0.x/api/YooAsset/RequestPackageVersionOperation): 返回请求版本操作对象### RequestPackageVersionAsync(RequestPackageVersionOptions)
+[YooAsset.RequestPackageVersionOperation](/docs/api/YooAsset/RequestPackageVersionOperation): 返回请求版本操作对象### RequestPackageVersionAsync(RequestPackageVersionOptions)
 请求最新的资源版本
 
 ```csharp title="Declaration"
@@ -80,12 +80,12 @@ public RequestPackageVersionOperation RequestPackageVersionAsync(RequestPackageV
 
 ##### Returns
 
-[YooAsset.RequestPackageVersionOperation](/docs/3.0.x/api/YooAsset/RequestPackageVersionOperation): 返回请求版本操作对象
+[YooAsset.RequestPackageVersionOperation](/docs/api/YooAsset/RequestPackageVersionOperation): 返回请求版本操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.RequestPackageVersionOptions](/docs/3.0.x/api/YooAsset/RequestPackageVersionOptions) | *options* | 请求版本选项 |
+| [YooAsset.RequestPackageVersionOptions](/docs/api/YooAsset/RequestPackageVersionOptions) | *options* | 请求版本选项 |
 
 ### LoadPackageManifestAsync(LoadPackageManifestOptions)
 加载指定版本的资源清单
@@ -96,12 +96,12 @@ public LoadPackageManifestOperation LoadPackageManifestAsync(LoadPackageManifest
 
 ##### Returns
 
-[YooAsset.LoadPackageManifestOperation](/docs/3.0.x/api/YooAsset/LoadPackageManifestOperation): 返回加载清单操作对象
+[YooAsset.LoadPackageManifestOperation](/docs/api/YooAsset/LoadPackageManifestOperation): 返回加载清单操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.LoadPackageManifestOptions](/docs/3.0.x/api/YooAsset/LoadPackageManifestOptions) | *options* | 加载清单选项 |
+| [YooAsset.LoadPackageManifestOptions](/docs/api/YooAsset/LoadPackageManifestOptions) | *options* | 加载清单选项 |
 
 ### PrefetchManifestAsync(PrefetchManifestOptions)
 预取指定版本的包裹资源清单
@@ -112,12 +112,12 @@ public PrefetchManifestOperation PrefetchManifestAsync(PrefetchManifestOptions o
 
 ##### Returns
 
-[YooAsset.PrefetchManifestOperation](/docs/3.0.x/api/YooAsset/PrefetchManifestOperation): 返回预取清单操作对象
+[YooAsset.PrefetchManifestOperation](/docs/api/YooAsset/PrefetchManifestOperation): 返回预取清单操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.PrefetchManifestOptions](/docs/3.0.x/api/YooAsset/PrefetchManifestOptions) | *options* | 预取清单选项 |
+| [YooAsset.PrefetchManifestOptions](/docs/api/YooAsset/PrefetchManifestOptions) | *options* | 预取清单选项 |
 
 ### ClearCacheAsync(ClearCacheOptions)
 清理缓存文件
@@ -128,12 +128,12 @@ public ClearCacheOperation ClearCacheAsync(ClearCacheOptions options)
 
 ##### Returns
 
-[YooAsset.ClearCacheOperation](/docs/3.0.x/api/YooAsset/ClearCacheOperation): 返回清理缓存操作对象
+[YooAsset.ClearCacheOperation](/docs/api/YooAsset/ClearCacheOperation): 返回清理缓存操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ClearCacheOptions](/docs/3.0.x/api/YooAsset/ClearCacheOptions) | *options* | 清理缓存选项 |
+| [YooAsset.ClearCacheOptions](/docs/api/YooAsset/ClearCacheOptions) | *options* | 清理缓存选项 |
 
 ### GetPackageVersion()
 获取当前加载包裹的版本信息
@@ -162,7 +162,7 @@ public PackageDetails GetPackageDetails()
 
 ##### Returns
 
-[YooAsset.PackageDetails](/docs/3.0.x/api/YooAsset/PackageDetails): 返回包含包裹配置的详细信息对象### UnloadAllAssetsAsync()
+[YooAsset.PackageDetails](/docs/api/YooAsset/PackageDetails): 返回包含包裹配置的详细信息对象### UnloadAllAssetsAsync()
 强制回收所有资源
 
 ```csharp title="Declaration"
@@ -171,7 +171,7 @@ public UnloadAllAssetsOperation UnloadAllAssetsAsync()
 
 ##### Returns
 
-[YooAsset.UnloadAllAssetsOperation](/docs/3.0.x/api/YooAsset/UnloadAllAssetsOperation): 返回卸载资源操作对象### UnloadAllAssetsAsync(UnloadAllAssetsOptions)
+[YooAsset.UnloadAllAssetsOperation](/docs/api/YooAsset/UnloadAllAssetsOperation): 返回卸载资源操作对象### UnloadAllAssetsAsync(UnloadAllAssetsOptions)
 强制回收所有资源
 
 ```csharp title="Declaration"
@@ -180,12 +180,12 @@ public UnloadAllAssetsOperation UnloadAllAssetsAsync(UnloadAllAssetsOptions opti
 
 ##### Returns
 
-[YooAsset.UnloadAllAssetsOperation](/docs/3.0.x/api/YooAsset/UnloadAllAssetsOperation): 返回卸载资源操作对象
+[YooAsset.UnloadAllAssetsOperation](/docs/api/YooAsset/UnloadAllAssetsOperation): 返回卸载资源操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.UnloadAllAssetsOptions](/docs/3.0.x/api/YooAsset/UnloadAllAssetsOptions) | *options* | 卸载选项 |
+| [YooAsset.UnloadAllAssetsOptions](/docs/api/YooAsset/UnloadAllAssetsOptions) | *options* | 卸载选项 |
 
 ### UnloadUnusedAssetsAsync()
 回收不再使用的资源
@@ -196,7 +196,7 @@ public UnloadUnusedAssetsOperation UnloadUnusedAssetsAsync()
 
 ##### Returns
 
-[YooAsset.UnloadUnusedAssetsOperation](/docs/3.0.x/api/YooAsset/UnloadUnusedAssetsOperation): 返回卸载未使用资源操作对象### UnloadUnusedAssetsAsync(UnloadUnusedAssetsOptions)
+[YooAsset.UnloadUnusedAssetsOperation](/docs/api/YooAsset/UnloadUnusedAssetsOperation): 返回卸载未使用资源操作对象### UnloadUnusedAssetsAsync(UnloadUnusedAssetsOptions)
 回收不再使用的资源
 
 ```csharp title="Declaration"
@@ -205,12 +205,12 @@ public UnloadUnusedAssetsOperation UnloadUnusedAssetsAsync(UnloadUnusedAssetsOpt
 
 ##### Returns
 
-[YooAsset.UnloadUnusedAssetsOperation](/docs/3.0.x/api/YooAsset/UnloadUnusedAssetsOperation): 返回卸载未使用资源操作对象
+[YooAsset.UnloadUnusedAssetsOperation](/docs/api/YooAsset/UnloadUnusedAssetsOperation): 返回卸载未使用资源操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.UnloadUnusedAssetsOptions](/docs/3.0.x/api/YooAsset/UnloadUnusedAssetsOptions) | *options* | 卸载选项 |
+| [YooAsset.UnloadUnusedAssetsOptions](/docs/api/YooAsset/UnloadUnusedAssetsOptions) | *options* | 卸载选项 |
 
 ### TryUnloadUnusedAsset(string, int)
 尝试卸载指定的未使用资源
@@ -237,7 +237,7 @@ public void TryUnloadUnusedAsset(AssetInfo assetInfo, int loopCount = 10)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.Int32` | *loopCount* | 最大循环卸载次数 |
 
 ### GetDownloadSize(string)
@@ -270,7 +270,7 @@ public long GetDownloadSize(AssetInfo assetInfo)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### GetAllAssetInfos()
 获取所有的资源信息
@@ -322,7 +322,7 @@ public AssetInfo GetAssetInfo(string location)
 
 ##### Returns
 
-[YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo): 返回资源信息对象
+[YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo): 返回资源信息对象
 ##### Parameters
 
 | Type | Name | Description |
@@ -338,7 +338,7 @@ public AssetInfo GetAssetInfo(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo): 返回资源信息对象
+[YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo): 返回资源信息对象
 ##### Parameters
 
 | Type | Name | Description |
@@ -355,7 +355,7 @@ public AssetInfo GetAssetInfoByGuid(string assetGuid)
 
 ##### Returns
 
-[YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo): 返回资源信息对象
+[YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo): 返回资源信息对象
 ##### Parameters
 
 | Type | Name | Description |
@@ -371,7 +371,7 @@ public AssetInfo GetAssetInfoByGuid(string assetGuid, Type type)
 
 ##### Returns
 
-[YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo): 返回资源信息对象
+[YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo): 返回资源信息对象
 ##### Parameters
 
 | Type | Name | Description |
@@ -404,12 +404,12 @@ public RawFileHandle LoadRawFileSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](/docs/3.0.x/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
+[YooAsset.RawFileHandle](/docs/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadRawFileSync(string)
 同步加载原生文件
@@ -420,7 +420,7 @@ public RawFileHandle LoadRawFileSync(string location)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](/docs/3.0.x/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
+[YooAsset.RawFileHandle](/docs/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -436,12 +436,12 @@ public RawFileHandle LoadRawFileAsync(AssetInfo assetInfo, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](/docs/3.0.x/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
+[YooAsset.RawFileHandle](/docs/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* | 加载的优先级 |
 
 ### LoadRawFileAsync(string, uint)
@@ -453,7 +453,7 @@ public RawFileHandle LoadRawFileAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.RawFileHandle](/docs/3.0.x/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
+[YooAsset.RawFileHandle](/docs/api/YooAsset/RawFileHandle): 返回原生文件操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -470,7 +470,7 @@ public SceneHandle LoadSceneSync(string location, LoadSceneMode sceneMode = Load
 
 ##### Returns
 
-[YooAsset.SceneHandle](/docs/3.0.x/api/YooAsset/SceneHandle): 返回场景操作句柄
+[YooAsset.SceneHandle](/docs/api/YooAsset/SceneHandle): 返回场景操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -488,12 +488,12 @@ public SceneHandle LoadSceneSync(AssetInfo assetInfo, LoadSceneMode sceneMode = 
 
 ##### Returns
 
-[YooAsset.SceneHandle](/docs/3.0.x/api/YooAsset/SceneHandle): 返回场景操作句柄
+[YooAsset.SceneHandle](/docs/api/YooAsset/SceneHandle): 返回场景操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
 | `UnityEngine.SceneManagement.LoadSceneMode` | *sceneMode* | 场景加载模式 |
 | `UnityEngine.SceneManagement.LocalPhysicsMode` | *physicsMode* | 场景物理模式 |
 
@@ -506,7 +506,7 @@ public SceneHandle LoadSceneAsync(string location, LoadSceneMode sceneMode = Loa
 
 ##### Returns
 
-[YooAsset.SceneHandle](/docs/3.0.x/api/YooAsset/SceneHandle): 返回场景操作句柄
+[YooAsset.SceneHandle](/docs/api/YooAsset/SceneHandle): 返回场景操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -526,12 +526,12 @@ public SceneHandle LoadSceneAsync(AssetInfo assetInfo, LoadSceneMode sceneMode =
 
 ##### Returns
 
-[YooAsset.SceneHandle](/docs/3.0.x/api/YooAsset/SceneHandle): 返回场景操作句柄
+[YooAsset.SceneHandle](/docs/api/YooAsset/SceneHandle): 返回场景操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 场景的资源信息 |
 | `UnityEngine.SceneManagement.LoadSceneMode` | *sceneMode* | 场景加载模式 |
 | `UnityEngine.SceneManagement.LocalPhysicsMode` | *physicsMode* | 场景物理模式 |
 | `System.Boolean` | *allowSceneActivation* | 是否允许场景激活 |
@@ -546,12 +546,12 @@ public AssetHandle LoadAssetSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadAssetSync&lt;TObject&gt;(string)
 同步加载资源对象
@@ -562,7 +562,7 @@ public AssetHandle LoadAssetSync<TObject>(string location) where TObject : Objec
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -582,7 +582,7 @@ public AssetHandle LoadAssetSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -599,7 +599,7 @@ public AssetHandle LoadAssetSync(string location)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -615,12 +615,12 @@ public AssetHandle LoadAssetAsync(AssetInfo assetInfo, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* | 加载的优先级 |
 
 ### LoadAssetAsync&lt;TObject&gt;(string, uint)
@@ -632,7 +632,7 @@ public AssetHandle LoadAssetAsync<TObject>(string location, uint priority = 0) w
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -653,7 +653,7 @@ public AssetHandle LoadAssetAsync(string location, Type type, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -671,7 +671,7 @@ public AssetHandle LoadAssetAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AssetHandle](/docs/3.0.x/api/YooAsset/AssetHandle): 返回资源操作句柄
+[YooAsset.AssetHandle](/docs/api/YooAsset/AssetHandle): 返回资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -688,12 +688,12 @@ public SubAssetsHandle LoadSubAssetsSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadSubAssetsSync&lt;TObject&gt;(string)
 同步加载子资源对象
@@ -704,7 +704,7 @@ public SubAssetsHandle LoadSubAssetsSync<TObject>(string location) where TObject
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -724,7 +724,7 @@ public SubAssetsHandle LoadSubAssetsSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -741,7 +741,7 @@ public SubAssetsHandle LoadSubAssetsSync(string location)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -757,12 +757,12 @@ public SubAssetsHandle LoadSubAssetsAsync(AssetInfo assetInfo, uint priority = 0
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* | 加载的优先级 |
 
 ### LoadSubAssetsAsync&lt;TObject&gt;(string, uint)
@@ -774,7 +774,7 @@ public SubAssetsHandle LoadSubAssetsAsync<TObject>(string location, uint priorit
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -795,7 +795,7 @@ public SubAssetsHandle LoadSubAssetsAsync(string location, Type type, uint prior
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -813,7 +813,7 @@ public SubAssetsHandle LoadSubAssetsAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.SubAssetsHandle](/docs/3.0.x/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
+[YooAsset.SubAssetsHandle](/docs/api/YooAsset/SubAssetsHandle): 返回子资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -830,12 +830,12 @@ public AllAssetsHandle LoadAllAssetsSync(AssetInfo assetInfo)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 
 ### LoadAllAssetsSync&lt;TObject&gt;(string)
 同步加载资源包内所有资源对象
@@ -846,7 +846,7 @@ public AllAssetsHandle LoadAllAssetsSync<TObject>(string location) where TObject
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -866,7 +866,7 @@ public AllAssetsHandle LoadAllAssetsSync(string location, Type type)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -883,7 +883,7 @@ public AllAssetsHandle LoadAllAssetsSync(string location)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -899,12 +899,12 @@ public AllAssetsHandle LoadAllAssetsAsync(AssetInfo assetInfo, uint priority = 0
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AssetInfo](/docs/3.0.x/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.AssetInfo](/docs/api/YooAsset/AssetInfo) | *assetInfo* | 资源信息 |
 | `System.UInt32` | *priority* | 加载的优先级 |
 
 ### LoadAllAssetsAsync&lt;TObject&gt;(string, uint)
@@ -916,7 +916,7 @@ public AllAssetsHandle LoadAllAssetsAsync<TObject>(string location, uint priorit
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -937,7 +937,7 @@ public AllAssetsHandle LoadAllAssetsAsync(string location, Type type, uint prior
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -955,7 +955,7 @@ public AllAssetsHandle LoadAllAssetsAsync(string location, uint priority = 0)
 
 ##### Returns
 
-[YooAsset.AllAssetsHandle](/docs/3.0.x/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
+[YooAsset.AllAssetsHandle](/docs/api/YooAsset/AllAssetsHandle): 返回全资源操作句柄
 ##### Parameters
 
 | Type | Name | Description |
@@ -972,12 +972,12 @@ public ResourceDownloaderOperation CreateResourceDownloader(ResourceDownloaderOp
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](/docs/3.0.x/api/YooAsset/ResourceDownloaderOperation): 返回资源下载操作对象
+[YooAsset.ResourceDownloaderOperation](/docs/api/YooAsset/ResourceDownloaderOperation): 返回资源下载操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ResourceDownloaderOptions](/docs/3.0.x/api/YooAsset/ResourceDownloaderOptions) | *options* | 资源下载选项 |
+| [YooAsset.ResourceDownloaderOptions](/docs/api/YooAsset/ResourceDownloaderOptions) | *options* | 资源下载选项 |
 
 ### CreateResourceDownloader(BundleDownloaderOptions)
 创建资源下载器，用于下载指定的资源信息列表依赖的资源包文件。
@@ -988,12 +988,12 @@ public ResourceDownloaderOperation CreateResourceDownloader(BundleDownloaderOpti
 
 ##### Returns
 
-[YooAsset.ResourceDownloaderOperation](/docs/3.0.x/api/YooAsset/ResourceDownloaderOperation): 返回资源下载操作对象
+[YooAsset.ResourceDownloaderOperation](/docs/api/YooAsset/ResourceDownloaderOperation): 返回资源下载操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDownloaderOptions](/docs/3.0.x/api/YooAsset/BundleDownloaderOptions) | *options* | 资源下载选项 |
+| [YooAsset.BundleDownloaderOptions](/docs/api/YooAsset/BundleDownloaderOptions) | *options* | 资源下载选项 |
 
 ### CreateResourceUnpacker(ResourceUnpackerOptions)
 创建内置资源解压器，用于解压指定的资源标签关联的资源包文件。
@@ -1004,12 +1004,12 @@ public ResourceUnpackerOperation CreateResourceUnpacker(ResourceUnpackerOptions 
 
 ##### Returns
 
-[YooAsset.ResourceUnpackerOperation](/docs/3.0.x/api/YooAsset/ResourceUnpackerOperation): 返回资源解压操作对象
+[YooAsset.ResourceUnpackerOperation](/docs/api/YooAsset/ResourceUnpackerOperation): 返回资源解压操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ResourceUnpackerOptions](/docs/3.0.x/api/YooAsset/ResourceUnpackerOptions) | *options* | 资源解压选项 |
+| [YooAsset.ResourceUnpackerOptions](/docs/api/YooAsset/ResourceUnpackerOptions) | *options* | 资源解压选项 |
 
 ### CreateResourceImporter(BundleImporterOptions)
 创建资源导入器
@@ -1020,10 +1020,10 @@ public ResourceImporterOperation CreateResourceImporter(BundleImporterOptions op
 
 ##### Returns
 
-[YooAsset.ResourceImporterOperation](/docs/3.0.x/api/YooAsset/ResourceImporterOperation): 返回资源导入操作对象
+[YooAsset.ResourceImporterOperation](/docs/api/YooAsset/ResourceImporterOperation): 返回资源导入操作对象
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleImporterOptions](/docs/3.0.x/api/YooAsset/BundleImporterOptions) | *options* | 资源导入选项 |
+| [YooAsset.BundleImporterOptions](/docs/api/YooAsset/BundleImporterOptions) | *options* | 资源导入选项 |
 

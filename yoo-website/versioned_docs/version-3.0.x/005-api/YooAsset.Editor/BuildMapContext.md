@@ -54,7 +54,7 @@ public void PackAsset(BuildAssetInfo assetInfo)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildAssetInfo](/docs/3.0.x/api/YooAsset.Editor/BuildAssetInfo) | *assetInfo* | 待打包的资源信息 |
+| [YooAsset.Editor.BuildAssetInfo](/docs/api/YooAsset.Editor/BuildAssetInfo) | *assetInfo* | 待打包的资源信息 |
 
 ### IsContainsBundle(string)
 检查是否包含指定名称的资源包
@@ -81,7 +81,7 @@ public BuildBundleInfo GetBundleInfo(string bundleName)
 
 ##### Returns
 
-[YooAsset.Editor.BuildBundleInfo](/docs/3.0.x/api/YooAsset.Editor/BuildBundleInfo): 对应的资源包构建信息
+[YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo): 对应的资源包构建信息
 ##### Parameters
 
 | Type | Name | Description |

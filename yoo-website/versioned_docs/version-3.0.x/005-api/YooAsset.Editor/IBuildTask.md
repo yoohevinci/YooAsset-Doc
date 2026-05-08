@@ -23,5 +23,5 @@ void Run(BuildContext context)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 

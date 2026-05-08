@@ -29,7 +29,7 @@ protected void DeletePackageRootDirectory(BuildParameters buildParameters)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](/docs/3.0.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
+| [YooAsset.Editor.BuildParameters](/docs/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
 
 ### PrepareOutputDirectory(BuildParameters)
 检测包裹输出目录是否已存在，并创建管线输出目录
@@ -42,5 +42,5 @@ protected void PrepareOutputDirectory(BuildParameters buildParameters)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](/docs/3.0.x/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
+| [YooAsset.Editor.BuildParameters](/docs/api/YooAsset.Editor/BuildParameters) | *buildParameters* |
 

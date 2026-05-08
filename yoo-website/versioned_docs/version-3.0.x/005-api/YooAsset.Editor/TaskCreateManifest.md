@@ -26,7 +26,7 @@ protected void CreateManifestFile(bool processBundleDepends, bool processBundleT
 | `System.Boolean` | *processBundleDepends* | 是否处理资源包依赖关系 |
 | `System.Boolean` | *processBundleTags* | 是否处理资源包标签 |
 | `System.Boolean` | *replaceAssetPathWithAddress* | 是否用可寻址地址替换资源路径 |
-| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 
 ### GetBundleDepends(BuildContext, string)
 获取资源包的依赖集合
@@ -42,6 +42,6 @@ protected abstract string[] GetBundleDepends(BuildContext context, string bundle
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildContext](/docs/3.0.x/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
 | `System.String` | *bundleName* | 资源包名称 |
 

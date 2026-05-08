@@ -28,7 +28,7 @@ int GetBufferSize(BundleDecryptArgs args)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDecryptArgs](/docs/3.0.x/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
+| [YooAsset.BundleDecryptArgs](/docs/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
 
 ### CreateDecryptionStream(BundleDecryptArgs)
 创建用于解密读取的流实例
@@ -44,5 +44,5 @@ Stream CreateDecryptionStream(BundleDecryptArgs args)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDecryptArgs](/docs/3.0.x/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
+| [YooAsset.BundleDecryptArgs](/docs/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
 

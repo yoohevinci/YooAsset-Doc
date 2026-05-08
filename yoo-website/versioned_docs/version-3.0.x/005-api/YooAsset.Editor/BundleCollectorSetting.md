@@ -97,7 +97,7 @@ public CollectResult BeginCollect(string packageName, bool simulateBuild, bool u
 
 ##### Returns
 
-[YooAsset.Editor.CollectResult](/docs/3.0.x/api/YooAsset.Editor/CollectResult): 资源收集结果
+[YooAsset.Editor.CollectResult](/docs/api/YooAsset.Editor/CollectResult): 资源收集结果
 ##### Parameters
 
 | Type | Name | Description |
@@ -115,7 +115,7 @@ public BundleCollectorPackage GetPackage(string packageName)
 
 ##### Returns
 
-[YooAsset.Editor.BundleCollectorPackage](/docs/3.0.x/api/YooAsset.Editor/BundleCollectorPackage): 包裹对象
+[YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage): 包裹对象
 ##### Parameters
 
 | Type | Name | Description |

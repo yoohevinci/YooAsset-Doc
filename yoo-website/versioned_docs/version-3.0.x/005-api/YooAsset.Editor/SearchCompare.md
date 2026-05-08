@@ -72,4 +72,4 @@ public bool CompareTo(double value)
 
 ## Implements
 
-* [YooAsset.Editor.ISearchCommand](/docs/3.0.x/api/YooAsset.Editor/ISearchCommand)
+* [YooAsset.Editor.ISearchCommand](/docs/api/YooAsset.Editor/ISearchCommand)

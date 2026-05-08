@@ -14,4 +14,4 @@ public class TaskEncryption_LBP : TaskEncryption, IBuildTask
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/3.0.x/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)

@@ -15,4 +15,4 @@ public class AddressByGroupAndFileName : IAddressRule
 
 ## Implements
 
-* [YooAsset.Editor.IAddressRule](/docs/3.0.x/api/YooAsset.Editor/IAddressRule)
+* [YooAsset.Editor.IAddressRule](/docs/api/YooAsset.Editor/IAddressRule)

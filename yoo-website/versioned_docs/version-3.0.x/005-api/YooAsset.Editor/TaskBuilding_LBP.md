@@ -14,4 +14,4 @@ public class TaskBuilding_LBP : IBuildTask
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/3.0.x/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)

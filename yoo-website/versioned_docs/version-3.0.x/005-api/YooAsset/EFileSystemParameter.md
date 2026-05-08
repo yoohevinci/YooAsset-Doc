@@ -13,7 +13,7 @@ public enum EFileSystemParameter
 ```
 ## Fields
 ### FileVerifyLevel
-初始化的时候缓存文件校验级别 [YooAsset.EFileVerifyLevel](/docs/3.0.x/api/YooAsset/EFileVerifyLevel)
+初始化的时候缓存文件校验级别 [YooAsset.EFileVerifyLevel](/docs/api/YooAsset/EFileVerifyLevel)
 
 ```csharp title="Declaration"
 FileVerifyLevel = 0
@@ -25,7 +25,7 @@ FileVerifyLevel = 0
 FileVerifyMaxConcurrency = 1
 ```
 ### InstallCleanupMode
-覆盖安装缓存清理模式 [YooAsset.EInstallCleanupMode](/docs/3.0.x/api/YooAsset/EInstallCleanupMode)
+覆盖安装缓存清理模式 [YooAsset.EInstallCleanupMode](/docs/api/YooAsset/EInstallCleanupMode)
 
 ```csharp title="Declaration"
 InstallCleanupMode = 2
@@ -127,43 +127,43 @@ CopyBuiltinPackageManifestDestRoot = 17
 UnpackFileSystemRoot = 18
 ```
 ### RemoteService
-远端资源地址查询服务类 [YooAsset.IRemoteService](/docs/3.0.x/api/YooAsset/IRemoteService)
+远端资源地址查询服务类 [YooAsset.IRemoteService](/docs/api/YooAsset/IRemoteService)
 
 ```csharp title="Declaration"
 RemoteService = 19
 ```
 ### AssetbundleDecryptor
-AssetBundle 解密器 [YooAsset.IBundleDecryptor](/docs/3.0.x/api/YooAsset/IBundleDecryptor)
+AssetBundle 解密器 [YooAsset.IBundleDecryptor](/docs/api/YooAsset/IBundleDecryptor)
 
 ```csharp title="Declaration"
 AssetbundleDecryptor = 20
 ```
 ### RawbundleDecryptor
-RawBundle 解密器 [YooAsset.IBundleDecryptor](/docs/3.0.x/api/YooAsset/IBundleDecryptor)
+RawBundle 解密器 [YooAsset.IBundleDecryptor](/docs/api/YooAsset/IBundleDecryptor)
 
 ```csharp title="Declaration"
 RawbundleDecryptor = 21
 ```
 ### AssetbundleFallbackDecryptor
-AssetBundle 备用解密器 [YooAsset.IBundleMemoryDecryptor](/docs/3.0.x/api/YooAsset/IBundleMemoryDecryptor)
+AssetBundle 备用解密器 [YooAsset.IBundleMemoryDecryptor](/docs/api/YooAsset/IBundleMemoryDecryptor)
 
 ```csharp title="Declaration"
 AssetbundleFallbackDecryptor = 22
 ```
 ### ManifestDecryptor
-资源清单解密器 [YooAsset.IManifestDecryptor](/docs/3.0.x/api/YooAsset/IManifestDecryptor)
+资源清单解密器 [YooAsset.IManifestDecryptor](/docs/api/YooAsset/IManifestDecryptor)
 
 ```csharp title="Declaration"
 ManifestDecryptor = 23
 ```
 ### DownloadRetryPolicy
-下载重试判定策略 [YooAsset.IDownloadRetryPolicy](/docs/3.0.x/api/YooAsset/IDownloadRetryPolicy)
+下载重试判定策略 [YooAsset.IDownloadRetryPolicy](/docs/api/YooAsset/IDownloadRetryPolicy)
 
 ```csharp title="Declaration"
 DownloadRetryPolicy = 24
 ```
 ### DownloadUrlPolicy
-URL 选择策略 [YooAsset.IDownloadUrlPolicy](/docs/3.0.x/api/YooAsset/IDownloadUrlPolicy)
+URL 选择策略 [YooAsset.IDownloadUrlPolicy](/docs/api/YooAsset/IDownloadUrlPolicy)
 
 ```csharp title="Declaration"
 DownloadUrlPolicy = 25

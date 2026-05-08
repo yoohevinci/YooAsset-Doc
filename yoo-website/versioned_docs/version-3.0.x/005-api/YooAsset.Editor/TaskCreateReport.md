@@ -23,7 +23,7 @@ protected void CreateReportFile(BuildParametersContext buildParametersContext, B
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildParametersContext](/docs/3.0.x/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* | 构建参数上下文 |
-| [YooAsset.Editor.BuildMapContext](/docs/3.0.x/api/YooAsset.Editor/BuildMapContext) | *buildMapContext* | 构建映射上下文 |
-| [YooAsset.Editor.ManifestContext](/docs/3.0.x/api/YooAsset.Editor/ManifestContext) | *manifestContext* | 资源清单上下文 |
+| [YooAsset.Editor.BuildParametersContext](/docs/api/YooAsset.Editor/BuildParametersContext) | *buildParametersContext* | 构建参数上下文 |
+| [YooAsset.Editor.BuildMapContext](/docs/api/YooAsset.Editor/BuildMapContext) | *buildMapContext* | 构建映射上下文 |
+| [YooAsset.Editor.ManifestContext](/docs/api/YooAsset.Editor/ManifestContext) | *manifestContext* | 资源清单上下文 |
 

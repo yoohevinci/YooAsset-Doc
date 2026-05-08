@@ -103,7 +103,7 @@ public void SetFlag(ECollectFlags flag, bool isOn)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.ECollectFlags](/docs/3.0.x/api/YooAsset.Editor/ECollectFlags) | *flag* | 标记位 |
+| [YooAsset.Editor.ECollectFlags](/docs/api/YooAsset.Editor/ECollectFlags) | *flag* | 标记位 |
 | `System.Boolean` | *isOn* | 是否开启 |
 
 ### IsFlagSet(ECollectFlags)
@@ -120,5 +120,5 @@ public bool IsFlagSet(ECollectFlags flag)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.ECollectFlags](/docs/3.0.x/api/YooAsset.Editor/ECollectFlags) | *flag* | 标记位 |
+| [YooAsset.Editor.ECollectFlags](/docs/api/YooAsset.Editor/ECollectFlags) | *flag* | 标记位 |
 

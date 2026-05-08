@@ -21,14 +21,14 @@ public BundleEncryptResult Encrypt(BundleEncryptArgs fileInfo)
 
 ##### Returns
 
-[YooAsset.BundleEncryptResult](/docs/3.0.x/api/YooAsset/BundleEncryptResult): 包含加密状态和加密后数据的结果
+[YooAsset.BundleEncryptResult](/docs/api/YooAsset/BundleEncryptResult): 包含加密状态和加密后数据的结果
 ##### Parameters
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.BundleEncryptArgs](/docs/3.0.x/api/YooAsset/BundleEncryptArgs) | *fileInfo* |
+| [YooAsset.BundleEncryptArgs](/docs/api/YooAsset/BundleEncryptArgs) | *fileInfo* |
 
 
 ## Implements
 
-* [YooAsset.IBundleEncryptor](/docs/3.0.x/api/YooAsset/IBundleEncryptor)
+* [YooAsset.IBundleEncryptor](/docs/api/YooAsset/IBundleEncryptor)

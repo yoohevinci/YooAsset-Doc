@@ -14,4 +14,4 @@ public class ManifestDecryptorNone : IManifestDecryptor
 
 ## Implements
 
-* [YooAsset.IManifestDecryptor](/docs/3.0.x/api/YooAsset/IManifestDecryptor)
+* [YooAsset.IManifestDecryptor](/docs/api/YooAsset/IManifestDecryptor)

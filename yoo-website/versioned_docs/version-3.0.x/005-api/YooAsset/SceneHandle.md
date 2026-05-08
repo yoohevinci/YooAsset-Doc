@@ -52,7 +52,7 @@ public UnloadSceneOperation UnloadSceneAsync()
 
 ##### Returns
 
-[YooAsset.UnloadSceneOperation](/docs/3.0.x/api/YooAsset/UnloadSceneOperation): 卸载场景操作## Events
+[YooAsset.UnloadSceneOperation](/docs/api/YooAsset/UnloadSceneOperation): 卸载场景操作## Events
 ### Completed
 当加载完成时触发
 
