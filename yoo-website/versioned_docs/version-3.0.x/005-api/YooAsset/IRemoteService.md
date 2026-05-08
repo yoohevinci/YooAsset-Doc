@@ -7,14 +7,14 @@ description: "远端资源服务"
 远端资源服务
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IRemoteService.cs#L8)
 ```csharp title="Declaration"
 public interface IRemoteService
 ```
 ## Methods
 ### GetRemoteUrls(string)
 获取指定文件的所有远端候选地址，按优先级排序。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IRemoteService.cs#L15)
 ```csharp title="Declaration"
 IReadOnlyList<string> GetRemoteUrls(string fileName)
 ```

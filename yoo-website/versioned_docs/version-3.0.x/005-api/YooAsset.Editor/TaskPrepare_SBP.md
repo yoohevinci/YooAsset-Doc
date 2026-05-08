@@ -7,11 +7,11 @@ description: "可编程构建管线的准备任务"
 可编程构建管线的准备任务
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/ScriptableBuildPipeline/BuildTasks/TaskPrepare_SBP.cs#L8)
 ```csharp title="Declaration"
 public class TaskPrepare_SBP : TaskPrepare, IBuildTask
 ```
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)

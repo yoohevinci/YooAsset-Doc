@@ -7,14 +7,14 @@ description: "资源分组激活规则接口"
 资源分组激活规则接口
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/CollectRules/IGroupActiveRule.cs#L27)
 ```csharp title="Declaration"
 public interface IGroupActiveRule
 ```
 ## Methods
 ### IsActiveGroup(GroupActiveRuleData)
 检查是否激活分组
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/CollectRules/IGroupActiveRule.cs#L34)
 ```csharp title="Declaration"
 bool IsActiveGroup(GroupActiveRuleData data)
 ```
@@ -26,5 +26,5 @@ bool IsActiveGroup(GroupActiveRuleData data)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.GroupActiveRuleData](/docs/api/YooAsset.Editor/GroupActiveRuleData) | *data* | 分组数据 |
+| [YooAsset.Editor.GroupActiveRuleData](../YooAsset.Editor/GroupActiveRuleData.md) | *data* | 分组数据 |
 

@@ -7,7 +7,7 @@ description: "打包原生文件"
 打包原生文件
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultBundlePackRule.cs#L166)
 ```csharp title="Declaration"
 [DisplayName("打包原生文件")]
 public class PackRawFile : IBundlePackRule
@@ -15,4 +15,4 @@ public class PackRawFile : IBundlePackRule
 
 ## Implements
 
-* [YooAsset.Editor.IBundlePackRule](/docs/api/YooAsset.Editor/IBundlePackRule)
+* [YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md)

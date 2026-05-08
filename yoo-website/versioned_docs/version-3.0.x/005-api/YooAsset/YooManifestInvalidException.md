@@ -7,7 +7,7 @@ description: "The exception that is thrown when the resource manifest data is in
 The exception that is thrown when the resource manifest data is invalid.
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooException.cs#L75)
 ```csharp title="Declaration"
 [Serializable]
 public class YooManifestInvalidException : YooException, ISerializable

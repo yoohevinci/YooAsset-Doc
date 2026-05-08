@@ -7,7 +7,7 @@ description: "The exception that is thrown when an internal logic error occurs i
 The exception that is thrown when an internal logic error occurs in YooAsset.
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooException.cs#L31)
 ```csharp title="Declaration"
 [Serializable]
 public class YooInternalException : YooException, ISerializable

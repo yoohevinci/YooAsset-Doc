@@ -7,14 +7,14 @@ description: "文件操作工具类"
 文件操作工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L11)
 ```csharp title="Declaration"
 public static class EditorFileUtility
 ```
 ## Methods
 ### CreateFileDirectory(string)
 创建文件所在的目录
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L17)
 ```csharp title="Declaration"
 public static void CreateFileDirectory(string filePath)
 ```
@@ -27,7 +27,7 @@ public static void CreateFileDirectory(string filePath)
 
 ### CreateDirectory(string)
 创建文件夹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L28)
 ```csharp title="Declaration"
 public static bool CreateDirectory(string directory)
 ```
@@ -43,7 +43,7 @@ public static bool CreateDirectory(string directory)
 
 ### DeleteDirectory(string)
 删除文件夹及子目录
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L46)
 ```csharp title="Declaration"
 public static bool DeleteDirectory(string directory)
 ```
@@ -59,7 +59,7 @@ public static bool DeleteDirectory(string directory)
 
 ### FileRename(string, string)
 文件重命名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L64)
 ```csharp title="Declaration"
 public static void FileRename(string filePath, string newName)
 ```
@@ -73,7 +73,7 @@ public static void FileRename(string filePath, string newName)
 
 ### MoveFile(string, string)
 移动文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L91)
 ```csharp title="Declaration"
 public static void MoveFile(string filePath, string destPath)
 ```
@@ -87,7 +87,7 @@ public static void MoveFile(string filePath, string destPath)
 
 ### CopyFile(string, string, bool)
 拷贝文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L111)
 ```csharp title="Declaration"
 public static void CopyFile(string sourcePath, string destPath, bool overwrite)
 ```
@@ -102,7 +102,7 @@ public static void CopyFile(string sourcePath, string destPath, bool overwrite)
 
 ### GetFileSize(string)
 获取文件字节大小
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L126)
 ```csharp title="Declaration"
 public static long GetFileSize(string filePath)
 ```
@@ -118,7 +118,7 @@ public static long GetFileSize(string filePath)
 
 ### ReadFileAllText(string)
 读取文件的所有文本内容
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L137)
 ```csharp title="Declaration"
 public static string ReadFileAllText(string filePath)
 ```
@@ -134,7 +134,7 @@ public static string ReadFileAllText(string filePath)
 
 ### ReadFileAllLine(string)
 读取文件的所有文本行
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L150)
 ```csharp title="Declaration"
 public static string[] ReadFileAllLine(string filePath)
 ```
@@ -150,7 +150,7 @@ public static string[] ReadFileAllLine(string filePath)
 
 ### CheckBundleFileValid(byte[])
 检测 AssetBundle 文件是否合法
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorFileUtility.cs#L163)
 ```csharp title="Declaration"
 public static bool CheckBundleFileValid(byte[] fileData)
 ```

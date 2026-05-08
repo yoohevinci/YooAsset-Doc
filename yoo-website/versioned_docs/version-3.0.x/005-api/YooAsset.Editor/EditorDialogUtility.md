@@ -7,14 +7,14 @@ description: "编辑器对话框与进度条工具类"
 编辑器对话框与进度条工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorDialogUtility.cs#L9)
 ```csharp title="Declaration"
 public static class EditorDialogUtility
 ```
 ## Methods
 ### OpenFolderPanel(string, string, string)
 打开文件夹选择面板
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorDialogUtility.cs#L18)
 ```csharp title="Declaration"
 public static string OpenFolderPanel(string title, string defaultPath, string defaultName = "")
 ```
@@ -32,7 +32,7 @@ public static string OpenFolderPanel(string title, string defaultPath, string de
 
 ### OpenFilePath(string, string, string)
 打开文件选择面板
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorDialogUtility.cs#L39)
 ```csharp title="Declaration"
 public static string OpenFilePath(string title, string defaultPath, string extension = "")
 ```
@@ -50,7 +50,7 @@ public static string OpenFilePath(string title, string defaultPath, string exten
 
 ### DisplayProgressBar(string, int, int)
 显示进度框
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorDialogUtility.cs#L59)
 ```csharp title="Declaration"
 public static void DisplayProgressBar(string tips, int progressValue, int totalValue)
 ```
@@ -65,7 +65,7 @@ public static void DisplayProgressBar(string tips, int progressValue, int totalV
 
 ### ClearProgressBar()
 隐藏进度框
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorDialogUtility.cs#L68)
 ```csharp title="Declaration"
 public static void ClearProgressBar()
 ```

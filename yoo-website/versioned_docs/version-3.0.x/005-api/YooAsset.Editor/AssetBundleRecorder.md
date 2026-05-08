@@ -7,14 +7,14 @@ description: "AssetBundle 文件的加载缓存管理器"
 AssetBundle 文件的加载缓存管理器
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/AssetBundleRecorder.cs#L12)
 ```csharp title="Declaration"
 public static class AssetBundleRecorder
 ```
 ## Methods
 ### GetAssetBundle(string)
 获取 AssetBundle 对象，如果没有被缓存就重新加载。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/AssetBundleRecorder.cs#L27)
 ```csharp title="Declaration"
 public static AssetBundle GetAssetBundle(string filePath)
 ```
@@ -30,7 +30,7 @@ public static AssetBundle GetAssetBundle(string filePath)
 
 ### UnloadAll()
 卸载所有已经加载的AssetBundle文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/AssetBundleRecorder.cs#L62)
 ```csharp title="Declaration"
 public static void UnloadAll()
 ```

@@ -7,7 +7,7 @@ description: "禁用寻址"
 禁用寻址
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAddressRule.cs#L8)
 ```csharp title="Declaration"
 [DisplayName("定位地址: 禁用")]
 public class AddressDisable : IAddressRule
@@ -15,4 +15,4 @@ public class AddressDisable : IAddressRule
 
 ## Implements
 
-* [YooAsset.Editor.IAddressRule](/docs/api/YooAsset.Editor/IAddressRule)
+* [YooAsset.Editor.IAddressRule](../YooAsset.Editor/IAddressRule.md)

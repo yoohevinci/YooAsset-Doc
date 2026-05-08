@@ -7,14 +7,14 @@ description: "UIElements 通用工具方法集"
 UIElements 通用工具方法集
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L11)
 ```csharp title="Declaration"
 public static class UIElementsTools
 ```
 ## Methods
 ### SetElementVisible(VisualElement, bool)
 设置元素显隐
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L18)
 ```csharp title="Declaration"
 public static void SetElementVisible(VisualElement element, bool visible)
 ```
@@ -28,7 +28,7 @@ public static void SetElementVisible(VisualElement element, bool visible)
 
 ### SetElementLabelMinWidth(VisualElement, int)
 设置元素内部 Label 的最小宽度
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L32)
 ```csharp title="Declaration"
 public static void SetElementLabelMinWidth(VisualElement element, int minWidth)
 ```
@@ -42,7 +42,7 @@ public static void SetElementLabelMinWidth(VisualElement element, int minWidth)
 
 ### SetObjectFieldShowPath(ObjectField)
 设置 ObjectField 的显示文本为资源路径
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L45)
 ```csharp title="Declaration"
 public static void SetObjectFieldShowPath(ObjectField objectField)
 ```
@@ -55,7 +55,7 @@ public static void SetObjectFieldShowPath(ObjectField objectField)
 
 ### RefreshObjectFieldShowPath(ObjectField)
 刷新 ObjectField 的资源路径显示文本
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L78)
 ```csharp title="Declaration"
 public static void RefreshObjectFieldShowPath(ObjectField objectField)
 ```
@@ -68,7 +68,7 @@ public static void RefreshObjectFieldShowPath(ObjectField objectField)
 
 ### SetToolbarButtonIcon(ToolbarButton, string)
 设置工具栏按钮的图标
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L109)
 ```csharp title="Declaration"
 public static void SetToolbarButtonIcon(ToolbarButton element, string iconName)
 ```
@@ -82,7 +82,7 @@ public static void SetToolbarButtonIcon(ToolbarButton element, string iconName)
 
 ### SplitVerticalPanel(VisualElement, VisualElement, VisualElement)
 将两个面板重组为垂直分屏布局
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsTools.cs#L122)
 ```csharp title="Declaration"
 public static void SplitVerticalPanel(VisualElement root, VisualElement panelA, VisualElement panelB)
 ```

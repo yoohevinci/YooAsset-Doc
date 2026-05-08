@@ -7,7 +7,7 @@ description: "显示开关（眼睛图标）"
 显示开关（眼睛图标）
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/ElementsDefine/ToggleDisplay.cs#L12)
 ```csharp title="Declaration"
 public class ToggleDisplay : Toggle, IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler, IBindable, INotifyValueChanged<bool>, IMixedValueSupport
 ```
@@ -16,7 +16,7 @@ public class ToggleDisplay : Toggle, IEventHandler, IResolvedStyle, ITransform, 
 &lt;p&gt;
 Sets the value of the BaseBoolField, but does not notify the rest of the hierarchy of the change.
 &lt;/p&gt;
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/ElementsDefine/ToggleDisplay.cs#L28)
 ```csharp title="Declaration"
 public override void SetValueWithoutNotify(bool newValue)
 ```

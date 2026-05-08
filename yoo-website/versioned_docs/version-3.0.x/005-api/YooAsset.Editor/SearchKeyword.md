@@ -7,27 +7,27 @@ description: "搜索关键字命令，按字符串包含关系进行匹配"
 搜索关键字命令，按字符串包含关系进行匹配
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/SearchSystem/SearchKeyword.cs#L7)
 ```csharp title="Declaration"
 public class SearchKeyword : ISearchCommand
 ```
 ## Properties
 ### SearchTag
 搜索标签
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/SearchSystem/SearchKeyword.cs#L10)
 ```csharp title="Declaration"
 public string SearchTag { get; set; }
 ```
 ### Keyword
 待匹配的关键字
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/SearchSystem/SearchKeyword.cs#L15)
 ```csharp title="Declaration"
 public string Keyword { get; set; }
 ```
 ## Methods
 ### CompareTo(string)
 检查是否包含关键字
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/SearchSystem/SearchKeyword.cs#L22)
 ```csharp title="Declaration"
 public bool CompareTo(string value)
 ```
@@ -44,4 +44,4 @@ public bool CompareTo(string value)
 
 ## Implements
 
-* [YooAsset.Editor.ISearchCommand](/docs/api/YooAsset.Editor/ISearchCommand)
+* [YooAsset.Editor.ISearchCommand](../YooAsset.Editor/ISearchCommand.md)

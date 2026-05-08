@@ -7,14 +7,14 @@ description: "默认忽略规则的工具类"
 默认忽略规则的工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetIgnoreRule.cs#L11)
 ```csharp title="Declaration"
 public class DefaultAssetIgnoreRule
 ```
 ## Methods
 ### IsIgnoreFileExtension(string)
 查询文件扩展名是否在忽略列表中
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetIgnoreRule.cs#L21)
 ```csharp title="Declaration"
 public static bool IsIgnoreFileExtension(string extension)
 ```

@@ -7,14 +7,14 @@ description: "默认的下载重试策略"
 默认的下载重试策略
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadRetryPolicy.cs#L8)
 ```csharp title="Declaration"
 public class DefaultDownloadRetryPolicy : IDownloadRetryPolicy
 ```
 ## Methods
 ### IsRetryableError(string, long, string)
 判断本次下载失败是否属于可重试的错误
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadRetryPolicy.cs#L20)
 ```csharp title="Declaration"
 public bool IsRetryableError(string url, long httpCode, string httpError)
 ```
@@ -32,7 +32,7 @@ public bool IsRetryableError(string url, long httpCode, string httpError)
 
 ### CalculateRetryDelay(int, float)
 计算重试等待时长（秒）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadRetryPolicy.cs#L57)
 ```csharp title="Declaration"
 public float CalculateRetryDelay(int retryCount, float previousDelay)
 ```
@@ -50,4 +50,4 @@ public float CalculateRetryDelay(int retryCount, float previousDelay)
 
 ## Implements
 
-* [YooAsset.IDownloadRetryPolicy](/docs/api/YooAsset/IDownloadRetryPolicy)
+* [YooAsset.IDownloadRetryPolicy](../YooAsset/IDownloadRetryPolicy.md)

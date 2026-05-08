@@ -7,14 +7,14 @@ description: "URL 选择策略"
 URL 选择策略
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IDownloadUrlPolicy.cs#L8)
 ```csharp title="Declaration"
 public interface IDownloadUrlPolicy
 ```
 ## Methods
 ### SelectUrl(IReadOnlyList&lt;string&gt;)
 选择本次请求应使用的 URL
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IDownloadUrlPolicy.cs#L15)
 ```csharp title="Declaration"
 string SelectUrl(IReadOnlyList<string> candidateUrls)
 ```
@@ -30,7 +30,7 @@ string SelectUrl(IReadOnlyList<string> candidateUrls)
 
 ### OnRequestSucceeded(string)
 反馈请求成功，策略可据此更新内部状态。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IDownloadUrlPolicy.cs#L21)
 ```csharp title="Declaration"
 void OnRequestSucceeded(string url)
 ```
@@ -43,7 +43,7 @@ void OnRequestSucceeded(string url)
 
 ### OnRequestFailed(string, long, string)
 反馈请求失败，策略可据此更新内部状态。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IDownloadUrlPolicy.cs#L29)
 ```csharp title="Declaration"
 void OnRequestFailed(string url, long httpCode, string httpError)
 ```

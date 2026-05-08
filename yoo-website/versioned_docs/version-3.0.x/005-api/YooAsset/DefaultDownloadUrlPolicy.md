@@ -7,14 +7,14 @@ description: "默认的 URL 选择策略"
 默认的 URL 选择策略
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadUrlPolicy.cs#L12)
 ```csharp title="Declaration"
 public class DefaultDownloadUrlPolicy : IDownloadUrlPolicy
 ```
 ## Methods
 ### SelectUrl(IReadOnlyList&lt;string&gt;)
 基于内部失败计数轮转选择 URL
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadUrlPolicy.cs#L21)
 ```csharp title="Declaration"
 public string SelectUrl(IReadOnlyList<string> candidateUrls)
 ```
@@ -30,7 +30,7 @@ public string SelectUrl(IReadOnlyList<string> candidateUrls)
 
 ### OnRequestSucceeded(string)
 请求成功反馈，保持当前 URL 不变。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadUrlPolicy.cs#L34)
 ```csharp title="Declaration"
 public void OnRequestSucceeded(string url)
 ```
@@ -43,7 +43,7 @@ public void OnRequestSucceeded(string url)
 
 ### OnRequestFailed(string, long, string)
 请求失败反馈，递增失败计数以切换 URL。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/DownloadSystem/Policies/DefaultDownloadUrlPolicy.cs#L44)
 ```csharp title="Declaration"
 public void OnRequestFailed(string url, long httpCode, string httpError)
 ```
@@ -59,4 +59,4 @@ public void OnRequestFailed(string url, long httpCode, string httpError)
 
 ## Implements
 
-* [YooAsset.IDownloadUrlPolicy](/docs/api/YooAsset/IDownloadUrlPolicy)
+* [YooAsset.IDownloadUrlPolicy](../YooAsset/IDownloadUrlPolicy.md)

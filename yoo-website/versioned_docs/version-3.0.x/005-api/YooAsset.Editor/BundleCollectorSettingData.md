@@ -7,45 +7,45 @@ description: "资源收集器配置数据管理类"
 资源收集器配置数据管理类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L13)
 ```csharp title="Declaration"
 public class BundleCollectorSettingData
 ```
 ## Properties
 ### IsDirty
 配置数据是否被修改
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L35)
 ```csharp title="Declaration"
 public static bool IsDirty { get; }
 ```
 ### Setting
 配置文件实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L168)
 ```csharp title="Declaration"
 public static BundleCollectorSetting Setting { get; }
 ```
 ## Methods
 ### SaveFile()
 存储配置文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L181)
 ```csharp title="Declaration"
 public static void SaveFile()
 ```
 ### FixFile()
 修复配置文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L195)
 ```csharp title="Declaration"
 public static void FixFile()
 ```
 ### ClearAll()
 清空所有数据
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L208)
 ```csharp title="Declaration"
 public static void ClearAll()
 ```
 ### GetGroupActiveRuleNames()
 获取所有激活规则的显示名称列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L226)
 ```csharp title="Declaration"
 public static List<RuleDisplayName> GetGroupActiveRuleNames()
 ```
@@ -54,7 +54,7 @@ public static List<RuleDisplayName> GetGroupActiveRuleNames()
 
 `System.Collections.Generic.List<YooAsset.Editor.RuleDisplayName>`: 激活规则的显示名称列表### GetAddressRuleNames()
 获取所有寻址规则的显示名称列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L243)
 ```csharp title="Declaration"
 public static List<RuleDisplayName> GetAddressRuleNames()
 ```
@@ -63,7 +63,7 @@ public static List<RuleDisplayName> GetAddressRuleNames()
 
 `System.Collections.Generic.List<YooAsset.Editor.RuleDisplayName>`: 寻址规则的显示名称列表### GetBundlePackRuleNames()
 获取所有打包规则的显示名称列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L260)
 ```csharp title="Declaration"
 public static List<RuleDisplayName> GetBundlePackRuleNames()
 ```
@@ -72,7 +72,7 @@ public static List<RuleDisplayName> GetBundlePackRuleNames()
 
 `System.Collections.Generic.List<YooAsset.Editor.RuleDisplayName>`: 打包规则的显示名称列表### GetAssetFilterRuleNames()
 获取所有过滤规则的显示名称列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L277)
 ```csharp title="Declaration"
 public static List<RuleDisplayName> GetAssetFilterRuleNames()
 ```
@@ -81,7 +81,7 @@ public static List<RuleDisplayName> GetAssetFilterRuleNames()
 
 `System.Collections.Generic.List<YooAsset.Editor.RuleDisplayName>`: 过滤规则的显示名称列表### GetAssetIgnoreRuleNames()
 获取所有忽略规则的显示名称列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L294)
 ```csharp title="Declaration"
 public static List<RuleDisplayName> GetAssetIgnoreRuleNames()
 ```
@@ -90,7 +90,7 @@ public static List<RuleDisplayName> GetAssetIgnoreRuleNames()
 
 `System.Collections.Generic.List<YooAsset.Editor.RuleDisplayName>`: 忽略规则的显示名称列表### HasGroupActiveRuleName(string)
 检查是否存在指定的激活规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L312)
 ```csharp title="Declaration"
 public static bool HasGroupActiveRuleName(string ruleName)
 ```
@@ -106,7 +106,7 @@ public static bool HasGroupActiveRuleName(string ruleName)
 
 ### HasAddressRuleName(string)
 检查是否存在指定的寻址规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L322)
 ```csharp title="Declaration"
 public static bool HasAddressRuleName(string ruleName)
 ```
@@ -122,7 +122,7 @@ public static bool HasAddressRuleName(string ruleName)
 
 ### HasBundlePackRuleName(string)
 检查是否存在指定的打包规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L332)
 ```csharp title="Declaration"
 public static bool HasBundlePackRuleName(string ruleName)
 ```
@@ -138,7 +138,7 @@ public static bool HasBundlePackRuleName(string ruleName)
 
 ### HasAssetFilterRuleName(string)
 检查是否存在指定的过滤规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L342)
 ```csharp title="Declaration"
 public static bool HasAssetFilterRuleName(string ruleName)
 ```
@@ -154,7 +154,7 @@ public static bool HasAssetFilterRuleName(string ruleName)
 
 ### HasAssetIgnoreRuleName(string)
 检查是否存在指定的忽略规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L352)
 ```csharp title="Declaration"
 public static bool HasAssetIgnoreRuleName(string ruleName)
 ```
@@ -170,14 +170,14 @@ public static bool HasAssetIgnoreRuleName(string ruleName)
 
 ### GetGroupActiveRuleInstance(string)
 获取激活规则实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L362)
 ```csharp title="Declaration"
 public static IGroupActiveRule GetGroupActiveRuleInstance(string ruleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.IGroupActiveRule](/docs/api/YooAsset.Editor/IGroupActiveRule): 激活规则实例
+[YooAsset.Editor.IGroupActiveRule](../YooAsset.Editor/IGroupActiveRule.md): 激活规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -186,14 +186,14 @@ public static IGroupActiveRule GetGroupActiveRuleInstance(string ruleName)
 
 ### GetAddressRuleInstance(string)
 获取寻址规则实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L388)
 ```csharp title="Declaration"
 public static IAddressRule GetAddressRuleInstance(string ruleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.IAddressRule](/docs/api/YooAsset.Editor/IAddressRule): 寻址规则实例
+[YooAsset.Editor.IAddressRule](../YooAsset.Editor/IAddressRule.md): 寻址规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -202,14 +202,14 @@ public static IAddressRule GetAddressRuleInstance(string ruleName)
 
 ### GetBundlePackRuleInstance(string)
 获取打包规则实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L414)
 ```csharp title="Declaration"
 public static IBundlePackRule GetBundlePackRuleInstance(string ruleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.IBundlePackRule](/docs/api/YooAsset.Editor/IBundlePackRule): 打包规则实例
+[YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md): 打包规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -218,14 +218,14 @@ public static IBundlePackRule GetBundlePackRuleInstance(string ruleName)
 
 ### GetAssetFilterRuleInstance(string)
 获取过滤规则实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L440)
 ```csharp title="Declaration"
 public static IAssetFilterRule GetAssetFilterRuleInstance(string ruleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.IAssetFilterRule](/docs/api/YooAsset.Editor/IAssetFilterRule): 过滤规则实例
+[YooAsset.Editor.IAssetFilterRule](../YooAsset.Editor/IAssetFilterRule.md): 过滤规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -234,14 +234,14 @@ public static IAssetFilterRule GetAssetFilterRuleInstance(string ruleName)
 
 ### GetAssetIgnoreRuleInstance(string)
 获取忽略规则实例
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L466)
 ```csharp title="Declaration"
 public static IAssetIgnoreRule GetAssetIgnoreRuleInstance(string ruleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.IAssetIgnoreRule](/docs/api/YooAsset.Editor/IAssetIgnoreRule): 忽略规则实例
+[YooAsset.Editor.IAssetIgnoreRule](../YooAsset.Editor/IAssetIgnoreRule.md): 忽略规则实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -250,7 +250,7 @@ public static IAssetIgnoreRule GetAssetIgnoreRuleInstance(string ruleName)
 
 ### ModifyShowPackageView(bool)
 修改是否显示资源包裹视图
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L492)
 ```csharp title="Declaration"
 public static void ModifyShowPackageView(bool showPackageView)
 ```
@@ -263,7 +263,7 @@ public static void ModifyShowPackageView(bool showPackageView)
 
 ### ModifyShowEditorAlias(bool)
 修改是否显示编辑器别名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L502)
 ```csharp title="Declaration"
 public static void ModifyShowEditorAlias(bool showAlias)
 ```
@@ -276,7 +276,7 @@ public static void ModifyShowEditorAlias(bool showAlias)
 
 ### ModifyUniqueBundleName(bool)
 修改是否启用资源包唯一命名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L512)
 ```csharp title="Declaration"
 public static void ModifyUniqueBundleName(bool uniqueBundleName)
 ```
@@ -289,14 +289,14 @@ public static void ModifyUniqueBundleName(bool uniqueBundleName)
 
 ### CreatePackage(string)
 创建资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L525)
 ```csharp title="Declaration"
 public static BundleCollectorPackage CreatePackage(string packageName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage): 新创建的资源包裹
+[YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md): 新创建的资源包裹
 ##### Parameters
 
 | Type | Name | Description |
@@ -305,7 +305,7 @@ public static BundleCollectorPackage CreatePackage(string packageName)
 
 ### RemovePackage(BundleCollectorPackage)
 移除资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L538)
 ```csharp title="Declaration"
 public static void RemovePackage(BundleCollectorPackage package)
 ```
@@ -314,11 +314,11 @@ public static void RemovePackage(BundleCollectorPackage package)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 要移除的资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 要移除的资源包裹 |
 
 ### ModifyPackage(BundleCollectorPackage)
 标记资源包裹已修改
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L554)
 ```csharp title="Declaration"
 public static void ModifyPackage(BundleCollectorPackage package)
 ```
@@ -327,28 +327,28 @@ public static void ModifyPackage(BundleCollectorPackage package)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 已修改的资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 已修改的资源包裹 |
 
 ### CreateGroup(BundleCollectorPackage, string)
 创建资源分组
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L570)
 ```csharp title="Declaration"
 public static BundleCollectorGroup CreateGroup(BundleCollectorPackage package, string groupName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup): 新创建的资源分组
+[YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md): 新创建的资源分组
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
 | `System.String` | *groupName* | 资源分组名称 |
 
 ### RemoveGroup(BundleCollectorPackage, BundleCollectorGroup)
 移除资源分组
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L584)
 ```csharp title="Declaration"
 public static void RemoveGroup(BundleCollectorPackage package, BundleCollectorGroup group)
 ```
@@ -357,12 +357,12 @@ public static void RemoveGroup(BundleCollectorPackage package, BundleCollectorGr
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
-| [YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 要移除的资源分组 |
+| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 要移除的资源分组 |
 
 ### ModifyGroup(BundleCollectorPackage, BundleCollectorGroup)
 标记资源分组已修改
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L601)
 ```csharp title="Declaration"
 public static void ModifyGroup(BundleCollectorPackage package, BundleCollectorGroup group)
 ```
@@ -371,12 +371,12 @@ public static void ModifyGroup(BundleCollectorPackage package, BundleCollectorGr
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorPackage](/docs/api/YooAsset.Editor/BundleCollectorPackage) | *package* | 所属资源包裹 |
-| [YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 已修改的资源分组 |
+| [YooAsset.Editor.BundleCollectorPackage](../YooAsset.Editor/BundleCollectorPackage.md) | *package* | 所属资源包裹 |
+| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 已修改的资源分组 |
 
 ### CreateCollector(BundleCollectorGroup, BundleCollector)
 创建资源收集器条目
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L616)
 ```csharp title="Declaration"
 public static void CreateCollector(BundleCollectorGroup group, BundleCollector collector)
 ```
@@ -385,12 +385,12 @@ public static void CreateCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](/docs/api/YooAsset.Editor/BundleCollector) | *collector* | 资源收集器配置 |
+| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 资源收集器配置 |
 
 ### RemoveCollector(BundleCollectorGroup, BundleCollector)
 移除资源收集器条目
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L627)
 ```csharp title="Declaration"
 public static void RemoveCollector(BundleCollectorGroup group, BundleCollector collector)
 ```
@@ -399,12 +399,12 @@ public static void RemoveCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](/docs/api/YooAsset.Editor/BundleCollector) | *collector* | 要移除的资源收集器 |
+| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 要移除的资源收集器 |
 
 ### ModifyCollector(BundleCollectorGroup, BundleCollector)
 标记资源收集器已修改
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L644)
 ```csharp title="Declaration"
 public static void ModifyCollector(BundleCollectorGroup group, BundleCollector collector)
 ```
@@ -413,12 +413,12 @@ public static void ModifyCollector(BundleCollectorGroup group, BundleCollector c
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BundleCollectorGroup](/docs/api/YooAsset.Editor/BundleCollectorGroup) | *group* | 所属资源分组 |
-| [YooAsset.Editor.BundleCollector](/docs/api/YooAsset.Editor/BundleCollector) | *collector* | 已修改的资源收集器 |
+| [YooAsset.Editor.BundleCollectorGroup](../YooAsset.Editor/BundleCollectorGroup.md) | *group* | 所属资源分组 |
+| [YooAsset.Editor.BundleCollector](../YooAsset.Editor/BundleCollector.md) | *collector* | 已修改的资源收集器 |
 
 ### GetPackageAllTags(string)
 获取所有的资源标签
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorSettingData.cs#L657)
 ```csharp title="Declaration"
 public static string GetPackageAllTags(string packageName)
 ```

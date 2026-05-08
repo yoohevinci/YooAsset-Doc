@@ -7,26 +7,26 @@ description: "场景卸载异步操作类"
 场景卸载异步操作类
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadSceneOperation.cs#L9)
 ```csharp title="Declaration"
 public sealed class UnloadSceneOperation : AsyncOperationBase, IEnumerator, IComparable<AsyncOperationBase>
 ```
 ## Methods
 ### InternalStart()
 内部启动方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadSceneOperation.cs#L46)
 ```csharp title="Declaration"
 protected override void InternalStart()
 ```
 ### InternalUpdate()
 内部更新方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadSceneOperation.cs#L51)
 ```csharp title="Declaration"
 protected override void InternalUpdate()
 ```
 ### InternalGetDescription()
 获取操作的描述信息（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadSceneOperation.cs#L112)
 ```csharp title="Declaration"
 protected override string InternalGetDescription()
 ```

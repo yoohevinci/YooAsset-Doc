@@ -7,7 +7,7 @@ description: "收集着色器的过滤规则"
 收集着色器的过滤规则
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetFilterRule.cs#L101)
 ```csharp title="Declaration"
 [DisplayName("收集着色器")]
 public class CollectShader : IAssetFilterRule
@@ -15,14 +15,14 @@ public class CollectShader : IAssetFilterRule
 ## Properties
 ### FindAssetType
 搜寻的资源类型
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetFilterRule.cs#L105)
 ```csharp title="Declaration"
 public string FindAssetType { get; }
 ```
 ## Methods
 ### IsCollectAsset(AssetFilterRuleData)
 检查是否为收集资源
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetFilterRule.cs#L111)
 ```csharp title="Declaration"
 public bool IsCollectAsset(AssetFilterRuleData data)
 ```
@@ -34,9 +34,9 @@ public bool IsCollectAsset(AssetFilterRuleData data)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.AssetFilterRuleData](/docs/api/YooAsset.Editor/AssetFilterRuleData) | *data* | 过滤规则数据 |
+| [YooAsset.Editor.AssetFilterRuleData](../YooAsset.Editor/AssetFilterRuleData.md) | *data* | 过滤规则数据 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IAssetFilterRule](/docs/api/YooAsset.Editor/IAssetFilterRule)
+* [YooAsset.Editor.IAssetFilterRule](../YooAsset.Editor/IAssetFilterRule.md)

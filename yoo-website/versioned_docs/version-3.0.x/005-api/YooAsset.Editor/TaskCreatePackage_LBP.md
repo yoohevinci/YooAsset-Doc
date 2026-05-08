@@ -7,11 +7,11 @@ description: "旧版构建管线的补丁包创建任务"
 旧版构建管线的补丁包创建任务
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/LegacyBuildPipeline/BuildTasks/TaskCreatePackage_LBP.cs#L6)
 ```csharp title="Declaration"
 public class TaskCreatePackage_LBP : TaskCreatePackage, IBuildTask
 ```
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)

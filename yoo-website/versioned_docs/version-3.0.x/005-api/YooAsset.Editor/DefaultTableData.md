@@ -7,27 +7,27 @@ description: "表格行数据抽象的默认实现，提供便捷的单元格添
 表格行数据抽象的默认实现，提供便捷的单元格添加方法
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L9)
 ```csharp title="Declaration"
 public class DefaultTableData : ITableData
 ```
 ## Properties
 ### Visible
 是否可见
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L12)
 ```csharp title="Declaration"
 public bool Visible { get; set; }
 ```
 ### Cells
 单元格集合
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L15)
 ```csharp title="Declaration"
 public IList<ITableCell> Cells { get; }
 ```
 ## Methods
 ### AddCell(ITableCell)
 添加自定义单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L22)
 ```csharp title="Declaration"
 public void AddCell(ITableCell cell)
 ```
@@ -36,11 +36,11 @@ public void AddCell(ITableCell cell)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.ITableCell](/docs/api/YooAsset.Editor/ITableCell) | *cell* | 要添加的单元格实例 |
+| [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md) | *cell* | 要添加的单元格实例 |
 
 ### AddButtonCell(string)
 添加按钮单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L31)
 ```csharp title="Declaration"
 public void AddButtonCell(string searchTag)
 ```
@@ -53,7 +53,7 @@ public void AddButtonCell(string searchTag)
 
 ### AddAssetPathCell(string, string)
 添加资源路径单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L42)
 ```csharp title="Declaration"
 public void AddAssetPathCell(string searchTag, string assetPath)
 ```
@@ -67,7 +67,7 @@ public void AddAssetPathCell(string searchTag, string assetPath)
 
 ### AddAssetObjectCell(string, string)
 添加资源对象单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L53)
 ```csharp title="Declaration"
 public void AddAssetObjectCell(string searchTag, string assetPath)
 ```
@@ -81,7 +81,7 @@ public void AddAssetObjectCell(string searchTag, string assetPath)
 
 ### AddStringValueCell(string, string)
 添加字符串单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L64)
 ```csharp title="Declaration"
 public void AddStringValueCell(string searchTag, string value)
 ```
@@ -95,7 +95,7 @@ public void AddStringValueCell(string searchTag, string value)
 
 ### AddLongValueCell(string, long)
 添加长整数单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L75)
 ```csharp title="Declaration"
 public void AddLongValueCell(string searchTag, long value)
 ```
@@ -109,7 +109,7 @@ public void AddLongValueCell(string searchTag, long value)
 
 ### AddDoubleValueCell(string, double)
 添加双精度浮点单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L86)
 ```csharp title="Declaration"
 public void AddDoubleValueCell(string searchTag, double value)
 ```
@@ -123,7 +123,7 @@ public void AddDoubleValueCell(string searchTag, double value)
 
 ### AddBoolValueCell(string, bool)
 添加布尔单元格
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultTableData/DefaultTableData.cs#L97)
 ```csharp title="Declaration"
 public void AddBoolValueCell(string searchTag, bool value)
 ```
@@ -138,4 +138,4 @@ public void AddBoolValueCell(string searchTag, bool value)
 
 ## Implements
 
-* [YooAsset.Editor.ITableData](/docs/api/YooAsset.Editor/ITableData)
+* [YooAsset.Editor.ITableData](../YooAsset.Editor/ITableData.md)

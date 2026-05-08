@@ -7,81 +7,81 @@ description: "异步操作基类"
 异步操作基类
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L11)
 ```csharp title="Declaration"
 public abstract class AsyncOperationBase : IEnumerator, IComparable<AsyncOperationBase>
 ```
 ## Properties
 ### IsBusy
 当前帧时间切片是否已用完
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L41)
 ```csharp title="Declaration"
 protected bool IsBusy { get; }
 ```
 ### Priority
 任务优先级（值越大越优先执行）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L55)
 ```csharp title="Declaration"
 public uint Priority { get; set; }
 ```
 ### Progress
 异步操作的处理进度（0f - 1f）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L73)
 ```csharp title="Declaration"
 public float Progress { get; protected set; }
 ```
 ### IsDone
 异步操作是否已结束
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L78)
 ```csharp title="Declaration"
 public bool IsDone { get; }
 ```
 ### Error
 操作失败时的错误描述
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L89)
 ```csharp title="Declaration"
 public string Error { get; }
 ```
 ### Status
 异步操作的当前状态
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L97)
 ```csharp title="Declaration"
 public EOperationStatus Status { get; }
 ```
 ## Methods
 ### WaitForCompletion()
 同步等待异步执行完毕
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L162)
 ```csharp title="Declaration"
 public void WaitForCompletion()
 ```
 ### InternalStart()
 内部启动方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L285)
 ```csharp title="Declaration"
 protected abstract void InternalStart()
 ```
 ### InternalUpdate()
 内部更新方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L290)
 ```csharp title="Declaration"
 protected abstract void InternalUpdate()
 ```
 ### InternalAbort()
 内部中止方法（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L295)
 ```csharp title="Declaration"
 protected virtual void InternalAbort()
 ```
 ### InternalDispose()
 内部释放方法（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L302)
 ```csharp title="Declaration"
 protected virtual void InternalDispose()
 ```
 ### InternalGetDescription()
 获取操作的描述信息（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L310)
 ```csharp title="Declaration"
 protected virtual string InternalGetDescription()
 ```
@@ -90,19 +90,19 @@ protected virtual string InternalGetDescription()
 
 `System.String`: 操作的描述字符串，默认返回空字符串。### InternalWaitForCompletion()
 内部同步等待方法（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L321)
 ```csharp title="Declaration"
 protected virtual void InternalWaitForCompletion()
 ```
 ### SetResult()
 将操作标记为成功完成
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L330)
 ```csharp title="Declaration"
 protected void SetResult()
 ```
 ### SetError(string)
 将操作标记为失败
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L342)
 ```csharp title="Declaration"
 protected void SetError(string error)
 ```
@@ -115,7 +115,7 @@ protected void SetError(string error)
 
 ### CalculateMultiStageProgress(int, int, int, int)
 计算多阶段操作的整体进度
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L359)
 ```csharp title="Declaration"
 protected float CalculateMultiStageProgress(int stageIndex, int stageCount, int remaining, int total)
 ```
@@ -134,7 +134,7 @@ protected float CalculateMultiStageProgress(int stageIndex, int stageCount, int 
 
 ### AddChildOperation(AsyncOperationBase)
 添加子任务
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L371)
 ```csharp title="Declaration"
 protected void AddChildOperation(AsyncOperationBase child)
 ```
@@ -143,11 +143,11 @@ protected void AddChildOperation(AsyncOperationBase child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AsyncOperationBase](/docs/api/YooAsset/AsyncOperationBase) | *child* | 要添加的子任务 |
+| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *child* | 要添加的子任务 |
 
 ### RemoveChildOperation(AsyncOperationBase)
 移除子任务
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L398)
 ```csharp title="Declaration"
 protected void RemoveChildOperation(AsyncOperationBase child)
 ```
@@ -156,17 +156,17 @@ protected void RemoveChildOperation(AsyncOperationBase child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.AsyncOperationBase](/docs/api/YooAsset/AsyncOperationBase) | *child* | 要移除的子任务 |
+| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *child* | 要移除的子任务 |
 
 ### ExecuteOnce()
 执行一次更新逻辑
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L417)
 ```csharp title="Declaration"
 protected void ExecuteOnce()
 ```
 ### ExecuteBatch(int)
 批量执行一定次数的更新逻辑
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L432)
 ```csharp title="Declaration"
 protected void ExecuteBatch(int count = 1000)
 ```
@@ -179,7 +179,7 @@ protected void ExecuteBatch(int count = 1000)
 
 ### ExecuteUntilComplete(int)
 循环执行更新逻辑直到操作完成
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L457)
 ```csharp title="Declaration"
 protected void ExecuteUntilComplete(int sleepMilliseconds = 1)
 ```
@@ -192,7 +192,7 @@ protected void ExecuteUntilComplete(int sleepMilliseconds = 1)
 
 ### CompareTo(AsyncOperationBase)
 
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L672)
 ```csharp title="Declaration"
 public int CompareTo(AsyncOperationBase other)
 ```
@@ -205,21 +205,21 @@ public int CompareTo(AsyncOperationBase other)
 
 | Type | Name |
 |:--- |:--- |
-| [YooAsset.AsyncOperationBase](/docs/api/YooAsset/AsyncOperationBase) | *other* |
+| [YooAsset.AsyncOperationBase](../YooAsset/AsyncOperationBase.md) | *other* |
 
 ### GetAwaiter()
 获取用于 async/await 的等待器
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L683)
 ```csharp title="Declaration"
 public OperationAwaiter GetAwaiter()
 ```
 
 ##### Returns
 
-[YooAsset.OperationAwaiter](/docs/api/YooAsset/OperationAwaiter): 当前操作的等待器## Events
+[YooAsset.OperationAwaiter](../YooAsset/OperationAwaiter.md): 当前操作的等待器## Events
 ### Completed
 异步操作的完成事件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/AsyncOperation/AsyncOperationBase.cs#L108)
 ```csharp title="Declaration"
 public event Action<AsyncOperationBase> Completed
 ```

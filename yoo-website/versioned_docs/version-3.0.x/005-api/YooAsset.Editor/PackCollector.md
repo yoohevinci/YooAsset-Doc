@@ -9,7 +9,7 @@ description: "以收集器路径作为资源包名
 注意：收集的所有文件打进一个资源包
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultBundlePackRule.cs#L125)
 ```csharp title="Declaration"
 [DisplayName("资源包名: 收集器路径")]
 public class PackCollector : IBundlePackRule
@@ -17,4 +17,4 @@ public class PackCollector : IBundlePackRule
 
 ## Implements
 
-* [YooAsset.Editor.IBundlePackRule](/docs/api/YooAsset.Editor/IBundlePackRule)
+* [YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md)

@@ -7,25 +7,25 @@ description: "构建管线接口，定义构建流程的标准入口"
 构建管线接口，定义构建流程的标准入口
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildSystem/IBuildPipeline.cs#L9)
 ```csharp title="Declaration"
 public interface IBuildPipeline
 ```
 ## Methods
 ### Run(BuildParameters, bool)
 执行构建流程
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildSystem/IBuildPipeline.cs#L17)
 ```csharp title="Declaration"
 BuildResult Run(BuildParameters buildParameters, bool enableLog)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.BuildResult](/docs/api/YooAsset.Editor/BuildResult): 构建结果
+[YooAsset.Editor.BuildResult](../YooAsset.Editor/BuildResult.md): 构建结果
 ##### Parameters
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildParameters](/docs/api/YooAsset.Editor/BuildParameters) | *buildParameters* | 构建参数 |
+| [YooAsset.Editor.BuildParameters](../YooAsset.Editor/BuildParameters.md) | *buildParameters* | 构建参数 |
 | `System.Boolean` | *enableLog* | 是否启用日志记录 |
 

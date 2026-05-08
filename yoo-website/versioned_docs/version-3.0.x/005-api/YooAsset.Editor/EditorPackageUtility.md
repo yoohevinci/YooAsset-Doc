@@ -7,14 +7,14 @@ description: "包管理工具类"
 包管理工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPackageUtility.cs#L6)
 ```csharp title="Declaration"
 public static class EditorPackageUtility
 ```
 ## Methods
 ### GetPackageManagerYooVersion()
 获取通过 PackageManager 安装的 YooAsset 版本号
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPackageUtility.cs#L12)
 ```csharp title="Declaration"
 public static string GetPackageManagerYooVersion()
 ```

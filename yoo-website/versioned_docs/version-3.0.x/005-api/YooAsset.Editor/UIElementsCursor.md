@@ -7,14 +7,14 @@ description: "通过反射创建自定义鼠标光标的工具类"
 通过反射创建自定义鼠标光标的工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsCursor.cs#L9)
 ```csharp title="Declaration"
 public static class UIElementsCursor
 ```
 ## Methods
 ### CreateCursor(MouseCursor)
 创建指定类型的鼠标光标
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/UIElementsCursor.cs#L29)
 ```csharp title="Declaration"
 public static Cursor CreateCursor(MouseCursor cursorType)
 ```

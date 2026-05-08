@@ -7,14 +7,14 @@ description: "场景工具类"
 场景工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorSceneUtility.cs#L8)
 ```csharp title="Declaration"
 public static class EditorSceneUtility
 ```
 ## Methods
 ### HasDirtyScenes()
 检查当前打开的场景中是否存在未保存的修改
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorSceneUtility.cs#L14)
 ```csharp title="Declaration"
 public static bool HasDirtyScenes()
 ```

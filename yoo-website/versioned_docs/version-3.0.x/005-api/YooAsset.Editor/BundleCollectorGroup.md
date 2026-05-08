@@ -7,7 +7,7 @@ description: "资源收集器分组"
 资源收集器分组
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L13)
 ```csharp title="Declaration"
 [Serializable]
 public class BundleCollectorGroup
@@ -15,44 +15,44 @@ public class BundleCollectorGroup
 ## Fields
 ### GroupName
 分组名称
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L19)
 ```csharp title="Declaration"
 public string GroupName
 ```
 ### GroupDesc
 分组描述
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L24)
 ```csharp title="Declaration"
 public string GroupDesc
 ```
 ### AssetTags
 资源分类标签
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L29)
 ```csharp title="Declaration"
 public string AssetTags
 ```
 ### ActiveRuleName
 分组激活规则
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L34)
 ```csharp title="Declaration"
 public string ActiveRuleName
 ```
 ### Collectors
 分组的收集器列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L39)
 ```csharp title="Declaration"
 public List<BundleCollector> Collectors
 ```
 ## Methods
 ### CheckConfigError()
 检测配置错误
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L45)
 ```csharp title="Declaration"
 public void CheckConfigError()
 ```
 ### FixConfigError()
 修复配置错误
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L65)
 ```csharp title="Declaration"
 public bool FixConfigError()
 ```
@@ -61,7 +61,7 @@ public bool FixConfigError()
 
 `System.Boolean`: 如果修复了配置错误返回 true### GetAllCollectAssets(CollectCommand)
 获取打包收集的资源文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorGroup.cs#L83)
 ```csharp title="Declaration"
 public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command)
 ```
@@ -73,5 +73,5 @@ public List<CollectAssetInfo> GetAllCollectAssets(CollectCommand command)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.CollectCommand](/docs/api/YooAsset.Editor/CollectCommand) | *command* | 收集命令 |
+| [YooAsset.Editor.CollectCommand](../YooAsset.Editor/CollectCommand.md) | *command* | 收集命令 |
 

@@ -7,14 +7,14 @@ description: "卸载未使用资源的选项配置"
 卸载未使用资源的选项配置
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadUnusedAssetsOptions.cs#L7)
 ```csharp title="Declaration"
 public readonly struct UnloadUnusedAssetsOptions
 ```
 ## Properties
 ### MaxLoopCount
 最大循环迭代次数
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadUnusedAssetsOptions.cs#L12)
 ```csharp title="Declaration"
 public int MaxLoopCount { get; }
 ```

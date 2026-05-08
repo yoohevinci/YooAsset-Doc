@@ -13,7 +13,7 @@ description: "以文件路径作为资源包名
 例如："Assets/UIPanel/Shop/View/main.prefab" --&gt; "assets_uipanel_shop_view_main.bundle"
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultBundlePackRule.cs#L58)
 ```csharp title="Declaration"
 [DisplayName("资源包名: 文件路径")]
 public class PackSeparately : IBundlePackRule
@@ -21,4 +21,4 @@ public class PackSeparately : IBundlePackRule
 
 ## Implements
 
-* [YooAsset.Editor.IBundlePackRule](/docs/api/YooAsset.Editor/IBundlePackRule)
+* [YooAsset.Editor.IBundlePackRule](../YooAsset.Editor/IBundlePackRule.md)

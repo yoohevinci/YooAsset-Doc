@@ -7,14 +7,14 @@ description: "资源包构建器的持久化设置"
 资源包构建器的持久化设置
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L10)
 ```csharp title="Declaration"
 public static class BundleBuilderSetting
 ```
 ## Methods
 ### GetPackageBuildPipeline(string)
 获取包裹的构建管线名称
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L17)
 ```csharp title="Declaration"
 public static string GetPackageBuildPipeline(string packageName)
 ```
@@ -30,7 +30,7 @@ public static string GetPackageBuildPipeline(string packageName)
 
 ### SetPackageBuildPipeline(string, string)
 设置包裹的构建管线名称
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L29)
 ```csharp title="Declaration"
 public static void SetPackageBuildPipeline(string packageName, string buildPipeline)
 ```
@@ -44,14 +44,14 @@ public static void SetPackageBuildPipeline(string packageName, string buildPipel
 
 ### GetPackageCompressOption(string, string)
 获取包裹的压缩选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L41)
 ```csharp title="Declaration"
 public static ECompressOption GetPackageCompressOption(string packageName, string buildPipeline)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.ECompressOption](/docs/api/YooAsset.Editor/ECompressOption): 压缩选项
+[YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md): 压缩选项
 ##### Parameters
 
 | Type | Name | Description |
@@ -61,7 +61,7 @@ public static ECompressOption GetPackageCompressOption(string packageName, strin
 
 ### SetPackageCompressOption(string, string, ECompressOption)
 设置包裹的压缩选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L53)
 ```csharp title="Declaration"
 public static void SetPackageCompressOption(string packageName, string buildPipeline, ECompressOption compressOption)
 ```
@@ -72,18 +72,18 @@ public static void SetPackageCompressOption(string packageName, string buildPipe
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.Editor.ECompressOption](/docs/api/YooAsset.Editor/ECompressOption) | *compressOption* | 压缩选项 |
+| [YooAsset.Editor.ECompressOption](../YooAsset.Editor/ECompressOption.md) | *compressOption* | 压缩选项 |
 
 ### GetPackageFileNameStyle(string, string)
 获取包裹的文件名样式
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L65)
 ```csharp title="Declaration"
 public static EFileNameStyle GetPackageFileNameStyle(string packageName, string buildPipeline)
 ```
 
 ##### Returns
 
-[YooAsset.EFileNameStyle](/docs/api/YooAsset/EFileNameStyle): 文件名样式
+[YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md): 文件名样式
 ##### Parameters
 
 | Type | Name | Description |
@@ -93,7 +93,7 @@ public static EFileNameStyle GetPackageFileNameStyle(string packageName, string 
 
 ### SetPackageFileNameStyle(string, string, EFileNameStyle)
 设置包裹的文件名样式
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L77)
 ```csharp title="Declaration"
 public static void SetPackageFileNameStyle(string packageName, string buildPipeline, EFileNameStyle fileNameStyle)
 ```
@@ -104,18 +104,18 @@ public static void SetPackageFileNameStyle(string packageName, string buildPipel
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.EFileNameStyle](/docs/api/YooAsset/EFileNameStyle) | *fileNameStyle* | 文件名样式 |
+| [YooAsset.EFileNameStyle](../YooAsset/EFileNameStyle.md) | *fileNameStyle* | 文件名样式 |
 
 ### GetPackageBundledCopyOption(string, string)
 获取包裹的首包资源的拷贝选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L89)
 ```csharp title="Declaration"
 public static EBundledCopyOption GetPackageBundledCopyOption(string packageName, string buildPipeline)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.EBundledCopyOption](/docs/api/YooAsset.Editor/EBundledCopyOption): 首包资源的拷贝选项
+[YooAsset.Editor.EBundledCopyOption](../YooAsset.Editor/EBundledCopyOption.md): 首包资源的拷贝选项
 ##### Parameters
 
 | Type | Name | Description |
@@ -125,7 +125,7 @@ public static EBundledCopyOption GetPackageBundledCopyOption(string packageName,
 
 ### SetPackageBundledCopyOption(string, string, EBundledCopyOption)
 设置包裹的首包资源的拷贝选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L101)
 ```csharp title="Declaration"
 public static void SetPackageBundledCopyOption(string packageName, string buildPipeline, EBundledCopyOption bundledCopyOption)
 ```
@@ -136,11 +136,11 @@ public static void SetPackageBundledCopyOption(string packageName, string buildP
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
 | `System.String` | *buildPipeline* | 构建管线名称 |
-| [YooAsset.Editor.EBundledCopyOption](/docs/api/YooAsset.Editor/EBundledCopyOption) | *bundledCopyOption* | 首包资源的拷贝选项 |
+| [YooAsset.Editor.EBundledCopyOption](../YooAsset.Editor/EBundledCopyOption.md) | *bundledCopyOption* | 首包资源的拷贝选项 |
 
 ### GetPackageBundledCopyParams(string, string)
 获取包裹的首包资源的拷贝参数
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L113)
 ```csharp title="Declaration"
 public static string GetPackageBundledCopyParams(string packageName, string buildPipeline)
 ```
@@ -157,7 +157,7 @@ public static string GetPackageBundledCopyParams(string packageName, string buil
 
 ### SetPackageBundledCopyParams(string, string, string)
 设置包裹的首包资源的拷贝参数
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L125)
 ```csharp title="Declaration"
 public static void SetPackageBundledCopyParams(string packageName, string buildPipeline, string bundledCopyParams)
 ```
@@ -172,7 +172,7 @@ public static void SetPackageBundledCopyParams(string packageName, string buildP
 
 ### GetPackageBundleEncryptorClassName(string, string)
 获取包裹的资源包加密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L137)
 ```csharp title="Declaration"
 public static string GetPackageBundleEncryptorClassName(string packageName, string buildPipeline)
 ```
@@ -189,7 +189,7 @@ public static string GetPackageBundleEncryptorClassName(string packageName, stri
 
 ### SetPackageBundleEncryptorClassName(string, string, string)
 设置包裹的资源包加密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L149)
 ```csharp title="Declaration"
 public static void SetPackageBundleEncryptorClassName(string packageName, string buildPipeline, string encryptorClassName)
 ```
@@ -204,7 +204,7 @@ public static void SetPackageBundleEncryptorClassName(string packageName, string
 
 ### GetPackageManifestEncryptorClassName(string, string)
 获取包裹的资源清单加密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L161)
 ```csharp title="Declaration"
 public static string GetPackageManifestEncryptorClassName(string packageName, string buildPipeline)
 ```
@@ -221,7 +221,7 @@ public static string GetPackageManifestEncryptorClassName(string packageName, st
 
 ### SetPackageManifestEncryptorClassName(string, string, string)
 设置包裹的资源清单加密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L173)
 ```csharp title="Declaration"
 public static void SetPackageManifestEncryptorClassName(string packageName, string buildPipeline, string encryptionClassName)
 ```
@@ -236,7 +236,7 @@ public static void SetPackageManifestEncryptorClassName(string packageName, stri
 
 ### GetPackageManifestDecryptorClassName(string, string)
 获取包裹的资源清单解密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L185)
 ```csharp title="Declaration"
 public static string GetPackageManifestDecryptorClassName(string packageName, string buildPipeline)
 ```
@@ -253,7 +253,7 @@ public static string GetPackageManifestDecryptorClassName(string packageName, st
 
 ### SetPackageManifestDecryptorClassName(string, string, string)
 设置包裹的资源清单解密器类名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L197)
 ```csharp title="Declaration"
 public static void SetPackageManifestDecryptorClassName(string packageName, string buildPipeline, string encryptionClassName)
 ```
@@ -268,7 +268,7 @@ public static void SetPackageManifestDecryptorClassName(string packageName, stri
 
 ### GetPackageClearBuildCache(string, string)
 获取包裹的清空构建缓存选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L209)
 ```csharp title="Declaration"
 public static bool GetPackageClearBuildCache(string packageName, string buildPipeline)
 ```
@@ -285,7 +285,7 @@ public static bool GetPackageClearBuildCache(string packageName, string buildPip
 
 ### SetPackageClearBuildCache(string, string, bool)
 设置包裹的清空构建缓存选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L221)
 ```csharp title="Declaration"
 public static void SetPackageClearBuildCache(string packageName, string buildPipeline, bool clearBuildCache)
 ```
@@ -300,7 +300,7 @@ public static void SetPackageClearBuildCache(string packageName, string buildPip
 
 ### GetPackageUseAssetDependencyDB(string, string)
 获取包裹的资源依赖缓存数据库选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L233)
 ```csharp title="Declaration"
 public static bool GetPackageUseAssetDependencyDB(string packageName, string buildPipeline)
 ```
@@ -317,7 +317,7 @@ public static bool GetPackageUseAssetDependencyDB(string packageName, string bui
 
 ### SetPackageUseAssetDependencyDB(string, string, bool)
 设置包裹的资源依赖缓存数据库选项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BundleBuilderSetting.cs#L245)
 ```csharp title="Declaration"
 public static void SetPackageUseAssetDependencyDB(string packageName, string buildPipeline, bool useAssetDependencyDB)
 ```

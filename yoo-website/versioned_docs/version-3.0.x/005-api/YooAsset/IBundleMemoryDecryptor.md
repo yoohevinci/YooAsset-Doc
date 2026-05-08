@@ -9,14 +9,14 @@ description: "基于内存的资源包解密器。
 将整个加密数据解密为字节数组后加载。
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IBundleDecryptor.cs#L74)
 ```csharp title="Declaration"
 public interface IBundleMemoryDecryptor : IBundleDecryptor
 ```
 ## Methods
 ### GetDecryptedData(BundleDecryptArgs)
 将资源包数据解密并返回解密后的字节数组
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Interfaces/IBundleDecryptor.cs#L81)
 ```csharp title="Declaration"
 byte[] GetDecryptedData(BundleDecryptArgs args)
 ```
@@ -28,5 +28,5 @@ byte[] GetDecryptedData(BundleDecryptArgs args)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.BundleDecryptArgs](/docs/api/YooAsset/BundleDecryptArgs) | *args* | 解密操作的输入参数 |
+| [YooAsset.BundleDecryptArgs](../YooAsset/BundleDecryptArgs.md) | *args* | 解密操作的输入参数 |
 

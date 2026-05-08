@@ -7,14 +7,14 @@ description: "程序集与属性工具类"
 程序集与属性工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L13)
 ```csharp title="Declaration"
 public static class EditorAssemblyUtility
 ```
 ## Methods
 ### GetAssignableTypes(Type)
 获取带继承关系的所有类的类型
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L20)
 ```csharp title="Declaration"
 public static List<Type> GetAssignableTypes(Type parentType)
 ```
@@ -30,7 +30,7 @@ public static List<Type> GetAssignableTypes(Type parentType)
 
 ### GetTypesWithAttribute(Type)
 获取带有指定属性的所有类的类型
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L34)
 ```csharp title="Declaration"
 public static List<Type> GetTypesWithAttribute(Type attrType)
 ```
@@ -46,7 +46,7 @@ public static List<Type> GetTypesWithAttribute(Type attrType)
 
 ### InvokeNonPublicStaticMethod(Type, string, params object[])
 调用私有的静态方法
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L50)
 ```csharp title="Declaration"
 public static object InvokeNonPublicStaticMethod(Type type, string method, params object[] parameters)
 ```
@@ -64,7 +64,7 @@ public static object InvokeNonPublicStaticMethod(Type type, string method, param
 
 ### InvokePublicStaticMethod(Type, string, params object[])
 调用公开的静态方法
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L71)
 ```csharp title="Declaration"
 public static object InvokePublicStaticMethod(Type type, string method, params object[] parameters)
 ```
@@ -82,7 +82,7 @@ public static object InvokePublicStaticMethod(Type type, string method, params o
 
 ### GetAttribute&lt;T&gt;(Type)
 获取指定类型上的自定义属性
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L91)
 ```csharp title="Declaration"
 public static T GetAttribute<T>(Type type) where T : Attribute
 ```
@@ -102,7 +102,7 @@ public static T GetAttribute<T>(Type type) where T : Attribute
 | `T` | 属性类型 |
 ### GetAttribute&lt;T&gt;(MethodInfo)
 获取指定方法上的自定义属性
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L102)
 ```csharp title="Declaration"
 public static T GetAttribute<T>(MethodInfo methodInfo) where T : Attribute
 ```
@@ -122,7 +122,7 @@ public static T GetAttribute<T>(MethodInfo methodInfo) where T : Attribute
 | `T` | 属性类型 |
 ### GetAttribute&lt;T&gt;(FieldInfo)
 获取指定字段上的自定义属性
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorAssemblyUtility.cs#L113)
 ```csharp title="Declaration"
 public static T GetAttribute<T>(FieldInfo field) where T : Attribute
 ```

@@ -7,14 +7,14 @@ description: "自定义日志处理接口"
 自定义日志处理接口
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooLogger.cs#L8)
 ```csharp title="Declaration"
 public interface ILogger
 ```
 ## Methods
 ### Log(string)
 输出普通日志
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooLogger.cs#L13)
 ```csharp title="Declaration"
 void Log(string message)
 ```
@@ -27,7 +27,7 @@ void Log(string message)
 
 ### LogWarning(string)
 输出警告日志
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooLogger.cs#L18)
 ```csharp title="Declaration"
 void LogWarning(string message)
 ```
@@ -40,7 +40,7 @@ void LogWarning(string message)
 
 ### LogError(string)
 输出错误日志
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooLogger.cs#L23)
 ```csharp title="Declaration"
 void LogError(string message)
 ```
@@ -53,7 +53,7 @@ void LogError(string message)
 
 ### LogException(Exception)
 输出异常日志
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/Utility/YooLogger.cs#L28)
 ```csharp title="Declaration"
 void LogException(Exception exception)
 ```

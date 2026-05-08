@@ -7,14 +7,14 @@ description: "资源路径类型的表格单元格"
 资源路径类型的表格单元格
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/AssetPathCell.cs#L8)
 ```csharp title="Declaration"
 public class AssetPathCell : StringValueCell, ITableCell, IComparable
 ```
 ## Methods
 ### PingAssetObject()
 在 Project 窗口中定位并高亮资源对象
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/AssetPathCell.cs#L23)
 ```csharp title="Declaration"
 public bool PingAssetObject()
 ```
@@ -24,5 +24,5 @@ public bool PingAssetObject()
 `System.Boolean`: 定位成功返回 true；资源不存在时返回 false。
 ## Implements
 
-* [YooAsset.Editor.ITableCell](/docs/api/YooAsset.Editor/ITableCell)
+* [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md)
 * `System.IComparable`

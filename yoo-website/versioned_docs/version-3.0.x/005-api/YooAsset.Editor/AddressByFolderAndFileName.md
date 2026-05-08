@@ -7,7 +7,7 @@ description: "以文件夹名和文件名作为寻址地址"
 以文件夹名和文件名作为寻址地址
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAddressRule.cs#L48)
 ```csharp title="Declaration"
 [DisplayName("定位地址: 文件夹名_文件名")]
 public class AddressByFolderAndFileName : IAddressRule
@@ -15,4 +15,4 @@ public class AddressByFolderAndFileName : IAddressRule
 
 ## Implements
 
-* [YooAsset.Editor.IAddressRule](/docs/api/YooAsset.Editor/IAddressRule)
+* [YooAsset.Editor.IAddressRule](../YooAsset.Editor/IAddressRule.md)

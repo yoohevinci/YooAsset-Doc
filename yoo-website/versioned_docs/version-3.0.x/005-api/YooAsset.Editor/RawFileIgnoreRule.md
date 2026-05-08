@@ -7,14 +7,14 @@ description: "适配原生文件构建管线"
 适配原生文件构建管线
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetIgnoreRule.cs#L73)
 ```csharp title="Declaration"
 public class RawFileIgnoreRule : IAssetIgnoreRule
 ```
 ## Methods
 ### IsIgnoreAsset(EditorAssetInfo)
 检查是否为忽略文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultAssetIgnoreRule.cs#L76)
 ```csharp title="Declaration"
 public bool IsIgnoreAsset(EditorAssetInfo assetInfo)
 ```
@@ -26,9 +26,9 @@ public bool IsIgnoreAsset(EditorAssetInfo assetInfo)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.EditorAssetInfo](/docs/api/YooAsset.Editor/EditorAssetInfo) | *assetInfo* | 资源信息 |
+| [YooAsset.Editor.EditorAssetInfo](../YooAsset.Editor/EditorAssetInfo.md) | *assetInfo* | 资源信息 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IAssetIgnoreRule](/docs/api/YooAsset.Editor/IAssetIgnoreRule)
+* [YooAsset.Editor.IAssetIgnoreRule](../YooAsset.Editor/IAssetIgnoreRule.md)

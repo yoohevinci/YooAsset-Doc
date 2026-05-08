@@ -7,14 +7,14 @@ description: "编辑器模拟构建管线的资源包信息更新任务"
 编辑器模拟构建管线的资源包信息更新任务
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L11)
 ```csharp title="Declaration"
 public class TaskUpdateBundleInfo_ESBP : TaskUpdateBundleInfo, IBuildTask
 ```
 ## Methods
 ### GetUnityHash(BuildBundleInfo, BuildContext)
 获取 Unity 记录的资源包哈希值
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L19)
 ```csharp title="Declaration"
 protected override string GetUnityHash(BuildBundleInfo bundleInfo, BuildContext context)
 ```
@@ -26,12 +26,12 @@ protected override string GetUnityHash(BuildBundleInfo bundleInfo, BuildContext 
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
 
 ### GetUnityCRC(BuildBundleInfo, BuildContext)
 获取 Unity 记录的资源包 CRC
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L23)
 ```csharp title="Declaration"
 protected override uint GetUnityCRC(BuildBundleInfo bundleInfo, BuildContext context)
 ```
@@ -43,12 +43,12 @@ protected override uint GetUnityCRC(BuildBundleInfo bundleInfo, BuildContext con
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
 
 ### GetBundleFileHash(BuildBundleInfo, BuildContext)
 获取资源包文件的哈希值（用于远端文件名等）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L27)
 ```csharp title="Declaration"
 protected override string GetBundleFileHash(BuildBundleInfo bundleInfo, BuildContext context)
 ```
@@ -60,12 +60,12 @@ protected override string GetBundleFileHash(BuildBundleInfo bundleInfo, BuildCon
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
 
 ### GetBundleFileCRC(BuildBundleInfo, BuildContext)
 获取资源包文件的 CRC
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L32)
 ```csharp title="Declaration"
 protected override uint GetBundleFileCRC(BuildBundleInfo bundleInfo, BuildContext context)
 ```
@@ -77,12 +77,12 @@ protected override uint GetBundleFileCRC(BuildBundleInfo bundleInfo, BuildContex
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
 
 ### GetBundleFileSize(BuildBundleInfo, BuildContext)
 获取资源包文件大小（字节）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/EditorSimulateBuildPipeline/BuildTasks/TaskUpdateBundleInfo_ESBP.cs#L36)
 ```csharp title="Declaration"
 protected override long GetBundleFileSize(BuildBundleInfo bundleInfo, BuildContext context)
 ```
@@ -94,10 +94,10 @@ protected override long GetBundleFileSize(BuildBundleInfo bundleInfo, BuildConte
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.BuildBundleInfo](/docs/api/YooAsset.Editor/BuildBundleInfo) | *bundleInfo* | 资源包构建信息 |
-| [YooAsset.Editor.BuildContext](/docs/api/YooAsset.Editor/BuildContext) | *context* | 构建上下文 |
+| [YooAsset.Editor.BuildBundleInfo](../YooAsset.Editor/BuildBundleInfo.md) | *bundleInfo* | 资源包构建信息 |
+| [YooAsset.Editor.BuildContext](../YooAsset.Editor/BuildContext.md) | *context* | 构建上下文 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)

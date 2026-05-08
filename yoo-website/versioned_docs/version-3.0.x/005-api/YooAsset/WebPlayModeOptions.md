@@ -7,20 +7,20 @@ description: "WebGL运行模式的初始化参数"
 WebGL运行模式的初始化参数
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L67)
 ```csharp title="Declaration"
 public class WebPlayModeOptions : InitializePackageOptions
 ```
 ## Properties
 ### WebServerFileSystemParameters
 Web服务器文件系统初始化参数
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L72)
 ```csharp title="Declaration"
 public FileSystemParameters WebServerFileSystemParameters { get; set; }
 ```
 ### WebRemoteFileSystemParameters
 Web远程文件系统初始化参数
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L77)
 ```csharp title="Declaration"
 public FileSystemParameters WebRemoteFileSystemParameters { get; set; }
 ```

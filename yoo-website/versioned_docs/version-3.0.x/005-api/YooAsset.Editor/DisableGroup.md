@@ -7,7 +7,7 @@ description: "禁用分组的激活规则"
 禁用分组的激活规则
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultGroupActiveRule.cs#L20)
 ```csharp title="Declaration"
 [DisplayName("禁用分组")]
 public class DisableGroup : IGroupActiveRule
@@ -15,7 +15,7 @@ public class DisableGroup : IGroupActiveRule
 ## Methods
 ### IsActiveGroup(GroupActiveRuleData)
 检查是否激活分组
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/DefaultRules/DefaultGroupActiveRule.cs#L24)
 ```csharp title="Declaration"
 public bool IsActiveGroup(GroupActiveRuleData data)
 ```
@@ -27,9 +27,9 @@ public bool IsActiveGroup(GroupActiveRuleData data)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.GroupActiveRuleData](/docs/api/YooAsset.Editor/GroupActiveRuleData) | *data* | 分组数据 |
+| [YooAsset.Editor.GroupActiveRuleData](../YooAsset.Editor/GroupActiveRuleData.md) | *data* | 分组数据 |
 
 
 ## Implements
 
-* [YooAsset.Editor.IGroupActiveRule](/docs/api/YooAsset.Editor/IGroupActiveRule)
+* [YooAsset.Editor.IGroupActiveRule](../YooAsset.Editor/IGroupActiveRule.md)

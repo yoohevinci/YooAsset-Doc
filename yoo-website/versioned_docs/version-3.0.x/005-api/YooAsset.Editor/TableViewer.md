@@ -7,27 +7,27 @@ description: "多列表格视图"
 多列表格视图
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L18)
 ```csharp title="Declaration"
 public class TableViewer : VisualElement, IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler
 ```
 ## Properties
 ### ItemsSource
 数据源
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L38)
 ```csharp title="Declaration"
 public IList<ITableData> ItemsSource { get; set; }
 ```
 ### SelectedItems
 选中的数据列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L57)
 ```csharp title="Declaration"
 public IReadOnlyList<ITableData> SelectedItems { get; }
 ```
 ## Methods
 ### GetHeaderElement(string)
 获取指定名称的标题栏元素
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L124)
 ```csharp title="Declaration"
 public VisualElement GetHeaderElement(string elementName)
 ```
@@ -43,7 +43,7 @@ public VisualElement GetHeaderElement(string elementName)
 
 ### AddColumn(TableColumn)
 添加单元列
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L133)
 ```csharp title="Declaration"
 public void AddColumn(TableColumn column)
 ```
@@ -52,11 +52,11 @@ public void AddColumn(TableColumn column)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.TableColumn](/docs/api/YooAsset.Editor/TableColumn) | *column* | 要添加的列定义 |
+| [YooAsset.Editor.TableColumn](../YooAsset.Editor/TableColumn.md) | *column* | 要添加的列定义 |
 
 ### AddColumns(IList&lt;TableColumn&gt;)
 批量添加单元列
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L181)
 ```csharp title="Declaration"
 public void AddColumns(IList<TableColumn> columns)
 ```
@@ -69,13 +69,13 @@ public void AddColumns(IList<TableColumn> columns)
 
 ### RebuildView()
 重建表格视图
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L192)
 ```csharp title="Declaration"
 public void RebuildView()
 ```
 ### ClearAll(bool, bool)
 清空表格数据
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L253)
 ```csharp title="Declaration"
 public void ClearAll(bool clearColumns, bool clearSource)
 ```
@@ -90,7 +90,7 @@ public void ClearAll(bool clearColumns, bool clearSource)
 ## Events
 ### TableDataClicked
 当点击表格数据行时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L74)
 ```csharp title="Declaration"
 public event Action<PointerDownEvent, ITableData> TableDataClicked
 ```
@@ -98,7 +98,7 @@ public event Action<PointerDownEvent, ITableData> TableDataClicked
 `System.Action<UnityEngine.UIElements.PointerDownEvent,YooAsset.Editor.ITableData>`
 ### TableHeadClicked
 当点击表格标题列时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L79)
 ```csharp title="Declaration"
 public event Action<TableColumn> TableHeadClicked
 ```
@@ -106,7 +106,7 @@ public event Action<TableColumn> TableHeadClicked
 `System.Action<YooAsset.Editor.TableColumn>`
 ### SelectionChanged
 当选中项变化时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/TableViewer.cs#L84)
 ```csharp title="Declaration"
 public event Action<ITableData> SelectionChanged
 ```

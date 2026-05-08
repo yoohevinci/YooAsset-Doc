@@ -7,27 +7,27 @@ description: "子资源句柄，用于管理资源包内子资源对象的加载
 子资源句柄，用于管理资源包内子资源对象的加载和访问。
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L9)
 ```csharp title="Declaration"
 public sealed class SubAssetsHandle : HandleBase, IEnumerator, IDisposable
 ```
 ## Properties
 ### SubAssetObjects
 子资源对象集合
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L57)
 ```csharp title="Declaration"
 public IReadOnlyList<Object> SubAssetObjects { get; }
 ```
 ## Methods
 ### WaitForAsyncComplete()
 等待异步执行完毕
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L46)
 ```csharp title="Declaration"
 public void WaitForAsyncComplete()
 ```
 ### GetSubAssetObject&lt;TObject&gt;(string)
 获取子资源对象
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L73)
 ```csharp title="Declaration"
 public TObject GetSubAssetObject<TObject>(string assetName) where TObject : Object
 ```
@@ -47,7 +47,7 @@ public TObject GetSubAssetObject<TObject>(string assetName) where TObject : Obje
 | `TObject` | 子资源对象类型 |
 ### GetSubAssetObjects&lt;TObject&gt;()
 获取所有的子资源对象集合
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L95)
 ```csharp title="Declaration"
 public IReadOnlyList<TObject> GetSubAssetObjects<TObject>() where TObject : Object
 ```
@@ -61,7 +61,7 @@ public IReadOnlyList<TObject> GetSubAssetObjects<TObject>() where TObject : Obje
 ## Events
 ### Completed
 当加载完成时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Handles/SubAssetsHandle.cs#L24)
 ```csharp title="Declaration"
 public event Action<SubAssetsHandle> Completed
 ```

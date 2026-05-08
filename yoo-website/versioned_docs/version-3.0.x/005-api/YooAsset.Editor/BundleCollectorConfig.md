@@ -7,14 +7,14 @@ description: "资源收集器的 XML 配置"
 资源收集器的 XML 配置
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorConfig.cs#L13)
 ```csharp title="Declaration"
 public class BundleCollectorConfig
 ```
 ## Methods
 ### ImportXmlConfig(string)
 导入XML配置表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorConfig.cs#L52)
 ```csharp title="Declaration"
 public static void ImportXmlConfig(string filePath)
 ```
@@ -27,7 +27,7 @@ public static void ImportXmlConfig(string filePath)
 
 ### ExportXmlConfig(string)
 导出XML配置表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/BundleCollectorConfig.cs#L156)
 ```csharp title="Declaration"
 public static void ExportXmlConfig(string savePath)
 ```

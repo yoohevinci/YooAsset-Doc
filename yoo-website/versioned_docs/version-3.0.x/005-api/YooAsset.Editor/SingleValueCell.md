@@ -7,33 +7,33 @@ description: "浮点数类型的表格单元格"
 浮点数类型的表格单元格
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L8)
 ```csharp title="Declaration"
 public class SingleValueCell : ITableCell, IComparable
 ```
 ## Properties
 ### CellValue
 单元格数值
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L11)
 ```csharp title="Declaration"
 public object CellValue { get; set; }
 ```
 ### SearchTag
 搜索标签
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L16)
 ```csharp title="Declaration"
 public string SearchTag { get; }
 ```
 ### SingleValue
 双精度浮点形式的单元格值
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L21)
 ```csharp title="Declaration"
 public double SingleValue { get; }
 ```
 ## Methods
 ### GetDisplayObject()
 获取用于界面渲染的显示对象
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L41)
 ```csharp title="Declaration"
 public object GetDisplayObject()
 ```
@@ -42,7 +42,7 @@ public object GetDisplayObject()
 
 `System.Object`: 可用于 UI 绑定的对象实例### CompareTo(object)
 
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TableViewer/DefaultCells/SingleValueCell.cs#L47)
 ```csharp title="Declaration"
 public int CompareTo(object other)
 ```
@@ -60,5 +60,5 @@ public int CompareTo(object other)
 
 ## Implements
 
-* [YooAsset.Editor.ITableCell](/docs/api/YooAsset.Editor/ITableCell)
+* [YooAsset.Editor.ITableCell](../YooAsset.Editor/ITableCell.md)
 * `System.IComparable`

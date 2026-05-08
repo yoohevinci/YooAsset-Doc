@@ -7,27 +7,27 @@ description: "资源系统的主入口"
 资源系统的主入口
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L13)
 ```csharp title="Declaration"
 public static class YooAssets
 ```
 ## Properties
 ### IsInitialized
 是否已经初始化
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L32)
 ```csharp title="Declaration"
 public static bool IsInitialized { get; }
 ```
 ## Methods
 ### Initialize()
 初始化资源系统
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L40)
 ```csharp title="Declaration"
 public static void Initialize()
 ```
 ### Initialize(ILogger)
 初始化资源系统
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L49)
 ```csharp title="Declaration"
 public static void Initialize(ILogger logger)
 ```
@@ -36,24 +36,24 @@ public static void Initialize(ILogger logger)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.ILogger](/docs/api/YooAsset/ILogger) | *logger* | 自定义日志处理 |
+| [YooAsset.ILogger](../YooAsset/ILogger.md) | *logger* | 自定义日志处理 |
 
 ### Destroy()
 销毁资源系统
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L75)
 ```csharp title="Declaration"
 public static void Destroy()
 ```
 ### CreatePackage(string)
 创建资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L116)
 ```csharp title="Declaration"
 public static ResourcePackage CreatePackage(string packageName)
 ```
 
 ##### Returns
 
-[YooAsset.ResourcePackage](/docs/api/YooAsset/ResourcePackage): 新创建的资源包裹实例
+[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 新创建的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -62,14 +62,14 @@ public static ResourcePackage CreatePackage(string packageName)
 
 ### CreatePackage(string, uint)
 创建资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L127)
 ```csharp title="Declaration"
 public static ResourcePackage CreatePackage(string packageName, uint packagePriority)
 ```
 
 ##### Returns
 
-[YooAsset.ResourcePackage](/docs/api/YooAsset/ResourcePackage): 新创建的资源包裹实例
+[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 新创建的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -79,14 +79,14 @@ public static ResourcePackage CreatePackage(string packageName, uint packagePrio
 
 ### GetPackage(string)
 获取资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L147)
 ```csharp title="Declaration"
 public static ResourcePackage GetPackage(string packageName)
 ```
 
 ##### Returns
 
-[YooAsset.ResourcePackage](/docs/api/YooAsset/ResourcePackage): 指定名称的资源包裹实例
+[YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md): 指定名称的资源包裹实例
 ##### Parameters
 
 | Type | Name | Description |
@@ -95,7 +95,7 @@ public static ResourcePackage GetPackage(string packageName)
 
 ### TryGetPackage(string, out ResourcePackage)
 尝试获取资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L162)
 ```csharp title="Declaration"
 public static bool TryGetPackage(string packageName, out ResourcePackage package)
 ```
@@ -108,11 +108,11 @@ public static bool TryGetPackage(string packageName, out ResourcePackage package
 | Type | Name | Description |
 |:--- |:--- |:--- |
 | `System.String` | *packageName* | 包裹名称 |
-| [YooAsset.ResourcePackage](/docs/api/YooAsset/ResourcePackage) | *package* | 获取到的资源包裹，如果不存在则为null。 |
+| [YooAsset.ResourcePackage](../YooAsset/ResourcePackage.md) | *package* | 获取到的资源包裹，如果不存在则为null。 |
 
 ### GetPackages()
 获取所有资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L173)
 ```csharp title="Declaration"
 public static IReadOnlyList<ResourcePackage> GetPackages()
 ```
@@ -121,7 +121,7 @@ public static IReadOnlyList<ResourcePackage> GetPackages()
 
 `System.Collections.Generic.IReadOnlyList<YooAsset.ResourcePackage>`: 当前已注册的所有资源包裹的只读列表### RemovePackage(string)
 移除资源包裹
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L183)
 ```csharp title="Declaration"
 public static void RemovePackage(string packageName)
 ```
@@ -134,7 +134,7 @@ public static void RemovePackage(string packageName)
 
 ### ContainsPackage(string)
 检测资源包裹是否存在
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L203)
 ```csharp title="Declaration"
 public static bool ContainsPackage(string packageName)
 ```
@@ -150,7 +150,7 @@ public static bool ContainsPackage(string packageName)
 
 ### SetAsyncOperationMaxTimeSlice(long)
 设置异步系统参数，每帧执行消耗的最大时间切片。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/YooAssets.cs#L214)
 ```csharp title="Declaration"
 public static void SetAsyncOperationMaxTimeSlice(long milliseconds)
 ```

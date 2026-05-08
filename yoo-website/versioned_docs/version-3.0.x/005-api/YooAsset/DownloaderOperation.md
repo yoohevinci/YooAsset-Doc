@@ -7,51 +7,51 @@ description: "下载操作基类，提供资源下载、暂停、恢复和取消
 下载操作基类，提供资源下载、暂停、恢复和取消功能。
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L9)
 ```csharp title="Declaration"
 public abstract class DownloaderOperation : AsyncOperationBase, IEnumerator, IComparable<AsyncOperationBase>
 ```
 ## Properties
 ### TotalDownloadCount
 统计的下载文件总数量
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L41)
 ```csharp title="Declaration"
 public int TotalDownloadCount { get; }
 ```
 ### TotalDownloadBytes
 统计的下载文件的总大小
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L46)
 ```csharp title="Declaration"
 public long TotalDownloadBytes { get; }
 ```
 ### CurrentDownloadCount
 当前已经完成的下载总数量
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L51)
 ```csharp title="Declaration"
 public int CurrentDownloadCount { get; }
 ```
 ### CurrentDownloadBytes
 当前已经完成的下载总大小
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L59)
 ```csharp title="Declaration"
 public long CurrentDownloadBytes { get; }
 ```
 ## Methods
 ### InternalStart()
 内部启动方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L103)
 ```csharp title="Declaration"
 protected override void InternalStart()
 ```
 ### InternalUpdate()
 内部更新方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L109)
 ```csharp title="Declaration"
 protected override void InternalUpdate()
 ```
 ### Combine(DownloaderOperation)
 合并其它下载器
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L317)
 ```csharp title="Declaration"
 public void Combine(DownloaderOperation downloader)
 ```
@@ -60,36 +60,36 @@ public void Combine(DownloaderOperation downloader)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.DownloaderOperation](/docs/api/YooAsset/DownloaderOperation) | *downloader* | 合并的下载器 |
+| [YooAsset.DownloaderOperation](../YooAsset/DownloaderOperation.md) | *downloader* | 合并的下载器 |
 
 ### StartDownload()
 开始下载
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L358)
 ```csharp title="Declaration"
 public void StartDownload()
 ```
 ### PauseDownload()
 暂停下载
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L369)
 ```csharp title="Declaration"
 public void PauseDownload()
 ```
 ### ResumeDownload()
 恢复下载
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L377)
 ```csharp title="Declaration"
 public void ResumeDownload()
 ```
 ### CancelDownload()
 取消下载
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L385)
 ```csharp title="Declaration"
 public void CancelDownload()
 ```
 ## Events
 ### DownloadCompleted
 当下载完成时触发（无论成功或失败）。
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L67)
 ```csharp title="Declaration"
 public event Action<DownloadCompletedEventArgs> DownloadCompleted
 ```
@@ -97,7 +97,7 @@ public event Action<DownloadCompletedEventArgs> DownloadCompleted
 `System.Action<YooAsset.DownloadCompletedEventArgs>`
 ### DownloadProgressChanged
 当下载进度更新时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L72)
 ```csharp title="Declaration"
 public event Action<DownloadProgressChangedEventArgs> DownloadProgressChanged
 ```
@@ -105,7 +105,7 @@ public event Action<DownloadProgressChangedEventArgs> DownloadProgressChanged
 `System.Action<YooAsset.DownloadProgressChangedEventArgs>`
 ### DownloadError
 当发生下载错误时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L77)
 ```csharp title="Declaration"
 public event Action<DownloadErrorEventArgs> DownloadError
 ```
@@ -113,7 +113,7 @@ public event Action<DownloadErrorEventArgs> DownloadError
 `System.Action<YooAsset.DownloadErrorEventArgs>`
 ### DownloadFileStarted
 当开始下载单个文件时触发
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOperation.cs#L82)
 ```csharp title="Declaration"
 public event Action<DownloadFileStartedEventArgs> DownloadFileStarted
 ```

@@ -7,11 +7,11 @@ description: "原生文件构建管线的补丁包创建任务"
 原生文件构建管线的补丁包创建任务
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/RawFileBuildPipeline/BuildTasks/TaskCreatePackage_RFBP.cs#L6)
 ```csharp title="Declaration"
 public class TaskCreatePackage_RFBP : TaskCreatePackage, IBuildTask
 ```
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)

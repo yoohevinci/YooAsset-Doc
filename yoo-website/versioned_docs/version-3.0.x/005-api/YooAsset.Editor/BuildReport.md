@@ -7,7 +7,7 @@ description: "构建报告"
 构建报告
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L12)
 ```csharp title="Declaration"
 [Serializable]
 public class BuildReport
@@ -15,39 +15,39 @@ public class BuildReport
 ## Fields
 ### Summary
 汇总信息
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L23)
 ```csharp title="Declaration"
 public ReportSummary Summary
 ```
 ### AssetInfos
 资源对象列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L28)
 ```csharp title="Declaration"
 public List<ReportAssetInfo> AssetInfos
 ```
 ### BundleInfos
 资源包列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L33)
 ```csharp title="Declaration"
 public List<ReportBundleInfo> BundleInfos
 ```
 ### IndependentAssets
 未被依赖的资源列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L38)
 ```csharp title="Declaration"
 public List<ReportIndependentAsset> IndependentAssets
 ```
 ## Methods
 ### GetBundleInfo(string)
 获取指定名称的资源包信息
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L46)
 ```csharp title="Declaration"
 public ReportBundleInfo GetBundleInfo(string bundleName)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.ReportBundleInfo](/docs/api/YooAsset.Editor/ReportBundleInfo): 匹配的资源包信息
+[YooAsset.Editor.ReportBundleInfo](../YooAsset.Editor/ReportBundleInfo.md): 匹配的资源包信息
 ##### Parameters
 
 | Type | Name | Description |
@@ -56,14 +56,14 @@ public ReportBundleInfo GetBundleInfo(string bundleName)
 
 ### GetAssetInfo(string)
 获取指定路径的资源信息
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L63)
 ```csharp title="Declaration"
 public ReportAssetInfo GetAssetInfo(string assetPath)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.ReportAssetInfo](/docs/api/YooAsset.Editor/ReportAssetInfo): 匹配的资源信息
+[YooAsset.Editor.ReportAssetInfo](../YooAsset.Editor/ReportAssetInfo.md): 匹配的资源信息
 ##### Parameters
 
 | Type | Name | Description |
@@ -72,7 +72,7 @@ public ReportAssetInfo GetAssetInfo(string assetPath)
 
 ### Serialize(string, BuildReport)
 将构建报告序列化为 JSON 并写入文件
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L81)
 ```csharp title="Declaration"
 public static void Serialize(string savePath, BuildReport buildReport)
 ```
@@ -82,18 +82,18 @@ public static void Serialize(string savePath, BuildReport buildReport)
 | Type | Name | Description |
 |:--- |:--- |:--- |
 | `System.String` | *savePath* | 文件保存路径 |
-| [YooAsset.Editor.BuildReport](/docs/api/YooAsset.Editor/BuildReport) | *buildReport* | 要序列化的构建报告 |
+| [YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md) | *buildReport* | 要序列化的构建报告 |
 
 ### Deserialize(string)
 从 JSON 字符串反序列化构建报告
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleReporter/BuildReport.cs#L100)
 ```csharp title="Declaration"
 public static BuildReport Deserialize(string jsonData)
 ```
 
 ##### Returns
 
-[YooAsset.Editor.BuildReport](/docs/api/YooAsset.Editor/BuildReport): 反序列化后的构建报告实例
+[YooAsset.Editor.BuildReport](../YooAsset.Editor/BuildReport.md): 反序列化后的构建报告实例
 ##### Parameters
 
 | Type | Name | Description |

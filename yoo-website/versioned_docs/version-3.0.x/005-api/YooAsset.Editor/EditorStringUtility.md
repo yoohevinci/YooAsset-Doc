@@ -7,14 +7,14 @@ description: "字符串工具类"
 字符串工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L9)
 ```csharp title="Declaration"
 public static class EditorStringUtility
 ```
 ## Methods
 ### RemoveFirstChar(string)
 移除字符串的第一个字符
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L16)
 ```csharp title="Declaration"
 public static string RemoveFirstChar(string value)
 ```
@@ -30,7 +30,7 @@ public static string RemoveFirstChar(string value)
 
 ### RemoveLastChar(string)
 移除字符串的最后一个字符
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L28)
 ```csharp title="Declaration"
 public static string RemoveLastChar(string value)
 ```
@@ -46,7 +46,7 @@ public static string RemoveLastChar(string value)
 
 ### SplitToList(string, char)
 按分隔符拆分字符串并去除空白项
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L41)
 ```csharp title="Declaration"
 public static List<string> SplitToList(string value, char separator)
 ```
@@ -63,7 +63,7 @@ public static List<string> SplitToList(string value, char separator)
 
 ### ParseEnum&lt;T&gt;(string)
 将字符串解析为指定的枚举值
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L65)
 ```csharp title="Declaration"
 public static T ParseEnum<T>(string name)
 ```
@@ -83,7 +83,7 @@ public static T ParseEnum<T>(string name)
 | `T` | 枚举类型 |
 ### Substring(string, string, bool, bool)
 截取字符串中匹配关键字之后的内容
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorStringUtility.cs#L85)
 ```csharp title="Declaration"
 public static string Substring(string content, string key, bool includeKey, bool firstMatch = true)
 ```

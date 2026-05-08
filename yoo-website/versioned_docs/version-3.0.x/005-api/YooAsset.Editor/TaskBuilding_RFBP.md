@@ -7,11 +7,11 @@ description: "原生文件构建管线的文件拷贝任务"
 原生文件构建管线的文件拷贝任务
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleBuilder/BuildPipeline/RawFileBuildPipeline/BuildTasks/TaskBuilding_RFBP.cs#L11)
 ```csharp title="Declaration"
 public class TaskBuilding_RFBP : IBuildTask
 ```
 
 ## Implements
 
-* [YooAsset.Editor.IBuildTask](/docs/api/YooAsset.Editor/IBuildTask)
+* [YooAsset.Editor.IBuildTask](../YooAsset.Editor/IBuildTask.md)

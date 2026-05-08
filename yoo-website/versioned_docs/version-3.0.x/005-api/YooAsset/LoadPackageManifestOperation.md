@@ -7,26 +7,26 @@ description: "加载资源清单操作"
 加载资源清单操作
 
 ###### **Assembly**: YooAsset.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/LoadPackageManifestOperation.cs#L7)
 ```csharp title="Declaration"
 public sealed class LoadPackageManifestOperation : AsyncOperationBase, IEnumerator, IComparable<AsyncOperationBase>
 ```
 ## Methods
 ### InternalStart()
 内部启动方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/LoadPackageManifestOperation.cs#L29)
 ```csharp title="Declaration"
 protected override void InternalStart()
 ```
 ### InternalUpdate()
 内部更新方法（子类必须实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/LoadPackageManifestOperation.cs#L34)
 ```csharp title="Declaration"
 protected override void InternalUpdate()
 ```
 ### InternalGetDescription()
 获取操作的描述信息（子类可选实现）
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/LoadPackageManifestOperation.cs#L101)
 ```csharp title="Declaration"
 protected override string InternalGetDescription()
 ```

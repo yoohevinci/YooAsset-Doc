@@ -7,14 +7,14 @@ description: "路径工具类"
 路径工具类
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L9)
 ```csharp title="Declaration"
 public static class EditorPathUtility
 ```
 ## Methods
 ### GetRegularPath(string)
 获取规范的路径
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L16)
 ```csharp title="Declaration"
 public static string GetRegularPath(string path)
 ```
@@ -30,7 +30,7 @@ public static string GetRegularPath(string path)
 
 ### RemoveExtension(string)
 移除路径里的后缀名
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L28)
 ```csharp title="Declaration"
 public static string RemoveExtension(string path)
 ```
@@ -46,7 +46,7 @@ public static string RemoveExtension(string path)
 
 ### GetProjectPath()
 获取项目工程路径
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L46)
 ```csharp title="Declaration"
 public static string GetProjectPath()
 ```
@@ -55,7 +55,7 @@ public static string GetProjectPath()
 
 `System.String`: 项目根目录的规范路径### AbsolutePathToAssetPath(string)
 转换文件的绝对路径为 Unity 资源路径
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L60)
 ```csharp title="Declaration"
 public static string AbsolutePathToAssetPath(string absolutePath)
 ```
@@ -71,7 +71,7 @@ public static string AbsolutePathToAssetPath(string absolutePath)
 
 ### AssetPathToAbsolutePath(string)
 转换 Unity 资源路径为文件的绝对路径
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/Utilities/EditorPathUtility.cs#L74)
 ```csharp title="Declaration"
 public static string AssetPathToAbsolutePath(string assetPath)
 ```

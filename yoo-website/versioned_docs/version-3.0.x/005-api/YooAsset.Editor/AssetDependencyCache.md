@@ -7,14 +7,14 @@ description: "资源依赖关系缓存"
 资源依赖关系缓存
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/AssetDependencyCache.cs#L14)
 ```csharp title="Declaration"
 public class AssetDependencyCache
 ```
 ## Methods
 ### GetDependencies(string, bool)
 获取资源的依赖列表
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/BundleCollector/AssetDependencyCache.cs#L43)
 ```csharp title="Declaration"
 public string[] GetDependencies(string assetPath, bool recursive = true)
 ```

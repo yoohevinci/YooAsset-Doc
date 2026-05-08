@@ -7,39 +7,39 @@ description: "树形结构的节点，持有用户数据并维护父子关系"
 树形结构的节点，持有用户数据并维护父子关系
 
 ###### **Assembly**: YooAsset.Editor.dll
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L13)
 ```csharp title="Declaration"
 public class TreeNode
 ```
 ## Properties
 ### Children
 子节点集合
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L20)
 ```csharp title="Declaration"
 public List<TreeNode> Children { get; }
 ```
 ### Parent
 父节点
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L25)
 ```csharp title="Declaration"
 public TreeNode Parent { get; set; }
 ```
 ### UserData
 用户数据
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L30)
 ```csharp title="Declaration"
 public object UserData { get; set; }
 ```
 ### IsExpanded
 是否展开
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L35)
 ```csharp title="Declaration"
 public bool IsExpanded { get; set; }
 ```
 ## Methods
 ### AddChild(TreeNode)
 添加子节点
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L51)
 ```csharp title="Declaration"
 public void AddChild(TreeNode child)
 ```
@@ -48,17 +48,17 @@ public void AddChild(TreeNode child)
 
 | Type | Name | Description |
 |:--- |:--- |:--- |
-| [YooAsset.Editor.TreeNode](/docs/api/YooAsset.Editor/TreeNode) | *child* | 要添加的子节点 |
+| [YooAsset.Editor.TreeNode](../YooAsset.Editor/TreeNode.md) | *child* | 要添加的子节点 |
 
 ### ClearChildren()
 清理所有子节点
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L60)
 ```csharp title="Declaration"
 public void ClearChildren()
 ```
 ### GetDepth()
 计算节点在树中的深度
-
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Editor/UIElements/TreeViewer/TreeNode.cs#L73)
 ```csharp title="Declaration"
 public int GetDepth()
 ```
