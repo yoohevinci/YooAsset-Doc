@@ -238,7 +238,7 @@ private static void BuildInternal(BuildTarget buildTarget)
 private string GetBuiltinShaderBundleName()
 {
     var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
-    var packRuleResult = DefaultPackRule.CreateShadersPackRuleResult();
+    var packRuleResult = DefaultBundlePackRule.CreateShadersPackRuleResult();
     return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
 }
 ```

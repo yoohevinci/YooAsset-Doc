@@ -54,7 +54,11 @@
   
 - File Ignore Rule
 
-  文件全局忽略规则。该规则可以扩展！
+  文件全局忽略规则，规则可以自定义扩展（扩展接口：IAssetIgnoreRule）。下面是内置规则：
+
+  - NormalIgnoreRule 适配常规的资源构建管线。
+
+  - RawFileIgnoreRule 适配原生文件构建管线。
 
   **原生文件配置选择RawFileIgnoreRule**
 
@@ -70,9 +74,9 @@
 
   ````csharp
   //自定义扩展范例
-  public class DisableGroup : IActiveRule
+  public class DisableGroup : IGroupActiveRule
   {
-      public bool IsActiveGroup(GroupData groupData)
+      public bool IsActiveGroup(GroupActiveRuleData data)
       {
           return false;
       }
@@ -117,9 +121,9 @@
 
   可寻址规则，规则可以自定义扩展。下面是内置规则：
 
+  - AddressDisable 禁用定位地址。
   - AddressByFileName 以文件名为定位地址。
-  - AddressByFilePath 以文件路径为定位地址。
-  - AddressByGrouperAndFileName 以分组名+文件名为定位地址。
+  - AddressByGroupAndFileName 以分组名+文件名为定位地址。
   - AddressByFolderAndFileName 以文件夹名+文件名为定位地址。
   
   ````csharp
@@ -143,16 +147,19 @@
   - PackCollector 以收集器路径作为资源包名，收集的所有文件打进一个资源包。
   - PackGroup 以分组名称作为资源包名，收集的所有文件打进一个资源包。
   - PackRawFile 目录下的资源文件会被处理为原生资源包。
+  - PackVideoFile 视频文件会按照原始文件扩展名打包。
+  - PackShader 着色器文件会被构建到独立的着色器资源包。
+  - PackShaderVariants 着色器变种集合文件会被构建到独立的着色器资源包。
 
   ````csharp
   //自定义扩展范例
-  public class PackDirectory : IPackRule
+  public class PackDirectory : IBundlePackRule
   {
-      PackRuleResult IPackRule.GetPackRuleResult(PackRuleData data)
+      BundlePackRuleResult IBundlePackRule.GetPackRuleResult(BundlePackRuleData data)
       {
           //"Assets/Config/test.txt" --> "Assets/Config"
           string bundleName = Path.GetDirectoryName(data.AssetPath);
-          PackRuleResult result = new PackRuleResult(bundleName, DefaultPackRule.AssetBundleFileExtension);
+          BundlePackRuleResult result = new BundlePackRuleResult(bundleName, DefaultBundlePackRule.AssetBundleFileExtension);
           return result;   
       }
   }
@@ -166,6 +173,8 @@
   - CollectScene 只收集目录下的场景文件
   - CollectPrefab 只收集目录下的预制体文件
   - CollectSprite 只收集目录下的精灵类型的文件
+  - CollectShader 只收集目录下的着色器文件
+  - CollectShaderVariants 只收集目录下的着色器变种集合文件
 
   ````csharp
   //自定义扩展范例
@@ -173,7 +182,7 @@
   {
       public string FindAssetType
       {
-          get { return EAssetSearchType.Prefab.ToString(); }
+          get { return EAssetFilterType.Prefab.ToString(); }
       }
       
       public bool IsCollectAsset(AssetFilterRuleData data)
