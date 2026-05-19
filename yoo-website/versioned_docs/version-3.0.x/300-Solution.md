@@ -282,14 +282,23 @@ public IEnumerator Start()
 
 ```csharp
 // 视频加载范例
-// 注意：使用 EnsureBundleFileAsync 获取本地文件路径
+// 注意：使用 EnsureBundleFileAsync 获取本地文件路径，拷贝到沙盒目录后播放
 public IEnumerator Start()
 {
     var package = YooAssets.GetPackage("DefaultPackage");
     var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
     yield return ensureOp;
     
-    _videoPlayer.url = ensureOp.Detail.BundleFilePath;
+    // 拷贝到沙盒目录并命名为 .mp4 格式
+    string bundleFilePath = ensureOp.Detail.BundleFilePath;
+    string videoFileName = Path.GetFileNameWithoutExtension(location) + ".mp4";
+    string destFilePath = Path.Combine(Application.persistentDataPath, videoFileName);
+    if (File.Exists(destFilePath) == false)
+    {
+        File.Copy(bundleFilePath, destFilePath);
+    }
+    
+    _videoPlayer.url = destFilePath;
     _videoPlayer.Play();
 }
 ```
