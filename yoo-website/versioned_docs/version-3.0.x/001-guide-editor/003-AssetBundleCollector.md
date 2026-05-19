@@ -219,7 +219,7 @@ using YooAsset.Editor;
 
 private void SetGroupDisable(string packageName, string groupName)
 {
-    foreach (var package in AssetBundleCollectorSettingData.Setting.Packages)
+    foreach (var package in BundleCollectorSettingData.Setting.Packages)
     {
         if (package.PackageName == packageName)
         {

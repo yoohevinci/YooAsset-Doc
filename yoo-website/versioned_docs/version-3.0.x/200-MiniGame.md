@@ -298,13 +298,13 @@ YOO的根目录默认为yoo，所以内置资产默认存放在assets/yoo/目录
 方案核心思路就是提前用异步方法加载AssetBundle，并让其驻留在内存中，然后业务层就可以用同步方法去加载其中的资源对象。
 
 ```csharp
-private RawFileHandle _bundleHandle;
+private BundleFileHandle _bundleHandle;
 private AssetHandle _assetHandle;
 
 private IEnumerator Start()
 {
     // 异步加载并持有AssetBundle的句柄
-    _bundleHandle = package.LoadRawFileAsync("prefab_location");
+    _bundleHandle = package.LoadBundleFileAsync("prefab_location");
     yield return _bundleHandle;
     
     // 调用游戏逻辑

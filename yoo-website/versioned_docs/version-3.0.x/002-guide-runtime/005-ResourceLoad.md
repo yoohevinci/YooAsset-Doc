@@ -11,8 +11,9 @@
 - LoadSubAssetsAsync() 异步加载子资源对象
 - LoadAllAssetsSync() 同步加载资源包内所有资源对象
 - LoadAllAssetsAsync() 异步加载资源包内所有资源对象
-- LoadRawFileSync() 同步获取原生文件
-- LoadRawFileAsync() 异步获取原生文件
+- LoadBundleFileSync() 同步加载资源包文件
+- LoadBundleFileAsync() 异步加载资源包文件
+- EnsureBundleFileAsync() 确保资源包文件已就绪并获取本地路径
 
 ### 统一约定
 
@@ -171,11 +172,10 @@ IEnumerator Start()
 ````csharp
 IEnumerator Start()
 {
-    // 注意：该Package必须是原生文件构建管线构建的资源包裹。
-    string location = "Assets/GameRes/wwise/init.bnk";
-    RawFileHandle handle = package.LoadRawFileAsync(location);
-    yield return handle;
-    string filePath = handle.GetRawFilePath();
+    // 如需获取本地文件路径，使用 EnsureBundleFileAsync
+    var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
+    yield return ensureOp;
+    string filePath = ensureOp.Detail.BundleFilePath;
     byte[] fileData = System.IO.File.ReadAllBytes(filePath);
     string fileText = System.IO.File.ReadAllText(filePath);
 }

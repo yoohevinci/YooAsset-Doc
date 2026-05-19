@@ -248,7 +248,7 @@ void BuildBundle()
     }
     
     // 拷贝所有首包文件
-    string root = $"{AssetBundleBuilderHelper.GetDefaultStreamingAssetsRoot()}/{packageName}";
+    string root = $"{BundleBuilderHelper.GetStreamingAssetsRoot()}/{packageName}";
     foreach(var packageBundle in bundles)
     {
         string destPath = $"{root}/{packageBundle.FileName}";
@@ -282,14 +282,14 @@ public IEnumerator Start()
 
 ```csharp
 // 视频加载范例
-// 注意：使用原生文件加载方法
+// 注意：使用 EnsureBundleFileAsync 获取本地文件路径
 public IEnumerator Start()
 {
     var package = YooAssets.GetPackage("DefaultPackage");
-    var handle = package.LoadRawFileAsync(location);
-    yield return handle;
+    var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
+    yield return ensureOp;
     
-    _videoPlayer.url = handle.GetRawFilePath();
+    _videoPlayer.url = ensureOp.Detail.BundleFilePath;
     _videoPlayer.Play();
 }
 ```
@@ -399,8 +399,8 @@ public IEnumerator Start()
   ```csharp
   private static void BuildInternal(BuildTarget buildTarget)
   {
-      var buildoutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
-      var streamingAssetsRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
+      var buildoutputRoot = BundleBuilderHelper.GetDefaultBuildOutputRoot();
+      var streamingAssetsRoot = BundleBuilderHelper.GetStreamingAssetsRoot();
   
       // 构建参数
       var buildParameters = new ScriptableBuildParameters();
@@ -611,14 +611,14 @@ public IEnumerator Start()
     downloader.StartDownload();
  	yield return downloader;
     
-    // 通过下面的方法获取原生文件的句柄
-    var handle = package.LoadRawFileAsync(location);
-    yield return handle;
+    // 通过 EnsureBundleFileAsync 确保文件就绪并获取本地路径
+    var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
+    yield return ensureOp;
     
     // 拷贝沙盒内音频文件到指定目录下（AddBasePath方法添加的目录）
     var packageVersion = package.GetPackageVersion();
     var basePath = $"{Application.persistentDataPath}/Audio/GeneratedSoundBanks/{packageVersion}";
-    var soundbankSourceFilePath = handle.GetRawFilePath();
+    var soundbankSourceFilePath = ensureOp.Detail.BundleFilePath;
     var soundbankDestFilePath = $"{basePath}/soundbankFileName";
     if (File.Exists(soundbankDestFilePath) == false)
     {

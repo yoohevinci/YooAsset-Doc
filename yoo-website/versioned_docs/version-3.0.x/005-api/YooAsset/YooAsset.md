@@ -58,8 +58,6 @@
 资源包裹的详细信息，用于外部查询包裹配置。
 ### [PrefetchManifestOperation](../YooAsset/PrefetchManifestOperation.md)
 预取清单操作，用于提前加载指定版本的资源清单。
-### [RawFileHandle](../YooAsset/RawFileHandle.md)
-原生文件句柄，用于访问未经 Unity 处理的原始文件。
 ### [RawFileObject](../YooAsset/RawFileObject.md)
 原生文件对象
 ### [RequestPackageVersionOperation](../YooAsset/RequestPackageVersionOperation.md)

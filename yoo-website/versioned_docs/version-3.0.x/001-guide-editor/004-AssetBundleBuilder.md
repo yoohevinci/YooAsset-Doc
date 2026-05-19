@@ -30,6 +30,12 @@
 
   ​	用于构建Unity引擎无法识别的资源类型，例如FMOD的音频文件(bank后缀格式)
 
+  (5) ArchiveFileBuildPipeline: 归档文件构建管线
+
+  ​	用于将同一资源包名下的多个原始文件合并写入一个归档文件，适合原始文件归档管理场景。
+
+  ​	**注意：**该构建管线不支持资源包加密服务。
+
 - **Build Output**
 
   构建输出的目录，会根据Unity编辑器当前切换的平台自动划分构建结果。
@@ -169,15 +175,15 @@ private static void BuildInternal(BuildTarget buildTarget)
 {
     Debug.Log($"开始构建 : {buildTarget}");
 
-    var buildoutputRoot = AssetBundleBuilderHelper.GetDefaultBuildOutputRoot();
-    var streamingAssetsRoot = AssetBundleBuilderHelper.GetStreamingAssetsRoot();
+    var buildoutputRoot = BundleBuilderHelper.GetDefaultBuildOutputRoot();
+    var streamingAssetsRoot = BundleBuilderHelper.GetStreamingAssetsRoot();
     
     // 构建参数
     LegacyBuildParameters buildParameters = new LegacyBuildParameters();
     buildParameters.BuildOutputRoot = buildoutputRoot;
     buildParameters.BundledFileRoot = streamingAssetsRoot;
     buildParameters.BuildPipeline = EBuildPipeline.LegacyBuildPipeline.ToString();
-    buildParameters.BuildBundleType = (int)EBuildBundleType.AssetBundle; //必须指定资源包类型
+    buildParameters.BuildBundleType = (int)EBundleType.AssetBundle; //必须指定资源包类型
     buildParameters.BuildTarget = BuildTarget;
     buildParameters.PackageName = "DefaultPackage";
     buildParameters.PackageVersion = "1.0";
@@ -237,7 +243,7 @@ private static void BuildInternal(BuildTarget buildTarget)
 /// </summary>
 private string GetBuiltinShaderBundleName()
 {
-    var uniqueBundleName = AssetBundleCollectorSettingData.Setting.UniqueBundleName;
+    var uniqueBundleName = BundleCollectorSettingData.Setting.UniqueBundleName;
     var packRuleResult = DefaultBundlePackRule.CreateShadersPackRuleResult();
     return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
 }
