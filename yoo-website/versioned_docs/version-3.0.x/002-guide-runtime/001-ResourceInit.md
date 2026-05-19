@@ -57,7 +57,7 @@ private IEnumerator DestroyPackage()
 ````csharp
 private IEnumerator InitPackage()
 {  
-    var buildResult = EditorSimulateModeHelper.SimulateBuild("DefaultPackage");    
+    var buildResult = EditorSimulateBuildInvoker.Build("DefaultPackage", (int)EBundleType.VirtualAssetBundle);
     var packageRoot = buildResult.PackageRootDirectory;
     var fileSystemParams = FileSystemParameters.CreateDefaultEditorFileSystemParameters(packageRoot);
     
@@ -307,7 +307,7 @@ yield return initializeOp;
 ```csharp
 // 初始化资源包
 var createParameters = new OfflinePlayModeOptions();
-var decryption = new TestProcessManifest();
+var decryption = new TestManifestDecryptor();
 createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
 createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.ManifestDecryptor, decryption);
 
@@ -339,7 +339,7 @@ Package.InitializePackageAsync()方法解析。
 
 - 编辑器模拟模式
 
-  每次启动调用EditorSimulateModeHelper.SimulateBuild方法，都会在底层执行一次模拟构建（Simulate Build）。
+  每次启动调用EditorSimulateBuildInvoker.Build方法，都会在底层执行一次模拟构建（Simulate Build）。
 
   如果参与构建的资源对象数量级很大的话则会有卡顿现象，可以通过直接指定已有的清单路径来避免每次都重复执行模拟构建。
 

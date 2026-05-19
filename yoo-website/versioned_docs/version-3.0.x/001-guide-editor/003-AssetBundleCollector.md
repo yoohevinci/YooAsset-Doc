@@ -169,14 +169,14 @@
 
   ````csharp
   //自定义扩展范例
-  public class CollectPrefab : IFilterRule
+  public class CollectPrefab : IAssetFilterRule
   {
       public string FindAssetType
       {
           get { return EAssetSearchType.Prefab.ToString(); }
       }
       
-      public bool IsCollectAsset(FilterRuleData data)
+      public bool IsCollectAsset(AssetFilterRuleData data)
       {
           return Path.GetExtension(data.AssetPath) == ".prefab";
       }
