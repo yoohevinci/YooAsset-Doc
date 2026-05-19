@@ -8,6 +8,8 @@
 资源信息类
 ### [AsyncOperationBase](../YooAsset/AsyncOperationBase.md)
 异步操作基类
+### [BundleFileHandle](../YooAsset/BundleFileHandle.md)
+资源包文件句柄，用于持有已加载的资源包引用。
 ### [ClearCacheMethods](../YooAsset/ClearCacheMethods.md)
 缓存清理方式标识符
 ### [ClearCacheOperation](../YooAsset/ClearCacheOperation.md)
@@ -26,6 +28,8 @@
 编辑器模拟构建的调用入口
 ### [EditorSimulateModeOptions](../YooAsset/EditorSimulateModeOptions.md)
 编辑器下模拟运行模式的初始化参数
+### [EnsureBundleFileOperation](../YooAsset/EnsureBundleFileOperation.md)
+确保资源包已就绪的异步操作
 ### [FileSystemParameters](../YooAsset/FileSystemParameters.md)
 提供文件系统的创建参数与工厂方法
 ### [HandleBase](../YooAsset/HandleBase.md)
@@ -117,6 +121,10 @@ The exception that is thrown when a resource package is in an invalid state.
 下载进度更新事件参数
 ### [DownloadReport](../YooAsset/DownloadReport.md)
 下载状态报告
+### [EnsureBundleFileOperation.BundleDetail](../YooAsset/EnsureBundleFileOperation.BundleDetail.md)
+资源包文件详情
+### [EnsureBundleFileOptions](../YooAsset/EnsureBundleFileOptions.md)
+确保资源包文件已就绪的选项
 ### [ImportBundleInfo](../YooAsset/ImportBundleInfo.md)
 导入的资源包信息
 ### [InstantiateOptions](../YooAsset/InstantiateOptions.md)

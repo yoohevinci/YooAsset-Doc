@@ -14,19 +14,19 @@ public sealed class DestroyPackageOperation : AsyncOperationBase, IEnumerator, I
 ## Methods
 ### InternalStart()
 内部启动方法（子类必须实现）
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L30)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L33)
 ```csharp title="Declaration"
 protected override void InternalStart()
 ```
 ### InternalUpdate()
 内部更新方法（子类必须实现）
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L35)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L38)
 ```csharp title="Declaration"
 protected override void InternalUpdate()
 ```
 ### InternalGetDescription()
 获取操作的描述信息（子类可选实现）
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L104)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DestroyPackageOperation.cs#L111)
 ```csharp title="Declaration"
 protected override string InternalGetDescription()
 ```

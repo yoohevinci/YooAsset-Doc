@@ -395,75 +395,9 @@ public bool IsLocationValid(string location)
 |:--- |:--- |:--- |
 | `System.String` | *location* | 资源的定位地址 |
 
-### LoadRawFileSync(AssetInfo)
-同步加载原生文件
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L428)
-```csharp title="Declaration"
-public RawFileHandle LoadRawFileSync(AssetInfo assetInfo)
-```
-
-##### Returns
-
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md): 返回原生文件操作句柄
-##### Parameters
-
-| Type | Name | Description |
-|:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
-
-### LoadRawFileSync(string)
-同步加载原生文件
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L439)
-```csharp title="Declaration"
-public RawFileHandle LoadRawFileSync(string location)
-```
-
-##### Returns
-
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md): 返回原生文件操作句柄
-##### Parameters
-
-| Type | Name | Description |
-|:--- |:--- |:--- |
-| `System.String` | *location* | 资源的定位地址 |
-
-### LoadRawFileAsync(AssetInfo, uint)
-加载原生文件
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L452)
-```csharp title="Declaration"
-public RawFileHandle LoadRawFileAsync(AssetInfo assetInfo, uint priority = 0)
-```
-
-##### Returns
-
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md): 返回原生文件操作句柄
-##### Parameters
-
-| Type | Name | Description |
-|:--- |:--- |:--- |
-| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
-| `System.UInt32` | *priority* | 加载的优先级 |
-
-### LoadRawFileAsync(string, uint)
-加载原生文件
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L464)
-```csharp title="Declaration"
-public RawFileHandle LoadRawFileAsync(string location, uint priority = 0)
-```
-
-##### Returns
-
-[YooAsset.RawFileHandle](../YooAsset/RawFileHandle.md): 返回原生文件操作句柄
-##### Parameters
-
-| Type | Name | Description |
-|:--- |:--- |:--- |
-| `System.String` | *location* | 资源的定位地址 |
-| `System.UInt32` | *priority* | 加载的优先级 |
-
 ### LoadSceneSync(string, LoadSceneMode, LocalPhysicsMode)
 同步加载场景
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L490)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L430)
 ```csharp title="Declaration"
 public SceneHandle LoadSceneSync(string location, LoadSceneMode sceneMode = LoadSceneMode.Single, LocalPhysicsMode physicsMode = LocalPhysicsMode.None)
 ```
@@ -481,7 +415,7 @@ public SceneHandle LoadSceneSync(string location, LoadSceneMode sceneMode = Load
 
 ### LoadSceneSync(AssetInfo, LoadSceneMode, LocalPhysicsMode)
 同步加载场景
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L504)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L444)
 ```csharp title="Declaration"
 public SceneHandle LoadSceneSync(AssetInfo assetInfo, LoadSceneMode sceneMode = LoadSceneMode.Single, LocalPhysicsMode physicsMode = LocalPhysicsMode.None)
 ```
@@ -499,7 +433,7 @@ public SceneHandle LoadSceneSync(AssetInfo assetInfo, LoadSceneMode sceneMode = 
 
 ### LoadSceneAsync(string, LoadSceneMode, LocalPhysicsMode, bool, uint)
 加载场景
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L519)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L459)
 ```csharp title="Declaration"
 public SceneHandle LoadSceneAsync(string location, LoadSceneMode sceneMode = LoadSceneMode.Single, LocalPhysicsMode physicsMode = LocalPhysicsMode.None, bool allowSceneActivation = true, uint priority = 0)
 ```
@@ -519,7 +453,7 @@ public SceneHandle LoadSceneAsync(string location, LoadSceneMode sceneMode = Loa
 
 ### LoadSceneAsync(AssetInfo, LoadSceneMode, LocalPhysicsMode, bool, uint)
 加载场景
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L535)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L475)
 ```csharp title="Declaration"
 public SceneHandle LoadSceneAsync(AssetInfo assetInfo, LoadSceneMode sceneMode = LoadSceneMode.Single, LocalPhysicsMode physicsMode = LocalPhysicsMode.None, bool allowSceneActivation = true, uint priority = 0)
 ```
@@ -539,7 +473,7 @@ public SceneHandle LoadSceneAsync(AssetInfo assetInfo, LoadSceneMode sceneMode =
 
 ### LoadAssetSync(AssetInfo)
 同步加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L559)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L499)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetSync(AssetInfo assetInfo)
 ```
@@ -555,7 +489,7 @@ public AssetHandle LoadAssetSync(AssetInfo assetInfo)
 
 ### LoadAssetSync&lt;TObject&gt;(string)
 同步加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L571)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L511)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetSync<TObject>(string location) where TObject : Object
 ```
@@ -575,7 +509,7 @@ public AssetHandle LoadAssetSync<TObject>(string location) where TObject : Objec
 | `TObject` | 资源类型 |
 ### LoadAssetSync(string, Type)
 同步加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L584)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L524)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetSync(string location, Type type)
 ```
@@ -592,7 +526,7 @@ public AssetHandle LoadAssetSync(string location, Type type)
 
 ### LoadAssetSync(string)
 同步加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L596)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L536)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetSync(string location)
 ```
@@ -608,7 +542,7 @@ public AssetHandle LoadAssetSync(string location)
 
 ### LoadAssetAsync(AssetInfo, uint)
 加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L610)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L550)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetAsync(AssetInfo assetInfo, uint priority = 0)
 ```
@@ -625,7 +559,7 @@ public AssetHandle LoadAssetAsync(AssetInfo assetInfo, uint priority = 0)
 
 ### LoadAssetAsync&lt;TObject&gt;(string, uint)
 加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L623)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L563)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetAsync<TObject>(string location, uint priority = 0) where TObject : Object
 ```
@@ -646,7 +580,7 @@ public AssetHandle LoadAssetAsync<TObject>(string location, uint priority = 0) w
 | `TObject` | 资源类型 |
 ### LoadAssetAsync(string, Type, uint)
 加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L637)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L577)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetAsync(string location, Type type, uint priority = 0)
 ```
@@ -664,7 +598,7 @@ public AssetHandle LoadAssetAsync(string location, Type type, uint priority = 0)
 
 ### LoadAssetAsync(string, uint)
 加载资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L650)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L590)
 ```csharp title="Declaration"
 public AssetHandle LoadAssetAsync(string location, uint priority = 0)
 ```
@@ -681,7 +615,7 @@ public AssetHandle LoadAssetAsync(string location, uint priority = 0)
 
 ### LoadSubAssetsSync(AssetInfo)
 同步加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L675)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L615)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsSync(AssetInfo assetInfo)
 ```
@@ -697,7 +631,7 @@ public SubAssetsHandle LoadSubAssetsSync(AssetInfo assetInfo)
 
 ### LoadSubAssetsSync&lt;TObject&gt;(string)
 同步加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L687)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L627)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsSync<TObject>(string location) where TObject : Object
 ```
@@ -717,7 +651,7 @@ public SubAssetsHandle LoadSubAssetsSync<TObject>(string location) where TObject
 | `TObject` | 资源类型 |
 ### LoadSubAssetsSync(string, Type)
 同步加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L700)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L640)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsSync(string location, Type type)
 ```
@@ -734,7 +668,7 @@ public SubAssetsHandle LoadSubAssetsSync(string location, Type type)
 
 ### LoadSubAssetsSync(string)
 同步加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L712)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L652)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsSync(string location)
 ```
@@ -750,7 +684,7 @@ public SubAssetsHandle LoadSubAssetsSync(string location)
 
 ### LoadSubAssetsAsync(AssetInfo, uint)
 加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L726)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L666)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsAsync(AssetInfo assetInfo, uint priority = 0)
 ```
@@ -767,7 +701,7 @@ public SubAssetsHandle LoadSubAssetsAsync(AssetInfo assetInfo, uint priority = 0
 
 ### LoadSubAssetsAsync&lt;TObject&gt;(string, uint)
 加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L739)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L679)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsAsync<TObject>(string location, uint priority = 0) where TObject : Object
 ```
@@ -788,7 +722,7 @@ public SubAssetsHandle LoadSubAssetsAsync<TObject>(string location, uint priorit
 | `TObject` | 资源类型 |
 ### LoadSubAssetsAsync(string, Type, uint)
 加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L753)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L693)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsAsync(string location, Type type, uint priority = 0)
 ```
@@ -806,7 +740,7 @@ public SubAssetsHandle LoadSubAssetsAsync(string location, Type type, uint prior
 
 ### LoadSubAssetsAsync(string, uint)
 加载子资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L766)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L706)
 ```csharp title="Declaration"
 public SubAssetsHandle LoadSubAssetsAsync(string location, uint priority = 0)
 ```
@@ -823,7 +757,7 @@ public SubAssetsHandle LoadSubAssetsAsync(string location, uint priority = 0)
 
 ### LoadAllAssetsSync(AssetInfo)
 同步加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L791)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L731)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsSync(AssetInfo assetInfo)
 ```
@@ -839,7 +773,7 @@ public AllAssetsHandle LoadAllAssetsSync(AssetInfo assetInfo)
 
 ### LoadAllAssetsSync&lt;TObject&gt;(string)
 同步加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L803)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L743)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsSync<TObject>(string location) where TObject : Object
 ```
@@ -859,7 +793,7 @@ public AllAssetsHandle LoadAllAssetsSync<TObject>(string location) where TObject
 | `TObject` | 资源类型 |
 ### LoadAllAssetsSync(string, Type)
 同步加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L816)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L756)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsSync(string location, Type type)
 ```
@@ -876,7 +810,7 @@ public AllAssetsHandle LoadAllAssetsSync(string location, Type type)
 
 ### LoadAllAssetsSync(string)
 同步加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L828)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L768)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsSync(string location)
 ```
@@ -892,7 +826,7 @@ public AllAssetsHandle LoadAllAssetsSync(string location)
 
 ### LoadAllAssetsAsync(AssetInfo, uint)
 加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L842)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L782)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsAsync(AssetInfo assetInfo, uint priority = 0)
 ```
@@ -909,7 +843,7 @@ public AllAssetsHandle LoadAllAssetsAsync(AssetInfo assetInfo, uint priority = 0
 
 ### LoadAllAssetsAsync&lt;TObject&gt;(string, uint)
 加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L855)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L795)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsAsync<TObject>(string location, uint priority = 0) where TObject : Object
 ```
@@ -930,7 +864,7 @@ public AllAssetsHandle LoadAllAssetsAsync<TObject>(string location, uint priorit
 | `TObject` | 资源类型 |
 ### LoadAllAssetsAsync(string, Type, uint)
 加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L869)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L809)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsAsync(string location, Type type, uint priority = 0)
 ```
@@ -948,7 +882,7 @@ public AllAssetsHandle LoadAllAssetsAsync(string location, Type type, uint prior
 
 ### LoadAllAssetsAsync(string, uint)
 加载资源包内所有资源对象
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L882)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L822)
 ```csharp title="Declaration"
 public AllAssetsHandle LoadAllAssetsAsync(string location, uint priority = 0)
 ```
@@ -963,9 +897,91 @@ public AllAssetsHandle LoadAllAssetsAsync(string location, uint priority = 0)
 | `System.String` | *location* | 资源的定位地址 |
 | `System.UInt32` | *priority* | 加载的优先级 |
 
+### EnsureBundleFileAsync(EnsureBundleFileOptions)
+确保资源包文件已就绪
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L847)
+```csharp title="Declaration"
+public EnsureBundleFileOperation EnsureBundleFileAsync(EnsureBundleFileOptions options)
+```
+
+##### Returns
+
+[YooAsset.EnsureBundleFileOperation](../YooAsset/EnsureBundleFileOperation.md): 返回确保资源包文件就绪的操作对象
+##### Parameters
+
+| Type | Name | Description |
+|:--- |:--- |:--- |
+| [YooAsset.EnsureBundleFileOptions](../YooAsset/EnsureBundleFileOptions.md) | *options* | 确保资源包文件已就绪的选项 |
+
+### LoadBundleFileSync(AssetInfo)
+同步加载资源包文件
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L866)
+```csharp title="Declaration"
+public BundleFileHandle LoadBundleFileSync(AssetInfo assetInfo)
+```
+
+##### Returns
+
+[YooAsset.BundleFileHandle](../YooAsset/BundleFileHandle.md): 返回资源包文件操作句柄
+##### Parameters
+
+| Type | Name | Description |
+|:--- |:--- |:--- |
+| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+
+### LoadBundleFileSync(string)
+同步加载资源包文件
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L877)
+```csharp title="Declaration"
+public BundleFileHandle LoadBundleFileSync(string location)
+```
+
+##### Returns
+
+[YooAsset.BundleFileHandle](../YooAsset/BundleFileHandle.md): 返回资源包文件操作句柄
+##### Parameters
+
+| Type | Name | Description |
+|:--- |:--- |:--- |
+| `System.String` | *location* | 资源的定位地址 |
+
+### LoadBundleFileAsync(AssetInfo, uint)
+异步加载资源包文件
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L890)
+```csharp title="Declaration"
+public BundleFileHandle LoadBundleFileAsync(AssetInfo assetInfo, uint priority = 0)
+```
+
+##### Returns
+
+[YooAsset.BundleFileHandle](../YooAsset/BundleFileHandle.md): 返回资源包文件操作句柄
+##### Parameters
+
+| Type | Name | Description |
+|:--- |:--- |:--- |
+| [YooAsset.AssetInfo](../YooAsset/AssetInfo.md) | *assetInfo* | 资源信息 |
+| `System.UInt32` | *priority* | 加载的优先级 |
+
+### LoadBundleFileAsync(string, uint)
+异步加载资源包文件
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L902)
+```csharp title="Declaration"
+public BundleFileHandle LoadBundleFileAsync(string location, uint priority = 0)
+```
+
+##### Returns
+
+[YooAsset.BundleFileHandle](../YooAsset/BundleFileHandle.md): 返回资源包文件操作句柄
+##### Parameters
+
+| Type | Name | Description |
+|:--- |:--- |:--- |
+| `System.String` | *location* | 资源的定位地址 |
+| `System.UInt32` | *priority* | 加载的优先级 |
+
 ### CreateResourceDownloader(ResourceDownloaderOptions)
 创建资源下载器，用于下载指定的资源标签关联的资源包文件。
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L907)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L925)
 ```csharp title="Declaration"
 public ResourceDownloaderOperation CreateResourceDownloader(ResourceDownloaderOptions options)
 ```
@@ -981,7 +997,7 @@ public ResourceDownloaderOperation CreateResourceDownloader(ResourceDownloaderOp
 
 ### CreateResourceDownloader(BundleDownloaderOptions)
 创建资源下载器，用于下载指定的资源信息列表依赖的资源包文件。
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L918)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L936)
 ```csharp title="Declaration"
 public ResourceDownloaderOperation CreateResourceDownloader(BundleDownloaderOptions options)
 ```
@@ -997,7 +1013,7 @@ public ResourceDownloaderOperation CreateResourceDownloader(BundleDownloaderOpti
 
 ### CreateResourceUnpacker(ResourceUnpackerOptions)
 创建内置资源解压器，用于解压指定的资源标签关联的资源包文件。
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L931)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L949)
 ```csharp title="Declaration"
 public ResourceUnpackerOperation CreateResourceUnpacker(ResourceUnpackerOptions options)
 ```
@@ -1013,7 +1029,7 @@ public ResourceUnpackerOperation CreateResourceUnpacker(ResourceUnpackerOptions 
 
 ### CreateResourceImporter(BundleImporterOptions)
 创建资源导入器
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L944)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/ResourcePackage.cs#L962)
 ```csharp title="Declaration"
 public ResourceImporterOperation CreateResourceImporter(BundleImporterOptions options)
 ```

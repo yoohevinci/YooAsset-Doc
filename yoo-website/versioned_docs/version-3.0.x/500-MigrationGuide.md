@@ -37,6 +37,10 @@
         <td><code>EPlayMode.HostPlayMode</code></td>
         <td>已移除（用 Options 类代替）</td>
       </tr>
+      <tr>
+        <td><code>EBundleType.VirtualBundle</code></td>
+        <td><code>EBundleType.VirtualAssetBundle</code></td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -91,7 +95,7 @@
   </table>
 </div>
 
-### 1.4 RawFileHandle
+### 1.4 BundleFileHandle（原 RawFileHandle）
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -103,12 +107,28 @@
     </thead>
     <tbody>
       <tr>
-        <td><code>rawHandle.GetRawFileData()</code></td>
-        <td><code>File.ReadAllBytes(rawHandle.GetRawFilePath())</code></td>
+        <td><code>package.LoadRawFileSync(location)</code></td>
+        <td><code>package.LoadBundleFileSync(location)</code></td>
       </tr>
       <tr>
-        <td><code>rawHandle.GetRawFileText()</code></td>
-        <td><code>File.ReadAllText(rawHandle.GetRawFilePath())</code></td>
+        <td><code>package.LoadRawFileAsync(location, priority)</code></td>
+        <td><code>package.LoadBundleFileAsync(location, priority)</code></td>
+      </tr>
+      <tr>
+        <td><code>RawFileHandle handle = ...</code></td>
+        <td><code>BundleFileHandle handle = ...</code></td>
+      </tr>
+      <tr>
+        <td><code>handle.GetRawFilePath()</code></td>
+        <td><code>EnsureBundleFileAsync()</code> → <code>op.Detail.BundleFilePath</code></td>
+      </tr>
+      <tr>
+        <td><code>handle.GetRawFileData()</code></td>
+        <td><code>LoadAssetAsync&lt;RawFileObject&gt;()</code> → <code>obj.GetBytes()</code></td>
+      </tr>
+      <tr>
+        <td><code>handle.GetRawFileText()</code></td>
+        <td><code>LoadAssetAsync&lt;RawFileObject&gt;()</code> → <code>obj.GetText()</code></td>
       </tr>
     </tbody>
   </table>
@@ -264,6 +284,14 @@
       <tr>
         <td><code>package.CreateResourceImporter(paths, maxNum, retry)</code></td>
         <td><code>package.CreateResourceImporter(bundleImporterOptions)</code></td>
+      </tr>
+      <tr>
+        <td><code>package.LoadRawFileSync(location)</code></td>
+        <td><code>package.LoadBundleFileSync(location)</code></td>
+      </tr>
+      <tr>
+        <td><code>package.LoadRawFileAsync(location, priority)</code></td>
+        <td><code>package.LoadBundleFileAsync(location, priority)</code></td>
       </tr>
     </tbody>
   </table>
@@ -434,6 +462,14 @@
         <td><code>DownloadStatus</code></td>
         <td>已移除</td>
       </tr>
+      <tr>
+        <td><code>RawFileHandle</code></td>
+        <td><code>BundleFileHandle</code></td>
+      </tr>
+      <tr>
+        <td><code>EditorSimulateModeHelper.SimulateBuild(name)</code></td>
+        <td><code>EditorSimulateBuildInvoker.Build(name, (int)EBundleType.VirtualAssetBundle)</code></td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -580,4 +616,22 @@ v2.3 中通过字符串引用的内部文件系统类名在 v3 中已变更：
 </div>
 
 如果旧代码中手写了类名字符串（如 `new FileSystemParameters("YooAsset.DefaultCacheFileSystem", root)`），需改为 v3 工厂方法或更新类名。
+
+### 2.7 BundleFilePath 获取方式变更
+
+v2.3 中可通过 `handle.GetRawFilePath()` 直接获取资源包文件路径。v3 中此方法已移除，需改用 `EnsureBundleFileAsync` 异步操作：
+
+```csharp
+// v2.3 写法
+var handle = package.LoadRawFileSync("location");
+string path = handle.GetRawFilePath();
+
+// v3 写法
+var options = new EnsureBundleFileOptions("location");
+var op = package.EnsureBundleFileAsync(options);
+await op;
+string path = op.Detail.BundleFilePath;
+```
+
+> **注意**：`EnsureBundleFileAsync` 仅确保资源包文件就绪并返回本地路径，不会将 Bundle 加载到内存。如果需要同时加载 Bundle，请继续使用 `LoadBundleFileAsync`。
 
