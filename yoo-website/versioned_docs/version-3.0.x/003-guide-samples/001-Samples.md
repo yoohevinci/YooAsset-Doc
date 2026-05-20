@@ -18,7 +18,7 @@
 
 #### 导入流程注意事项
 
-1. Space Shooter在导入完成后，打开YooAsset->AssetBundle Collector窗口。
-2. 点击修复按钮，然后点击Save按钮保存配置，最后关闭窗口。
+1. **太空战机DEMO** 在导入完成后，打开YooAsset->AssetBundle Collector窗口。
+2. 点击Fix修复按钮，然后点击Save按钮保存配置，最后关闭窗口。
 3. 找到Boot.scene场景启动游戏。
 

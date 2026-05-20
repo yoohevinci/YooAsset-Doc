@@ -60,11 +60,11 @@
 
   - RawFileIgnoreRule 适配原生文件构建管线。
 
-  **原生文件配置选择RawFileIgnoreRule**
+  **注意：**原生构建管线配置选择RawFileIgnoreRule
 
 ### 资源分组
 
-- Active Rule
+- Group Active Rule
 
   激活规则，规则可以自定义扩展。下面是内置规则：
 
@@ -83,11 +83,11 @@
   }
   ````
 
-- Grouper Name
+- Group Name
 
   分组名称
 
-- Grouper Desc
+- Group Desc
 
   分组备注信息
 
@@ -137,7 +137,7 @@
   }
   ````
   
-- **PackRule**
+- **BundlePackRule**
 
   打包规则，规则可以自定义扩展。下面是内置规则：
 

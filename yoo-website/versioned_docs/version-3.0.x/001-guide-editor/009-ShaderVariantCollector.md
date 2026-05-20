@@ -14,7 +14,7 @@
 
 菜单栏Tools ---> 变种着色器收集器
 
-![image](./Image/ShaderVariantCollector-img1.jpg)
+![image](./Image/ShaderVariantCollector-img1.png)
 
 点击搜集变种按钮开始收集，请耐心等待结束。
 

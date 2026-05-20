@@ -4,7 +4,7 @@
 
 ### 资源句柄释放
 
-每个资源对象加载方法都会返回一个资源句柄，开发者需要在该资源不再使用的时候释放该句柄，否则会造成资源泄露（一直存在内中当中）
+每个资源对象加载方法都会返回一个资源句柄，开发者需要在该资源不再使用的时候释放该句柄，否则会造成资源泄露（一直存在于内存当中）
 
 ````csharp
 IEnumerator Start()
@@ -31,12 +31,12 @@ private IEnumerator UnloadUnusedAssets()
 {
     var package = YooAssets.GetPackage("DefaultPackage");
     var operation = package.UnloadUnusedAssetsAsync();
-    operation.WaitForAsyncComplete(); //支持同步操作
+    operation.WaitForCompletion(); //支持同步操作
     yield return operation;
 }
 
 // 强制卸载所有资源包，该方法请在合适的时机调用。
-// 注意：Package在销毁的时候也会自动调用该方法。
+// 注意：ResourcePackage在销毁的时候也会自动调用该方法。
 // 备注：不支持同步操作。
 private IEnumerator ForceUnloadAllAssets()
 {

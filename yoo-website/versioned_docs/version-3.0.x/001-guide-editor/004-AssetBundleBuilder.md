@@ -56,17 +56,17 @@
 
   <u>当开启此项的时候，会极大提高构建速度！</u>
 
-- **Encryption Services**
+- **Bundle Encryptor**
 
-  资源包加密类列表。
+  资源包加密器列表。
 
 - **Manifest Encryptor**
 
-  资源清单加密或压缩类列表。
+  资源清单加密器列表。
 
 - **Manifest Decryptor**
 
-  资源清单解密或解压类列表。
+  资源清单解密器列表。
 
 - **Compression**
 
@@ -179,7 +179,7 @@ private static void BuildInternal(BuildTarget buildTarget)
     var streamingAssetsRoot = BundleBuilderHelper.GetStreamingAssetsRoot();
     
     // 构建参数
-    LegacyBuildParameters buildParameters = new LegacyBuildParameters();
+    var buildParameters = new LegacyBuildParameters();
     buildParameters.BuildOutputRoot = buildoutputRoot;
     buildParameters.BundledFileRoot = streamingAssetsRoot;
     buildParameters.BuildPipeline = EBuildPipeline.LegacyBuildPipeline.ToString();

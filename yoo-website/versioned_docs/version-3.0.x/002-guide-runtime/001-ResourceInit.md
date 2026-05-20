@@ -54,9 +54,16 @@ private IEnumerator DestroyPackage()
 
 注意：该模式只在编辑器下起效
 
+`EditorSimulateBuildInvoker.Build()` 的第二个参数用于指定编辑器模拟模式下的资源包类型，必须传入虚拟资源包类型：
+
+- `EBundleType.VirtualAssetBundle`：模拟常规AssetBundle资源包。
+- `EBundleType.VirtualRawBundle`：模拟原生文件资源包。
+- `EBundleType.VirtualArchiveBundle`：模拟归档文件资源包。
+
 ````csharp
 private IEnumerator InitPackage()
 {  
+    var package = YooAssets.GetPackage("DefaultPackage");
     var buildResult = EditorSimulateBuildInvoker.Build("DefaultPackage", (int)EBundleType.VirtualAssetBundle);
     var packageRoot = buildResult.PackageRootDirectory;
     var fileSystemParams = FileSystemParameters.CreateDefaultEditorFileSystemParameters(packageRoot);
@@ -89,6 +96,7 @@ private IEnumerator InitPackage()
 ````csharp
 private IEnumerator InitPackage()
 {
+    var package = YooAssets.GetPackage("DefaultPackage");
     var fileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
     
     var createParameters = new OfflinePlayModeOptions();
@@ -119,14 +127,15 @@ private IEnumerator InitPackage()
 ````csharp
 private IEnumerator InitPackage()
 {
+    var package = YooAssets.GetPackage("DefaultPackage");
     string defaultHostServer = "http://127.0.0.1/CDN/Android/v1.0";
     string fallbackHostServer = "http://127.0.0.1/CDN/Android/v1.0";
     IRemoteService remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
     var cacheFileSystemParams = FileSystemParameters.CreateDefaultSandboxFileSystemParameters(remoteServices);
-    var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    var builtinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
     
     var createParameters = new HostPlayModeOptions();
-    createParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    createParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     createParameters.CacheFileSystemParameters = cacheFileSystemParams;
     
     var initOperation = package.InitializePackageAsync(createParameters);
@@ -181,6 +190,10 @@ private class RemoteServices : IRemoteService
 ```csharp
 private IEnumerator InitPackage()
 {
+    var package = YooAssets.GetPackage("DefaultPackage");
+    string defaultHostServer = "http://127.0.0.1/CDN/Android/v1.0";
+    string fallbackHostServer = "http://127.0.0.1/CDN/Android/v1.0";
+
     //说明：RemoteServices类定义请参考联机运行模式！
     IRemoteService remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
     var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
@@ -223,13 +236,13 @@ private IEnumerator RequestPackageVersion()
 
     if (operation.Status == EOperationStatus.Succeeded)
     {
-        //更新成功
+        //请求成功
         string packageVersion = operation.PackageVersion;
         Debug.Log($"Request package Version : {packageVersion}");
     }
     else
     {
-        //更新失败
+        //请求失败
         Debug.LogError(operation.Error);
     }
 }
@@ -240,7 +253,7 @@ private IEnumerator RequestPackageVersion()
 在获取到资源版本号之后，就可以更新资源清单了。
 
 ````csharp
-private IEnumerator UpdatePackageManifest()
+private IEnumerator UpdatePackageManifest(string packageVersion)
 {
     var package = YooAssets.GetPackage("DefaultPackage");
     var operation = package.LoadPackageManifestAsync(new LoadPackageManifestOptions(packageVersion, 60));
@@ -267,6 +280,7 @@ private IEnumerator UpdatePackageManifest()
 ```csharp
 private IEnumerator InitPackage()
 {
+    var package = YooAssets.GetPackage("DefaultPackage");
     // 配置各个文件系统参数
     ......
     
@@ -290,14 +304,17 @@ private IEnumerator InitPackage()
 实现一个继承IBundleDecryptor相关接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestFileEncryption.cs)
 
 ```csharp
-// 初始化资源包
-var decryptor = new TestFileStreamDecryption();
-var createParameters = new OfflinePlayModeOptions();
-createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
-createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, decryptor);
+private IEnumerator InitPackage()
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var decryptor = new TestFileStreamDecryption();
+    var createParameters = new OfflinePlayModeOptions();
+    createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, decryptor);
 
-var initializeOp = package.InitializePackageAsync(createParameters);
-yield return initializeOp;
+    var initializeOp = package.InitializePackageAsync(createParameters);
+    yield return initializeOp;
+}
 ```
 
 ### 资源清单解密方法
@@ -305,14 +322,17 @@ yield return initializeOp;
 实现一个继承IManifestDecryptor接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestManifestServices.cs)
 
 ```csharp
-// 初始化资源包
-var createParameters = new OfflinePlayModeOptions();
-var decryption = new TestManifestDecryptor();
-createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
-createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.ManifestDecryptor, decryption);
+private IEnumerator InitPackage()
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var createParameters = new OfflinePlayModeOptions();
+    var decryption = new TestManifestDecryptor();
+    createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.ManifestDecryptor, decryption);
 
-var initializeOp = package.InitializePackageAsync(createParameters);
-yield return initializeOp;
+    var initializeOp = package.InitializePackageAsync(createParameters);
+    yield return initializeOp;
+}
 ```
 
 ### 注意事项
@@ -324,7 +344,7 @@ yield return initializeOp;
 3. 要想解决上面的问题，需要开发者扩展默认的内置文件系统类。
 
 ```csharp
-string packageRoot = Application.persistentDataPath + "/buildin"; //沙盒目录
+string packageRoot = Application.persistentDataPath + "/builtin"; //沙盒目录
 FileSystemParameters.CreateDefaultBuiltinFileSystemParameters(packageRoot);
 ```
 
@@ -335,7 +355,7 @@ FileSystemParameters.CreateDefaultBuiltinFileSystemParameters(packageRoot);
 
 ### 源代码解析
 
-Package.InitializePackageAsync()方法解析。
+ResourcePackage.InitializePackageAsync()方法解析。
 
 - 编辑器模拟模式
 

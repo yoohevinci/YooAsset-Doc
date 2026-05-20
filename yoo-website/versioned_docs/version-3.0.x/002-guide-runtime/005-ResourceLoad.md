@@ -144,7 +144,7 @@ IEnumerator Start()
     bool allowSceneActivation = true;
     SceneHandle handle = package.LoadSceneAsync(location, sceneMode, physicsMode, allowSceneActivation);
     yield return handle;
-    Debug.Log($"Scene name is {handle.Scene.name}");
+    Debug.Log($"Scene name is {handle.SceneName}");
 }
 ````
 
@@ -158,8 +158,8 @@ IEnumerator Start()
     string location = "Assets/GameRes/UIAtlas/login.spriteatlas";
     AssetHandle handle = package.LoadAssetAsync(location);
     yield return handle;
-    var spriteAtals = handle.AssetObject as SpriteAtlas;
-    var spriteObject = spriteAtals.GetSprite("spriteName");
+    var spriteAtlas = handle.AssetObject as SpriteAtlas;
+    var spriteObject = spriteAtlas.GetSprite("spriteName");
 }
 ```
 
@@ -172,12 +172,34 @@ IEnumerator Start()
 ````csharp
 IEnumerator Start()
 {
-    // 如需获取本地文件路径，使用 EnsureBundleFileAsync
+    // 注意：该Package必须是原生文件构建管线构建的资源包裹。
+    string location = "Assets/GameRes/wwise/init.bnk";
+    AssetHandle handle = package.LoadAssetAsync<RawFileObject>(location);
+    yield return handle;
+
+    RawFileObject rawFileObject = handle.GetAssetObject<RawFileObject>();
+    byte[] fileData = rawFileObject.GetBytes();
+    string fileText = rawFileObject.GetText();
+
+    handle.Release();
+}
+````
+
+### 获取资源包文件地址范例
+
+`EnsureBundleFileAsync` 用于确保资源包文件已经在本地文件系统中就绪，并返回该资源包文件的本地磁盘路径。
+
+该方法适用于必须把真实文件路径传递给第三方系统的场景，例如音频中间件加载外部音频文件、第三方解压库读取文件等。它不是用来读取文件内容的通用方法；如果只是读取原生文件的字节或文本内容，推荐使用 `RawFileObject`。
+
+````csharp
+IEnumerator Start()
+{
+    string location = "Assets/GameRes/wwise/init.bnk";
     var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
     yield return ensureOp;
+
     string filePath = ensureOp.Detail.BundleFilePath;
-    byte[] fileData = System.IO.File.ReadAllBytes(filePath);
-    string fileText = System.IO.File.ReadAllText(filePath);
+    AudioEngine.LoadBank(filePath);
 }
 ````
 
@@ -202,6 +224,8 @@ IEnumerator Start()
 ### 热更脚本加载范例
 
 如果使用的是Lua或者ILRuntime，HybridCLR热更方式，可以将Lua或者Hotfix.dll的文件格式修改为.bytes
+
+注意：这里的.bytes文件需要作为普通资源被收集器收集，并通过常规AssetBundle构建管线构建到资源包内。加载时使用 `LoadAssetAsync<TextAsset>()`，而不是原生文件加载方式。
 
 ```csharp
 IEnumerator Start()
@@ -245,7 +269,9 @@ void GetAllAssetInfos()
 ### 检测资源是否需要更新下载
 
 ````csharp
+void CheckDownloadSize()
 {
+    string location = "Assets/GameRes/Panel/login.prefab";
     bool isNeedDownload = package.GetDownloadSize(location) > 0;
 }
 ````

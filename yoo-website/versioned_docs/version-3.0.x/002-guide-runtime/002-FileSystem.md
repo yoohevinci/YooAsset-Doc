@@ -16,7 +16,7 @@ YOO默认提供了多个文件系统类，可以满足大部分项目的业务�
 
 **FileVerifyLevel**
 
-参数说明：在文件系统初始化的时候，沙盒内缓存文件的校验级别。
+参数说明：在文件系统初始化的时候，缓存文件或内置文件的校验级别。
 
 支持范围：BuiltinFileSystem, SandboxFileSystem
 
@@ -28,7 +28,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.FileVerifyLevel, EFileVer
 
 **FileVerifyMaxConcurrency**
 
-参数说明：在文件系统初始化的时候，沙盒内缓存文件校验最大并发数。
+参数说明：在文件系统初始化的时候，缓存文件或内置文件校验的最大并发数。
 
 注意事项：参数不会超过系统提供的最大工作线程数量，超过会被截断。
 
@@ -54,14 +54,16 @@ fileSystemParameters.AddParameter(EFileSystemParameter.InstallCleanupMode, EInst
 
 **RemoteService**
 
-参数说明：远程服务接口的实例类。
+参数说明：远程服务接口的实例类，需要开发者自行实现 `IRemoteService` 接口。
 
 支持范围：SandboxFileSystem, WebRemoteFileSystem
 
 ```csharp
-IRemoteService remoteService = new RemoteService(defaultHostServer, fallbackHostServer);
+IRemoteService remoteService = new RemoteServices(defaultHostServer, fallbackHostServer);
 fileSystemParameters.AddParameter(EFileSystemParameter.RemoteService, remoteService);
 ```
+
+注意：`RemoteServices` 为示例类名，开发者需要自行实现 `IRemoteService` 接口。具体实现方式可以参考初始化文档里的联机运行模式示例。
 
 
 
@@ -136,7 +138,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleFallbackDecryp
 支持范围：WebRemoteFileSystem, WebServerFileSystem
 
 ```csharp
-UnityWebRequestCreator creator = (url) => UnityWebRequest.Get(url);
+UnityWebRequestCreator creator = (url, method) => UnityWebRequest.Get(url);
 fileSystemParameters.AddParameter(EFileSystemParameter.UnityWebRequestCreator, creator);
 ```
 

@@ -75,7 +75,7 @@ downloader1.StartDownload();
 
 ### 源代码解析
 
-Package.RequestPackageVersionAsync()方法解析。
+ResourcePackage.RequestPackageVersionAsync()方法解析。
 
 - 单机运行模式
 
