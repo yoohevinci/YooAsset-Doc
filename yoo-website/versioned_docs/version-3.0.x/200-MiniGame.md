@@ -18,17 +18,40 @@ IEnumerator InitPackage()
     // 创建远程服务类
     string defaultHostServer = GetHostServerURL();
     string fallbackHostServer = GetHostServerURL();
-    var remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    IRemoteService remoteService = new RemoteService(defaultHostServer, fallbackHostServer);
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices);
+    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteService);
     createParameters.WebServerFileSystemParameters = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
 }
 ````
+
+```csharp
+private class RemoteService : IRemoteService
+{
+    private readonly string _defaultHostServer;
+    private readonly string _fallbackHostServer;
+
+    public RemoteService(string defaultHostServer, string fallbackHostServer)
+    {
+        _defaultHostServer = defaultHostServer;
+        _fallbackHostServer = fallbackHostServer;
+    }
+
+    public IReadOnlyList<string> GetRemoteUrls(string fileName)
+    {
+        return new[]
+        {
+            $"{_defaultHostServer}/{fileName}",
+            $"{_fallbackHostServer}/{fileName}"
+        };
+    }
+}
+```
 
 
 
@@ -52,11 +75,11 @@ IEnumerator InitPackage()
     // 创建远程服务类
     string defaultHostServer = GetHostServerURL();
     string fallbackHostServer = GetHostServerURL();
-    var remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    IRemoteService remoteService = new RemoteService(defaultHostServer, fallbackHostServer);
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices);
+    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteService);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -118,7 +141,7 @@ IEnumerator InitPackage()
     // 创建远程服务类
     string defaultHostServer = GetHostServerURL();
     string fallbackHostServer = GetHostServerURL();
-    var remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    IRemoteService remoteService = new RemoteService(defaultHostServer, fallbackHostServer);
     
     // 小游戏缓存根目录
     // 注意：此处代码根据微信插件配置来填写！
@@ -127,7 +150,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteServices, null);
+    createParameters.WebServerFileSystemParameters = WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, null);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -141,7 +164,7 @@ IEnumerator InitPackage()
 根据下图配置，则初始化代码PackageRoot设置为
 
 ```csharp
-string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/yoo"
+string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/yoo";
 //string packageRoot = $"{WeChatWASM.WX.PluginCachePath}/yoo";
 ```
 
@@ -161,7 +184,7 @@ string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/yoo"
 
 2. MethodAccessException: Attempt to access method 'YooAsset.IFileSystem.RequestPackageVersionAsync' on type ' ' failed.
 
-   查看日志里是否包含其它异常日志，例如：Exception: RemoteServices returned URL contains double slashes.
+   查看日志里是否包含其它异常日志，例如：Exception: IRemoteService returned URL contains double slashes.
 
 ### 抖音小游戏
 
@@ -183,17 +206,17 @@ IEnumerator InitPackage()
     // 创建远程服务类
     string defaultHostServer = GetHostServerURL();
     string fallbackHostServer = GetHostServerURL();
-    var remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
+    IRemoteService remoteService = new RemoteService(defaultHostServer, fallbackHostServer);
     
     // 创建解密服务类
-    var decryptionServices = new WebDecryption();
+    IBundleDecryptor decryptor = null; //如需资源加密，请传入自定义解密器实例。
     
     // 随意填写
     string packageRoot = "yoo"; 
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = TiktokFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteServices, decryptionServices);
+    createParameters.WebServerFileSystemParameters = TiktokFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -231,7 +254,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = AlipayFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteServices, decryptionServices);
+    createParameters.WebServerFileSystemParameters = AlipayFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -261,7 +284,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = TaptapFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteServices, decryptionServices);
+    createParameters.WebServerFileSystemParameters = TaptapFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -297,6 +320,8 @@ YOO的根目录默认为yoo，所以内置资产默认存放在assets/yoo/目录
 
 方案核心思路就是提前用异步方法加载AssetBundle，并让其驻留在内存中，然后业务层就可以用同步方法去加载其中的资源对象。
 
+注意：如果仍要在WebGL或小游戏平台使用同步加载，需要在初始化参数里设置 `createParameters.WebGLForceSyncLoadAsset = true`。
+
 ```csharp
 private BundleFileHandle _bundleHandle;
 private AssetHandle _assetHandle;
@@ -321,8 +346,8 @@ private void OnDestroy()
 private void GameLogic()
 {
     // 业务代码可以用同步加载方法
-    var assetHandle = package.LoadAssetSync("prefab_location");
-    var go = assetHandle.InstantiateSync();
+    _assetHandle = package.LoadAssetSync("prefab_location");
+    var go = _assetHandle.InstantiateSync();
 }
 ```
 

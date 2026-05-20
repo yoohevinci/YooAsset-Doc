@@ -33,7 +33,7 @@ private IEnumerator InitHostPlayMode()
     var package = YooAssets.CreatePackage("BootPackage");
     ...（省略初始化参数）
     var initParameters = new HostPlayModeOptions();
-    initParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    initParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     initParameters.CacheFileSystemParameters = cacheFileSystemParams;
     var initializationOperation = package.InitializePackageAsync(initParameters);
     yield return initializationOperation;
@@ -79,7 +79,7 @@ private IEnumerator InitOfflinePlayMode()
     var package = YooAssets.CreatePackage("BootPackage");
     ...（省略初始化参数）
     var initParameters = new OfflinePlayModeOptions();
-    initParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    initParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     var initializationOperation = package.InitializePackageAsync(initParameters);
     yield return initializationOperation;
     
@@ -165,8 +165,14 @@ private IEnumerator Start()
 /// 创建资源导入器
 /// 注意：资源文件名称必须和资源服务器部署的文件名称一致！
 /// </summary>
-/// <param name="options">资源导入选项</param>
-public ResourceImporterOperation CreateResourceImporter(BundleImporterOptions options)
+public IEnumerator ImportBundles(ImportBundleInfo[] importInfos)
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var options = new BundleImporterOptions(importInfos, 10, 3);
+    var importer = package.CreateResourceImporter(options);
+    importer.StartDownload();
+    yield return importer;
+}
 ```
 
 ### 预下载后续版本内容解决方案
@@ -184,12 +190,13 @@ public IEnumerator Start()
     
     var downloader = preDownloadContentOp.CreateResourceDownloader(new ResourceDownloaderOptions(10, 3)); //有多种参数可适配各类需求
     downloader.StartDownload();
+    yield return downloader;
 }
 ```
 
 **注意：**
 
-在调用Package.ClearCacheAsync的时候，小心把预下载的内容清除了！
+在调用ResourcePackage.ClearCacheAsync的时候，小心把预下载的内容清除了！
 
 需要采用额外的策略，避免此行为发生。
 
@@ -199,7 +206,7 @@ public IEnumerator Start()
 
 主要是借助Unity官方的插件：https://github.com/Unity-Technologies/BackgroundDownload
 
-该插件的使用教程大家自行学习，这里不再累述。
+该插件的使用教程大家自行学习，这里不再赘述。
 
 解决方案的思路和上面的 [资源自定义分发解决方案] 类似。
 
@@ -211,8 +218,14 @@ public IEnumerator Start()
 /// 创建资源导入器
 /// 注意：资源文件名称必须和资源服务器部署的文件名称一致！
 /// </summary>
-/// <param name="options">资源导入选项</param>
-public ResourceImporterOperation CreateResourceImporter(BundleImporterOptions options)
+public IEnumerator ImportBundles(ImportBundleInfo[] importInfos)
+{
+    var package = YooAssets.GetPackage("DefaultPackage");
+    var options = new BundleImporterOptions(importInfos, 10, 3);
+    var importer = package.CreateResourceImporter(options);
+    importer.StartDownload();
+    yield return importer;
+}
 ```
 
 ### 首包资源定制解决方案
@@ -224,6 +237,7 @@ YooAsset默认支持通过Tag来指定首包资源，开发者也可以灵活定
 ```csharp
 using UnityEngine;
 using UnityEditor;
+using YooAsset;
 using YooAsset.Editor;
 
 void BuildBundle()
@@ -233,11 +247,11 @@ void BuildBundle()
     
     // 加载构建成功的资源清单对象
     byte[] manifestBytes = FileUtility.ReadAllBytes(manifestPath);
-    PackageManifest manifest = ManifestTools.DeserializeFromBinary(manifestBytes);
+    PackageManifest manifest = PackageManifestHelper.DeserializeManifestFromBinary(manifestBytes, null);
     
     // 查找所有需要打进首包资源的依赖AB
     HashSet<PackageBundle> bundles = new HashSet<PackageBundle>();
-    foreach(var assetPath in buildinAssetPathList)
+    foreach(var assetPath in builtinAssetPathList)
     {
         if(manifest.TryGetPackageAsset(assetPath, out PackageAsset packageAsset))
         {
@@ -251,7 +265,7 @@ void BuildBundle()
     string root = $"{BundleBuilderHelper.GetStreamingAssetsRoot()}/{packageName}";
     foreach(var packageBundle in bundles)
     {
-        string destPath = $"{root}/{packageBundle.FileName}";
+        string destPath = $"{root}/{packageBundle.GetFileName()}";
         ...... //拷贝文件
     }
 }
@@ -259,7 +273,7 @@ void BuildBundle()
 
 ### 视频打包和加载解决方案
 
-在AssetBundleCollector界面对视频文件使用PackVideoFile打包规则。
+在Bundle Collector界面对视频文件使用PackVideoFile打包规则。
 
 然后使用原生文件构建管线构建资源包。
 
@@ -268,12 +282,12 @@ void BuildBundle()
 // 注意：已移除APPEND_FILE_EXTENSION参数
 public IEnumerator Start()
 {
-    var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    var builtinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
     
     var cacheFileSystemParams = FileSystemParameters.CreateDefaultSandboxFileSystemParameters(remoteServices);
     
     var createParameters = new HostPlayModeOptions();
-    createParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    createParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     createParameters.CacheFileSystemParameters = cacheFileSystemParams;
     var initializationOperation = package.InitializePackageAsync(createParameters);
     yield return initializationOperation;
@@ -286,6 +300,7 @@ public IEnumerator Start()
 public IEnumerator Start()
 {
     var package = YooAssets.GetPackage("DefaultPackage");
+    string location = "Assets/GameRes/Video/login.mp4";
     var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
     yield return ensureOp;
     
@@ -305,7 +320,7 @@ public IEnumerator Start()
 
 ### 图集打包的零冗余解决方案
 
-在unity2020以上的版本，我们会推荐使用SBP构建管线。
+在Unity2020以上的版本，我们会推荐使用SBP构建管线。
 
 在使用Unity的图集系统的时候（SpriteAtlas），如何解决通过SBP构建管线造成的散图冗余的问题。
 
@@ -353,7 +368,7 @@ public IEnumerator Start()
   }
   ```
 
-- **方案2：编辑器下显示添加图集依赖。**
+- **方案2：编辑器下手动添加图集依赖。**
 
   完整代码请参考：[Extension Sample/Runtime/UIPanelMonitor](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Extension%20Sample/Runtime/UIPanelMonitor)目录脚本！
 
@@ -436,15 +451,15 @@ private IEnumerator Start()
     
     // 初始化注意事项
     // 注意：设置参数CopyBuiltinPackageManifest，可以初始化的时候拷贝内置清单到沙盒目录
-    var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
-    buildinFileSystemParams.AddParameter(EFileSystemParameter.CopyBuiltinPackageManifest, true);
+    var builtinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    builtinFileSystemParams.AddParameter(EFileSystemParameter.CopyBuiltinPackageManifest, true);
     
     // 注意：设置参数InstallCleanupMode，可以解决覆盖安装的时候将拷贝的内置清单文件清理的问题。
     var cacheFileSystemParams = FileSystemParameters.CreateDefaultSandboxFileSystemParameters(remoteServices);
     cacheFileSystemParams.AddParameter(EFileSystemParameter.InstallCleanupMode, EInstallCleanupMode.None);
     
     var playModeParameters = new HostPlayModeOptions();
-    playModeParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    playModeParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     playModeParameters.CacheFileSystemParameters = cacheFileSystemParams;
     var initOperation = package.InitializePackageAsync(playModeParameters);
     yield return initOperation;
@@ -542,11 +557,11 @@ private string GetAuthorization(string userName, string password)
 // 说明：Catalog文件是自动生成的内置资产查询目录文件，用于记录构建APP时刻包体内的资产列表。
 public IEnumerator Start()
 {
-    var buildinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
+    var builtinFileSystemParams = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
     // 已移除DISABLE_CATALOG_FILE参数。
     
     var createParameters = new OfflinePlayModeOptions();
-    createParameters.BuiltinFileSystemParameters = buildinFileSystemParams;
+    createParameters.BuiltinFileSystemParameters = builtinFileSystemParams;
     var initializationOperation = package.InitializePackageAsync(createParameters);
     yield return initializationOperation;
 }
@@ -614,6 +629,9 @@ public IEnumerator Start()
     ......
         
     var package = YooAssets.GetPackage("DefaultPackage");
+    string soundbankTag = "soundbank";
+    string location = "Assets/GameRes/Wwise/Init.bnk";
+    string soundbankFileName = Path.GetFileName(location);
     
     // 通过Tag标记下载更新的音频文件
     var downloader = package.CreateResourceDownloader(new ResourceDownloaderOptions(soundbankTag, 10, 3));
@@ -628,9 +646,10 @@ public IEnumerator Start()
     var packageVersion = package.GetPackageVersion();
     var basePath = $"{Application.persistentDataPath}/Audio/GeneratedSoundBanks/{packageVersion}";
     var soundbankSourceFilePath = ensureOp.Detail.BundleFilePath;
-    var soundbankDestFilePath = $"{basePath}/soundbankFileName";
+    var soundbankDestFilePath = $"{basePath}/{soundbankFileName}";
     if (File.Exists(soundbankDestFilePath) == false)
     {
+        Directory.CreateDirectory(basePath);
         File.Copy(soundbankSourceFilePath, soundbankDestFilePath);
     }
 }
