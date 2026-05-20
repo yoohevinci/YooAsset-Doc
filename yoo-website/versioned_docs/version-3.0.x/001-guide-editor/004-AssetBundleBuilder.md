@@ -58,15 +58,15 @@
 
 - **Bundle Encryptor**
 
-  资源包加密器列表。
+  资源包加密类列表。
 
 - **Manifest Encryptor**
 
-  资源清单加密器列表。
+  资源清单加密或压缩类列表。
 
 - **Manifest Decryptor**
 
-  资源清单解密器列表。
+  资源清单解密或解压类列表。
 
 - **Compression**
 
@@ -104,13 +104,13 @@
 
 在Editor目录下实现一个继承IBundleEncryptor接口的类。
 
-构建页面选择资源加密服务类。
+构建页面选择资源包加密类。
 
-加密支持三种方式：
+资源包加密发生在构建阶段，运行时需要在文件系统初始化参数里配置对应的资源包解密器。解密器接口按加载方式分为：
 
-- LoadFromFileOffset 通过文件偏移来解密加载。
-- LoadFromMemory 通过文件内存来解密加载。
-- LoadFromStream 通过文件流来解密加载。
+- IBundleOffsetDecryptor 通过文件偏移来解密加载。
+- IBundleMemoryDecryptor 通过文件内存来解密加载。
+- IBundleStreamDecryptor 通过文件流来解密加载。
 
 参考：[示例代码](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers)
 
@@ -148,6 +148,8 @@
 
   该文件为二进制格式，主要用于程序内读取加载。
 
+说明：如果在全局配置里设置了Package File Prefix，资源清单相关文件名会追加统一前缀。
+
 ### 构建报告
 
 - DefaultPackage_xxx.report
@@ -179,12 +181,12 @@ private static void BuildInternal(BuildTarget buildTarget)
     var streamingAssetsRoot = BundleBuilderHelper.GetStreamingAssetsRoot();
     
     // 构建参数
-    var buildParameters = new LegacyBuildParameters();
+    LegacyBuildParameters buildParameters = new LegacyBuildParameters();
     buildParameters.BuildOutputRoot = buildoutputRoot;
     buildParameters.BundledFileRoot = streamingAssetsRoot;
     buildParameters.BuildPipeline = EBuildPipeline.LegacyBuildPipeline.ToString();
     buildParameters.BuildBundleType = (int)EBundleType.AssetBundle; //必须指定资源包类型
-    buildParameters.BuildTarget = BuildTarget;
+    buildParameters.BuildTarget = buildTarget;
     buildParameters.PackageName = "DefaultPackage";
     buildParameters.PackageVersion = "1.0";
     buildParameters.VerifyBuildingResult = true;
@@ -234,18 +236,18 @@ private static void BuildInternal(BuildTarget buildTarget)
     // 构建参数
     ScriptableBuildParameters buildParameters = new ScriptableBuildParameters();
     ......
-    buildParameters.BuiltinShadersBundleName = GetBuiltinShaderBundleName();
+    buildParameters.BuiltinShadersBundleName = GetBuiltinShaderBundleName(buildParameters.PackageName);
 }
 
 /// <summary>
 /// 内置着色器资源包名称
 /// 注意：和自动收集的着色器资源包名保持一致！
 /// </summary>
-private string GetBuiltinShaderBundleName()
+private static string GetBuiltinShaderBundleName(string packageName)
 {
     var uniqueBundleName = BundleCollectorSettingData.Setting.UniqueBundleName;
     var packRuleResult = DefaultBundlePackRule.CreateShadersPackRuleResult();
-    return packRuleResult.GetBundleName(PackageName, uniqueBundleName);
+    return packRuleResult.GetBundleName(packageName, uniqueBundleName);
 }
 ```
 

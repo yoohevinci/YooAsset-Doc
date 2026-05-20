@@ -25,7 +25,9 @@
 ```csharp
 public static void CollectSVC()
 {
-    string savePath = ShaderVariantCollectorSettingData.Setting.SavePath;  
+    string packageName = "DefaultPackage";
+    string savePath = ShaderVariantCollectorSetting.GetFileSavePath(packageName);
+    int processMaxNum = ShaderVariantCollectorSetting.GetProcessCapacity(packageName);
     System.Action completedCallback = () =>
     {
         ShaderVariantCollection collection =
@@ -40,10 +42,10 @@ public static void CollectSVC()
             throw new Exception("Failed to Collect shader Variants.");
         }
         
-        EditorTools.CloseUnityGameWindow();
+        EditorWindowUtility.CloseUnityGameWindow();
         EditorApplication.Exit(0);
     };
-    ShaderVariantCollector.Run(savePath, completedCallback);
+    ShaderVariantCollector.Run(savePath, packageName, processMaxNum, completedCallback);
 }
 ```
 

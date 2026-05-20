@@ -12,7 +12,7 @@
 
 导出按钮：可以将配置数据导出为XML文件。
 
-修复按钮：在配置里的文件夹挪动位置之后，可以通过该按钮按钮来修正。
+修复按钮：在配置里的文件夹挪动位置之后，可以通过该按钮来修正。
 
 **注意**：该工具仅支持Unity2019.4+
 
@@ -64,7 +64,7 @@
 
 ### 资源分组
 
-- Group Active Rule
+- Active Rule
 
   激活规则，规则可以自定义扩展。下面是内置规则：
 
@@ -74,7 +74,7 @@
 
   ````csharp
   //自定义扩展范例
-  public class DisableGroup : IGroupActiveRule
+  public class MyDisableGroup : IGroupActiveRule
   {
       public bool IsActiveGroup(GroupActiveRuleData data)
       {
@@ -128,7 +128,7 @@
   
   ````csharp
   //自定义扩展范例
-  public class AddressByFileName : IAddressRule
+  public class MyAddressByFileName : IAddressRule
   {
       string IAddressRule.GetAssetAddress(AddressRuleData data)
       {
@@ -137,7 +137,7 @@
   }
   ````
   
-- **BundlePackRule**
+- **PackRule**
 
   打包规则，规则可以自定义扩展。下面是内置规则：
 
@@ -153,7 +153,7 @@
 
   ````csharp
   //自定义扩展范例
-  public class PackDirectory : IBundlePackRule
+  public class MyPackDirectory : IBundlePackRule
   {
       BundlePackRuleResult IBundlePackRule.GetPackRuleResult(BundlePackRuleData data)
       {
@@ -178,7 +178,7 @@
 
   ````csharp
   //自定义扩展范例
-  public class CollectPrefab : IAssetFilterRule
+  public class MyCollectPrefab : IAssetFilterRule
   {
       public string FindAssetType
       {
@@ -227,12 +227,13 @@ private void SetGroupDisable(string packageName, string groupName)
             {
                 if (group.GroupName == groupName)
                 {
-                    group.ActiveRuleName = nameof(DisableGroup);
+                    group.ActiveRuleName = nameof(MyDisableGroup);
                     break;
                 }
             }
         }
     }
+    BundleCollectorSettingData.SaveFile();
 }
 ```
 

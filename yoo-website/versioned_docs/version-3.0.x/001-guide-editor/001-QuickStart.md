@@ -53,7 +53,7 @@
 
 支持平台: Windows、OSX、Android、iOS、WebGL
 
-开发环境: .NET4.x
+开发环境: Unity 当前支持的 .NET 运行时
 
 ### 目录结构
 

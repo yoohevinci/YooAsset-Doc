@@ -36,7 +36,7 @@ Reference Bundle 是选中的资源包相关引用关系的资源包列表（谁
 
 当一个资源包在内存里被卸载需要2个条件：
 
-1. Using Assets 列表里所有资源对象的引用计数为零。
+1. Using Asset 列表里所有资源对象的引用计数为零。
 2. Reference Bundle 列表里所有资源包的引用计数为零。
 
 ![image](./Image/AssetDebugger-img2.png)
