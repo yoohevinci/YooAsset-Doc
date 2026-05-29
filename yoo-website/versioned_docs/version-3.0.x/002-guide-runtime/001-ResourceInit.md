@@ -197,11 +197,11 @@ private IEnumerator InitPackage()
     //说明：RemoteServices类定义请参考联机运行模式！
     IRemoteService remoteServices = new RemoteServices(defaultHostServer, fallbackHostServer);
     var webServerFileSystemParams = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
-    var webRemoteFileSystemParams = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteServices); //支持跨域下载
+    var webNetworkFileSystemParams = FileSystemParameters.CreateDefaultWebNetworkFileSystemParameters(remoteServices); //支持跨域下载
     
     var createParameters = new WebPlayModeOptions();
     createParameters.WebServerFileSystemParameters = webServerFileSystemParams;
-    createParameters.WebRemoteFileSystemParameters = webRemoteFileSystemParams;
+    createParameters.WebNetworkFileSystemParameters = webNetworkFileSystemParams;
     
     var initOperation = package.InitializePackageAsync(createParameters);
     yield return initOperation;
@@ -310,7 +310,7 @@ private IEnumerator InitPackage()
     var decryptor = new TestFileStreamDecryption();
     var createParameters = new OfflinePlayModeOptions();
     createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
-    createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, decryptor);
+    createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetBundleDecryptor, decryptor);
 
     var initializeOp = package.InitializePackageAsync(createParameters);
     yield return initializeOp;

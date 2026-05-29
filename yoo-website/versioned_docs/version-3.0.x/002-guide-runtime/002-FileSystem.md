@@ -7,8 +7,10 @@ YOO默认提供了多个文件系统类，可以满足大部分项目的业务�
 - EditorFileSystem 编辑器模拟文件系统类
 - BuiltinFileSystem 内置文件系统类
 - SandboxFileSystem 缓存文件系统类
-- WebRemoteFileSystem Web平台远端文件系统类
+- WebNetworkFileSystem Web平台网络文件系统类
 - WebServerFileSystem Web平台服务端文件系统类
+
+WebServerFileSystem和WebNetworkFileSystem都支持加载AssetBundle、RawBundle和ArchiveBundle。
 
 还包含各类小游戏平台的文件系统扩展类，该文档不做解释说明！
 
@@ -56,7 +58,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.InstallCleanupMode, EInst
 
 参数说明：远程服务接口的实例类，需要开发者自行实现 `IRemoteService` 接口。
 
-支持范围：SandboxFileSystem, WebRemoteFileSystem
+支持范围：SandboxFileSystem, WebNetworkFileSystem
 
 ```csharp
 IRemoteService remoteService = new RemoteServices(defaultHostServer, fallbackHostServer);
@@ -67,15 +69,15 @@ fileSystemParameters.AddParameter(EFileSystemParameter.RemoteService, remoteServ
 
 
 
-**AssetbundleDecryptor**
+**AssetBundleDecryptor**
 
 参数说明：解密服务接口的实例类。
 
-支持范围：BuiltinFileSystem, SandboxFileSystem, WebRemoteFileSystem, WebServerFileSystem
+支持范围：BuiltinFileSystem, SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem
 
 ```csharp
 IBundleDecryptor decryptor = new FileDecryptor();
-fileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, decryptor);
+fileSystemParameters.AddParameter(EFileSystemParameter.AssetBundleDecryptor, decryptor);
 ```
 
 
@@ -84,7 +86,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleDecryptor, dec
 
 参数说明：资源清单服务类。可以实现资源清单的解密或解压。
 
-支持范围：BuiltinFileSystem, SandboxFileSystem, WebRemoteFileSystem, WebServerFileSystem
+支持范围：BuiltinFileSystem, SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem
 
 ```csharp
 IManifestDecryptor manifestDecryptor = new ManifestDecryptor();
@@ -93,20 +95,33 @@ fileSystemParameters.AddParameter(EFileSystemParameter.ManifestDecryptor, manife
 
 
 
-**RawbundleDecryptor**
+**RawBundleDecryptor**
 
 参数说明：RawBundle 解密器。
 
-支持范围：BuiltinFileSystem, SandboxFileSystem
+支持范围：BuiltinFileSystem, SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem
 
 ```csharp
 IBundleDecryptor decryptor = new RawBundleDecryptor();
-fileSystemParameters.AddParameter(EFileSystemParameter.RawbundleDecryptor, decryptor);
+fileSystemParameters.AddParameter(EFileSystemParameter.RawBundleDecryptor, decryptor);
 ```
 
 
 
-**AssetbundleFallbackDecryptor**
+**ArchiveBundleDecryptor**
+
+参数说明：ArchiveBundle 解密器。
+
+支持范围：BuiltinFileSystem, SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem
+
+```csharp
+IBundleDecryptor decryptor = new ArchiveBundleDecryptor();
+fileSystemParameters.AddParameter(EFileSystemParameter.ArchiveBundleDecryptor, decryptor);
+```
+
+
+
+**AssetBundleFallbackDecryptor**
 
 参数说明：AssetBundle 备用解密器，通常用于回退到内存解密方式。
 
@@ -114,7 +129,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.RawbundleDecryptor, decry
 
 ```csharp
 IBundleMemoryDecryptor fallbackDecryptor = new BundleMemoryDecryptor();
-fileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleFallbackDecryptor, fallbackDecryptor);
+fileSystemParameters.AddParameter(EFileSystemParameter.AssetBundleFallbackDecryptor, fallbackDecryptor);
 ```
 
 
@@ -135,7 +150,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.AssetbundleFallbackDecryp
 
 参数说明：自定义 UnityWebRequest 创建委托，可用于设置自定义 Header 或证书校验等。
 
-支持范围：WebRemoteFileSystem, WebServerFileSystem
+支持范围：WebNetworkFileSystem, WebServerFileSystem
 
 ```csharp
 UnityWebRequestCreator creator = (url, method) => UnityWebRequest.Get(url);
@@ -161,7 +176,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.DownloadBackend, backend)
 
 参数说明：禁用Unity的网络缓存。
 
-支持范围：WebRemoteFileSystem, WebServerFileSystem
+支持范围：WebNetworkFileSystem, WebServerFileSystem
 
 ```csharp
 fileSystemParameters.AddParameter(EFileSystemParameter.DisableUnityWebCache, true);
@@ -243,7 +258,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.DownloadResumeMinimumSize
 
 参数说明：自定义下载重试策略。
 
-支持范围：SandboxFileSystem, WebRemoteFileSystem, WebServerFileSystem, 小游戏平台文件系统
+支持范围：SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem, 小游戏平台文件系统
 
 ```csharp
 IDownloadRetryPolicy retryPolicy = new MyDownloadRetryPolicy();
@@ -256,7 +271,7 @@ fileSystemParameters.AddParameter(EFileSystemParameter.DownloadRetryPolicy, retr
 
 参数说明：自定义 URL 选择策略。
 
-支持范围：SandboxFileSystem, WebRemoteFileSystem, WebServerFileSystem, 小游戏平台文件系统
+支持范围：SandboxFileSystem, WebNetworkFileSystem, WebServerFileSystem, 小游戏平台文件系统
 
 ```csharp
 IDownloadUrlPolicy urlPolicy = new MyDownloadUrlPolicy();
@@ -374,5 +389,31 @@ fileSystemParameters.AddParameter(EFileSystemParameter.CopyBuiltinPackageManifes
 ```csharp
 string unpackRoot = $"{Application.persistentDataPath}/yoo/unpack";
 fileSystemParameters.AddParameter(EFileSystemParameter.UnpackFileSystemRoot, unpackRoot);
+```
+
+
+
+**BundleUnpackPolicy**
+
+参数说明：内置资源包解包策略。可以根据资源包名称、文件名、类型、加密状态和标签，自定义哪些内置资源包需要解包到文件系统。
+
+支持范围：BuiltinFileSystem
+
+```csharp
+IBundleUnpackPolicy unpackPolicy = new MyBundleUnpackPolicy();
+fileSystemParameters.AddParameter(EFileSystemParameter.BundleUnpackPolicy, unpackPolicy);
+```
+
+
+
+**BuiltinFileAccessor**
+
+参数说明：内置文件访问器。可以为StreamingAssets文件提供自定义存在检测和字节读取能力，例如Android平台接入第三方同步读取方案。
+
+支持范围：BuiltinFileSystem
+
+```csharp
+IBuiltinFileAccessor fileAccessor = new MyBuiltinFileAccessor();
+fileSystemParameters.AddParameter(EFileSystemParameter.BuiltinFileAccessor, fileAccessor);
 ```
 

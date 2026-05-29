@@ -369,7 +369,7 @@
       </tr>
       <tr>
         <td><code>CreateDefaultWebRemoteFileSystemParameters(remoteSvc, webDecryptSvc, disableCache)</code></td>
-        <td><code>CreateDefaultWebRemoteFileSystemParameters(remoteService, disableCache)</code></td>
+        <td><code>CreateDefaultWebNetworkFileSystemParameters(remoteService, disableCache)</code></td>
       </tr>
       <tr>
         <td><code>FileSystemParametersDefine.XXX</code> 常量</td>
@@ -566,7 +566,7 @@ var fsp = FileSystemParameters.CreateDefaultBuildinFileSystemParameters(myDecryp
 // 兼容层编译通过，但 myDecryptSvc 不生效！
 // 迁移方法：实现 IBundleOffsetDecryptor 等新接口，通过 EFileSystemParameter 添加
 var fsp = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
-fsp.AddParameter(EFileSystemParameter.AssetbundleDecryptor, myNewDecryptor);
+fsp.AddParameter(EFileSystemParameter.AssetBundleDecryptor, myNewDecryptor);
 ```
 
 #### 已移除的参数常量
@@ -609,7 +609,7 @@ v2.3 中通过字符串引用的内部文件系统类名在 v3 中已变更：
       </tr>
       <tr>
         <td><code>DefaultWebRemoteFileSystem</code></td>
-        <td><code>WebRemoteFileSystem</code></td>
+        <td><code>WebNetworkFileSystem</code></td>
       </tr>
     </tbody>
   </table>
@@ -634,4 +634,15 @@ string path = op.Detail.BundleFilePath;
 ```
 
 > **注意**：`EnsureBundleFileAsync` 仅确保资源包文件就绪并返回本地路径，不会将 Bundle 加载到内存。如果需要同时加载 Bundle，请继续使用 `LoadBundleFileAsync`。
+
+### 2.8 3.0.2-beta Web文件系统变更
+
+3.0.2-beta 将WebGL远程加载和小游戏平台资源加载流程统一到Web网络文件系统：
+
+- `WebRemoteFileSystem` 调整为 `WebNetworkFileSystem`。
+- `CreateDefaultWebRemoteFileSystemParameters` 调整为 `CreateDefaultWebNetworkFileSystemParameters`。
+- `WebRemoteFileSystemParameters` 调整为 `WebNetworkFileSystemParameters`。
+- WebServerFileSystem和WebNetworkFileSystem支持AssetBundle、RawBundle和ArchiveBundle加载。
+- ArchiveBundle加密资源在运行时需要通过 `EFileSystemParameter.ArchiveBundleDecryptor` 配置解密器。
+- BuiltinFileSystem新增 `EFileSystemParameter.BundleUnpackPolicy` 和 `EFileSystemParameter.BuiltinFileAccessor`，可用于自定义内置资源解包策略和内置文件读取方式。
 

@@ -6,9 +6,8 @@
 
 **文件系统注意事项**
 
-1. 不支持同步加载。
-2. 不支持原生文件构建管线。
-3. 不支持下载器。
+1. 不支持同步加载
+2. 不支持下载器
 
 **文件系统初始化**
 
@@ -22,7 +21,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteService);
+    createParameters.WebNetworkFileSystemParameters = FileSystemParameters.CreateDefaultWebNetworkFileSystemParameters(remoteService);
     createParameters.WebServerFileSystemParameters = FileSystemParameters.CreateDefaultWebServerFileSystemParameters();
     
     // 初始化ResourcePackage
@@ -53,6 +52,8 @@ private class RemoteService : IRemoteService
 }
 ```
 
+Web网络文件系统支持RawBundle和ArchiveBundle加载。若需要加载加密资源包，可在文件系统参数里按需配置 `AssetBundleDecryptor`、`RawBundleDecryptor` 或 `ArchiveBundleDecryptor`。
+
 
 
 ### 小游戏宿主
@@ -63,9 +64,8 @@ Unity 小游戏宿主是融合了客户端 SDK、服务端 API 以及管理后�
 
 **文件系统注意事项**
 
-1. 不支持同步加载。
-2. 不支持原生文件构建管线。
-3. 不支持下载器。
+1. 不支持同步加载
+3. 不支持下载器
 
 **文件系统初始化**
 
@@ -79,7 +79,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebRemoteFileSystemParameters = FileSystemParameters.CreateDefaultWebRemoteFileSystemParameters(remoteService);
+    createParameters.WebNetworkFileSystemParameters = FileSystemParameters.CreateDefaultWebNetworkFileSystemParameters(remoteService);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -115,13 +115,12 @@ IEnumerator InitPackage()
 
 首先安装WX-WASM-SDK-V2 Unity插件，然后导入微信文件系统相关代码。
 
-微信文件系统相关代码在扩展工程内：Mini Game --> Runtime --> [WechatFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime)
+微信文件系统相关代码在扩展工程内：Mini Game --> Runtime --> [WechatFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/WechatFileSystem)
 
 **文件系统注意事项**
 
-1. 不支持同步加载！
-2. ~~不支持资源加密~~。（历史说明：v2.3.x版本开始支持加密！）
-3. 不支持原生文件构建管线！
+1. 不支持同步加载
+3. 不支持下载器
 
 **其它注意事项**
 
@@ -150,7 +149,7 @@ IEnumerator InitPackage()
     
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, null);
+    createParameters.WebNetworkFileSystemParameters = WechatFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, null);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -186,17 +185,18 @@ string packageRoot = $"{WeChatWASM.WX.env.USER_DATA_PATH}/__GAME_FILE_CACHE/yoo"
 
    查看日志里是否包含其它异常日志，例如：Exception: IRemoteService returned URL contains double slashes.
 
+
+
 ### 抖音小游戏
 
 首先安装字节小游戏相关的Unity插件，然后导入抖音文件系统相关代码。
 
-抖音文件系统相关代码在扩展工程内：Mini Game --> Runtime --> [TiktokFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime)
+抖音文件系统相关代码在扩展工程内：Mini Game --> Runtime --> [TiktokFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/TiktokFileSystem)
 
 **文件系统注意事项**
 
-1. 不支持同步加载。
-2. ~~不支持资源加密~~。（历史说明：v2.2.12版本开始支持加密！）
-3. 不支持原生文件构建管线。
+1. 不支持同步加载
+1. 不支持下载器
 
 **文件系统初始化**
 
@@ -211,12 +211,9 @@ IEnumerator InitPackage()
     // 创建解密服务类
     IBundleDecryptor decryptor = null; //如需资源加密，请传入自定义解密器实例。
     
-    // 随意填写
-    string packageRoot = "yoo"; 
-    
     // 创建初始化参数
     var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = TiktokFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
+    createParameters.WebNetworkFileSystemParameters = TiktokFileSystemCreater.CreateFileSystemParameters(remoteService, decryptor);
     
     // 初始化ResourcePackage
     yield return package.InitializePackageAsync(createParameters);
@@ -231,65 +228,19 @@ IEnumerator InitPackage()
 
 
 
-### 支付宝小游戏
+### 其它小游戏平台
 
-首先安装支付宝小游戏相关的Unity插件，然后导入支付宝文件系统相关代码。
+支付宝小游戏：Mini Game --> Runtime --> [AlipayFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/AlipayFileSystem)
 
-支付宝文件系统相关代码在扩展工程内：Mini Game --> Runtime --> [AlipayFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime)
+Taptap小游戏：Mini Game --> Runtime --> [TaptapFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/TaptapFileSystem)
 
-注意：支付宝小游戏插件目前还未公开（2025.9.10），可以联系支付宝团队索取插件库。
+OPPO小游戏：Mini Game --> Runtime --> [OppoFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/OppoFileSystem)
 
-**文件系统注意事项**
+vivo小游戏：Mini Game --> Runtime --> [VivoFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/VivoFileSystem)
 
-1. 不支持同步加载。
-2. ~~不支持资源加密~~。（历史说明：v2.2.12版本开始支持加密！）
-3. 不支持原生文件构建管线。
+快手小游戏：Mini Game --> Runtime --> [KuaiShouFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime/KuaiShouFileSystem)
 
-**文件系统初始化**
-
-```csharp
-IEnumerator InitPackage()
-{
-    ... //省略！参考字节小游戏初始化代码
-    
-    // 创建初始化参数
-    var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = AlipayFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
-    
-    // 初始化ResourcePackage
-    yield return package.InitializePackageAsync(createParameters);
-}
-```
-
-
-
-### Taptap小游戏
-
-首先安装Taptap小游戏相关的Unity插件，然后导入Taptap文件系统相关代码。
-
-Taptap文件系统相关代码在扩展工程内：Mini Game --> Runtime -->[TaptapFileSystem](https://github.com/tuyoogame/YooAsset/tree/yoo3/Assets/YooAsset/Samples~/Mini%20Game/Runtime)
-
-**文件系统注意事项**
-
-1. 不支持同步加载。
-2. ~~不支持资源加密~~。（历史说明：v2.2.12版本开始支持加密！）
-3. 不支持原生文件构建管线。
-
-**文件系统初始化**
-
-```csharp
-IEnumerator InitPackage()
-{
-    ... //省略！参考字节小游戏初始化代码
-    
-    // 创建初始化参数
-    var createParameters = new WebPlayModeOptions();
-    createParameters.WebServerFileSystemParameters = TaptapFileSystemCreater.CreateFileSystemParameters(packageRoot, remoteService, decryptor);
-    
-    // 初始化ResourcePackage
-    yield return package.InitializePackageAsync(createParameters);
-}
-```
+**注意：链接目录下内置了说明文档**
 
 
 
