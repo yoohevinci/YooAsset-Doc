@@ -1,10 +1,10 @@
 ---
 title: Struct UnloadAllAssetsOptions
 sidebar_label: UnloadAllAssetsOptions
-description: "卸载所有资源的选项配置"
+description: "卸载所有资源的操作选项"
 ---
 # Struct UnloadAllAssetsOptions
-卸载所有资源的选项配置
+卸载所有资源的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/UnloadAllAssetsOptions.cs#L7)

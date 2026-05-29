@@ -1,10 +1,10 @@
 ---
 title: Class InitializePackageOptions
 sidebar_label: InitializePackageOptions
-description: "初始化参数"
+description: "初始化资源包的操作选项"
 ---
 # Class InitializePackageOptions
-初始化参数
+初始化资源包的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L8)

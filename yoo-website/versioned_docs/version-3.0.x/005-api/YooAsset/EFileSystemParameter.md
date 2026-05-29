@@ -132,39 +132,63 @@ UnpackFileSystemRoot = 18
 ```csharp title="Declaration"
 RemoteService = 19
 ```
-### AssetbundleDecryptor
+### AssetBundleDecryptor
 AssetBundle 解密器 [YooAsset.IBundleDecryptor](../YooAsset/IBundleDecryptor.md)
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L112)
 ```csharp title="Declaration"
-AssetbundleDecryptor = 20
+AssetBundleDecryptor = 20
 ```
-### RawbundleDecryptor
+### RawBundleDecryptor
 RawBundle 解密器 [YooAsset.IBundleDecryptor](../YooAsset/IBundleDecryptor.md)
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L117)
 ```csharp title="Declaration"
-RawbundleDecryptor = 21
+RawBundleDecryptor = 21
 ```
-### AssetbundleFallbackDecryptor
-AssetBundle 备用解密器 [YooAsset.IBundleMemoryDecryptor](../YooAsset/IBundleMemoryDecryptor.md)
+### ArchiveBundleDecryptor
+ArchiveBundle 解密器 [YooAsset.IBundleDecryptor](../YooAsset/IBundleDecryptor.md)
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L122)
 ```csharp title="Declaration"
-AssetbundleFallbackDecryptor = 22
+ArchiveBundleDecryptor = 22
+```
+### AssetBundleFallbackDecryptor
+AssetBundle 备用解密器 [YooAsset.IBundleMemoryDecryptor](../YooAsset/IBundleMemoryDecryptor.md)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L127)
+```csharp title="Declaration"
+AssetBundleFallbackDecryptor = 23
 ```
 ### ManifestDecryptor
 资源清单解密器 [YooAsset.IManifestDecryptor](../YooAsset/IManifestDecryptor.md)
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L127)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L132)
 ```csharp title="Declaration"
-ManifestDecryptor = 23
+ManifestDecryptor = 24
 ```
 ### DownloadRetryPolicy
 下载重试判定策略 [YooAsset.IDownloadRetryPolicy](../YooAsset/IDownloadRetryPolicy.md)
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L132)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L137)
 ```csharp title="Declaration"
-DownloadRetryPolicy = 24
+DownloadRetryPolicy = 25
 ```
 ### DownloadUrlPolicy
 URL 选择策略 [YooAsset.IDownloadUrlPolicy](../YooAsset/IDownloadUrlPolicy.md)
-###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L137)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L142)
 ```csharp title="Declaration"
-DownloadUrlPolicy = 25
+DownloadUrlPolicy = 26
+```
+### WebPlatformStrategy
+WebGL 平台策略 `YooAsset.IWebPlatformStrategy`
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L147)
+```csharp title="Declaration"
+WebPlatformStrategy = 27
+```
+### BundleUnpackPolicy
+内置资源包解包策略 [YooAsset.IBundleUnpackPolicy](../YooAsset/IBundleUnpackPolicy.md)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L152)
+```csharp title="Declaration"
+BundleUnpackPolicy = 28
+```
+### BuiltinFileAccessor
+内置文件访问器 [YooAsset.IBuiltinFileAccessor](../YooAsset/IBuiltinFileAccessor.md)
+###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/FileSystem/EFileSystemParameter.cs#L157)
+```csharp title="Declaration"
+BuiltinFileAccessor = 29
 ```

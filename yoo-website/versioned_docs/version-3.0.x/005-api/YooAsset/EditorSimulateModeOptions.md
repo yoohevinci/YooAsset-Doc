@@ -1,10 +1,10 @@
 ---
 title: Class EditorSimulateModeOptions
 sidebar_label: EditorSimulateModeOptions
-description: "编辑器下模拟运行模式的初始化参数"
+description: "编辑器下模拟运行模式的操作选项"
 ---
 # Class EditorSimulateModeOptions
-编辑器下模拟运行模式的初始化参数
+编辑器下模拟运行模式的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L29)

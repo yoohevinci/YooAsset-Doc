@@ -1,10 +1,10 @@
 ---
 title: Struct EnsureBundleFileOptions
 sidebar_label: EnsureBundleFileOptions
-description: "确保资源包文件已就绪的选项"
+description: "确保资源包文件已就绪的操作选项"
 ---
 # Struct EnsureBundleFileOptions
-确保资源包文件已就绪的选项
+确保资源包文件已就绪的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/EnsureBundleFileOptions.cs#L7)

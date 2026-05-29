@@ -1,10 +1,10 @@
 ---
 title: Struct ClearCacheOptions
 sidebar_label: ClearCacheOptions
-description: "清理缓存选项"
+description: "清理缓存的操作选项"
 ---
 # Struct ClearCacheOptions
-清理缓存选项
+清理缓存的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/ClearCacheOptions.cs#L7)

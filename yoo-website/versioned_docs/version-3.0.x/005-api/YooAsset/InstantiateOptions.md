@@ -1,10 +1,10 @@
 ---
 title: Struct InstantiateOptions
 sidebar_label: InstantiateOptions
-description: "游戏对象实例化选项"
+description: "游戏对象实例化的操作选项"
 ---
 # Struct InstantiateOptions
-游戏对象实例化选项
+游戏对象实例化的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourceManager/Operations/InstantiateOptions.cs#L8)

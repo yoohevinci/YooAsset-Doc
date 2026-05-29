@@ -15,7 +15,7 @@
 ### [ClearCacheOperation](../YooAsset/ClearCacheOperation.md)
 清理缓存操作
 ### [CustomPlayModeOptions](../YooAsset/CustomPlayModeOptions.md)
-自定义运行模式的初始化参数
+自定义运行模式的操作选项
 ### [DefaultDownloadRetryPolicy](../YooAsset/DefaultDownloadRetryPolicy.md)
 默认的下载重试策略
 ### [DefaultDownloadUrlPolicy](../YooAsset/DefaultDownloadUrlPolicy.md)
@@ -27,7 +27,7 @@
 ### [EditorSimulateBuildInvoker](../YooAsset/EditorSimulateBuildInvoker.md)
 编辑器模拟构建的调用入口
 ### [EditorSimulateModeOptions](../YooAsset/EditorSimulateModeOptions.md)
-编辑器下模拟运行模式的初始化参数
+编辑器下模拟运行模式的操作选项
 ### [EnsureBundleFileOperation](../YooAsset/EnsureBundleFileOperation.md)
 确保资源包已就绪的异步操作
 ### [FileSystemParameters](../YooAsset/FileSystemParameters.md)
@@ -37,19 +37,19 @@
 ### [HashUtility](../YooAsset/HashUtility.md)
 哈希工具类
 ### [HostPlayModeOptions](../YooAsset/HostPlayModeOptions.md)
-联机运行模式的初始化参数
+联机运行模式的操作选项
 ### [InitializeFileSystemOperation](../YooAsset/InitializeFileSystemOperation.md)
 初始化文件系统操作
 ### [InitializePackageOperation](../YooAsset/InitializePackageOperation.md)
 初始化资源包裹操作
 ### [InitializePackageOptions](../YooAsset/InitializePackageOptions.md)
-初始化参数
+初始化资源包的操作选项
 ### [InstantiateOperation](../YooAsset/InstantiateOperation.md)
 游戏对象实例化操作
 ### [LoadPackageManifestOperation](../YooAsset/LoadPackageManifestOperation.md)
 加载资源清单操作
 ### [OfflinePlayModeOptions](../YooAsset/OfflinePlayModeOptions.md)
-离线运行模式的初始化参数
+离线运行模式的操作选项
 ### [PackageBuildParameters](../YooAsset/PackageBuildParameters.md)
 资源包裹构建的调用参数
 ### [PackageBuildResult](../YooAsset/PackageBuildResult.md)
@@ -58,6 +58,8 @@
 资源包裹的详细信息，用于外部查询包裹配置。
 ### [PrefetchManifestOperation](../YooAsset/PrefetchManifestOperation.md)
 预取清单操作，用于提前加载指定版本的资源清单。
+### [RawFileHandle](../YooAsset/RawFileHandle.md)
+原生文件句柄，用于访问未经 Unity 处理的原始文件。
 ### [RawFileObject](../YooAsset/RawFileObject.md)
 原生文件对象
 ### [RequestPackageVersionOperation](../YooAsset/RequestPackageVersionOperation.md)
@@ -81,7 +83,7 @@
 ### [UnloadUnusedAssetsOperation](../YooAsset/UnloadUnusedAssetsOperation.md)
 卸载未使用资源的异步操作
 ### [WebPlayModeOptions](../YooAsset/WebPlayModeOptions.md)
-WebGL运行模式的初始化参数
+WebGL运行模式的操作选项
 ### [YooAssetConfiguration](../YooAsset/YooAssetConfiguration.md)
 提供 YooAsset 全局配置的访问入口
 ### [YooAssets](../YooAsset/YooAssets.md)
@@ -100,15 +102,17 @@ The exception that is thrown when a resource package is in an invalid state.
 ### [BundleDecryptArgs](../YooAsset/BundleDecryptArgs.md)
 资源包解密操作的输入参数
 ### [BundleDownloaderOptions](../YooAsset/BundleDownloaderOptions.md)
-按资源信息创建下载器的选项
+按资源信息创建下载器的操作选项
 ### [BundleEncryptArgs](../YooAsset/BundleEncryptArgs.md)
 资源包加密操作的输入参数
 ### [BundleEncryptResult](../YooAsset/BundleEncryptResult.md)
 资源包加密操作的返回结果
 ### [BundleImporterOptions](../YooAsset/BundleImporterOptions.md)
-资源导入选项
+资源导入的操作选项
+### [BundleUnpackInfo](../YooAsset/BundleUnpackInfo.md)
+资源包解包判定信息
 ### [ClearCacheOptions](../YooAsset/ClearCacheOptions.md)
-清理缓存选项
+清理缓存的操作选项
 ### [DownloadCompletedEventArgs](../YooAsset/DownloadCompletedEventArgs.md)
 下载完成事件参数
 ### [DownloadErrorEventArgs](../YooAsset/DownloadErrorEventArgs.md)
@@ -122,28 +126,30 @@ The exception that is thrown when a resource package is in an invalid state.
 ### [EnsureBundleFileOperation.BundleDetail](../YooAsset/EnsureBundleFileOperation.BundleDetail.md)
 资源包文件详情
 ### [EnsureBundleFileOptions](../YooAsset/EnsureBundleFileOptions.md)
-确保资源包文件已就绪的选项
+确保资源包文件已就绪的操作选项
 ### [ImportBundleInfo](../YooAsset/ImportBundleInfo.md)
 导入的资源包信息
 ### [InstantiateOptions](../YooAsset/InstantiateOptions.md)
-游戏对象实例化选项
+游戏对象实例化的操作选项
 ### [LoadPackageManifestOptions](../YooAsset/LoadPackageManifestOptions.md)
-加载清单选项
+加载清单的操作选项
 ### [OperationAwaiter](../YooAsset/OperationAwaiter.md)
 支持异步编程的自定义 Awaiter
 ### [PrefetchManifestOptions](../YooAsset/PrefetchManifestOptions.md)
-预取清单选项
+预取清单的操作选项
 ### [RequestPackageVersionOptions](../YooAsset/RequestPackageVersionOptions.md)
-请求版本选项
+请求版本的操作选项
 ### [ResourceDownloaderOptions](../YooAsset/ResourceDownloaderOptions.md)
-按资源标签创建下载器的选项
+按资源标签创建下载器的操作选项
 ### [ResourceUnpackerOptions](../YooAsset/ResourceUnpackerOptions.md)
-资源解压选项
+资源解压的操作选项
 ### [UnloadAllAssetsOptions](../YooAsset/UnloadAllAssetsOptions.md)
-卸载所有资源的选项配置
+卸载所有资源的操作选项
 ### [UnloadUnusedAssetsOptions](../YooAsset/UnloadUnusedAssetsOptions.md)
-卸载未使用资源的选项配置
+卸载未使用资源的操作选项
 ## Interfaces
+### [IBuiltinFileAccessor](../YooAsset/IBuiltinFileAccessor.md)
+
 ### [IBundleDecryptor](../YooAsset/IBundleDecryptor.md)
 资源包解密器的基接口，本身不包含成员。
 ### [IBundleEncryptor](../YooAsset/IBundleEncryptor.md)
@@ -157,6 +163,8 @@ The exception that is thrown when a resource package is in an invalid state.
 ### [IBundleStreamDecryptor](../YooAsset/IBundleStreamDecryptor.md)
 基于流的资源包解密器。
 通过提供解密流实现流式加载，适用于大文件场景。
+### [IBundleUnpackPolicy](../YooAsset/IBundleUnpackPolicy.md)
+内置资源包解包策略接口
 ### [IDownloadRetryPolicy](../YooAsset/IDownloadRetryPolicy.md)
 下载重试策略
 ### [IDownloadUrlPolicy](../YooAsset/IDownloadUrlPolicy.md)

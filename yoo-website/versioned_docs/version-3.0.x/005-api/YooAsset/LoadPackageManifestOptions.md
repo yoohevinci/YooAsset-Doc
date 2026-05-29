@@ -1,10 +1,10 @@
 ---
 title: Struct LoadPackageManifestOptions
 sidebar_label: LoadPackageManifestOptions
-description: "加载清单选项"
+description: "加载清单的操作选项"
 ---
 # Struct LoadPackageManifestOptions
-加载清单选项
+加载清单的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/LoadPackageManifestOptions.cs#L7)

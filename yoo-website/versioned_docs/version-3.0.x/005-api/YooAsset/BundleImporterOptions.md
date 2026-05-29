@@ -1,10 +1,10 @@
 ---
 title: Struct BundleImporterOptions
 sidebar_label: BundleImporterOptions
-description: "资源导入选项"
+description: "资源导入的操作选项"
 ---
 # Struct BundleImporterOptions
-资源导入选项
+资源导入的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOptions.cs#L184)

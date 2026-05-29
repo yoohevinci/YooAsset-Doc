@@ -1,10 +1,10 @@
 ---
 title: Struct PrefetchManifestOptions
 sidebar_label: PrefetchManifestOptions
-description: "预取清单选项"
+description: "预取清单的操作选项"
 ---
 # Struct PrefetchManifestOptions
-预取清单选项
+预取清单的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/PrefetchManifestOptions.cs#L7)

@@ -1,10 +1,10 @@
 ---
 title: Struct ResourceUnpackerOptions
 sidebar_label: ResourceUnpackerOptions
-description: "资源解压选项"
+description: "资源解压的操作选项"
 ---
 # Struct ResourceUnpackerOptions
-资源解压选项
+资源解压的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOptions.cs#L124)

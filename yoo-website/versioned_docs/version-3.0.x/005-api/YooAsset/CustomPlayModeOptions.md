@@ -1,10 +1,10 @@
 ---
 title: Class CustomPlayModeOptions
 sidebar_label: CustomPlayModeOptions
-description: "自定义运行模式的初始化参数"
+description: "自定义运行模式的操作选项"
 ---
 # Class CustomPlayModeOptions
-自定义运行模式的初始化参数
+自定义运行模式的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/InitializePackageOptions.cs#L83)

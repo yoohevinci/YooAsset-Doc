@@ -1,10 +1,10 @@
 ---
 title: Struct RequestPackageVersionOptions
 sidebar_label: RequestPackageVersionOptions
-description: "请求版本选项"
+description: "请求版本的操作选项"
 ---
 # Struct RequestPackageVersionOptions
-请求版本选项
+请求版本的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/RequestPackageVersionOptions.cs#L7)

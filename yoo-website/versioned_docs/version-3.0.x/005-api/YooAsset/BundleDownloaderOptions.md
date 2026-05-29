@@ -1,10 +1,10 @@
 ---
 title: Struct BundleDownloaderOptions
 sidebar_label: BundleDownloaderOptions
-description: "按资源信息创建下载器的选项"
+description: "按资源信息创建下载器的操作选项"
 ---
 # Struct BundleDownloaderOptions
-按资源信息创建下载器的选项
+按资源信息创建下载器的操作选项
 
 ###### **Assembly**: YooAsset.dll
 ###### [View Source](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Runtime/ResourcePackage/Operations/DownloaderOptions.cs#L7)
