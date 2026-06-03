@@ -1,0 +1,8 @@
+{
+    "label": "解决方案",
+    "collapsible": true,
+    "link": {
+      "type": "generated-index",
+      "description": "解决方案"
+    }
+}
