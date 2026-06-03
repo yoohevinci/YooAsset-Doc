@@ -635,9 +635,9 @@ string path = op.Detail.BundleFilePath;
 
 > **注意**：`EnsureBundleFileAsync` 仅确保资源包文件就绪并返回本地路径，不会将 Bundle 加载到内存。如果需要同时加载 Bundle，请继续使用 `LoadBundleFileAsync`。
 
-### 2.8 3.0.2-beta Web文件系统变更
+### 2.8 Web文件系统变更
 
-3.0.2-beta 将WebGL远程加载和小游戏平台资源加载流程统一到Web网络文件系统：
+将WebGL远程加载和小游戏平台资源加载流程统一到Web网络文件系统：
 
 - `WebRemoteFileSystem` 调整为 `WebNetworkFileSystem`。
 - `CreateDefaultWebRemoteFileSystemParameters` 调整为 `CreateDefaultWebNetworkFileSystemParameters`。
@@ -645,4 +645,13 @@ string path = op.Detail.BundleFilePath;
 - WebServerFileSystem和WebNetworkFileSystem支持AssetBundle、RawBundle和ArchiveBundle加载。
 - ArchiveBundle加密资源在运行时需要通过 `EFileSystemParameter.ArchiveBundleDecryptor` 配置解密器。
 - BuiltinFileSystem新增 `EFileSystemParameter.BundleUnpackPolicy` 和 `EFileSystemParameter.BuiltinFileAccessor`，可用于自定义内置资源解包策略和内置文件读取方式。
+
+### 2.9 编辑器缓存目录迁移到 Library 下
+
+编辑器下的缓存根目录（`YooAssetConfiguration.GetEditorCacheRoot()`）已从**项目根目录**移动到 `Library/` 目录下：
+
+- 旧路径：`{项目根目录}/yoo/`
+- 新路径：`{项目根目录}/Library/yoo/`（`YooFolderName` 为空时退化为 `{项目根目录}/Library/`）
+
+> **注意**：这是一个 Breaking Change，但缓存可重建，首次运行会在新位置自动生成，不影响业务。升级后请手动删除项目根目录下残留的旧 `yoo/` 目录（不提供自动迁移）。
 

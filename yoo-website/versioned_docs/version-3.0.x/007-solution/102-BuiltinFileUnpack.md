@@ -6,7 +6,7 @@
 
 默认情况下，YooAsset 会通过 UnityWebRequest 读取 JAR 包里的内置文件。如果项目需要接入其它读取方案，例如 BetterStreamingAssets，可以通过内置文件访问器接管文件读取过程。
 
-## 解包策略
+### 解包策略
 
 通过 `IBundleUnpackPolicy` 可以决定哪些内置资源包需要解包到沙盒目录。
 
@@ -37,7 +37,7 @@ public sealed class CustomBundleUnpackPolicy : IBundleUnpackPolicy
 }
 ```
 
-## 内置文件访问器
+### 内置文件访问器
 
 通过 `IBuiltinFileAccessor` 可以接管 `StreamingAssets` 内置文件的存在检测和字节读取。安卓平台可在这里接入 BetterStreamingAssets 或项目自己的 JAR 文件读取方案。
 
@@ -72,7 +72,7 @@ public sealed class BetterStreamingAssetsFileAccessor : IBuiltinFileAccessor
 }
 ```
 
-## 初始化接入
+### 初始化接入
 
 在创建内置文件系统参数时，添加自定义解包策略和内置文件访问器。
 
@@ -96,7 +96,7 @@ private IEnumerator InitPackage()
 }
 ```
 
-## 注意事项
+### 注意事项
 
 1. `BundleUnpackPolicy` 只决定资源包是否需要解包，实际读取内置文件的方式由 `BuiltinFileAccessor` 决定。
 2. 如果没有设置 `BuiltinFileAccessor`，安卓平台会回退到默认的本地请求方式读取 JAR 包内文件。
