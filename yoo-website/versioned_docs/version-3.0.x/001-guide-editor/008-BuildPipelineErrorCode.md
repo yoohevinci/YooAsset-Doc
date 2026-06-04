@@ -4,9 +4,7 @@
 
 下面是对默认构建管线的输出错误码的说明。
 
-
-
-#### TaskPrepare节点
+### TaskPrepare节点
 
 - **ErrorCode100**
 
@@ -70,9 +68,8 @@
 
   内置着色器资源包名称为空会造成资源冗余，建议填写有效的资源包名称。
   
-  
 
-#### TaskGetBuildMap节点
+### TaskGetBuildMap节点
 
 - **ErrorCode200**
 
@@ -96,9 +93,7 @@
 
   重点检查资源配置的收集器打包规则。原生文件打包规则需要配置为：PackRawFile
 
-
-
-#### TaskBuilding节点
+### TaskBuilding节点
 
 - **ErrorCode300**
 
@@ -112,9 +107,7 @@
 
   极为特殊情况下会触发该错误，可以在社区群联系开源作者。
 
-
-
-#### TaskVerifyBuildResult节点
+### TaskVerifyBuildResult节点
 
 - **ErrorCode500**
 
@@ -138,9 +131,8 @@
 
   重点检查 InstantAsset 构建日志文件是否存在、内容是否完整，以及资源包 GUID 记录是否为空。
 
-  
 
-#### TaskUpdateBundleInfo节点
+### TaskUpdateBundleInfo节点
 
 - **ErrorCode400**
 
@@ -170,9 +162,7 @@
 
   重点检查 InstantAsset 构建日志是否完整，或资源包是否正确记录了关联的资源 GUID。
 
-
-
-#### TaskCreateManifest节点
+### TaskCreateManifest节点
 
 - **ErrorCode600**
 
@@ -202,14 +192,12 @@
 
      开发者可以优化或修改加密算法，来规避该问题。
 
-  
 
-#### TaskCopyBundledFiles节点
+### TaskCopyBundledFiles节点
 
 - **ErrorCode700**
 
   使用首包资源拷贝选项时，拷贝参数为空。
 
   重点检查 BundledCopyParams 配置是否完整。
-
 

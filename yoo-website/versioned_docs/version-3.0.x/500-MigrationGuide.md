@@ -2,7 +2,7 @@
 
 本兼容层允许大部分 v2.3 业务代码在 v3.x 下**零修改编译通过**。所有兼容 API 均标记了 `[Obsolete]`，编译时会输出警告提示迁移到 v3 新接口。
 
-## 启用兼容层
+### 启用兼容层
 
 兼容代码默认**不参与编译**，需要手动添加编译宏才能启用：
 
@@ -12,9 +12,9 @@
 
 ---
 
-## API 对照表（自动兼容）
+### API 对照表（自动兼容）
 
-### 1.1 枚举与状态
+#### 1.1 枚举与状态
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -45,7 +45,7 @@
   </table>
 </div>
 
-### 1.2 HandleBase
+#### 1.2 HandleBase
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -72,7 +72,7 @@
   </table>
 </div>
 
-### 1.3 SceneHandle
+#### 1.3 SceneHandle
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -95,7 +95,7 @@
   </table>
 </div>
 
-### 1.4 BundleFileHandle（原 RawFileHandle）
+#### 1.4 BundleFileHandle（原 RawFileHandle）
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -134,7 +134,7 @@
   </table>
 </div>
 
-### 1.5 AssetHandle 实例化
+#### 1.5 AssetHandle 实例化
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -181,7 +181,7 @@
   </table>
 </div>
 
-### 1.6 DownloaderOperation
+#### 1.6 DownloaderOperation
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -218,7 +218,7 @@
 
 > **注意**：v2.3 的 `DownloadError` 委托名与 v3 的 `DownloadError` event 冲突，已重命名为 `DownloadErrorDelegate`。如果你的旧代码中直接引用了 `DownloaderOperation.DownloadError` 委托类型，需要改为 `DownloadErrorDelegate`。
 
-### 1.7 ResourcePackage
+#### 1.7 ResourcePackage
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -297,7 +297,7 @@
   </table>
 </div>
 
-### 1.8 YooAssets 静态类
+#### 1.8 YooAssets 静态类
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -340,7 +340,7 @@
   </table>
 </div>
 
-### 1.9 文件系统参数
+#### 1.9 文件系统参数
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -403,7 +403,7 @@
   </table>
 </div>
 
-### 1.10 其他旧类型
+#### 1.10 其他旧类型
 
 <div style={{width: '100%'}}>
   <table style={{width: '100%', minWidth: '100%', display: 'table', tableLayout: 'fixed'}}>
@@ -476,9 +476,9 @@
 
 ---
 
-## 手动迁移项（无法兼容）
+### 手动迁移项（无法兼容）
 
-### 2.1 默认包裹快捷 API（已彻底移除）
+#### 2.1 默认包裹快捷 API（已彻底移除）
 
 v2.3 中 `YooAssets.SetDefaultPackage()` 及其关联的约 50 个静态快捷方法已在 v3 中**完全移除，不提供兼容**：
 
@@ -494,11 +494,11 @@ package.LoadAssetAsync<GameObject>("Assets/Prefabs/Hero.prefab");
 
 **迁移建议**：全局搜索 `YooAssets.Load`、`YooAssets.GetAssetInfo`、`YooAssets.SetDefaultPackage` 等调用，替换为 `package.Xxx(...)` 形式。
 
-### 2.2 DownloadError 委托名冲突
+#### 2.2 DownloadError 委托名冲突
 
 v2.3 的 `DownloaderOperation.DownloadError` 委托类型与 v3 的 `DownloadError` event 同名，兼容层已将旧委托重命名为 `DownloadErrorDelegate`。
 
-### 2.3 LoadSceneAsync 的 suspendLoad 参数语义反转
+#### 2.3 LoadSceneAsync 的 suspendLoad 参数语义反转
 
 v2.3 的 `LoadSceneAsync(..., bool suspendLoad, ...)` 与 v3 的 `LoadSceneAsync(..., bool allowSceneActivation, ...)` 参数类型签名完全相同，仅参数名和语义相反（`suspendLoad=true` 等价于 `allowSceneActivation=false`）。由于方法签名冲突，无法通过兼容层自动处理。
 
@@ -510,17 +510,17 @@ package.LoadSceneAsync("scene", LoadSceneMode.Single, LocalPhysicsMode.None, sus
 package.LoadSceneAsync("scene", LoadSceneMode.Single, LocalPhysicsMode.None, allowSceneActivation: false, 100);
 ```
 
-### 2.4 ClearCacheFilesOperation 类型名冲突
+#### 2.4 ClearCacheFilesOperation 类型名冲突
 
 v2.3 的 `ClearCacheFilesOperation` 与 v3 内部同名类冲突，无法提供兼容包装类。如果旧代码中显式引用了该类型名，需改为 `ClearCacheOperation`。通过 `package.ClearCacheFilesAsync(...)` 调用并用 `var` 接收返回值的写法不受影响。
 
-### 2.5 UnloadAllAssetsOptions 写法变更
+#### 2.5 UnloadAllAssetsOptions 写法变更
 
 v2.3 是 `class` + 公有可变字段，v3 是 `readonly struct` + 构造函数。此场景极少出现。
 
-### 2.6 文件系统参数迁移
+#### 2.6 文件系统参数迁移
 
-#### 解密服务接口重构（必须手动迁移）
+##### 解密服务接口重构（必须手动迁移）
 
 v2.3 的 `IDecryptionServices` 和 `IWebDecryptionServices` 在 v3 中已拆分为多个专用接口：
 
@@ -569,7 +569,7 @@ var fsp = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
 fsp.AddParameter(EFileSystemParameter.AssetBundleDecryptor, myNewDecryptor);
 ```
 
-#### 已移除的参数常量
+##### 已移除的参数常量
 
 以下 `FileSystemParametersDefine` 常量在 v3 中无稳定等价参数，兼容层保留了常量值但 v3 文件系统不会识别：
 
@@ -578,7 +578,7 @@ fsp.AddParameter(EFileSystemParameter.AssetBundleDecryptor, myNewDecryptor);
 - `COPY_LOCAL_FILE_SERVICES` — 已移除
 - `RESUME_DOWNLOAD_RESPONSE_CODES` — 已移除
 
-#### 旧内部文件系统类名
+##### 旧内部文件系统类名
 
 v2.3 中通过字符串引用的内部文件系统类名在 v3 中已变更：
 
@@ -617,7 +617,7 @@ v2.3 中通过字符串引用的内部文件系统类名在 v3 中已变更：
 
 如果旧代码中手写了类名字符串（如 `new FileSystemParameters("YooAsset.DefaultCacheFileSystem", root)`），需改为 v3 工厂方法或更新类名。
 
-### 2.7 BundleFilePath 获取方式变更
+#### 2.7 BundleFilePath 获取方式变更
 
 v2.3 中可通过 `handle.GetRawFilePath()` 直接获取资源包文件路径。v3 中此方法已移除，需改用 `EnsureBundleFileAsync` 异步操作：
 
@@ -635,7 +635,7 @@ string path = op.Detail.BundleFilePath;
 
 > **注意**：`EnsureBundleFileAsync` 仅确保资源包文件就绪并返回本地路径，不会将 Bundle 加载到内存。如果需要同时加载 Bundle，请继续使用 `LoadBundleFileAsync`。
 
-### 2.8 Web文件系统变更
+#### 2.8 Web文件系统变更
 
 将WebGL远程加载和小游戏平台资源加载流程统一到Web网络文件系统：
 
@@ -646,7 +646,7 @@ string path = op.Detail.BundleFilePath;
 - ArchiveBundle加密资源在运行时需要通过 `EFileSystemParameter.ArchiveBundleDecryptor` 配置解密器。
 - BuiltinFileSystem新增 `EFileSystemParameter.BundleUnpackPolicy` 和 `EFileSystemParameter.BuiltinFileAccessor`，可用于自定义内置资源解包策略和内置文件读取方式。
 
-### 2.9 编辑器缓存目录迁移到 Library 下
+#### 2.9 编辑器缓存目录迁移到 Library 下
 
 编辑器下的缓存根目录（`YooAssetConfiguration.GetEditorCacheRoot()`）已从**项目根目录**移动到 `Library/` 目录下：
 
