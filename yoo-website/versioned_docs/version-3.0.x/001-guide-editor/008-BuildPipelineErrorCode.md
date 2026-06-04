@@ -107,31 +107,6 @@
 
   极为特殊情况下会触发该错误，可以在社区群联系开源作者。
 
-### TaskVerifyBuildResult节点
-
-- **ErrorCode500**
-
-  该错误码为警告，提示差异项的资源包名称。
-
-- **ErrorCode501**
-
-  检测到Unity引擎构建的资源包列表和开发者的配置不一致。
-
-  结合错误码500的警告信息来排查问题原因。
-
-- **ErrorCode502**
-
-  检测到Unity引擎构建结果中缺失预期的资源包。
-
-  结合错误码500的警告信息来排查问题原因。
-
-- **ErrorCode503**
-
-  InstantAsset 构建日志文件无效。
-
-  重点检查 InstantAsset 构建日志文件是否存在、内容是否完整，以及资源包 GUID 记录是否为空。
-
-
 ### TaskUpdateBundleInfo节点
 
 - **ErrorCode400**
@@ -161,6 +136,30 @@
   未找到 InstantAsset 资源包的 GUID 映射。
 
   重点检查 InstantAsset 构建日志是否完整，或资源包是否正确记录了关联的资源 GUID。
+
+### TaskVerifyBuildResult节点
+
+- **ErrorCode500**
+
+  该错误码为警告，提示差异项的资源包名称。
+
+- **ErrorCode501**
+
+  检测到Unity引擎构建的资源包列表和开发者的配置不一致。
+
+  结合错误码500的警告信息来排查问题原因。
+
+- **ErrorCode502**
+
+  检测到Unity引擎构建结果中缺失预期的资源包。
+
+  结合错误码500的警告信息来排查问题原因。
+
+- **ErrorCode503**
+
+  InstantAsset 构建日志文件无效。
+
+  重点检查 InstantAsset 构建日志文件是否存在、内容是否完整，以及资源包 GUID 记录是否为空。
 
 ### TaskCreateManifest节点
 

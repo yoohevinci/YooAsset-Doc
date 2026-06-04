@@ -32,7 +32,7 @@ private IEnumerator InitHostPlayMode()
     // 注意：如果本地缓存清单不存在，这里会去远端请求
     // 注意：如果本地缓存清单被损坏，这里会返回失败
     var manifestOp = package.LoadPackageManifestAsync(new LoadPackageManifestOptions(bootVersion, 60));
-	yield return manifestOp;
+    yield return manifestOp;
     if (manifestOp.Status != EOperationStatus.Succeeded)
     {
         //加载本地资源清单文件失败，走离线模式！
@@ -70,7 +70,7 @@ private IEnumerator InitOfflinePlayMode()
     var initializationOperation = package.InitializePackageAsync(initParameters);
     yield return initializationOperation;
     
-   	// 这里是正常的更新流程
+    // 这里是正常的更新流程
     var packageVersionOp = package.RequestPackageVersionAsync();
     yield return packageVersionOp;
     

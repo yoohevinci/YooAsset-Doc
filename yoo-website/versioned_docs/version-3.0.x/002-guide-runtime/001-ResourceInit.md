@@ -301,13 +301,13 @@ private IEnumerator InitPackage()
 
 ### 资源文件解密方法
 
-实现一个继承IBundleDecryptor相关接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestFileEncryption.cs)
+实现一个继承IBundleDecryptor相关接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestAssetBundleDecryptor.cs)
 
 ```csharp
 private IEnumerator InitPackage()
 {
     var package = YooAssets.GetPackage("DefaultPackage");
-    var decryptor = new TestFileStreamDecryption();
+    var decryptor = new TestAssetBundleDecryptor();
     var createParameters = new OfflinePlayModeOptions();
     createParameters.BuiltinFileSystemParameters = FileSystemParameters.CreateDefaultBuiltinFileSystemParameters();
     createParameters.BuiltinFileSystemParameters.AddParameter(EFileSystemParameter.AssetBundleDecryptor, decryptor);
@@ -319,7 +319,7 @@ private IEnumerator InitPackage()
 
 ### 资源清单解密方法
 
-实现一个继承IManifestDecryptor接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestManifestServices.cs)
+实现一个继承IManifestDecryptor接口的类，参考代码：[示例代码](https://github.com/tuyoogame/YooAsset/blob/yoo3/Assets/YooAsset/Samples~/Test%20Sample/Runtime/CryptoHelpers/TestManifestDecryptor.cs)
 
 ```csharp
 private IEnumerator InitPackage()

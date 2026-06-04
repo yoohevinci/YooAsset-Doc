@@ -34,10 +34,6 @@
         <td><code>"ClearAllBundleFiles"</code> (字符串)</td>
       </tr>
       <tr>
-        <td><code>EPlayMode.HostPlayMode</code></td>
-        <td>已移除（用 Options 类代替）</td>
-      </tr>
-      <tr>
         <td><code>EBundleType.VirtualBundle</code></td>
         <td><code>EBundleType.VirtualAssetBundle</code></td>
       </tr>

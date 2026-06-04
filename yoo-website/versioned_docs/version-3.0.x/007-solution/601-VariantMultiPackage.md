@@ -78,7 +78,7 @@ public static void BuildAllVariants()
         p.BuildOutputRoot = $"Bundles/{variant}"; //变体专属输出目录
         p.BundledFileRoot = BundleBuilderHelper.GetStreamingAssetsRoot();
         p.BuildPipeline   = nameof(EBuildPipeline.ScriptableBuildPipeline);
-        p.BuildBundleType = (int)EBuildBundleType.AssetBundle;
+        p.BuildBundleType = (int)EBundleType.AssetBundle;
         p.BuildTarget     = EditorUserBuildSettings.activeBuildTarget;
         p.PackageName     = "DefaultPackage"; //两档包名一致 => 寻址结构一致
         p.PackageVersion  = "1.0.0";

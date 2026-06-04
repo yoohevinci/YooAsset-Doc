@@ -57,7 +57,7 @@ public static class VariantLoader
         where T : UnityEngine.Object
     {
         string addr = $"{baseAddress}#{Variant}";
-        if (pkg.CheckLocationValid(addr) == false)
+        if (pkg.IsLocationValid(addr) == false)
             addr = $"{baseAddress}#2K"; //当前档缺失则回退基础档
         return pkg.LoadAssetAsync<T>(addr);
     }
@@ -89,7 +89,7 @@ hero_prefab#2K / hero_prefab#4K
 
 ```csharp
 var texHandle = VariantLoader.LoadAsync<Texture2D>(pkg, "hero");
-await texHandle.Task;
+await texHandle;
 material.SetTexture("_MainTex", texHandle.GetAssetObject<Texture2D>());
 ```
 
@@ -106,8 +106,9 @@ YOO3 支持按 Tag 创建下载器与清理缓存，对应 Issue 的「只传 / 
 ```csharp
 // 只下载当前档 bundle
 var downloader = package.CreateResourceDownloader(
-    new ResourceDownloaderOptions(VariantLoader.Variant, downloadingMaxNumber: 10, failedTryAgain: 3));
-await downloader.BeginDownload().Task;
+    new ResourceDownloaderOptions(VariantLoader.Variant, maximumConcurrency: 10, retryCount: 3));
+downloader.StartDownload();
+await downloader;
 
 // 切档后清理旧档缓存（按 tag）
 // 参考 ClearCacheFilesOperation / ClearBundleFilesByTags 相关 API

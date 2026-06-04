@@ -12,7 +12,7 @@
 
 ### 工具介绍
 
-菜单栏Tools ---> 变种着色器收集器
+菜单栏Tools ---> Shader Variant Collector
 
 ![image](./Image/ShaderVariantCollector-img1.png)
 

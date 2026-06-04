@@ -17,7 +17,7 @@
 
    ![image](./Image/QuickStart-img1.png)
    
-   打开管理界面 **Edit/Windows/Package Manager**
+   打开管理界面 **Window/Package Manager**
    
    ![image](./Image/QuickStart-img2.png)
    

@@ -10,6 +10,6 @@
 
 配置说明：
 
-- Yoo Folder Name : 沙盒目录和内置目录的根目录名称
-- Package File Prefix : 资源包裹的文件名称统一前缀
+- Yoo Folder Name : 沙盒目录和内置目录的根目录名称（留空则直接使用平台默认路径）
+- Package File Prefix : 资源包裹的文件名称统一前缀（留空则不添加前缀）
 

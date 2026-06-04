@@ -1,6 +1,6 @@
 # Introduce
 
-[![License](https://img.shields.io/github/license/tuyoogame/YooAsset)](https://github.com/tuyoogame/YooAsset/blob/yoo3/LICENSE)[![openupm](https://img.shields.io/npm/v/com.tuyoogame.yooasset?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.cn/packages/com.tuyoogame.yooasset/)
+[![License](https://img.shields.io/github/license/tuyoogame/YooAsset)](https://github.com/tuyoogame/YooAsset/blob/yoo3/LICENSE) [![openupm](https://img.shields.io/npm/v/com.tuyoogame.yooasset?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.cn/packages/com.tuyoogame.yooasset/)
 
 **YooAsset**是一套用于Unity3D的资源管理系统，用于帮助研发团队快速部署和交付游戏。
 
@@ -49,7 +49,7 @@ YooAsset可以满足以下任何需求：
 
 - **多种模式自由切换**
 
-  编辑器模拟模式，单机运行模式，联机运行模式，WebGL运行模式。在编辑器模拟模式下，可以不构建资源包来模拟真实环境，在不修改任何代码的情况下，可以自由切换到其它模式。
+  编辑器模拟模式，单机运行模式，联机运行模式，Web运行模式。在编辑器模拟模式下，可以不构建资源包来模拟真实环境，在不修改任何代码的情况下，可以自由切换到其它模式。
 
 - **强大安全的加载系统**
 
@@ -70,6 +70,4 @@ YooAsset可以满足以下任何需求：
 - **多平台的完美适配**
   
   支持安卓，苹果，PC，WebGL以及各类小游戏平台。通过可扩展文件系统适配不同平台的文件访问、缓存和下载行为。
-  
-  
 

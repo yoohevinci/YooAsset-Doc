@@ -36,7 +36,7 @@ public IEnumerator Start()
     // 通过Tag标记下载更新的音频文件
     var downloader = package.CreateResourceDownloader(new ResourceDownloaderOptions(soundbankTag, 10, 3));
     downloader.StartDownload();
- 	yield return downloader;
+    yield return downloader;
     
     // 通过 EnsureBundleFileAsync 确保文件就绪并获取本地路径
     var ensureOp = package.EnsureBundleFileAsync(new EnsureBundleFileOptions(location));
