@@ -63,8 +63,6 @@ public static class YooAssetStartup
 }
 ```
 
-注意：实例标识是全局配置，后续初始化 `SandboxFileSystem` 和 `BuiltinFileSystem` 时，不需要分别传递实例参数。
-
 ### Windows 多开示例
 
 启动器可以通过命令行参数为不同进程分配实例标识：
