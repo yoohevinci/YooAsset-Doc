@@ -1,4 +1,4 @@
-# Google Play
+# Google Asset Delivery
 
 Google Play Asset Delivery（PAD）文件系统的接入与初始化配置。
 
